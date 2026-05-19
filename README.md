@@ -1,74 +1,79 @@
-# React + TypeScript + Vite
+# AXM Project Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Gestão de projetos com fluxo de fases, documentos e comentários.
 
-Currently, two official plugins are available:
+## Pré-requisitos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Node.js** 20+
+- **Docker** (para PostgreSQL local)
+- **npm**
 
-## React Compiler
+## Rodar tudo com um comando
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Na raiz do projeto:
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Isso automaticamente:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. Sobe o **PostgreSQL** via Docker
+2. Cria `server/.env` e `.env.local` se não existirem
+3. Aplica schema e **seed** no banco
+4. Inicia **API** (porta 3001) e **front** (porta 5173)
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Acesse: **http://localhost:5173**
+
+O front chama a API via proxy `/api` → `http://localhost:3001`.
+
+## Estrutura
+
 ```
-# axm-project-mng
+├── src/           # Front React + Vite
+├── server/        # API Node + Fastify + Prisma
+├── scripts/dev.mjs
+└── docker-compose.yml
+```
+
+## Comandos úteis
+
+| Comando | Descrição |
+|---------|-----------|
+| `npm run dev` | Postgres + API + front |
+| `npm run dev:web` | Só front (precisa API rodando) |
+| `npm run dev:api` | Só API (precisa Postgres) |
+| `npm run db:up` | Só PostgreSQL |
+| `npm run db:setup` | Schema + seed |
+
+## Variáveis de ambiente
+
+**Front** (`.env.local`):
+
+```
+VITE_API_URL=/api
+```
+
+**API** (`server/.env`):
+
+```
+PORT=3001
+DATABASE_URL=postgresql://axm:axm@localhost:5432/axm
+CORS_ORIGIN=http://localhost:5173
+UPLOAD_DIR=./uploads
+API_PUBLIC_URL=/api
+```
+
+## Mock (sem API)
+
+```
+VITE_USE_MOCK=true
+```
+
+## Deploy (Render)
+
+- **Web Service:** pasta `server`, build `npm install && npm run db:setup`, start `npm start`
+- **Static Site:** `npm run build`, publish `dist`
+- **PostgreSQL:** Render Postgres, `DATABASE_URL` na API
+# render-axm
