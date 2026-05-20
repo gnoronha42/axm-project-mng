@@ -205,6 +205,57 @@ body {
   word-break: break-word;
 }
 
+/* ── Linha de projeto no Dashboard ── */
+.axm-project-row.ant-list-item {
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 12px 8px !important;
+  transition: background 0.15s ease;
+}
+
+.axm-project-row.ant-list-item:hover {
+  background: rgba(249, 197, 86, 0.08);
+}
+
+.axm-project-row__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  min-width: 0;
+}
+
+.axm-project-row__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  min-width: 0;
+}
+
+.axm-project-row__title {
+  font-weight: 500;
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.axm-project-row__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.axm-project-row__progress {
+  flex: 1 1 140px;
+  max-width: 100%;
+  margin: 0 !important;
+  min-width: 100px;
+}
+
 /* ── Phase actions bar ── */
 .axm-phase-actions {
   display: flex;

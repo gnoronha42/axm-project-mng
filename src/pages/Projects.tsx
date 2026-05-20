@@ -1,17 +1,21 @@
-import { Card, Table, Tag, Input, Typography, Progress, Space, Skeleton } from 'antd';
-import { SearchOutlined } from '@ant-design/icons';
+import { Card, Table, Tag, Input, Typography, Progress, Space, Skeleton, Button, App, Popconfirm } from 'antd';
+import { SearchOutlined, PlusOutlined, DeleteOutlined } from '@ant-design/icons';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useProjects } from '../hooks/useProjects';
+import { useProjects, useDeleteProject } from '../hooks/useProjects';
 import { PHASE_LABELS, PHASE_ORDER } from '../types';
 import type { Project, ProjectPhase } from '../types';
 import { PhaseLabelTag, PhaseStatusTag } from '../components/common/StatusTag';
+import CreateProjectModal from '../components/projects/CreateProjectModal';
 import type { ColumnsType } from 'antd/es/table';
 
 export default function Projects() {
   const { data: projects, isLoading } = useProjects();
   const [search, setSearch] = useState('');
+  const [createOpen, setCreateOpen] = useState(false);
   const navigate = useNavigate();
+  const { notification } = App.useApp();
+  const deleteProject = useDeleteProject();
 
   const filtered = projects?.filter(
     (p) =>
@@ -74,15 +78,68 @@ export default function Projects() {
         </Space>
       ),
     },
+    {
+      title: 'Ações',
+      key: 'actions',
+      width: 80,
+      render: (_, record) => (
+        <Popconfirm
+          title="Excluir projeto?"
+          description="Documentos e comentários serão removidos."
+          okText="Excluir"
+          cancelText="Cancelar"
+          okButtonProps={{ danger: true, loading: deleteProject.isPending }}
+          onConfirm={async (e) => {
+            e?.stopPropagation();
+            try {
+              await deleteProject.mutateAsync(record.id);
+              notification.success({
+                message: 'Projeto excluído',
+                placement: 'topRight',
+              });
+            } catch (err) {
+              notification.error({
+                message: 'Falha ao excluir',
+                description: err instanceof Error ? err.message : undefined,
+                placement: 'topRight',
+              });
+            }
+          }}
+          onCancel={(e) => e?.stopPropagation()}
+        >
+          <Button
+            type="text"
+            danger
+            size="small"
+            icon={<DeleteOutlined />}
+            onClick={(e) => e.stopPropagation()}
+          />
+        </Popconfirm>
+      ),
+    },
   ];
 
   if (isLoading) return <Skeleton active paragraph={{ rows: 8 }} />;
 
   return (
     <div>
-      <Typography.Title level={3} className="axm-page-title">
-        Projetos
-      </Typography.Title>
+      <div
+        style={{
+          display: 'flex',
+          flexWrap: 'wrap',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          gap: 12,
+          marginBottom: 20,
+        }}
+      >
+        <Typography.Title level={3} className="axm-page-title" style={{ margin: 0 }}>
+          Projetos
+        </Typography.Title>
+        <Button type="primary" icon={<PlusOutlined />} onClick={() => setCreateOpen(true)}>
+          Novo Projeto
+        </Button>
+      </div>
 
       <Card>
         <Input
@@ -108,6 +165,12 @@ export default function Projects() {
           />
         </div>
       </Card>
+
+      <CreateProjectModal
+        open={createOpen}
+        onClose={() => setCreateOpen(false)}
+        onCreated={(id) => navigate(`/projects/${id}`)}
+      />
     </div>
   );
 }

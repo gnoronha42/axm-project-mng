@@ -66,25 +66,27 @@ export default function Dashboard() {
               renderItem={(project) => {
                 const completedPhases = project.phases.filter((p) => p.status === 'completed').length;
                 const pct = Math.round((completedPhases / PHASE_ORDER.length) * 100);
+                const status = project.phases.find((p) => p.status === 'in_progress')?.status ?? 'pending';
 
                 return (
                   <List.Item
-                    className="axm-list-item-mobile"
-                    style={{ cursor: 'pointer', borderRadius: 8, padding: '12px 8px', transition: 'background 0.15s' }}
+                    className="axm-project-row"
                     onClick={() => navigate(`/projects/${project.id}`)}
-                    actions={[<PhaseStatusTag key="s" status={project.phases.find((p) => p.status === 'in_progress')?.status ?? 'pending'} />]}
                   >
-                    <List.Item.Meta
-                      title={<span style={{ fontWeight: 500 }}>{project.title}</span>}
-                      description={
-                        <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginTop: 4, flexWrap: 'wrap' }}>
-                          <span style={{ margin: 0 }}>
-                            <PhaseLabelTag phase={project.currentPhase} />
-                          </span>
-                          <Progress percent={pct} size="small" style={{ flex: '1 1 120px', maxWidth: '100%', margin: 0 }} />
-                        </div>
-                      }
-                    />
+                    <div className="axm-project-row__inner">
+                      <div className="axm-project-row__head">
+                        <span className="axm-project-row__title">{project.title}</span>
+                        <PhaseStatusTag status={status} />
+                      </div>
+                      <div className="axm-project-row__meta">
+                        <PhaseLabelTag phase={project.currentPhase} />
+                        <Progress
+                          percent={pct}
+                          size="small"
+                          className="axm-project-row__progress"
+                        />
+                      </div>
+                    </div>
                   </List.Item>
                 );
               }}

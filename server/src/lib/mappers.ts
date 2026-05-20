@@ -1,6 +1,12 @@
 import type { Comment, Document, MonthlyReport, Project, ProjectPhaseRecord } from '@prisma/client';
 
-const API_PUBLIC_URL = process.env.API_PUBLIC_URL ?? '/api';
+function getPublicBase() {
+  const explicit = process.env.API_PUBLIC_URL?.trim();
+  if (explicit) return explicit.replace(/\/$/, '');
+  const renderUrl = process.env.RENDER_EXTERNAL_URL?.trim();
+  if (renderUrl) return renderUrl.replace(/\/$/, '');
+  return '/api';
+}
 
 type ProjectWithRelations = Project & {
   phases: ProjectPhaseRecord[];
@@ -41,7 +47,7 @@ export function mapDocument(row: Document) {
     uploadedBy: row.uploadedBy,
     size: row.size,
     mimeType: row.mimeType,
-    url: `${API_PUBLIC_URL}/files/${row.id}`,
+    url: `${getPublicBase()}/files/${row.id}`,
     version: row.version,
   };
 }

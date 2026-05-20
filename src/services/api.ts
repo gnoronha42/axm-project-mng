@@ -78,6 +78,40 @@ export const api = {
     );
   },
 
+  async createProject(input: {
+    title: string;
+    description?: string;
+    client: string;
+    investor?: string;
+    budget?: number;
+    tags?: string[];
+  }): Promise<Project> {
+    return request<Project>('/projects', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(input),
+    });
+  },
+
+  async updateProject(id: string, input: Partial<{
+    title: string;
+    description: string;
+    client: string;
+    investor: string;
+    budget: number | null;
+    tags: string[];
+  }>): Promise<Project> {
+    return request<Project>(`/projects/${id}`, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(input),
+    });
+  },
+
+  async deleteProject(id: string): Promise<void> {
+    await request<void>(`/projects/${id}`, { method: 'DELETE' });
+  },
+
   async addComment(comment: Omit<Comment, 'id' | 'createdAt'>): Promise<Comment> {
     return withMock(
       () =>

@@ -91,10 +91,36 @@ export default function DocumentList({ documents, loading, showPhase = true }: D
       title: 'Ações',
       key: 'actions',
       width: 100,
-      render: () => (
+      render: (_: unknown, doc: ProjectDocument) => (
         <Space>
-          <Button type="text" icon={<EyeOutlined />} size="small" />
-          <Button type="text" icon={<DownloadOutlined />} size="small" />
+          <Button
+            type="text"
+            icon={<EyeOutlined />}
+            size="small"
+            disabled={!doc.url}
+            onClick={(e) => {
+              e.stopPropagation();
+              if (doc.url) window.open(doc.url, '_blank', 'noopener');
+            }}
+          />
+          <Button
+            type="text"
+            icon={<DownloadOutlined />}
+            size="small"
+            disabled={!doc.url}
+            onClick={(e) => {
+              e.stopPropagation();
+              if (!doc.url) return;
+              const a = document.createElement('a');
+              a.href = doc.url;
+              a.download = doc.name;
+              a.target = '_blank';
+              a.rel = 'noopener';
+              document.body.appendChild(a);
+              a.click();
+              a.remove();
+            }}
+          />
         </Space>
       ),
     },

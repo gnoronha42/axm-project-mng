@@ -8,6 +8,7 @@ import multipart from '@fastify/multipart';
 import { prisma } from './lib/prisma.js';
 import { advanceProjectPhase } from './lib/advancePhase.js';
 import { mapComment, mapDocument, mapProject, mapReport } from './lib/mappers.js';
+import { PHASE_ORDER } from './lib/phases.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const PORT = Number(process.env.PORT ?? 3001);
@@ -42,6 +43,99 @@ app.get('/projects/:id', async (req, reply) => {
   });
   if (!row) return reply.status(404).send({ error: 'Projeto não encontrado' });
   return mapProject(row);
+});
+
+app.post('/projects', async (req, reply) => {
+  const body = req.body as {
+    title?: string;
+    description?: string;
+    client?: string;
+    investor?: string;
+    budget?: number;
+    tags?: string[];
+  };
+
+  if (!body?.title?.trim()) {
+    return reply.status(400).send({ error: 'Título obrigatório' });
+  }
+  if (!body?.client?.trim()) {
+    return reply.status(400).send({ error: 'Cliente obrigatório' });
+  }
+
+  const now = new Date();
+  const id = `p${Date.now()}`;
+
+  const created = await prisma.project.create({
+    data: {
+      id,
+      title: body.title.trim(),
+      description: body.description?.trim() ?? '',
+      client: body.client.trim(),
+      investor: body.investor?.trim() || null,
+      currentPhase: PHASE_ORDER[0],
+      budget: typeof body.budget === 'number' && Number.isFinite(body.budget) ? body.budget : null,
+      tags: Array.isArray(body.tags) ? body.tags.filter(Boolean) : [],
+      createdAt: now,
+      updatedAt: now,
+      phases: {
+        create: PHASE_ORDER.map((phaseKey, idx) => ({
+          phase: phaseKey,
+          status: idx === 0 ? 'in_progress' : 'pending',
+          sortOrder: idx,
+          startedAt: idx === 0 ? now : null,
+        })),
+      },
+    },
+    include: { phases: true },
+  });
+
+  return reply.status(201).send(mapProject(created));
+});
+
+app.patch('/projects/:id', async (req, reply) => {
+  const { id } = req.params as { id: string };
+  const body = req.body as {
+    title?: string;
+    description?: string;
+    client?: string;
+    investor?: string;
+    budget?: number | null;
+    tags?: string[];
+  };
+
+  const existing = await prisma.project.findUnique({ where: { id } });
+  if (!existing) return reply.status(404).send({ error: 'Projeto não encontrado' });
+
+  const updated = await prisma.project.update({
+    where: { id },
+    data: {
+      title: body.title?.trim() ?? undefined,
+      description: body.description?.trim() ?? undefined,
+      client: body.client?.trim() ?? undefined,
+      investor: body.investor === undefined ? undefined : (body.investor?.trim() || null),
+      budget: body.budget === undefined ? undefined : body.budget,
+      tags: body.tags === undefined ? undefined : body.tags.filter(Boolean),
+      updatedAt: new Date(),
+    },
+    include: { phases: true },
+  });
+
+  return mapProject(updated);
+});
+
+app.delete('/projects/:id', async (req, reply) => {
+  const { id } = req.params as { id: string };
+
+  const existing = await prisma.project.findUnique({ where: { id } });
+  if (!existing) return reply.status(404).send({ error: 'Projeto não encontrado' });
+
+  await prisma.comment.deleteMany({ where: { projectId: id } });
+  await prisma.monthlyReport.deleteMany({ where: { projectId: id } });
+  await prisma.document.deleteMany({ where: { projectId: id } });
+  await prisma.projectPhaseRecord.deleteMany({ where: { projectId: id } });
+  await prisma.project.delete({ where: { id } });
+
+  return reply.status(204).send();
 });
 
 app.post('/projects/:id/advance-phase', async (req, reply) => {
