@@ -44,6 +44,7 @@ export default function DocumentList({ documents, loading, showPhase = true }: D
       title: 'Categoria',
       dataIndex: 'category',
       key: 'category',
+      responsive: ['sm'],
       render: (cat) => <DocumentCategoryTag category={cat} />,
     },
     ...(showPhase
@@ -100,13 +101,16 @@ export default function DocumentList({ documents, loading, showPhase = true }: D
   ];
 
   return (
-    <Table
-      dataSource={documents}
-      columns={columns}
-      rowKey="id"
-      loading={loading}
-      size="small"
-      pagination={{ pageSize: 10 }}
-    />
+    <div className="axm-table-scroll">
+      <Table
+        dataSource={documents}
+        columns={columns}
+        rowKey="id"
+        loading={loading}
+        size="small"
+        scroll={{ x: 640 }}
+        pagination={{ pageSize: 10, responsive: true }}
+      />
+    </div>
   );
 }

@@ -1,0 +1,13 @@
+export const PHASE_ORDER = [
+  'RECEBIMENTO',
+  'PLANO_TRABALHO',
+  'REVISAO_AJUSTES',
+  'EXECUCAO_CLIENTE',
+  'APROVACAO_CLIENTE',
+  'ELABORACAO_CONVENIO',
+  'ASSINATURA_CONVENIO',
+  'EXECUCAO_PROJETO',
+  'VALIDACAO',
+] as const;
+
+export type ProjectPhase = (typeof PHASE_ORDER)[number];

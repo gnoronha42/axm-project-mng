@@ -1,4 +1,4 @@
-import { Card, Typography, Select, Space, Skeleton } from 'antd';
+import { Card, Typography, Select, Skeleton } from 'antd';
 import { useState } from 'react';
 import { useAllDocuments } from '../hooks/useDocuments';
 import { PHASE_LABELS, PHASE_ORDER } from '../types';
@@ -30,15 +30,16 @@ export default function Documents() {
 
   return (
     <div>
-      <Typography.Title level={3}>Documentos</Typography.Title>
+      <Typography.Title level={3} className="axm-page-title">
+        Documentos
+      </Typography.Title>
 
       <Card>
-        <Space style={{ marginBottom: 16 }} wrap>
+        <div className="axm-filter-row">
           <Select
             value={category}
             onChange={setCategory}
             options={CATEGORY_OPTIONS}
-            style={{ width: 220 }}
           />
           <Select
             value={phase}
@@ -47,9 +48,8 @@ export default function Documents() {
               { value: 'all', label: 'Todas as fases' },
               ...PHASE_ORDER.map((p) => ({ value: p, label: PHASE_LABELS[p] })),
             ]}
-            style={{ width: 260 }}
           />
-        </Space>
+        </div>
 
         <DocumentList documents={filtered} />
       </Card>

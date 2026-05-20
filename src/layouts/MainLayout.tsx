@@ -1,14 +1,16 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Outlet, useLocation, useNavigate } from 'react-router-dom';
-import { Layout, Menu } from 'antd';
+import { Drawer, Layout, Menu, Typography } from 'antd';
 import {
   DashboardOutlined,
-  ProjectOutlined,
   FileTextOutlined,
   MenuFoldOutlined,
+  MenuOutlined,
   MenuUnfoldOutlined,
+  ProjectOutlined,
 } from '@ant-design/icons';
 import logo from '../assets/images.png';
+import { useBreakpoint } from '../hooks/useBreakpoint';
 
 const { Sider, Header, Content } = Layout;
 
@@ -20,42 +22,52 @@ const menuItems = [
 
 export default function MainLayout() {
   const [collapsed, setCollapsed] = useState(false);
+  const [drawerOpen, setDrawerOpen] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
+  const { isMobile } = useBreakpoint();
 
-  const selectedKey = menuItems.find((item) =>
-    item.key === '/' ? location.pathname === '/' : location.pathname.startsWith(item.key),
-  )?.key ?? '/';
+  const selectedKey =
+    menuItems.find((item) =>
+      item.key === '/' ? location.pathname === '/' : location.pathname.startsWith(item.key),
+    )?.key ?? '/';
 
-  return (
-    <Layout style={{ minHeight: '100vh' }}>
-      <Sider
-        collapsible
-        collapsed={collapsed}
-        onCollapse={setCollapsed}
-        trigger={null}
-        width={240}
-        className={`axm-sider ${collapsed ? 'axm-sider-collapsed' : ''}`}
-      >
-        <div className="axm-logo-area">
-          <img
-            src={logo}
-            alt="AXM Consultoria"
-            style={{ width: collapsed ? 34 : 72, height: 'auto' }}
-          />
-          {!collapsed && <span className="axm-logo-text">AXM Consultoria</span>}
-        </div>
+  useEffect(() => {
+    if (isMobile) setCollapsed(true);
+  }, [isMobile]);
 
-        <Menu
-          theme="dark"
-          mode="inline"
-          selectedKeys={[selectedKey]}
-          items={menuItems}
-          onClick={({ key }) => navigate(key)}
-        />
+  const handleNavigate = (key: string) => {
+    navigate(key);
+    setDrawerOpen(false);
+  };
 
-        <div style={{ flex: 1 }} />
+  const menu = (
+    <Menu
+      theme="dark"
+      mode="inline"
+      selectedKeys={[selectedKey]}
+      items={menuItems}
+      onClick={({ key }) => handleNavigate(key)}
+    />
+  );
 
+  const logoBlock = (
+    <div className="axm-logo-area">
+      <img
+        src={logo}
+        alt="AXM Consultoria"
+        style={{ width: collapsed && !isMobile ? 34 : 72, height: 'auto' }}
+      />
+      {(!collapsed || isMobile) && <span className="axm-logo-text">AXM Consultoria</span>}
+    </div>
+  );
+
+  const siderContent = (
+    <>
+      {logoBlock}
+      {menu}
+      <div style={{ flex: 1 }} />
+      {!isMobile && (
         <div
           style={{
             padding: '12px 16px',
@@ -64,37 +76,68 @@ export default function MainLayout() {
             justifyContent: collapsed ? 'center' : 'flex-end',
           }}
         >
-          <div
-            className="axm-collapse-btn"
-            style={{
-              width: 32,
-              height: 32,
-              borderRadius: 8,
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              cursor: 'pointer',
-              color: 'rgba(255,255,255,0.35)',
-              transition: 'color 0.2s',
-            }}
+          <button
+            type="button"
+            className="axm-sider-toggle"
             onClick={() => setCollapsed(!collapsed)}
-            onMouseEnter={(e) => (e.currentTarget.style.color = 'rgba(255,255,255,0.7)')}
-            onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(255,255,255,0.35)')}
+            aria-label={collapsed ? 'Expandir menu' : 'Recolher menu'}
           >
             {collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
-          </div>
+          </button>
         </div>
-      </Sider>
+      )}
+    </>
+  );
 
-      <Layout>
-        <Header className="axm-header" style={{ padding: '0 24px', display: 'flex', alignItems: 'center' }}>
-          <div style={{ flex: 1 }} />
+  return (
+    <Layout style={{ minHeight: '100vh' }}>
+      {!isMobile && (
+        <Sider
+          collapsible
+          collapsed={collapsed}
+          onCollapse={setCollapsed}
+          trigger={null}
+          width={240}
+          collapsedWidth={72}
+          className={`axm-sider ${collapsed ? 'axm-sider-collapsed' : ''}`}
+        >
+          {siderContent}
+        </Sider>
+      )}
+
+      <Layout className="axm-main">
+        <Header className="axm-header">
+          {isMobile && (
+            <button
+              type="button"
+              className="axm-mobile-menu-btn"
+              onClick={() => setDrawerOpen(true)}
+              aria-label="Abrir menu"
+            >
+              <MenuOutlined />
+            </button>
+          )}
+          <Typography.Text className="axm-header-title" ellipsis>
+            AXM Project Manager
+          </Typography.Text>
         </Header>
 
         <Content className="axm-content">
           <Outlet />
         </Content>
       </Layout>
+
+      <Drawer
+        title={null}
+        placement="left"
+        open={drawerOpen}
+        onClose={() => setDrawerOpen(false)}
+        width={280}
+        styles={{ body: { padding: 0, background: '#141414' } }}
+        className="axm-mobile-drawer"
+      >
+        <div className="axm-sider axm-sider-drawer">{siderContent}</div>
+      </Drawer>
     </Layout>
   );
 }

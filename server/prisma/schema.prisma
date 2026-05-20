@@ -1,0 +1,90 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Project {
+  id           String   @id
+  title        String
+  description  String
+  client       String
+  investor     String?
+  currentPhase String
+  budget       Float?
+  tags         String[]
+  createdAt    DateTime
+  updatedAt    DateTime
+
+  phases    ProjectPhaseRecord[]
+  documents Document[]
+  comments  Comment[]
+  reports   MonthlyReport[]
+}
+
+model ProjectPhaseRecord {
+  id          String    @id @default(cuid())
+  projectId   String
+  phase       String
+  status      String
+  sortOrder   Int
+  startedAt   DateTime?
+  completedAt DateTime?
+  notes       String?
+
+  project Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
+
+  @@unique([projectId, phase])
+  @@index([projectId])
+}
+
+model Document {
+  id          String   @id
+  projectId   String
+  name        String
+  category    String
+  phase       String
+  uploadedAt  DateTime
+  uploadedBy  String
+  size        Int
+  mimeType    String
+  storagePath String
+  version     Int      @default(1)
+
+  project Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
+
+  @@index([projectId])
+}
+
+model Comment {
+  id        String   @id
+  projectId String
+  author    String
+  content   String
+  createdAt DateTime
+  phase     String
+  parentId  String?
+  resolved  Boolean  @default(false)
+
+  project Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
+
+  @@index([projectId])
+}
+
+model MonthlyReport {
+  id          String    @id
+  projectId   String
+  month       Int
+  year        Int
+  description String
+  status      String
+  submittedAt DateTime?
+  documentIds String[]
+
+  project Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
+
+  @@index([projectId])
+}

@@ -38,6 +38,7 @@ export default function Projects() {
       title: 'Fase Atual',
       dataIndex: 'currentPhase',
       key: 'currentPhase',
+      responsive: ['sm'],
       render: (phase) => <PhaseLabelTag phase={phase as ProjectPhase} />,
       filters: PHASE_ORDER.map((p) => ({ text: PHASE_LABELS[p], value: p })),
       onFilter: (value, record) => record.currentPhase === value,
@@ -53,6 +54,7 @@ export default function Projects() {
     {
       title: 'Progresso',
       key: 'progress',
+      responsive: ['md'],
       render: (_, record) => {
         const done = record.phases.filter((p) => p.status === 'completed').length;
         const pct = Math.round((done / PHASE_ORDER.length) * 100);
@@ -78,7 +80,9 @@ export default function Projects() {
 
   return (
     <div>
-      <Typography.Title level={3}>Projetos</Typography.Title>
+      <Typography.Title level={3} className="axm-page-title">
+        Projetos
+      </Typography.Title>
 
       <Card>
         <Input
@@ -86,20 +90,23 @@ export default function Projects() {
           prefix={<SearchOutlined />}
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          style={{ marginBottom: 16, maxWidth: 400 }}
+          style={{ marginBottom: 16, width: '100%', maxWidth: 480 }}
           allowClear
         />
 
-        <Table
-          dataSource={filtered}
-          columns={columns}
-          rowKey="id"
-          onRow={(record) => ({
-            onClick: () => navigate(`/projects/${record.id}`),
-            style: { cursor: 'pointer' },
-          })}
-          pagination={{ pageSize: 10 }}
-        />
+        <div className="axm-table-scroll">
+          <Table
+            dataSource={filtered}
+            columns={columns}
+            rowKey="id"
+            scroll={{ x: 720 }}
+            onRow={(record) => ({
+              onClick: () => navigate(`/projects/${record.id}`),
+              style: { cursor: 'pointer' },
+            })}
+            pagination={{ pageSize: 10, showSizeChanger: false, responsive: true }}
+          />
+        </div>
       </Card>
     </div>
   );

@@ -80,13 +80,16 @@ export default function MonthlyReports({ reports, loading }: MonthlyReportsProps
   ];
 
   return (
-    <Table
-      dataSource={reports}
-      columns={columns}
-      rowKey="id"
-      loading={loading}
-      size="small"
-      pagination={false}
-    />
+    <div className="axm-table-scroll">
+      <Table
+        dataSource={reports}
+        columns={columns}
+        rowKey="id"
+        loading={loading}
+        size="small"
+        scroll={{ x: 560 }}
+        pagination={false}
+      />
+    </div>
   );
 }

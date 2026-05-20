@@ -36,7 +36,7 @@ export default function Dashboard() {
 
   return (
     <div>
-      <Typography.Title level={3} style={{ marginBottom: 24, fontWeight: 600 }}>
+      <Typography.Title level={3} className="axm-page-title">
         Dashboard
       </Typography.Title>
 
@@ -69,6 +69,7 @@ export default function Dashboard() {
 
                 return (
                   <List.Item
+                    className="axm-list-item-mobile"
                     style={{ cursor: 'pointer', borderRadius: 8, padding: '12px 8px', transition: 'background 0.15s' }}
                     onClick={() => navigate(`/projects/${project.id}`)}
                     actions={[<PhaseStatusTag key="s" status={project.phases.find((p) => p.status === 'in_progress')?.status ?? 'pending'} />]}
@@ -80,7 +81,7 @@ export default function Dashboard() {
                           <span style={{ margin: 0 }}>
                             <PhaseLabelTag phase={project.currentPhase} />
                           </span>
-                          <Progress percent={pct} size="small" style={{ maxWidth: 160, margin: 0 }} />
+                          <Progress percent={pct} size="small" style={{ flex: '1 1 120px', maxWidth: '100%', margin: 0 }} />
                         </div>
                       }
                     />
