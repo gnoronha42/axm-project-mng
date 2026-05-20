@@ -1,4 +1,4 @@
-import type { Comment, Document, MonthlyReport, Project, ProjectPhaseRecord } from '@prisma/client';
+import type { Comment, Document, MonthlyReport, PhaseChecklistItem, Project, ProjectPhaseRecord } from '@prisma/client';
 
 function getPublicBase() {
   const explicit = process.env.API_PUBLIC_URL?.trim();
@@ -62,6 +62,19 @@ export function mapComment(row: Comment) {
     phase: row.phase,
     parentId: row.parentId ?? undefined,
     resolved: row.resolved,
+  };
+}
+
+export function mapChecklistItem(row: PhaseChecklistItem) {
+  return {
+    id: row.id,
+    projectId: row.projectId,
+    phase: row.phase,
+    label: row.label,
+    done: row.done,
+    sortOrder: row.sortOrder,
+    createdAt: row.createdAt.toISOString(),
+    updatedAt: row.updatedAt.toISOString(),
   };
 }
 

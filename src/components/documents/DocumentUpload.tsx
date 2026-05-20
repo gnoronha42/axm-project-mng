@@ -1,10 +1,10 @@
-import { Upload, Select, Button, App } from 'antd';
+import { Upload, Select, Button, App, Progress } from 'antd';
 import { InboxOutlined, CheckCircleOutlined } from '@ant-design/icons';
 import { useState } from 'react';
 import type { UploadFile } from 'antd';
 import { ProjectPhase, PHASE_LABELS, PHASE_ORDER } from '../../types';
 import type { DocumentCategory } from '../../types';
-import { api } from '../../services/api';
+import { uploadDocument } from '../../services/apiClient';
 
 const { Dragger } = Upload;
 
@@ -29,6 +29,7 @@ export default function DocumentUpload({ projectId, currentPhase, onUploadComple
   const [phase, setPhase] = useState<ProjectPhase>(currentPhase ?? ProjectPhase.RECEBIMENTO);
   const [fileList, setFileList] = useState<UploadFile[]>([]);
   const [uploading, setUploading] = useState(false);
+  const [progress, setProgress] = useState<Record<string, number>>({});
 
   const handleSend = async () => {
     if (fileList.length === 0) {
@@ -41,13 +42,27 @@ export default function DocumentUpload({ projectId, currentPhase, onUploadComple
     }
 
     setUploading(true);
-    try {
-      for (const item of fileList) {
-        const file = item.originFileObj as File | undefined;
-        if (!file) continue;
-        await api.uploadDocument(projectId, file, { category, phase, uploadedBy: 'Você' });
-      }
+    setProgress({});
 
+    let failed = 0;
+    for (const item of fileList) {
+      const file = item.originFileObj as File | undefined;
+      if (!file) continue;
+      try {
+        await uploadDocument(
+          projectId,
+          file,
+          { category, phase, uploadedBy: 'Você' },
+          (pct) => setProgress((prev) => ({ ...prev, [item.uid]: pct })),
+        );
+        setProgress((prev) => ({ ...prev, [item.uid]: 100 }));
+      } catch {
+        failed += 1;
+        setProgress((prev) => ({ ...prev, [item.uid]: -1 }));
+      }
+    }
+
+    if (failed === 0) {
       notification.success({
         message: 'Documentos enviados com sucesso!',
         description: `${fileList.length} arquivo(s) adicionado(s) à fase "${PHASE_LABELS[phase]}".`,
@@ -56,16 +71,17 @@ export default function DocumentUpload({ projectId, currentPhase, onUploadComple
       });
 
       setFileList([]);
+      setProgress({});
       onUploadComplete?.();
-    } catch {
+    } else {
       notification.error({
-        message: 'Falha no envio',
-        description: 'Não foi possível enviar os arquivos. Verifique se a API está rodando.',
+        message: 'Falha em alguns envios',
+        description: `${failed} arquivo(s) não foram enviados.`,
         placement: 'topRight',
       });
-    } finally {
-      setUploading(false);
     }
+
+    setUploading(false);
   };
 
   return (
@@ -96,6 +112,29 @@ export default function DocumentUpload({ projectId, currentPhase, onUploadComple
         }}
         onRemove={(file) => {
           setFileList((prev) => prev.filter((f) => f.uid !== file.uid));
+          setProgress((prev) => {
+            const next = { ...prev };
+            delete next[file.uid];
+            return next;
+          });
+        }}
+        showUploadList={{ showPreviewIcon: false }}
+        itemRender={(originNode, file) => {
+          const pct = progress[file.uid];
+          const failed = pct === -1;
+          return (
+            <div style={{ marginTop: 4 }}>
+              {originNode}
+              {pct !== undefined && (
+                <Progress
+                  percent={failed ? 100 : pct}
+                  size="small"
+                  status={failed ? 'exception' : pct === 100 ? 'success' : 'active'}
+                  style={{ marginTop: 2, marginLeft: 28, marginRight: 32 }}
+                />
+              )}
+            </div>
+          );
         }}
       >
         <p className="ant-upload-drag-icon">
@@ -109,7 +148,7 @@ export default function DocumentUpload({ projectId, currentPhase, onUploadComple
 
       <div style={{ marginTop: 12 }}>
         <Button type="primary" onClick={handleSend} loading={uploading} block>
-          Enviar Documentos
+          {uploading ? 'Enviando...' : 'Enviar Documentos'}
         </Button>
       </div>
     </div>

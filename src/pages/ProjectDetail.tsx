@@ -14,6 +14,7 @@ import { useDocuments, useComments, useReports, useAddComment } from '../hooks/u
 import type { PhaseInfo } from '../types';
 import { PHASE_LABELS } from '../types';
 import PhaseTimeline from '../components/workflow/PhaseTimeline';
+import PhaseChecklist from '../components/workflow/PhaseChecklist';
 import DocumentList from '../components/documents/DocumentList';
 import DocumentUpload from '../components/documents/DocumentUpload';
 import CommentThread from '../components/comments/CommentThread';
@@ -146,6 +147,13 @@ export default function ProjectDetail() {
               onChange={setActiveTab}
               size={isMobile ? 'small' : 'middle'}
               items={[
+                {
+                  key: 'checklist',
+                  label: 'Checklist',
+                  children: (
+                    <PhaseChecklist projectId={project.id} phase={viewPhase.phase} />
+                  ),
+                },
                 {
                   key: 'docs',
                   label: `Documentos (${phaseDocuments.length})`,

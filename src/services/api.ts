@@ -1,4 +1,4 @@
-import type { Comment, MonthlyReport, Project, ProjectDocument } from '../types';
+import type { ChecklistItem, Comment, MonthlyReport, Project, ProjectDocument, ProjectPhase } from '../types';
 import { ApiError, request, uploadDocument } from './apiClient';
 
 const USE_MOCK = import.meta.env.VITE_USE_MOCK === 'true';
@@ -110,6 +110,34 @@ export const api = {
 
   async deleteProject(id: string): Promise<void> {
     await request<void>(`/projects/${id}`, { method: 'DELETE' });
+  },
+
+  async getChecklist(projectId: string, phase?: ProjectPhase): Promise<ChecklistItem[]> {
+    const qs = phase ? `?phase=${phase}` : '';
+    return request<ChecklistItem[]>(`/projects/${projectId}/checklist${qs}`);
+  },
+
+  async addChecklistItem(projectId: string, phase: ProjectPhase, label: string): Promise<ChecklistItem> {
+    return request<ChecklistItem>(`/projects/${projectId}/checklist`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ phase, label }),
+    });
+  },
+
+  async updateChecklistItem(
+    itemId: string,
+    patch: { done?: boolean; label?: string },
+  ): Promise<ChecklistItem> {
+    return request<ChecklistItem>(`/checklist/${itemId}`, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(patch),
+    });
+  },
+
+  async deleteChecklistItem(itemId: string): Promise<void> {
+    await request<void>(`/checklist/${itemId}`, { method: 'DELETE' });
   },
 
   async addComment(comment: Omit<Comment, 'id' | 'createdAt'>): Promise<Comment> {

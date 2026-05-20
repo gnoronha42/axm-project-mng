@@ -23,6 +23,7 @@ model Project {
   documents Document[]
   comments  Comment[]
   reports   MonthlyReport[]
+  checklist PhaseChecklistItem[]
 }
 
 model ProjectPhaseRecord {
@@ -87,4 +88,19 @@ model MonthlyReport {
   project Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
 
   @@index([projectId])
+}
+
+model PhaseChecklistItem {
+  id        String   @id @default(cuid())
+  projectId String
+  phase     String
+  label     String
+  done      Boolean  @default(false)
+  sortOrder Int      @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  project Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
+
+  @@index([projectId, phase])
 }

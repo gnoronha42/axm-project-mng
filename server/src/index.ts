@@ -7,8 +7,9 @@ import cors from '@fastify/cors';
 import multipart from '@fastify/multipart';
 import { prisma } from './lib/prisma.js';
 import { advanceProjectPhase } from './lib/advancePhase.js';
-import { mapComment, mapDocument, mapProject, mapReport } from './lib/mappers.js';
-import { PHASE_ORDER } from './lib/phases.js';
+import { mapChecklistItem, mapComment, mapDocument, mapProject, mapReport } from './lib/mappers.js';
+import { PHASE_ORDER, type ProjectPhase } from './lib/phases.js';
+import { CHECKLIST_DEFAULTS } from './lib/checklistDefaults.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const PORT = Number(process.env.PORT ?? 3001);
@@ -89,6 +90,19 @@ app.post('/projects', async (req, reply) => {
     include: { phases: true },
   });
 
+  // Pré-popula checklist padrão de todas as fases
+  const checklistData = PHASE_ORDER.flatMap((phaseKey) =>
+    (CHECKLIST_DEFAULTS[phaseKey] ?? []).map((label, idx) => ({
+      projectId: created.id,
+      phase: phaseKey,
+      label,
+      sortOrder: idx,
+    })),
+  );
+  if (checklistData.length) {
+    await prisma.phaseChecklistItem.createMany({ data: checklistData });
+  }
+
   return reply.status(201).send(mapProject(created));
 });
 
@@ -129,6 +143,7 @@ app.delete('/projects/:id', async (req, reply) => {
   const existing = await prisma.project.findUnique({ where: { id } });
   if (!existing) return reply.status(404).send({ error: 'Projeto não encontrado' });
 
+  await prisma.phaseChecklistItem.deleteMany({ where: { projectId: id } });
   await prisma.comment.deleteMany({ where: { projectId: id } });
   await prisma.monthlyReport.deleteMany({ where: { projectId: id } });
   await prisma.document.deleteMany({ where: { projectId: id } });
@@ -269,6 +284,107 @@ app.get('/projects/:id/reports', async (req) => {
     orderBy: [{ year: 'desc' }, { month: 'desc' }],
   });
   return rows.map(mapReport);
+});
+
+app.get('/projects/:id/checklist', async (req, reply) => {
+  const { id } = req.params as { id: string };
+  const { phase } = req.query as { phase?: string };
+
+  const project = await prisma.project.findUnique({ where: { id } });
+  if (!project) return reply.status(404).send({ error: 'Projeto não encontrado' });
+
+  if (phase) {
+    const existing = await prisma.phaseChecklistItem.findMany({
+      where: { projectId: id, phase },
+      orderBy: { sortOrder: 'asc' },
+    });
+
+    if (existing.length === 0) {
+      const defaults = CHECKLIST_DEFAULTS[phase as ProjectPhase];
+      if (defaults?.length) {
+        await prisma.phaseChecklistItem.createMany({
+          data: defaults.map((label, idx) => ({
+            projectId: id,
+            phase,
+            label,
+            sortOrder: idx,
+          })),
+        });
+
+        const seeded = await prisma.phaseChecklistItem.findMany({
+          where: { projectId: id, phase },
+          orderBy: { sortOrder: 'asc' },
+        });
+        return seeded.map(mapChecklistItem);
+      }
+    }
+
+    return existing.map(mapChecklistItem);
+  }
+
+  const all = await prisma.phaseChecklistItem.findMany({
+    where: { projectId: id },
+    orderBy: [{ phase: 'asc' }, { sortOrder: 'asc' }],
+  });
+  return all.map(mapChecklistItem);
+});
+
+app.post('/projects/:id/checklist', async (req, reply) => {
+  const { id } = req.params as { id: string };
+  const body = req.body as { phase?: string; label?: string };
+
+  const project = await prisma.project.findUnique({ where: { id } });
+  if (!project) return reply.status(404).send({ error: 'Projeto não encontrado' });
+
+  if (!body?.phase || !PHASE_ORDER.includes(body.phase as ProjectPhase)) {
+    return reply.status(400).send({ error: 'Fase inválida' });
+  }
+  if (!body?.label?.trim()) {
+    return reply.status(400).send({ error: 'Texto do item obrigatório' });
+  }
+
+  const max = await prisma.phaseChecklistItem.aggregate({
+    where: { projectId: id, phase: body.phase },
+    _max: { sortOrder: true },
+  });
+
+  const created = await prisma.phaseChecklistItem.create({
+    data: {
+      projectId: id,
+      phase: body.phase,
+      label: body.label.trim(),
+      sortOrder: (max._max.sortOrder ?? -1) + 1,
+    },
+  });
+
+  return reply.status(201).send(mapChecklistItem(created));
+});
+
+app.patch('/checklist/:itemId', async (req, reply) => {
+  const { itemId } = req.params as { itemId: string };
+  const body = req.body as { done?: boolean; label?: string };
+
+  const existing = await prisma.phaseChecklistItem.findUnique({ where: { id: itemId } });
+  if (!existing) return reply.status(404).send({ error: 'Item não encontrado' });
+
+  const updated = await prisma.phaseChecklistItem.update({
+    where: { id: itemId },
+    data: {
+      done: body.done ?? undefined,
+      label: body.label?.trim() ?? undefined,
+    },
+  });
+
+  return mapChecklistItem(updated);
+});
+
+app.delete('/checklist/:itemId', async (req, reply) => {
+  const { itemId } = req.params as { itemId: string };
+  const existing = await prisma.phaseChecklistItem.findUnique({ where: { id: itemId } });
+  if (!existing) return reply.status(404).send({ error: 'Item não encontrado' });
+
+  await prisma.phaseChecklistItem.delete({ where: { id: itemId } });
+  return reply.status(204).send();
 });
 
 app.patch('/reports/:id', async (req, reply) => {

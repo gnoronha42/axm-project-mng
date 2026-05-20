@@ -91,6 +91,17 @@ export interface MonthlyReport {
   documents: string[];
 }
 
+export interface ChecklistItem {
+  id: string;
+  projectId: string;
+  phase: ProjectPhase;
+  label: string;
+  done: boolean;
+  sortOrder: number;
+  createdAt: string;
+  updatedAt: string;
+}
+
 export interface Project {
   id: string;
   title: string;

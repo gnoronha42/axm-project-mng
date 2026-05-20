@@ -7,6 +7,7 @@ const Dashboard = lazy(() => import('../pages/Dashboard'));
 const Projects = lazy(() => import('../pages/Projects'));
 const ProjectDetail = lazy(() => import('../pages/ProjectDetail'));
 const Documents = lazy(() => import('../pages/Documents'));
+const Workflow = lazy(() => import('../pages/Workflow'));
 
 function Loader() {
   return (
@@ -32,6 +33,7 @@ export const router = createBrowserRouter([
       { index: true, element: withSuspense(Dashboard) },
       { path: 'projects', element: withSuspense(Projects) },
       { path: 'projects/:id', element: withSuspense(ProjectDetail) },
+      { path: 'fluxo', element: withSuspense(Workflow) },
       { path: 'documents', element: withSuspense(Documents) },
     ],
   },
