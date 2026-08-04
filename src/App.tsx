@@ -4,6 +4,7 @@ import { ConfigProvider, App as AntApp } from 'antd';
 import ptBR from 'antd/locale/pt_BR';
 import { theme } from './styles/theme';
 import { router } from './routes';
+import { AuthProvider } from './auth/AuthContext';
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -19,7 +20,9 @@ export default function App() {
     <QueryClientProvider client={queryClient}>
       <ConfigProvider theme={theme} locale={ptBR}>
         <AntApp>
-          <RouterProvider router={router} />
+          <AuthProvider>
+            <RouterProvider router={router} />
+          </AuthProvider>
         </AntApp>
       </ConfigProvider>
     </QueryClientProvider>

@@ -5,6 +5,7 @@ import type { UploadFile } from 'antd';
 import { ProjectPhase, PHASE_LABELS, PHASE_ORDER } from '../../types';
 import type { DocumentCategory } from '../../types';
 import { uploadDocument } from '../../services/apiClient';
+import { useAuth } from '../../auth/AuthContext';
 
 const { Dragger } = Upload;
 
@@ -25,6 +26,7 @@ interface DocumentUploadProps {
 
 export default function DocumentUpload({ projectId, currentPhase, onUploadComplete }: DocumentUploadProps) {
   const { notification } = App.useApp();
+  const { user } = useAuth();
   const [category, setCategory] = useState<DocumentCategory>('outro');
   const [phase, setPhase] = useState<ProjectPhase>(currentPhase ?? ProjectPhase.RECEBIMENTO);
   const [fileList, setFileList] = useState<UploadFile[]>([]);
@@ -52,7 +54,7 @@ export default function DocumentUpload({ projectId, currentPhase, onUploadComple
         await uploadDocument(
           projectId,
           file,
-          { category, phase, uploadedBy: 'Você' },
+          { category, phase, uploadedBy: user?.name ?? 'Você' },
           (pct) => setProgress((prev) => ({ ...prev, [item.uid]: pct })),
         );
         setProgress((prev) => ({ ...prev, [item.uid]: 100 }));

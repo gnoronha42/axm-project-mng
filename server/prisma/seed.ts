@@ -122,11 +122,28 @@ const reports = [
 ];
 
 async function main() {
+  await prisma.phaseChecklistItem.deleteMany();
   await prisma.comment.deleteMany();
   await prisma.monthlyReport.deleteMany();
   await prisma.document.deleteMany();
   await prisma.projectPhaseRecord.deleteMany();
   await prisma.project.deleteMany();
+
+  const { hashPassword } = await import('../src/lib/auth.js');
+  const adminEmail = process.env.SEED_ADMIN_EMAIL ?? 'admin@axm.local';
+  const adminPass = process.env.SEED_ADMIN_PASSWORD ?? 'admin123';
+
+  await prisma.user.upsert({
+    where: { email: adminEmail },
+    update: {},
+    create: {
+      email: adminEmail,
+      name: 'Administrador AXM',
+      passwordHash: hashPassword(adminPass),
+      role: 'admin',
+    },
+  });
+  console.log(`Admin: ${adminEmail} / ${adminPass}`);
 
   for (const p of projects) {
     await prisma.project.create({

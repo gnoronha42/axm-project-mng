@@ -1,17 +1,20 @@
 import { useEffect, useState } from 'react';
 import { Outlet, useLocation, useNavigate } from 'react-router-dom';
-import { Drawer, Layout, Menu, Typography } from 'antd';
+import { Avatar, Drawer, Dropdown, Layout, Menu, Space, Typography } from 'antd';
 import {
   ApartmentOutlined,
   DashboardOutlined,
   FileTextOutlined,
+  LogoutOutlined,
   MenuFoldOutlined,
   MenuOutlined,
   MenuUnfoldOutlined,
   ProjectOutlined,
+  UserOutlined,
 } from '@ant-design/icons';
 import logo from '../assets/images.png';
 import { useBreakpoint } from '../hooks/useBreakpoint';
+import { useAuth } from '../auth/AuthContext';
 
 const { Sider, Header, Content } = Layout;
 
@@ -28,6 +31,7 @@ export default function MainLayout() {
   const navigate = useNavigate();
   const location = useLocation();
   const { isMobile } = useBreakpoint();
+  const { user, logout } = useAuth();
 
   const selectedKey =
     menuItems.find((item) =>
@@ -122,6 +126,32 @@ export default function MainLayout() {
           <Typography.Text className="axm-header-title" ellipsis>
             AXM Project Manager
           </Typography.Text>
+
+          <Dropdown
+            menu={{
+              items: [
+                {
+                  key: 'logout',
+                  icon: <LogoutOutlined />,
+                  label: 'Sair',
+                  onClick: () => {
+                    logout();
+                    navigate('/login', { replace: true });
+                  },
+                },
+              ],
+            }}
+            placement="bottomRight"
+          >
+            <Space style={{ cursor: 'pointer', flexShrink: 0 }} size={8}>
+              <Avatar size="small" icon={<UserOutlined />} style={{ background: '#f9c556', color: '#111' }} />
+              {!isMobile && (
+                <Typography.Text ellipsis style={{ maxWidth: 160 }}>
+                  {user?.name}
+                </Typography.Text>
+              )}
+            </Space>
+          </Dropdown>
         </Header>
 
         <Content className="axm-content">

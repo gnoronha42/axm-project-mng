@@ -1,0 +1,69 @@
+# AXM Project Manager — stack isolada (não compartilha rede/volumes com outras apps)
+name: axm
+
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: axm-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-axm}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-axm_change_me}
+      POSTGRES_DB: ${POSTGRES_DB:-axm}
+    volumes:
+      - axm_pg_data:/var/lib/postgresql/data
+    networks:
+      - axm_net
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB']
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  api:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    container_name: axm-api
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      PORT: 3001
+      DATABASE_URL: postgresql://${POSTGRES_USER:-axm}:${POSTGRES_PASSWORD:-axm_change_me}@db:5432/${POSTGRES_DB:-axm}
+      CORS_ORIGIN: ${CORS_ORIGIN:-http://76.13.234.226:8085}
+      JWT_SECRET: ${JWT_SECRET:-change-me-in-production}
+      UPLOAD_DIR: /app/uploads
+      API_PUBLIC_URL: ${API_PUBLIC_URL:-http://76.13.234.226:8085/api}
+    volumes:
+      - axm_uploads:/app/uploads
+    networks:
+      - axm_net
+    # Só escuta em localhost da VPS — não expõe a API direto na internet
+    ports:
+      - '127.0.0.1:3010:3001'
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        VITE_API_URL: /api
+    container_name: axm-web
+    restart: unless-stopped
+    depends_on:
+      - api
+    networks:
+      - axm_net
+    ports:
+      - '8085:80'
+
+volumes:
+  axm_pg_data:
+  axm_uploads:
+
+networks:
+  axm_net:
+    name: axm_net
+    driver: bridge

@@ -2,12 +2,15 @@ import { createBrowserRouter } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
 import { Spin } from 'antd';
 import MainLayout from '../layouts/MainLayout';
+import RequireAuth from '../auth/RequireAuth';
 
 const Dashboard = lazy(() => import('../pages/Dashboard'));
 const Projects = lazy(() => import('../pages/Projects'));
 const ProjectDetail = lazy(() => import('../pages/ProjectDetail'));
 const Documents = lazy(() => import('../pages/Documents'));
 const Workflow = lazy(() => import('../pages/Workflow'));
+const Login = lazy(() => import('../pages/Login'));
+const Register = lazy(() => import('../pages/Register'));
 
 function Loader() {
   return (
@@ -27,14 +30,27 @@ function withSuspense(Component: React.LazyExoticComponent<React.ComponentType>)
 
 export const router = createBrowserRouter([
   {
+    path: '/login',
+    element: withSuspense(Login),
+  },
+  {
+    path: '/register',
+    element: withSuspense(Register),
+  },
+  {
     path: '/',
-    element: <MainLayout />,
+    element: <RequireAuth />,
     children: [
-      { index: true, element: withSuspense(Dashboard) },
-      { path: 'projects', element: withSuspense(Projects) },
-      { path: 'projects/:id', element: withSuspense(ProjectDetail) },
-      { path: 'fluxo', element: withSuspense(Workflow) },
-      { path: 'documents', element: withSuspense(Documents) },
+      {
+        element: <MainLayout />,
+        children: [
+          { index: true, element: withSuspense(Dashboard) },
+          { path: 'projects', element: withSuspense(Projects) },
+          { path: 'projects/:id', element: withSuspense(ProjectDetail) },
+          { path: 'fluxo', element: withSuspense(Workflow) },
+          { path: 'documents', element: withSuspense(Documents) },
+        ],
+      },
     ],
   },
 ]);

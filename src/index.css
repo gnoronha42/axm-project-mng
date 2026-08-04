@@ -407,3 +407,31 @@ body {
 .ant-tabs-ink-bar {
   background: var(--brand-gold) !important;
 }
+
+/* ── Auth pages ── */
+.axm-auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background:
+    radial-gradient(ellipse at top, rgba(249, 197, 86, 0.18), transparent 55%),
+    linear-gradient(160deg, #f7f7f7 0%, #efefef 100%);
+}
+
+.axm-auth-card {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 16px !important;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08) !important;
+}
+
+.axm-auth-brand {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.axm-auth-brand img {
+  border-radius: 12px;
+}

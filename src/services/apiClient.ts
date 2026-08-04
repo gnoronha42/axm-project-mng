@@ -1,4 +1,17 @@
 const BASE = (import.meta.env.VITE_API_URL ?? '/api').replace(/\/$/, '');
+const TOKEN_KEY = 'axm_token';
+
+let memoryToken: string | null = localStorage.getItem(TOKEN_KEY);
+
+export function getAuthToken(): string | null {
+  return memoryToken;
+}
+
+export function setAuthToken(token: string | null) {
+  memoryToken = token;
+  if (token) localStorage.setItem(TOKEN_KEY, token);
+  else localStorage.removeItem(TOKEN_KEY);
+}
 
 export class ApiError extends Error {
   status: number;
@@ -10,13 +23,22 @@ export class ApiError extends Error {
   }
 }
 
+function authHeaders(extra?: HeadersInit): HeadersInit {
+  const headers = new Headers(extra);
+  if (memoryToken) headers.set('Authorization', `Bearer ${memoryToken}`);
+  return headers;
+}
+
 export async function request<T>(path: string, options?: RequestInit): Promise<T> {
-  const res = await fetch(`${BASE}${path}`, options);
+  const res = await fetch(`${BASE}${path}`, {
+    ...options,
+    headers: authHeaders(options?.headers),
+  });
 
   if (!res.ok) {
     let message = res.statusText;
     try {
-      const body = await res.json() as { error?: string };
+      const body = (await res.json()) as { error?: string };
       if (body.error) message = body.error;
     } catch {
       /* ignore */
@@ -43,6 +65,7 @@ export async function uploadDocument(
   return new Promise((resolve, reject) => {
     const xhr = new XMLHttpRequest();
     xhr.open('POST', `${BASE}/projects/${projectId}/documents`);
+    if (memoryToken) xhr.setRequestHeader('Authorization', `Bearer ${memoryToken}`);
 
     xhr.upload.onprogress = (evt) => {
       if (!evt.lengthComputable) return;

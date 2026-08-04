@@ -10,6 +10,14 @@ import { advanceProjectPhase } from './lib/advancePhase.js';
 import { mapChecklistItem, mapComment, mapDocument, mapProject, mapReport } from './lib/mappers.js';
 import { PHASE_ORDER, type ProjectPhase } from './lib/phases.js';
 import { CHECKLIST_DEFAULTS } from './lib/checklistDefaults.js';
+import {
+  hashPassword,
+  verifyPassword,
+  signToken,
+  verifyToken,
+  publicUser,
+  type AuthUser,
+} from './lib/auth.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const PORT = Number(process.env.PORT ?? 3001);
@@ -20,13 +28,100 @@ await mkdir(UPLOAD_DIR, { recursive: true });
 
 const app = Fastify({ logger: true });
 
+declare module 'fastify' {
+  interface FastifyRequest {
+    user?: AuthUser;
+  }
+}
+
 await app.register(cors, {
   origin: CORS_ORIGIN.split(',').map((o) => o.trim()),
+  credentials: true,
 });
 
 await app.register(multipart, { limits: { fileSize: 50 * 1024 * 1024 } });
 
+const PUBLIC_PATHS = new Set(['/health', '/auth/login', '/auth/register']);
+
+app.addHook('onRequest', async (req, reply) => {
+  const url = req.url.split('?')[0];
+  if (req.method === 'OPTIONS' || PUBLIC_PATHS.has(url) || url.startsWith('/files/')) {
+    return;
+  }
+
+  const header = req.headers.authorization;
+  if (!header?.startsWith('Bearer ')) {
+    return reply.status(401).send({ error: 'Não autenticado' });
+  }
+
+  const user = verifyToken(header.slice(7));
+  if (!user) {
+    return reply.status(401).send({ error: 'Sessão inválida ou expirada' });
+  }
+
+  req.user = user;
+});
+
 app.get('/health', async () => ({ ok: true }));
+
+app.post('/auth/register', async (req, reply) => {
+  const body = req.body as { name?: string; email?: string; password?: string };
+
+  const name = body?.name?.trim();
+  const email = body?.email?.trim().toLowerCase();
+  const password = body?.password ?? '';
+
+  if (!name) return reply.status(400).send({ error: 'Nome obrigatório' });
+  if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    return reply.status(400).send({ error: 'E-mail inválido' });
+  }
+  if (password.length < 6) {
+    return reply.status(400).send({ error: 'Senha deve ter no mínimo 6 caracteres' });
+  }
+
+  const exists = await prisma.user.findUnique({ where: { email } });
+  if (exists) return reply.status(409).send({ error: 'E-mail já cadastrado' });
+
+  const count = await prisma.user.count();
+  const role = count === 0 ? 'admin' : 'consultoria';
+
+  const user = await prisma.user.create({
+    data: {
+      name,
+      email,
+      passwordHash: hashPassword(password),
+      role,
+    },
+  });
+
+  const token = signToken(publicUser(user));
+  return reply.status(201).send({ token, user: publicUser(user) });
+});
+
+app.post('/auth/login', async (req, reply) => {
+  const body = req.body as { email?: string; password?: string };
+  const email = body?.email?.trim().toLowerCase();
+  const password = body?.password ?? '';
+
+  if (!email || !password) {
+    return reply.status(400).send({ error: 'E-mail e senha obrigatórios' });
+  }
+
+  const user = await prisma.user.findUnique({ where: { email } });
+  if (!user || !verifyPassword(password, user.passwordHash)) {
+    return reply.status(401).send({ error: 'E-mail ou senha incorretos' });
+  }
+
+  const token = signToken(publicUser(user));
+  return { token, user: publicUser(user) };
+});
+
+app.get('/auth/me', async (req, reply) => {
+  if (!req.user) return reply.status(401).send({ error: 'Não autenticado' });
+  const user = await prisma.user.findUnique({ where: { id: req.user.id } });
+  if (!user) return reply.status(401).send({ error: 'Usuário não encontrado' });
+  return { user: publicUser(user) };
+});
 
 app.get('/projects', async () => {
   const rows = await prisma.project.findMany({
