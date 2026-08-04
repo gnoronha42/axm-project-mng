@@ -1,10 +1,10 @@
 import { Upload, Select, Button, App, Progress } from 'antd';
 import { InboxOutlined, CheckCircleOutlined } from '@ant-design/icons';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import type { UploadFile } from 'antd';
 import { ProjectPhase, PHASE_LABELS, PHASE_ORDER } from '../../types';
 import type { DocumentCategory } from '../../types';
-import { uploadDocument } from '../../services/apiClient';
+import { ApiError, uploadDocument } from '../../services/apiClient';
 import { useAuth } from '../../auth/AuthContext';
 
 const { Dragger } = Upload;
@@ -33,7 +33,20 @@ export default function DocumentUpload({ projectId, currentPhase, onUploadComple
   const [uploading, setUploading] = useState(false);
   const [progress, setProgress] = useState<Record<string, number>>({});
 
+  useEffect(() => {
+    if (currentPhase) setPhase(currentPhase);
+  }, [currentPhase]);
+
   const handleSend = async () => {
+    if (!projectId) {
+      notification.warning({
+        message: 'Selecione um projeto',
+        description: 'É necessário escolher o projeto antes de enviar.',
+        placement: 'topRight',
+      });
+      return;
+    }
+
     if (fileList.length === 0) {
       notification.warning({
         message: 'Nenhum arquivo selecionado',
@@ -46,10 +59,19 @@ export default function DocumentUpload({ projectId, currentPhase, onUploadComple
     setUploading(true);
     setProgress({});
 
+    let uploaded = 0;
     let failed = 0;
+    let lastError = '';
+
     for (const item of fileList) {
-      const file = item.originFileObj as File | undefined;
-      if (!file) continue;
+      const file = (item.originFileObj as File | undefined) ?? null;
+      if (!file) {
+        failed += 1;
+        setProgress((prev) => ({ ...prev, [item.uid]: -1 }));
+        lastError = 'Arquivo inválido na fila';
+        continue;
+      }
+
       try {
         await uploadDocument(
           projectId,
@@ -58,27 +80,35 @@ export default function DocumentUpload({ projectId, currentPhase, onUploadComple
           (pct) => setProgress((prev) => ({ ...prev, [item.uid]: pct })),
         );
         setProgress((prev) => ({ ...prev, [item.uid]: 100 }));
-      } catch {
+        uploaded += 1;
+      } catch (err) {
         failed += 1;
         setProgress((prev) => ({ ...prev, [item.uid]: -1 }));
+        lastError = err instanceof ApiError ? err.message : 'Falha no upload';
       }
     }
 
-    if (failed === 0) {
+    if (failed === 0 && uploaded > 0) {
       notification.success({
         message: 'Documentos enviados com sucesso!',
-        description: `${fileList.length} arquivo(s) adicionado(s) à fase "${PHASE_LABELS[phase]}".`,
+        description: `${uploaded} arquivo(s) adicionado(s) à fase "${PHASE_LABELS[phase]}".`,
         placement: 'topRight',
         icon: <CheckCircleOutlined style={{ color: '#52c41a' }} />,
       });
-
       setFileList([]);
       setProgress({});
       onUploadComplete?.();
+    } else if (uploaded > 0) {
+      notification.warning({
+        message: 'Envio parcial',
+        description: `${uploaded} ok, ${failed} falhou(aram). ${lastError}`,
+        placement: 'topRight',
+      });
+      onUploadComplete?.();
     } else {
       notification.error({
-        message: 'Falha em alguns envios',
-        description: `${failed} arquivo(s) não foram enviados.`,
+        message: 'Falha no envio',
+        description: lastError || 'Não foi possível enviar os arquivos.',
         placement: 'topRight',
       });
     }
@@ -107,9 +137,17 @@ export default function DocumentUpload({ projectId, currentPhase, onUploadComple
         name="file"
         multiple
         fileList={fileList}
-        disabled={uploading}
+        disabled={uploading || !projectId}
         beforeUpload={(file) => {
-          setFileList((prev) => [...prev, file as unknown as UploadFile]);
+          const entry: UploadFile = {
+            uid: file.uid,
+            name: file.name,
+            status: 'done',
+            size: file.size,
+            type: file.type,
+            originFileObj: file,
+          };
+          setFileList((prev) => [...prev, entry]);
           return false;
         }}
         onRemove={(file) => {
@@ -149,7 +187,7 @@ export default function DocumentUpload({ projectId, currentPhase, onUploadComple
       </Dragger>
 
       <div style={{ marginTop: 12 }}>
-        <Button type="primary" onClick={handleSend} loading={uploading} block>
+        <Button type="primary" onClick={handleSend} loading={uploading} block disabled={!projectId}>
           {uploading ? 'Enviando...' : 'Enviar Documentos'}
         </Button>
       </div>

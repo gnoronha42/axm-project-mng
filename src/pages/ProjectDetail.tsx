@@ -1,11 +1,11 @@
 import { useParams, useNavigate, useSearchParams } from 'react-router-dom';
 import {
   Card, Col, Row, Typography, Descriptions, Tag, Button, Tabs, Skeleton,
-  Space, Statistic, Result, Modal, App,
+  Space, Statistic, Result, Modal, App, Segmented,
 } from 'antd';
 import {
   ArrowLeftOutlined, DollarOutlined, CalendarOutlined,
-  UserOutlined, ForwardOutlined, ExclamationCircleOutlined,
+  UserOutlined, ForwardOutlined, ExclamationCircleOutlined, UploadOutlined,
 } from '@ant-design/icons';
 import { useState } from 'react';
 import { useQueryClient } from '@tanstack/react-query';
@@ -21,6 +21,7 @@ import CommentThread from '../components/comments/CommentThread';
 import MonthlyReports from '../components/workflow/MonthlyReports';
 import { PhaseLabelTag } from '../components/common/StatusTag';
 import { useBreakpoint } from '../hooks/useBreakpoint';
+import { useAuth } from '../auth/AuthContext';
 
 export default function ProjectDetail() {
   const { id } = useParams<{ id: string }>();
@@ -28,6 +29,7 @@ export default function ProjectDetail() {
   const [searchParams, setSearchParams] = useSearchParams();
   const { notification } = App.useApp();
   const { isMobile, isDesktop } = useBreakpoint();
+  const { user } = useAuth();
 
   const { data: project, isLoading } = useProject(id!);
   const { data: documents = [], isLoading: loadingDocs } = useDocuments(id!);
@@ -40,6 +42,7 @@ export default function ProjectDetail() {
   const [selectedPhase, setSelectedPhase] = useState<PhaseInfo | null>(null);
   const [uploadOpen, setUploadOpen] = useState(false);
   const [advanceOpen, setAdvanceOpen] = useState(false);
+  const [docsScope, setDocsScope] = useState<'phase' | 'all'>('all');
 
   // Aba ativa preservada na URL (?tab=docs|comments|reports)
   const activeTab = searchParams.get('tab') ?? 'docs';
@@ -73,6 +76,7 @@ export default function ProjectDetail() {
   };
 
   const phaseDocuments = documents.filter((d) => d.phase === viewPhase.phase);
+  const visibleDocs = docsScope === 'phase' ? phaseDocuments : documents;
 
   return (
     <div>
@@ -156,20 +160,42 @@ export default function ProjectDetail() {
                 },
                 {
                   key: 'docs',
-                  label: `Documentos (${phaseDocuments.length})`,
+                  label: `Documentos (${documents.length})`,
                   children: (
                     <div>
-                      <div style={{ marginBottom: 12, textAlign: isMobile ? 'left' : 'right' }}>
+                      <div
+                        style={{
+                          marginBottom: 12,
+                          display: 'flex',
+                          flexWrap: 'wrap',
+                          gap: 12,
+                          alignItems: 'center',
+                          justifyContent: 'space-between',
+                        }}
+                      >
+                        <Segmented
+                          size={isMobile ? 'small' : 'middle'}
+                          value={docsScope}
+                          onChange={(v) => setDocsScope(v as 'phase' | 'all')}
+                          options={[
+                            { label: `Fase atual (${phaseDocuments.length})`, value: 'phase' },
+                            { label: `Todos (${documents.length})`, value: 'all' },
+                          ]}
+                        />
                         <Button
                           type="primary"
-                          ghost
+                          icon={<UploadOutlined />}
                           onClick={() => setUploadOpen(true)}
                           block={isMobile}
                         >
                           Enviar Documento
                         </Button>
                       </div>
-                      <DocumentList documents={phaseDocuments} loading={loadingDocs} showPhase={false} />
+                      <DocumentList
+                        documents={visibleDocs}
+                        loading={loadingDocs}
+                        showPhase={docsScope === 'all'}
+                      />
                     </div>
                   ),
                 },
@@ -185,7 +211,7 @@ export default function ProjectDetail() {
                       onAddComment={(content) => {
                         addComment.mutate({
                           projectId: project.id,
-                          author: 'Você',
+                          author: user?.name ?? 'Você',
                           content,
                           phase: viewPhase.phase,
                         });
