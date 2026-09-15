@@ -115,3 +115,52 @@ export interface Project {
   budget?: number;
   tags: string[];
 }
+
+export type TenantKind = 'consultoria' | 'empresa' | 'instituto';
+
+export interface Tenant {
+  id: string;
+  name: string;
+  kind: TenantKind;
+  cnpj?: string | null;
+}
+
+export type AllocationCategory = 'ict_amazonia' | 'capda_priority' | 'other';
+
+export interface FiscalValidation {
+  obligation: number;
+  invested: number;
+  gap: number;
+  ict: number;
+  capda: number;
+  other: number;
+  minIct: number;
+  minCapda: number;
+  compliant: boolean;
+  alerts: { code: string; severity: 'warning' | 'error'; message: string }[];
+}
+
+export interface BillingPeriod {
+  id: string;
+  tenantId: string;
+  year: number;
+  month: number;
+  grossRevenue: number;
+  ipiDeduction: number;
+  icmsDeduction: number;
+  netRevenue: number;
+  pdiObligation: number;
+  notes?: string | null;
+  allocations: { id: string; category: AllocationCategory; amount: number; description: string }[];
+  validation: FiscalValidation;
+}
+
+export interface GlosaRisk {
+  id: string;
+  projectId?: string;
+  code: string;
+  severity: string;
+  message: string;
+  documentId?: string | null;
+  createdAt: string;
+}

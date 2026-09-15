@@ -3,6 +3,7 @@ import { Outlet, useLocation, useNavigate } from 'react-router-dom';
 import { Avatar, Drawer, Dropdown, Layout, Menu, Space, Typography } from 'antd';
 import {
   ApartmentOutlined,
+  CalculatorOutlined,
   DashboardOutlined,
   FileTextOutlined,
   LogoutOutlined,
@@ -10,6 +11,7 @@ import {
   MenuOutlined,
   MenuUnfoldOutlined,
   ProjectOutlined,
+  SafetyCertificateOutlined,
   UserOutlined,
 } from '@ant-design/icons';
 import logo from '../assets/images.png';
@@ -23,6 +25,8 @@ const menuItems = [
   { key: '/projects', icon: <ProjectOutlined />, label: 'Projetos' },
   { key: '/fluxo', icon: <ApartmentOutlined />, label: 'Fluxo' },
   { key: '/documents', icon: <FileTextOutlined />, label: 'Documentos' },
+  { key: '/fiscal', icon: <CalculatorOutlined />, label: 'Fiscal Suframa' },
+  { key: '/conformidade', icon: <SafetyCertificateOutlined />, label: 'SAGAT / Glosa' },
 ];
 
 export default function MainLayout() {

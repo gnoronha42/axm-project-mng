@@ -9,6 +9,8 @@ const Projects = lazy(() => import('../pages/Projects'));
 const ProjectDetail = lazy(() => import('../pages/ProjectDetail'));
 const Documents = lazy(() => import('../pages/Documents'));
 const Workflow = lazy(() => import('../pages/Workflow'));
+const Fiscal = lazy(() => import('../pages/Fiscal'));
+const Conformidade = lazy(() => import('../pages/Conformidade'));
 const Login = lazy(() => import('../pages/Login'));
 const Register = lazy(() => import('../pages/Register'));
 
@@ -49,6 +51,8 @@ export const router = createBrowserRouter([
           { path: 'projects/:id', element: withSuspense(ProjectDetail) },
           { path: 'fluxo', element: withSuspense(Workflow) },
           { path: 'documents', element: withSuspense(Documents) },
+          { path: 'fiscal', element: withSuspense(Fiscal) },
+          { path: 'conformidade', element: withSuspense(Conformidade) },
         ],
       },
     ],

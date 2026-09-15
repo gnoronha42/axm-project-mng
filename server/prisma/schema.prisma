@@ -7,33 +7,76 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+model Tenant {
+  id        String   @id @default(cuid())
+  name      String
+  kind      String
+  cnpj      String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  members              TenantMember[]
+  users                User[]
+  ownedProjects        Project[]              @relation("ProjectOwnerTenant")
+  empresaProjects      Project[]              @relation("ProjectEmpresaTenant")
+  institutoProjects    Project[]              @relation("ProjectInstitutoTenant")
+  billingPeriods       BillingPeriod[]
+  sagatJobs            SagatJob[]
+}
+
+model TenantMember {
+  id       String @id @default(cuid())
+  tenantId String
+  userId   String
+  role     String
+
+  tenant Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([tenantId, userId])
+  @@index([userId])
+}
+
 model User {
   id           String   @id @default(cuid())
   email        String   @unique
   name         String
   passwordHash String
   role         String   @default("consultoria")
+  tenantId     String?
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
+
+  tenant      Tenant?        @relation(fields: [tenantId], references: [id])
+  memberships TenantMember[]
 }
 
 model Project {
-  id           String   @id
-  title        String
-  description  String
-  client       String
-  investor     String?
-  currentPhase String
-  budget       Float?
-  tags         String[]
-  createdAt    DateTime
-  updatedAt    DateTime
+  id                String   @id
+  title             String
+  description       String
+  client            String
+  investor          String?
+  currentPhase      String
+  budget            Float?
+  tags              String[]
+  createdAt         DateTime
+  updatedAt         DateTime
+  tenantId          String?
+  empresaTenantId   String?
+  institutoTenantId String?
 
-  phases    ProjectPhaseRecord[]
-  documents Document[]
-  comments  Comment[]
-  reports   MonthlyReport[]
-  checklist PhaseChecklistItem[]
+  tenant     Tenant? @relation("ProjectOwnerTenant", fields: [tenantId], references: [id])
+  empresa    Tenant? @relation("ProjectEmpresaTenant", fields: [empresaTenantId], references: [id])
+  instituto  Tenant? @relation("ProjectInstitutoTenant", fields: [institutoTenantId], references: [id])
+
+  phases      ProjectPhaseRecord[]
+  documents   Document[]
+  comments    Comment[]
+  reports     MonthlyReport[]
+  checklist   PhaseChecklistItem[]
+  extractions DocumentExtraction[]
+  glosaRisks  GlosaRisk[]
 }
 
 model ProjectPhaseRecord {
@@ -65,7 +108,9 @@ model Document {
   storagePath String
   version     Int      @default(1)
 
-  project Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  project     Project              @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  extraction  DocumentExtraction?
+  glosaRisks  GlosaRisk[]
 
   @@index([projectId])
 }
@@ -113,4 +158,95 @@ model PhaseChecklistItem {
   project Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
 
   @@index([projectId, phase])
+}
+
+model BillingPeriod {
+  id            String   @id @default(cuid())
+  tenantId      String
+  year          Int
+  month         Int
+  grossRevenue  Float
+  ipiDeduction  Float    @default(0)
+  icmsDeduction Float    @default(0)
+  netRevenue    Float
+  pdiObligation Float
+  notes         String?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  tenant      Tenant                  @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  allocations InvestmentAllocation[]
+  sagatJobs   SagatJob[]
+  glosaRisks  GlosaRisk[]
+
+  @@unique([tenantId, year, month])
+  @@index([tenantId])
+}
+
+model InvestmentAllocation {
+  id              String   @id @default(cuid())
+  billingPeriodId String
+  category        String
+  amount          Float
+  description     String
+  createdAt       DateTime @default(now())
+
+  billingPeriod BillingPeriod @relation(fields: [billingPeriodId], references: [id], onDelete: Cascade)
+
+  @@index([billingPeriodId])
+}
+
+model DocumentExtraction {
+  id             String   @id @default(cuid())
+  documentId     String   @unique
+  projectId      String
+  status         String
+  model          String
+  activitiesJson String   @default("[]")
+  timesheetJson  String   @default("[]")
+  expensesJson   String   @default("[]")
+  rawPreview     String?
+  error          String?
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  document Document @relation(fields: [documentId], references: [id], onDelete: Cascade)
+  project  Project  @relation(fields: [projectId], references: [id], onDelete: Cascade)
+
+  @@index([projectId])
+}
+
+model GlosaRisk {
+  id              String   @id @default(cuid())
+  projectId       String
+  documentId      String?
+  billingPeriodId String?
+  code            String
+  severity        String
+  message         String
+  detailsJson     String   @default("{}")
+  createdAt       DateTime @default(now())
+
+  project       Project        @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  document      Document?      @relation(fields: [documentId], references: [id], onDelete: SetNull)
+  billingPeriod BillingPeriod? @relation(fields: [billingPeriodId], references: [id], onDelete: SetNull)
+
+  @@index([projectId])
+}
+
+model SagatJob {
+  id              String   @id @default(cuid())
+  tenantId        String
+  billingPeriodId String?
+  status          String
+  mode            String   @default("sandbox")
+  payloadJson     String
+  log             String   @default("")
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  tenant        Tenant         @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  billingPeriod BillingPeriod? @relation(fields: [billingPeriodId], references: [id], onDelete: SetNull)
+
+  @@index([tenantId])
 }

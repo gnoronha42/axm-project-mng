@@ -259,6 +259,7 @@ export default function ProjectDetail() {
             setUploadOpen(false);
             queryClient.invalidateQueries({ queryKey: ['documents', project.id] });
             queryClient.invalidateQueries({ queryKey: ['documents'] });
+            queryClient.invalidateQueries({ queryKey: ['glosa'] });
           }}
         />
       </Modal>

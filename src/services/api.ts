@@ -1,4 +1,15 @@
-import type { ChecklistItem, Comment, MonthlyReport, Project, ProjectDocument, ProjectPhase } from '../types';
+import type {
+  ChecklistItem,
+  Comment,
+  MonthlyReport,
+  Project,
+  ProjectDocument,
+  ProjectPhase,
+  Tenant,
+  BillingPeriod,
+  GlosaRisk,
+  AllocationCategory,
+} from '../types';
 import { ApiError, request, uploadDocument } from './apiClient';
 
 const USE_MOCK = import.meta.env.VITE_USE_MOCK === 'true';
@@ -139,6 +150,51 @@ export const api = {
   async deleteChecklistItem(itemId: string): Promise<void> {
     await request<void>(`/checklist/${itemId}`, { method: 'DELETE' });
   },
+
+  getTenants: () => request<Tenant[]>('/tenants'),
+  createTenant: (input: { name: string; kind: Tenant['kind']; cnpj?: string }) =>
+    request<Tenant>('/tenants', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(input),
+    }),
+  getBillingPeriods: (tenantId?: string) =>
+    request<BillingPeriod[]>(`/billing-periods${tenantId ? `?tenantId=${tenantId}` : ''}`),
+  saveBillingPeriod: (input: {
+    tenantId?: string;
+    year: number;
+    month: number;
+    grossRevenue: number;
+    ipiDeduction?: number;
+    icmsDeduction?: number;
+    notes?: string;
+  }) =>
+    request<BillingPeriod>('/billing-periods', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(input),
+    }),
+  addAllocation: (periodId: string, input: { category: AllocationCategory; amount: number; description: string }) =>
+    request<BillingPeriod>(`/billing-periods/${periodId}/allocations`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(input),
+    }),
+  getGlosaRisks: (projectId?: string) =>
+    request<GlosaRisk[]>(projectId ? `/projects/${projectId}/glosa-risks` : '/glosa-risks'),
+  sagatPreview: (billingPeriodId: string) =>
+    request<{ payload: unknown }>(`/sagat/preview`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ billingPeriodId }),
+    }),
+  sagatSandboxRun: (billingPeriodId: string) =>
+    request<{ id: string; status: string; log: string; payload: unknown }>(`/sagat/sandbox-run`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ billingPeriodId }),
+    }),
+  getSagatJobs: () => request<{ id: string; status: string; log: string; createdAt: string }[]>('/sagat/jobs'),
 
   async addComment(comment: Omit<Comment, 'id' | 'createdAt'>): Promise<Comment> {
     return withMock(

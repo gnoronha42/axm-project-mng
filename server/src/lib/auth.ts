@@ -9,6 +9,7 @@ export type AuthUser = {
   email: string;
   name: string;
   role: string;
+  tenantId?: string;
 };
 
 export function hashPassword(password: string): string {
@@ -44,6 +45,7 @@ export function signToken(user: AuthUser): string {
       email: user.email,
       name: user.name,
       role: user.role,
+      tenantId: user.tenantId,
       iat: now,
       exp: now + TOKEN_TTL_SECONDS,
     }),
@@ -67,17 +69,18 @@ export function verifyToken(token: string): AuthUser | null {
       email: string;
       name: string;
       role: string;
+      tenantId?: string;
       exp: number;
     };
     if (!data.exp || data.exp < Math.floor(Date.now() / 1000)) return null;
-    return { id: data.sub, email: data.email, name: data.name, role: data.role };
+    return { id: data.sub, email: data.email, name: data.name, role: data.role, tenantId: data.tenantId };
   } catch {
     return null;
   }
 }
 
-export function publicUser(user: { id: string; email: string; name: string; role: string }) {
-  return { id: user.id, email: user.email, name: user.name, role: user.role };
+export function publicUser(user: { id: string; email: string; name: string; role: string; tenantId?: string | null }) {
+  return { id: user.id, email: user.email, name: user.name, role: user.role, tenantId: user.tenantId ?? undefined };
 }
 
 /** Fingerprint estável para logs (não é senha). */

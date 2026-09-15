@@ -6,6 +6,7 @@ export type AuthUser = {
   email: string;
   name: string;
   role: string;
+  tenantId?: string;
 };
 
 type AuthResponse = { token: string; user: AuthUser };

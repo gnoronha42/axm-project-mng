@@ -18,6 +18,10 @@ import {
   publicUser,
   type AuthUser,
 } from './lib/auth.js';
+import { ensureDefaultTenants, TENANT_KINDS, type TenantKind } from './lib/tenancy.js';
+import { processDocumentIntelligence } from './lib/processDocument.js';
+import { registerFiscalRoutes } from './routes/fiscal.js';
+import { registerIntelligenceRoutes } from './routes/intelligence.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const PORT = Number(process.env.PORT ?? 3001);
@@ -25,6 +29,7 @@ const UPLOAD_DIR = path.resolve(process.env.UPLOAD_DIR ?? path.join(__dirname, '
 const CORS_ORIGIN = process.env.CORS_ORIGIN ?? 'http://localhost:5173';
 
 await mkdir(UPLOAD_DIR, { recursive: true });
+await ensureDefaultTenants();
 
 const app = Fastify({ logger: true });
 
@@ -65,7 +70,7 @@ app.addHook('onRequest', async (req, reply) => {
 app.get('/health', async () => ({ ok: true }));
 
 app.post('/auth/register', async (req, reply) => {
-  const body = req.body as { name?: string; email?: string; password?: string };
+  const body = req.body as { name?: string; email?: string; password?: string; kind?: string };
 
   const name = body?.name?.trim();
   const email = body?.email?.trim().toLowerCase();
@@ -83,7 +88,18 @@ app.post('/auth/register', async (req, reply) => {
   if (exists) return reply.status(409).send({ error: 'E-mail já cadastrado' });
 
   const count = await prisma.user.count();
-  const role = count === 0 ? 'admin' : 'consultoria';
+  const requestedKind = body.kind as TenantKind | undefined;
+  const kind: TenantKind = count === 0
+    ? 'consultoria'
+    : requestedKind && TENANT_KINDS.includes(requestedKind)
+      ? requestedKind
+      : 'consultoria';
+  const role = count === 0 ? 'admin' : kind;
+
+  let tenant = await prisma.tenant.findFirst({ where: { kind } });
+  if (!tenant) {
+    tenant = await prisma.tenant.create({ data: { name: `${name} (${kind})`, kind } });
+  }
 
   const user = await prisma.user.create({
     data: {
@@ -91,7 +107,11 @@ app.post('/auth/register', async (req, reply) => {
       email,
       passwordHash: hashPassword(password),
       role,
+      tenantId: tenant.id,
     },
+  });
+  await prisma.tenantMember.create({
+    data: { tenantId: tenant.id, userId: user.id, role },
   });
 
   const token = signToken(publicUser(user));
@@ -160,6 +180,7 @@ app.post('/projects', async (req, reply) => {
 
   const now = new Date();
   const id = `p${Date.now()}`;
+  const ownerTenantId = req.user?.tenantId ?? (await prisma.user.findUnique({ where: { id: req.user?.id } }))?.tenantId;
 
   const created = await prisma.project.create({
     data: {
@@ -173,6 +194,7 @@ app.post('/projects', async (req, reply) => {
       tags: Array.isArray(body.tags) ? body.tags.filter(Boolean) : [],
       createdAt: now,
       updatedAt: now,
+      tenantId: ownerTenantId ?? null,
       phases: {
         create: PHASE_ORDER.map((phaseKey, idx) => ({
           phase: phaseKey,
@@ -313,6 +335,7 @@ app.post('/projects/:id/documents', async (req, reply) => {
     },
   });
 
+  void processDocumentIntelligence(row.id, UPLOAD_DIR);
   return mapDocument(row);
 });
 
@@ -496,6 +519,9 @@ app.patch('/reports/:id', async (req, reply) => {
 
   return mapReport(row);
 });
+
+await registerFiscalRoutes(app);
+await registerIntelligenceRoutes(app);
 
 try {
   await app.listen({ port: PORT, host: '0.0.0.0' });
