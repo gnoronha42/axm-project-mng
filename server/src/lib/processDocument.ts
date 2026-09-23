@@ -47,7 +47,7 @@ export async function processDocumentIntelligence(documentId: string, uploadDir:
     });
 
     await prisma.glosaRisk.deleteMany({ where: { documentId: doc.id } });
-    const findings = evaluateGlosa(result, doc.project.description);
+    const findings = await evaluateGlosa(result, doc.project.description);
     if (findings.length) {
       await prisma.glosaRisk.createMany({
         data: findings.map((f) => ({

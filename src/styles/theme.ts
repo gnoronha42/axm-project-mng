@@ -1,4 +1,6 @@
-import type { ThemeConfig } from 'antd';
+import { theme as antdTheme, type ThemeConfig } from 'antd';
+
+export type ThemeMode = 'light' | 'dark';
 
 export const BRAND = {
   gold: '#f9c556',
@@ -7,7 +9,7 @@ export const BRAND = {
   dark: '#2c2c2c',
 } as const;
 
-export const theme: ThemeConfig = {
+const lightTheme: ThemeConfig = {
   token: {
     colorPrimary: BRAND.gold,
     colorSuccess: '#52c41a',
@@ -54,3 +56,31 @@ export const theme: ThemeConfig = {
     },
   },
 };
+
+const darkTheme: ThemeConfig = {
+  algorithm: antdTheme.darkAlgorithm,
+  token: {
+    ...lightTheme.token,
+    colorBgLayout: '#141414',
+    colorText: '#f5f5f5',
+    colorTextHeading: '#f5f5f5',
+  },
+  components: {
+    ...lightTheme.components,
+    Layout: {
+      siderBg: '#141414',
+      headerBg: '#141414',
+      headerHeight: 56,
+    },
+    Progress: {
+      defaultColor: '#f9c556',
+      remainingColor: '#333333',
+    },
+  },
+};
+
+export const theme = lightTheme;
+
+export function getAntdTheme(mode: ThemeMode): ThemeConfig {
+  return mode === 'dark' ? darkTheme : lightTheme;
+}

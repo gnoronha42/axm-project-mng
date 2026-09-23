@@ -1,4 +1,10 @@
 const BASE = (import.meta.env.VITE_API_URL ?? '/api').replace(/\/$/, '');
+
+export function mediaUrl(path?: string | null): string | undefined {
+  if (!path) return undefined;
+  if (path.startsWith('data:') || path.startsWith('blob:') || path.startsWith('http')) return path;
+  return `${BASE}${path.startsWith('/') ? path : `/${path}`}`;
+}
 const TOKEN_KEY = 'axm_token';
 
 let memoryToken: string | null = localStorage.getItem(TOKEN_KEY);
@@ -48,6 +54,14 @@ export async function request<T>(path: string, options?: RequestInit): Promise<T
 
   if (res.status === 204) return undefined as T;
   return res.json() as Promise<T>;
+}
+
+export async function fetchBlob(path: string): Promise<Blob> {
+  const res = await fetch(`${BASE}${path}`, { headers: authHeaders() });
+  if (!res.ok) {
+    throw new ApiError('Arquivo não encontrado', res.status);
+  }
+  return res.blob();
 }
 
 export async function uploadDocument(

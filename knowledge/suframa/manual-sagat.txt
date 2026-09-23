@@ -1,0 +1,790 @@
+                                       MANUAL DO USUÁRIO
+MÓDULO RECEPÇÃO DO RELATÓRIO DEMONSTRATIVO VIA SISTEMA DE
+    ACOMPANHAMENTO, GESTÃO E ANÁLISE TECNOLÓGICA – SAGAT
+                          Ministério da Economia
+          Superintendência da Zona Franca de Manaus – Suframa
+ Superintendência Adjunta de Desenvolvimento e Inovação Tecnológica – SDI
+            Coordenação Geral de Gestão Tecnológica – CGTEC
+
+
+
+
+                         MANUAL DO USUÁRIO
+MÓDULO RECEPÇÃO DO RELATÓRIO DEMONSTRATIVO VIA SISTEMA DE
+  ACOMPANHAMENTO, GESTÃO E ANÁLISE TECNOLÓGICA – SAGAT
+
+
+
+
+                                                        Edição e Elaboração
+                                             Daniel Nicholas de Jesus Gibson
+                                               Thiago Azevedo Conte de Melo
+
+
+
+
+                              Outubro/2022
+Sumário
+1     INTRODUÇÃO .................................................................................................... 3
+2     ESCOPO ............................................................................................................ 3
+3     TELA DE ACESSO E TELA INICIAL................................................................... 4
+4     PREENCHIMENTO DO RELATÓRIO DEMONSTRATIVO – RD ........................ 6
+    4.1     IDENTIFICAÇÃO ......................................................................................... 6
+    4.2     OBRIGAÇÃO ............................................................................................... 7
+      4.2.1      Produto ................................................................................................... 7
+      4.2.2      Assunção ................................................................................................ 9
+    4.3     EXECUÇÃO ............................................................................................... 10
+      4.3.1      MODALIDADE EXTERNA .................................................................... 10
+          4.3.1.1      Convênio com ICT ......................................................................... 10
+          4.3.1.2      Projetos .......................................................................................... 11
+          4.3.1.3      Programa Prioritário ....................................................................... 19
+          4.3.1.4      FNDCT ........................................................................................... 20
+          4.3.1.5      Fundos de Investimento em Participações ..................................... 20
+          4.3.1.6      Aceleradoras e Incubadoras........................................................... 22
+      4.3.2      MODALIDADE INTERNA ..................................................................... 22
+          4.3.2.2      Projetos .......................................................................................... 22
+          4.3.2.3      Startups.......................................................................................... 24
+          4.3.2.4      PROTECSUS ................................................................................. 25
+          4.3.2.5      Indústria 4.0 ................................................................................... 26
+          4.3.2.6      Pagamento da Auditoria ................................................................. 27
+5     DECLARAÇÃO DE VERACIDADE E ENTREGA DO RD .................................. 28
+6     COMPROVANTE DE QUITAÇÃO DE SALDO DEVEDOR ............................... 29
+7 ENTREGA DO RELATÓRIO CONSOLIDADO E DO PARECER
+CONCLUSIVO ELABORADO POR AUDITORIA INDEPENDENTE ......................... 30
+8     GLOSSÁRIO DE SIGLAS ................................................................................. 31
+                                                                                  3
+
+
+1 INTRODUÇÃO
+
+
+
+
+      Conforme Oficio Circular 65/2022/SAP/SUFRAMA, de 24 de agosto de 2022, a
+entrega do Relatório Demonstrativo do Ano-Base 2021, previsto no inciso I do Art. 30
+do Decreto nº 10.521, de 15 de outubro de 2020, será realizada, exclusivamente, por
+via eletrônica, através do Sistema de Acompanhamento, Gestão e Análise
+Tecnológica – SAGAT, através do sítio eletrônico sagat.suframa.gov.br.
+      Devido a implementação do sistema SAGAT, e da necessidade de adaptação
+das empresas beneficiarias ao novo processo de preenchimento das RDs,
+exclusivamente para o Ano-Base 2021, o prazo limite de entrega das RDs é até 30
+de dezembro de 2022, conforme Portaria Conjunta ME/SUFRAMA nº 8.660, de 29 de
+setembro de 2022.
+
+
+
+
+2 ESCOPO
+
+
+
+
+      O presente manual tem por finalidade servir de guia para a apresentação dos
+Relatórios Demonstrativos (RDs) das obrigações de investimentos nas atividades de
+Pesquisa, Desenvolvimento e Inovação (PD&I), em decorrência do Faturamento em
+Bens de Informática e Automação das empresas beneficiarias dos incentivos fiscais
+da Zona Franca de Manaus conforme Lei n° 8.387, de 30 de dezembro de 1991.
+      As empresas que ainda não possuem acesso ao sistema SAGAT podem
+solicitar à Coordenação Geral de Gestão Tecnológica - Suframa através do e-mail
+cgtec@suframa.gov.br.
+                                                                               4
+
+
+3 TELA DE ACESSO E TELA INICIAL
+
+
+      O portal de cadastro dos Relatórios Demonstrativos no sistema SAGAT é
+acessado através do endereço http://sagat.suframa.gov.br
+
+
+
+
+      A empresa deve inserir o seu usuário e a senha que registrou,
+recomendamos que o usuário digite o login sem copia-lo de outro texto, verificar
+também se não há "espaço" no início ou no fim da numeração. Sobre a senha,
+é a mesma do “cadsuf”, entretanto, usando somente letras minúsculas.
+                                                                                      5
+
+
+       Nesta tela será possível verificar e editar os Relatórios Demonstrativos
+preenchidos, emitir a Declaração de Veracidade ou preencher um novo RD.
+       A coluna “Código RD”, informa os Relatórios Demonstrativos entregue ou em
+preenchimento, caso esteja informando um código é porque o preenchimento já foi
+concluído e enviado, caso o RD ainda não tenha sido enviado, haverá a indicação “--
+“, o que ainda possibilita alterações.
+       Uma vez, constando a numeração do “Código RD”, não é mais permitido
+alterações no preenchimento do Relatório Demonstrativo, pois trata-se de um
+RD preenchido e entregue.
+        Na coluna “Ano Base” informa qual o ano-base relativo a RD em questão, no
+caso, o que a empresa informou por ocasião de seu preenchimento.
+       Na coluna “Opções”, a empresa poderá:
+
+
+
+             Visualizar: Verifica o que foi preenchido no RD;
+
+             Alterar: A empresa pode editar o RD, caso ainda não tenha sido
+             entregue;
+
+             Excluir: Apaga todo o RD;
+
+             Anexar um Comprovante de Quitação: Local onde a empresa poderá
+             calcular o saldo atualizado e anexar o comprovante de quitação dos
+             investimentos (Só ativa esse botão após a entrega do RD);
+             Relatório Consolidado e Parecer Conclusivo da Auditoria: Local
+             onde anexa o Relatório consolidado e o Parecer Conclusivo elaborado
+             por Auditoria Independente (Só ativa esse botão após a entrega do RD);
+             e,
+             Por fim, na última coluna, a empresa poderá emitir a Declaração de
+             Veracidade, aparece uma tela onde a empresa gera a declaração de
+             veracidade e o RD estará entregue.
+                                                                                  6
+
+
+4 PREENCHIMENTO DO RELATÓRIO DEMONSTRATIVO – RD
+
+
+      O preenchimento de um novo Relatório Demonstrativo e através do Botão:
+
+
+
+
+      Na tela inicial de preenchimento é composta das seguintes abas: Identificação,
+Obrigação,   Execução    e   Indicadores,   este   último,   o   sistema   preenche
+automaticamente.
+
+
+4.1   IDENTIFICAÇÃO
+
+
+      As abas de preenchimentos das RD, são liberadas conforme a empresa
+preenche os dados, a primeira tela é de Identificação, essa aba é composta pelos
+Dados da Empresa e pelos dados do Plano de PD&I.
+
+
+
+
+      Nesta aba inicial, a empresa deve selecionar o Plano de PD&I e informar Ano
+Calendário (Ano-Base) referente ao Rd que a empresa pretende preencher, além do
+seu Representante Legal do Plano de PD&I e os seus dados de contato como
+Telefone e e-mail.
+      Caso, por ocasião do preenchimento do RD, a empresa não esteja visualizado
+um Plano de PD&I disponível, favor entrar em contato com a equipe de suporte
+do SAGAT, através do e-mail: sagat@suframa.gov.br.
+      Após salvar, o sistema exibe a aba de obrigação.
+                                                                                7
+
+
+4.2     OBRIGAÇÃO
+
+
+        A aba obrigação é composta por duas abas: Produto e Assunção.
+
+
+      4.2.1 Produto
+
+
+        Nesta aba a empresa deverá informar seu faturamento, adicionando os
+produtos beneficiados pela Lei da Informática da ZFM.
+
+
+
+
+        Para inserir um produto a empresa de clicar em          , onde abrirá tela
+de registro de produtos a seguir:
+
+
+
+
+        Deverá indicar a NCM do produto, sem pontos, que o sistema retornar com a
+descrição e a Obrigação referente.
+        A empresa deve ainda indicar Código Suframa relacionado ao NCM indicado,
+o Número da Resolução ou Portaria Suframa e o Faturamento Bruto do produto,
+                                                                                   8
+
+
+inclusive dever ser indicado os Tributos do produto cadastrado, caso não tenha valor
+a empresa deve inserir o valor 0,00.
+
+
+
+
+      Ainda na mesma tela, se for o caso, a empresa deve informar se adquiriu bens
+incentivados na produção do produto informado. Se houve aquisições, então
+seleciona a opção “sim”, preenchendo o NCM, Fornecedor, Valor Adquirido e a Lei
+Respectiva. Para cada aquisição que houver deve ser feito um registro no campo
+aquisições, ao clica no botão           o sistema permite cadastrar outra aquisição
+incentivada.
+
+
+
+
+      Após salvar o sistema retornar a tela de Registros informando os dados do
+produto cadastrado e os valores das obrigações Internas e Externas.
+      A qualquer momento, na tela registros dos produtos, a empresa ainda poderá:
+
+
+
+               Visualizar os dados do produto cadastrado;
+
+
+               Alterar os dados do produto cadastrado;
+                                                                               9
+
+
+
+            Excluir o produto cadastrado;
+
+
+
+   4.2.2 Assunção
+
+
+       Caso haja repasse de obrigação a empresa deve se dirigir a aba Assunção e
+informar os valores repassados a outras empresas beneficiadas.
+
+
+
+
+      Para inserir os dados de repasse, a empresa que está repassando sua
+obrigação, deverá ir em             e informar o CNPJ da empresa que está
+recebendo a obrigação, a Razão Social é automaticamente preenchida pelo sistema.
+      Após indicar o CNPJ da empresa que irá assumir a obrigação, a empresa deve
+indicar os valores detalhados e as modalidades repassadas.
+                                                                                     10
+
+
+         Concluindo o cadastro de repasse de obrigação, preenchendo a Data de
+assinatura do contrato de repasse e anexando o contrato digitalizado.
+         Caso a empresa tenha obrigação assumida, primeiramente a empresa que
+repassou as obrigações deve preencher o RD dela e só assim aparecerão os valores
+de obrigações assumidas no RD da empresa que assumiu.
+         Destacamos que o sistema não permite alterações nos valores de repasse
+de obrigação de PD&I após o aceite da empresa que assumiu a obrigação.
+
+
+4.3      EXECUÇÃO
+
+
+         Nesta aba é possível registrar os investimentos realizados no ano base e, é
+composta por duas abas: Modalidade Externa e Modalidade Interna.
+
+
+      4.3.1 MODALIDADE EXTERNA
+
+
+         Na aba “modalidade externa” é possível registrar os seguintes investimentos:
+                       •     Convênio com ICT
+                       •     Projetos
+                       •     Programa Prioritário
+                       •     FNDCT
+                       •     Fundos de Investimento
+                       •     Aceleradoras e Incubadoras
+
+
+
+
+      4.3.1.1   Convênio com ICT
+
+
+         Antes de registrar os projetos externos, a empresa deve registrar os convênios,
+assim que entra nessa aba aparece a seguinte tela:
+                                                                                  11
+
+
+
+
+      O registro de um convênio é realizado através do botão “+convênio”, sendo
+exibida a seguinte tela:
+
+
+
+
+      Nesta tela, a empresa seleciona a Instituição que realizou o convênio, qual o
+tipo de convênio (Originário para convênios “guarda-chuva” ou Projeto para convênio
+que abarca só um projeto), digita o número do convênio, o valor (somente nos casos
+de convênios projetos); a data da assinatura, a data de início e fim do convênio, e o
+anexa o termo assinado. Após feito todo o processo, a empresa pode salvar a tela
+que o convênio aparecerá na lista dos convênios registrados.
+
+
+   4.3.1.2    Projetos
+
+
+      Após cadastrar os convênios, a empresa poderá cadastrar os projetos na
+modalidade externa, ao se dirigir a aba projetos:
+                                                                                  12
+
+
+
+
+      Nesta aba, a empresa preenche os dados do projeto como Nome, Palavras-
+Chave, Modalidade, Situação, Enquadrabilidade, Período Total de Execução do
+Projeto e Período Total de Execução no Ano-Base.
+      Destacamos que no preenchimento destes campos a empresa deve atentar
+para o seguinte:
+      a) Os campos Nome e Palavras-Chave possuem um limite de 240
+         (duzentos e quarenta) caracteres;
+      b) Os incisos listados no campo Enquadrabilidade se referem aos do Art. 21
+         do Decreto 10.521/2020:
+               Inciso I                         Pesquisa Básica
+               Inciso II                       Pesquisa Aplicada
+              Inciso III                 Desenvolvimento Experimental
+              Inciso IV                      Inovação Tecnológica
+              Inciso V                Formação ou Capacitação Profissional
+              Inciso VI        Serviços de Consultoria Científica e Tecnológica
+      c) No campo Período Total de Execução no Ano-Base, a data final não
+         poderá ser superior à 30 de junho de 2022, data limite de encerramento do
+         Ano-Base 2021, conforme inciso III do §2º do Art. 46 do Decreto
+         10.521/2020.
+      No campo identificação, constará, além dos campos já preenchidos
+anteriormente, os seguintes campos:
+                                                                                  13
+
+
+
+
+      Onde a empresa deve selecionar a Instituição Cientifica, Tecnológica e de
+Inovação (ICT) responsável pelo projeto, o Convênio previamente cadastrado e
+Termo Aditivo referente ao projeto, além de poder registrar termos aditivos e adendos
+aos convênios, se houver.
+      Após inserir os dados de identificação do projeto, o sistema disponibilizará os
+seguintes campos: Justificativa, Motivação, Escopo, Objetivos, Características
+Inovadoras, Atividades, Resultados, Resumo Financeiro, Aporte e Dispêndios.
+
+
+
+
+      As abas Justificativa, Motivação, Escopo, Objetivos e Características
+Inovadoras são compostas de caixas de campo textual de livre preenchimento da
+empresa, com a limitação de 10.000 (dez mil) caracteres. Com exceção da aba
+Objetivos, no qual são dois campos textuais, Geral e Específico, com 2.000 (dois
+mil) e 10.000 (dez mil) caracteres, respectivamente.
+      Na aba Atividade, a empresa vai inserir cada atividade do projeto, conforme
+apresentado abaixo:
+                                                                                   14
+
+
+
+
+      Para inserir uma atividade, a empresa pressiona o botão
+aparecerá a seguinte tela:
+
+
+
+
+      Nestes campos a empresa informa o Nome da atividade, se houve intercâmbio,
+o período inicial e final, o vínculo (externo ou interno), a descrição da atividade, a
+justificativa e o resultado obtido e, após salvar os dados da Atividade, a empresa
+poderá inserir os recursos humanos que participaram da atividade, rolando a tela mais
+abaixo e clicando em “+participante”.
+                                                                                 15
+
+
+
+
+       A empresa informa o CPF do participante, a quantidade de horas que o mesmo
+participou, a formação, o nível de escolaridade e o tipo de participação (Direto ou
+Indireto).
+       Na aba Resultados, a empresa informa a quantidade de resultados dos
+projetos, conforme tela abaixo:
+
+
+
+
+       A aba Resumo Financeiro é preenchida automaticamente pelo sistema a
+medida em que a empresa for inserindo os dados do projeto, entretanto nesta aba, é
+permitido a empresa informa se houve Recursos Antecipados ou não.
+                                                                               16
+
+
+      A aba Aportes, apresenta a relação dos aportes realizados no projeto.
+
+
+
+
+      Através do botão               , a empresa adiciona os aportes que realizou
+no projeto, onde informa a data do aporte, o valor e anexa o comprovante em PDF.
+                                                                                 17
+
+
+      A última aba é a dos Dispêndios, que é dividida em Dispêndio RH e Demais
+Dispêndios:
+      No Dispêndio de RH aparecem os participantes que a empresa adicionou nas
+atividades. Para registrar os dispêndios dos participantes deve-se selecionar o Nome
+do participante, o Vínculo (externo ou interno), o Tipo de Participação (direto ou
+indireto), o Valor Total dispendido com ele em todo o projeto e Anexa o comprovante
+do dispêndio (E-social) do participante. Ao pressionar o botão “+incluir” o sistema
+salva o dispêndio.
+
+
+
+
+      Em Demais Dispêndios, a empresa preenche: o Tipo de Dispêndio, o
+Vínculo (externo ou interno, para projetos da modalidade interna ou externa), se é
+Intercâmbio, Valor e a Data, Descrição do Dispêndio, Justificativa, a Empresa
+(se o tipo de dispêndio houver); CNPJ/CPF da empresa do dispêndio (se o tipo de
+dispêndio exigir); O número da Nota Fiscal (se o tipo de dispêndio exigir) e Anexa o
+comprovante em PDF do dispêndio.
+                                                                                   18
+
+
+
+
+      Após o preenchimento de cada dispêndio, a empresa deve pressionar
+para que o dispêndio apareça na lista.
+       Quando a empresa terminar de preencher todos os dispêndios, na aba
+Resumo Financeiro aparecerá o quadro abaixo:
+
+
+
+
+      Destacamos que, para o Resumo Financeiro apresente os dados dos
+Demais Dispêndios consolidados se faz necessário que a empresa tenha
+registrado, anteriormente, aportes no projeto.
+      Se todo o preenchimento do projeto foi feito, a empresa poderá ver o seu status
+na tela que lista todos os projetos no caminho Execução > Modalidade Externa >
+Projetos. A gaivota           indica que o projeto está corretamente preenchido.
+
+
+
+
+      Após a inclusão dos projetos, na aba projetos, além de apresentar a lista dos
+projetos cadastrados, a empresa ainda poderá:
+
+
+
+            Visualizar os dados do projeto;
+
+
+            Imprimir os dados do projeto;
+
+
+            Alterar os dados do projeto;
+
+
+            Excluir um projeto;
+                                                                                  19
+
+
+   4.3.1.3   Programa Prioritário
+
+
+      Aba Programas Prioritários permite a empresa informar em quais programas
+ela investiu no ano base em preenchimento:
+
+
+
+
+      Através do botão               a empresa informa o programa em que realizou
+depósitos.
+
+
+
+
+      Nesta tela a empresa seleciona o programa prioritário que investiu, informa o
+valor investido, a data e anexa o comprovante bancário.
+      Ainda é possível visualizar, alterar e excluir o que foi feito, através da tela
+registros de Programa Prioritário:
+                                                                                 20
+
+
+   4.3.1.4    FNDCT
+
+
+       A aba FNDCT é Semelhante a aba programas prioritários, nesta aba permite a
+empresa informar os seus depósitos no ano base em preenchimento.
+
+
+
+
+       Para inserir um novo deposito, a empresa clica no botão            , onde é
+apresentada a tela de inserção dos depósitos.
+
+
+
+
+       Nesta tela a empresa informa a Data, o Valor investido, além de anexar a GRU
+e o Comprovante Bancário, após esse processo pressiona o botão                  que
+o que foi preenchido é salvo.
+       Após o registro, é possível a empresa Visualizar, Alterar e Excluir o que foi
+feito, através da tela inicial da aba.
+
+
+   4.3.1.5    Fundos de Investimento em Participações
+
+
+       Aba que permite a empresa informar os seus depósitos nos FIP’s no ano base
+em preenchimento, a tela é a seguinte:
+                                                                                  21
+
+
+
+
+      Através do botão              , a empresa inclui o fundo que desejar, a tela se
+inclusão de fundo.
+
+
+
+
+      Nesta tela a empresa informa o Nome do Fundo, CNPJ do fundo, o
+Regulamento do Fundo e o Relatório do Gestor do Fundo. Após esse processo, o
+sistema permite incluir o aporte nos FIP’s através do botão
+                                                                                 22
+
+
+      Nesta tela a empresa informa a Data, o Valor do aporte e Anexa o
+Comprovante bancário do aporte. Após o registro, os aportes ficam disponíveis na
+Aba de Fundo de Investimentos. Nesta tela a empresa pode: Visualizar o aporte,
+Editar ou Excluir.
+
+
+
+
+   4.3.1.6   Aceleradoras e Incubadoras
+
+
+      Modalidade ainda sem regulação.
+
+
+   4.3.2 MODALIDADE INTERNA
+
+
+      Na aba “modalidade interna” é possível registrar os seguintes investimentos:
+Projetos, Startups, PROTECSUS, Industria 4.0 e Pagamento de Auditoria.
+
+
+
+
+   4.3.2.2   Projetos
+
+
+      Para adicionar um novo projeto interno a empresa clica no botão “+novo”, e
+insere: Nome, Palavras-Chave, Modalidade, Situação, Enquadrabilidade, Período
+Total de Execução do Projeto e Período Total de Execução no Ano-Base.
+                                                                               23
+
+
+      A dinâmica de preenchimento é semelhante ao item 4.3.1.2, a exceção fica por
+conta da desnecessidade de vincular o projeto à um convênio com ICT, pois esta
+modalidade é feita na própria empresa.
+
+
+
+
+      Caso o projeto seja terceirizado, os comprovantes de dispêndios devem
+ser inseridos na aba: “Demais dispêndios” no tipo serviços técnicos de
+terceiros.
+      O sistema SAGAT não permite a inserção de atividades Externa + Interna
+em um único campo. Caso a empresa possua projetos com execução externa +
+interna, o preenchimento do projeto deve ser dividido em duas atividades, uma
+somente externa e outra somente interna. Após o nome da atividade inserir em
+um parêntese se é externa ou interna.
+      Após a inserção dos projetos a empresa ainda poderá:
+
+
+
+             Visualizar os dados do projeto;
+
+
+             Imprimir os dados do projeto;
+
+
+             Alterar os dados do projeto;
+
+
+             Excluir um projeto;
+                                                                                    24
+
+
+   4.3.2.3    Startups
+
+
+      A aba que permite a empresa informar os seus investimentos em startups no
+ano base em preenchimento, a tela é a seguinte:
+
+
+
+
+      Através do botão                    a empresa inclui a Startup que desejar, após
+pressionar aparece a seguinte tela:
+
+
+
+
+      Nesta tela a empresa informa o Nome da Startup, o CNPJ da Startup, o Nome
+e CPF do Sócio e anexa o Plano Estratégico da Startup como anexo em PDF. Após
+esse processo pode pressionar o botão “salvar”.
+      Após salvar, o sistema permite incluir os aportes nas Startups através do botão
+             , que está na tela abaixo:
+                                                                                 25
+
+
+
+
+         Nesta tela a empresa informa a Data, o Valor do aporte na startup e anexa o
+Comprovante Bancário do aporte. Após o registro, na aba de aporte fica da seguinte
+forma:
+
+
+
+
+         Nesta tela a empresa pode Visualizar, Editar ou Excluir o aporte.
+
+
+   4.3.2.4     PROTECSUS
+
+
+         A aba que permite a empresa informar os seus investimentos no PROTECSUS
+no ano base em preenchimento, a tela é:
+                                                                                  26
+
+
+      No botão “+novo” a empresa inclui o PROTECUS que desejar, após pressionar
+aparece a seguinte tela:
+
+
+
+
+      Nesta tela a empresa informa a Instituição que realizou o Protecsus, o nome do
+projeto, anexa o instrumento jurídico, preenche o valor total do projeto e o valor do
+projeto realizado no ano base, anexa um PDF com a prestação de contas que está
+em anexo na portaria específica da modalidade e a Data. Após esse processo pode
+pressionar o botão             .
+
+
+   4.3.2.5   Indústria 4.0
+
+
+      A aba que permite a empresa informar os seus investimentos em Indústria 4.0
+no ano base em preenchimento, é:
+
+
+
+
+      No botão “+novo” a empresa inclui o investimento em Industria 4.0 que desejar,
+após pressionar aparece a seguinte tela:
+                                                                              27
+
+
+
+
+       Nesta tela a empresa informa o Nome do Projeto, o Período de Execução,
+o Valor, o Estado (iniciado, etc.) e o Escopo do projeto.
+      Após esse procedimento, o sistema libera outras abas na Industria 4.0 para
+preenchimento, que são:
+
+
+
+
+       Após preenchidas todas as abas e ao pressionar o botão “Desenvolvimento”,
+o sistema salva o projeto.
+
+
+   4.3.2.6   Pagamento da Auditoria
+
+
+      A aba que permite a empresa informar o quanto pagou na Auditoria
+Independente no ano base em preenchimento, é a seguinte:
+                                                                                    28
+
+
+        Para incluir o dispêndio com pagamento de Auditoria, a empresa deve inserir
+as informação através do botão               , após pressionar aparece a seguinte
+tela:
+
+
+
+
+        Nesta tela a empresa informa a Razão Social da firma de auditoria, o CNPJ
+da firma, o Valor pago e anexa o Comprovante de Contratação da firma.
+
+
+5 DECLARAÇÃO DE VERACIDADE E ENTREGA DO RD
+
+
+        Com todo o RD preenchido, na tela inicial do sistema, caso deseje emitir e
+visualiza a Declaração de Veracidade, a empresa deve clicar no botão
+        Nesta opção a empresa tem duas opções: Gerar Declaração para Simples
+Conferência e Emitir Declaração de Veracidade.
+
+
+                                      ATENÇÃO
+
+
+        O botão Gerar Declaração para Simples Conferência permite à empresa
+beneficiária verificar quais lançamentos ela fez no sistema e detectar se há algo a ser
+corrigido, inserido ou excluído.
+        O botão Emitir Declaração de Veracidade é a entrega oficial do Relatório
+Demonstrativo.
+                                                                                29
+
+
+      Se o usuário clicar no botão Emitir Declaração de Veracidade, o sistema
+detectará as pendências e informado ao usuário, conforme exemplo abaixo:
+
+
+
+
+      Caso não exista pendências, o sistema a seguinte tela:
+
+
+
+
+      O sistema informa ao usuário que não há pendências e que ao emitir a
+Declaração de Veracidade, será gerado um código para o RD cadastrado, não sendo
+mais permitida sua edição. O Usuário confirma que leu e aceitou, clica no “check” e
+no botão emitir.
+
+
+6 COMPROVANTE DE QUITAÇÃO DE SALDO DEVEDOR
+
+
+      Caso após o preenchimento do Relatório Demonstrativo haja saldo devedor de
+obrigação de P,D&I. A empresa poderá, através do botão         , atualizar o saldo
+devedor e inserir o comprovante de quitação.
+                                                                                  30
+
+
+      Destacamos que esta opção de atualização do saldo devedor estará
+disponível apenas após a entrega definitiva da RD mencionada no Item 5 deste
+manual.
+      O saldo devedor decorrente da insuficiência de aplicações em P,D&I é
+atualizado pela Taxa de Juros de Longo Prazo (TJPL), em Regime Simples,
+acrescido de 12% (doze por cento) de Multa, nos termos do Art. 32 do Decreto
+10.521/2020.
+
+
+7 ENTREGA DO RELATÓRIO CONSOLIDADO E DO PARECER CONCLUSIVO
+  ELABORADO POR AUDITORIA INDEPENDENTE
+
+
+      Após a entrega do RD, o sistema permite a entrega do Relatório da Auditoria
+através do botão          :
+
+
+
+
+      Nesse campo a empresa preenche a Firma de Auditoria, o CNPJ da firma de
+Auditoria, a Data de assinatura do relatório e Anexa o arquivo do mesmo em PDF.
+      Há, ainda, um campo de observação que a empresa pode preencher com o
+que achar necessário, não sendo obrigatório. Após esse processo a empresa
+pressiona o botão                   .
+      Após incluir os anexos, clique no botão          que o relatório foi entregue.
+                                                                         31
+
+
+8 GLOSSÁRIO DE SIGLAS
+
+
+   ICT -    Instituto Cientifico, Tecnologia e de Inovação
+ FNDTC -    Fundo Nacional de Desenvolvimento Científico e Tecnológico
+   RD -     Relatório Demonstrativo
+  FIP’s -   Fundos de Investimento em Participações
+  GRU -     Guia de Recolhimento da União
+ Cadsuf -   Cadastro SUFRAMA
+  PD&I -    Pesquisa, Desenvolvimento e Inovação
+ SAGAT -    Sistema de Acompanhamento, Gestão e Análise Tecnológica
+ CGTEC -    Coordenação Geral de Gestão Tecnológica
+  NCM -     Nomenclatura Comum do Mercosul
+

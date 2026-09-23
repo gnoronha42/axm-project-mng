@@ -3,6 +3,7 @@ import { lazy, Suspense } from 'react';
 import { Spin } from 'antd';
 import MainLayout from '../layouts/MainLayout';
 import RequireAuth from '../auth/RequireAuth';
+import RequireAdmin from '../auth/RequireAdmin';
 
 const Dashboard = lazy(() => import('../pages/Dashboard'));
 const Projects = lazy(() => import('../pages/Projects'));
@@ -11,6 +12,9 @@ const Documents = lazy(() => import('../pages/Documents'));
 const Workflow = lazy(() => import('../pages/Workflow'));
 const Fiscal = lazy(() => import('../pages/Fiscal'));
 const Conformidade = lazy(() => import('../pages/Conformidade'));
+const Biblioteca = lazy(() => import('../pages/Biblioteca'));
+const Equipe = lazy(() => import('../pages/Equipe'));
+const Perfil = lazy(() => import('../pages/Perfil'));
 const Login = lazy(() => import('../pages/Login'));
 const Register = lazy(() => import('../pages/Register'));
 
@@ -53,6 +57,12 @@ export const router = createBrowserRouter([
           { path: 'documents', element: withSuspense(Documents) },
           { path: 'fiscal', element: withSuspense(Fiscal) },
           { path: 'conformidade', element: withSuspense(Conformidade) },
+          { path: 'biblioteca', element: withSuspense(Biblioteca) },
+          { path: 'perfil', element: withSuspense(Perfil) },
+          {
+            element: <RequireAdmin />,
+            children: [{ path: 'equipe', element: withSuspense(Equipe) }],
+          },
         ],
       },
     ],

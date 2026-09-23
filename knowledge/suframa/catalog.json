@@ -1,0 +1,151 @@
+{
+  "source": "pdfs-oficiais-anexados",
+  "livePortal": false,
+  "note": "Corpus local em knowledge/suframa. O AXM não consulta suframa.gov.br em tempo real.",
+  "documents": [
+    {
+      "slug": "lei-8387-1991",
+      "title": "Lei nº 8.387, de 30 de dezembro de 1991",
+      "kind": "lei",
+      "filename": "lei-8387-1991.pdf",
+      "textFile": "lei-8387-1991.txt",
+      "extractable": true,
+      "summary": "Base legal da obrigação de 5% do faturamento bruto no mercado interno, deduzidos tributos e aquisições incentivadas. §4: no mínimo 2,3% da base, com ICT ≥ 0,9% e FNDCT ≥ 0,2%."
+    },
+    {
+      "slug": "decreto-10521-2020",
+      "title": "Decreto nº 10.521, de 15 de outubro de 2020",
+      "kind": "decreto",
+      "filename": "decreto-10521-2020.pdf",
+      "textFile": "decreto-10521-2020.txt",
+      "extractable": true,
+      "summary": "Regulamenta a Lei 8.387. Art. 5º: 5% da base e cesta de 2,3% (ICT, FNDCT, fundos CVM, programas CAPDA, incubadoras). Art. 6º: complemento de 2,7%."
+    },
+    {
+      "slug": "manual-auditoria",
+      "title": "Manual de Auditoria PD&I",
+      "kind": "manual",
+      "filename": "manual-auditoria.pdf",
+      "textFile": "manual-auditoria.txt",
+      "extractable": true,
+      "summary": "Procedimentos de auditoria independente dos investimentos em PD&I."
+    },
+    {
+      "slug": "manual-analise-rd",
+      "title": "Manual de Análise do Relatório Demonstrativo (RD)",
+      "kind": "manual",
+      "filename": "manual-analise-rd.pdf",
+      "textFile": "manual-analise-rd.txt",
+      "extractable": true,
+      "summary": "Critérios de análise do RD e hipóteses típicas de glosa (pertinência, comprovação, enquadramento, depreciação)."
+    },
+    {
+      "slug": "manual-sagat",
+      "title": "Manual SAGAT",
+      "kind": "manual",
+      "filename": "manual-sagat.pdf",
+      "textFile": "manual-sagat.txt",
+      "extractable": true,
+      "summary": "Orientação operacional do sistema SAGAT. Usado só para mapear campos em sandbox — sem acesso ao portal real."
+    },
+    {
+      "slug": "pc-01-02-2025-fip",
+      "title": "PC 01/02.25 FIP",
+      "kind": "parecer",
+      "filename": "pc-01-02-2025-fip.pdf",
+      "textFile": "pc-01-02-2025-fip.txt",
+      "extractable": false,
+      "summary": "Parecer FIP escaneado (imagem). Extração de texto vazia até OCR."
+    },
+    {
+      "slug": "pc-01-11-2024-fip",
+      "title": "PC 01/11.24 FIP",
+      "kind": "parecer",
+      "filename": "pc-01-11-2024-fip.pdf",
+      "textFile": "pc-01-11-2024-fip.txt",
+      "extractable": false,
+      "summary": "Parecer FIP escaneado (imagem). Extração de texto vazia até OCR."
+    },
+    {
+      "slug": "portaria-1753-fip",
+      "title": "Portaria 1753 FIP",
+      "kind": "portaria",
+      "filename": "portaria-1753-fip.pdf",
+      "textFile": "portaria-1753-fip.txt",
+      "extractable": true,
+      "summary": "Portaria FIP — procedimentos e modelos de comprovação."
+    },
+    {
+      "slug": "portaria-conjunta-mdic-suframa-11-2023",
+      "title": "Portaria Conjunta MDIC/SUFRAMA nº 11, de 27 de dezembro de 2023",
+      "kind": "portaria",
+      "filename": "portaria-conjunta-mdic-suframa-11-2023.pdf",
+      "textFile": "portaria-conjunta-mdic-suframa-11-2023.txt",
+      "extractable": true,
+      "summary": "Norma conjunta MDIC/Suframa sobre procedimentos de PD&I."
+    },
+    {
+      "slug": "portaria-gmdic-378-2023",
+      "title": "Portaria GM-MDIC nº 378, de 28 de dezembro de 2023",
+      "kind": "portaria",
+      "filename": "portaria-gmdic-378-2023.pdf",
+      "textFile": "portaria-gmdic-378-2023.txt",
+      "extractable": true,
+      "summary": "Portaria GM-MDIC complementar ao marco de PD&I."
+    },
+    {
+      "slug": "portaria-me-suframa-9835-2022",
+      "title": "Portaria ME/SUFRAMA nº 9.835, de 17 de novembro de 2022",
+      "kind": "portaria",
+      "filename": "portaria-me-suframa-9835-2022.pdf",
+      "textFile": "portaria-me-suframa-9835-2022.txt",
+      "extractable": true,
+      "summary": "Regulamenta investimentos em PD&I das empresas beneficiárias da Lei 8.387 (mínimo de 5%)."
+    },
+    {
+      "slug": "portaria-suframa-858-2023",
+      "title": "Portaria SUFRAMA nº 858, de 31 de maio de 2023",
+      "kind": "portaria",
+      "filename": "portaria-suframa-858-2023.pdf",
+      "textFile": "portaria-suframa-858-2023.txt",
+      "extractable": true,
+      "summary": "Apresentação de plano de PD&I, incluindo valores previstos em projetos externos (2,3%) e FNDCT."
+    },
+    {
+      "slug": "resolucao-2-programas-prioritarios",
+      "title": "Resolução nº 2 — Programas Prioritários CAPDA",
+      "kind": "resolucao",
+      "filename": "resolucao-2-programas-prioritarios.pdf",
+      "textFile": "resolucao-2-programas-prioritarios.txt",
+      "extractable": true,
+      "summary": "Regras dos programas prioritários do Capda (Lei 8.387, art. 2º, §4º, IV)."
+    },
+    {
+      "slug": "template-rda-anexo-v",
+      "title": "Template RDA (Externo) — Anexo V orientativo",
+      "kind": "template",
+      "filename": "template-rda-anexo-v.pdf",
+      "textFile": "template-rda-anexo-v.txt",
+      "extractable": true,
+      "summary": "Modelo de Relatório de Projetos das ICTs credenciadas no CAPDA: convênio, TA, descrição, atividades/dispêndios, resumo financeiro e anexos."
+    },
+    {
+      "slug": "treinamento-sagat-lg-0403",
+      "title": "Treinamento SAGAT LG — gravação 04/03/2026 (transcrição)",
+      "kind": "treinamento",
+      "filename": "treinamento-sagat-lg-0403.txt",
+      "textFile": "treinamento-sagat-lg-0403.txt",
+      "extractable": true,
+      "summary": "Transcrição Whisper da reunião de treinamento SAGAT (fala útil ~1h36 após silêncio inicial). Ensina cadastro de convênio, TA, projeto, RH, dispêndios e declaração de veracidade. Somente sandbox no AXM."
+    },
+    {
+      "slug": "treinamento-sagat-lg-0403-roteiro",
+      "title": "Roteiro operacional SAGAT (extraído do treinamento LG)",
+      "kind": "treinamento",
+      "filename": "treinamento-sagat-lg-0403-roteiro.txt",
+      "textFile": "treinamento-sagat-lg-0403-roteiro.txt",
+      "extractable": true,
+      "summary": "Passos limpos do treinamento: ordem TA antes do convênio, PDF com nome curto, relatório técnico no convênio (externo) ou outros correlatos (interno, R$ 0,01), RH por CPF, declaração só sem X."
+    }
+  ]
+}

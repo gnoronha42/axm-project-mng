@@ -1,0 +1,502 @@
+www.axmconsultoria.com   1
+       Treinamento em Interpretação e
+Aplicação da Lei de Informática – P&D (Parte 2)
+
+
+      MANUAL DE ANÁLISE DO RELATÓRIO
+    DEMONSTRATIVO (RD) – LEI Nº 8.387/1991
+
+
+
+
+              www.axmconsultoria.com   2
+  Metodologia de Análises de Convênios com ICTs
+Método de Análise das Atividades de Pesquisa desenvolvimento e Inovação
+ Etapas          Descrição                       Execução
+ Pré-Análise     São avaliados os aspectos       Intuito de verificar se as informações fornecidas
+                 descritos na pré-análise do     pela empresa preenchem os requisitos mínimos
+                 projeto                         para serem objeto de análise como atividade de
+                                                 PD&I para o ano base ao qual o RD se refere.
+ Enquadramento   Verifica se no projeto há       Para projetos de PD&I stricto sensu é verificado se
+                 algo que vai contra ao          o mesmo é inovador no âmbito da empresa e se
+                 estipulado no art. 11 da        não é caracterizado mera customização.
+                 Resolução CAS nº 71/2016.       Para projetos de capacitação e formação são
+                                                 considerados os cursos que tenham relação com as
+                                                 áreas de PD&I
+ Análise dos     Consiste na avaliação           O analista apreciará os atributos de elegibilidade,
+ dispêndios      individual dos atributos e      pertinência e adequação de cada rubrica relatada.
+                 justificativa de cada rubrica   A avaliação de cada item resultará no valor SIM ou
+                 apresentada                     NÃO para cada um dos três atributos.
+                                    www.axmconsultoria.com                                             3
+            Metodologia de Análises de Convênios com ICTs
+
+            Pré-análise
+         Devem ser verificados as seguintes informações sobre os projetos de um RD:
+
+         1. Se os convênios e os termos aditivos tem validade para o ano-base em análise, os valores
+         acordados e o cronograma dos projetos.
+         2. Se o aporte da empresa beneficiária foi feito no tempo correto.
+         3. Se as atividades foram desenvolvidas dentro do período válido para o ano-base relativo ao RD
+         apresentado.
+         4. Se as atividades se referem ou estão relacionadas de forma complementar a outras realizadas
+         nas áreas PD&I ou em áreas prioritárias pelo Capda;
+         5. Se os campos do relatório foram preenchidos com informações que podem ser avaliadas;
+
+Caso conclua que as informações do RD são suficientes para demonstrar o atendimento dos aspectos
+listados acima, o analista dará início à análise do enquadramento e dos dispêndios do projeto.
+                                           www.axmconsultoria.com                                          4
+      Metodologia de Análises de Convênios com ICTs
+                        Públicas
+A análise do enquadramento e dos dispêndios dos projetos realizados pelas Empresas Beneficiárias com as ICTs públicas
+segue o mesmo trâmite do item 5.2. O que muda é na fase de Pré-análise, onde tem que se cumprir, segundo a Portaria
+Conjunta nº 347/ 2020:
+“Art. 6º O repasse de recursos à ICT pública credenciada no Capda deverá ser efetuado para a respectiva fundação de
+apoio, que também deverá assinar, como interveniente, o convênio específico para o projeto.
+§ 1º Os convênios referidos nesta Portaria poderão contemplar um percentual de até vinte por cento dos dispêndios dos
+projetos de PD&I, para fins de cobertura de despesas operacionais e administrativas incorridas na execução dos
+convênios pelas 26 ICTs, e para a constituição de reserva a ser por elas utilizada em PD&I.
+Para que estejam habilitadas a receber os recursos mencionados nesta Portaria, devem:
+I - comprovar regularidade;
+II - não ter como dirigente membro de qualquer Poder Público;
+III - não figurar em cadastros impeditivos de receber recursos, incentivos ou subvenções públicas; e
+IV - não tenha, em suas relações anteriores com a União, incorrido má condutas:
+
+
+
+
+                                           www.axmconsultoria.com                                                       5
+ORIENTAÇÕES PARA O ENQUADRAMENTO COMO PD&I
+       Inconsistências de datas de início e fim de Projeto
+  ID    Situação                           Recomendação
+  1     As datas de início e fim se        Reprovar (NE) na etapa de pré-análise. Indicar no campo livre
+        referem a períodos diferentes      quais as datas encontradas para justificar a inconsistência.
+        do ano base, conforme
+        legislação.
+  2     Projetos com data de término       Com critério geral, reprovar (NE) na etapa de pré-análise.
+        anterior à data de início.         Indicar no campo livre quais as datas encontradas para
+                                           justificar a inconsistência. Em situações onde o analista puder
+                                           identificar que houve erro de digitação então seguir com a
+                                           avaliação e incluir, no campo recomendação, uma frase
+                                           indicando sobre as datas estarem invertidas.
+
+
+
+
+                                        www.axmconsultoria.com                                               6
+ORIENTAÇÕES PARA O ENQUADRAMENTO COMO PD&I
+      Projetos Continuados
+ ID Situação                                Recomendação
+ 1   Descrição do projeto é a mesma em      Só cabe aprovação, se for o caso, se os resultados e atividades de cada reporte
+     todos os anos em que ele é             representarem a ordem cronológica de seu desenvolvimento. O princípio aqui
+     apresentado.                           adotado é o da “contextualização temporal”, isto é, o projeto deve ter uma
+                                            evolução ao longo tempo. No primeiro ano, deve-se avaliar normalmente. Se no
+                                            ano seguinte, não houver descrição do que foi executado no período, o projeto
+                                            estará reprovado porque não há descrição que informe o que foi feito no ano (não
+                                            há informação sobre a “contextualização temporal” do projeto).
+ 2   As datas de início e de término do     Tratar como projeto continuado, mesmo que o projeto mude de nome. O
+     projeto se dão no ano-base, mas no     importante nesses casos é o conteúdo do projeto. Se o conteúdo (isto é, a
+     ano seguinte é dada continuidade ao    descrição) se mantém, o projeto deve ser considerado como sendo o mesmo.
+     projeto (com o mesmo nome ou não).     Observar que, a cada ano, deve haver algum indício de progresso no projeto para
+                                            que se perceba uma cronologia no projeto.
+
+ 3   Projetos continuados no título e nas   Tratar como projetos diferentes.
+     datas, porém, os conteúdos de cada
+     descrição não permitem estabelecer a
+     relação entre os dois projetos.
+
+                                            www.axmconsultoria.com                                                             7
+ORIENTAÇÕES PRÁTICAS PARA O TRATAMENTO DOS DISPÊNDIOS
+Segundo a Resolução CAS n° 71/ 2016, “§ 3º A aquisição de bens e serviços deverá ser demonstrada por meio de notas fiscais e os demais
+dispêndios por documentos idôneos e próprios do tipo de despesa e contemporâneos dos fatos a comprovar, tudo devendo estar
+acompanhado dos correspondentes comprovantes de pagamento.”
+A tabela a seguir descreve as principais situações práticas observadas durante a análise dos dispêndios declarados, em qual atributo se insere
+a situação (Elegibilidade, Pertinência ou Adequação) e a recomendação de tratamento.
+
+      ID                           Descrição da Ocorrência                                    Atributo             Recomendação
+                                                                                           Correspondente
+                                                                  GERAL
+      1     Não há menção ao dispêndio na descrição de investimento, embora conste            Elegibilidade           Não aprovar
+            o valor na tabela
+      2     Em casos onde há justificativa na descrição de investimentos mas não                 Ignorar                 Ignorar
+            consta valor na tabela.
+      3     Há descrição dos dispêndios, e essa descrição permite concluir que não há         Elegibilidade           Não aprovar
+            relação dos dispêndios com projeto de PD&I.
+      4     Há descrição dos dispêndios, e essa descrição permite concluir que, embora         Pertinência            Não aprovar
+            o dispêndio seja elegível, não é demonstrada a aplicabilidade àquele
+            projeto de PD&I específico.
+      5     Há menção aos dispêndios, porém não há justificativa e detalhamento da             Pertinência            Não aprovar
+            aplicabilidade ao projeto de PD&I. 6 6
+
+                                                      www.axmconsultoria.com                                                                8
+ORIENTAÇÕES PRÁTICAS PARA O TRATAMENTO DOS DISPÊNDIOS
+  ID                          Descrição da Ocorrência                                 Atributo       Recomendação
+                                                                                   Correspondente
+             RECURSOS HUMANOS DIRETOS E INDIRETOS ENVOLVIDOS NA EXECUÇÃO DO PROJETO
+  1    O projeto não tem RH Direto mas tem outras rubricas.                             EPA         Analisar EPA das
+                                                                                                     demais rubricas.
+  2    Na descrição do investimento, há menção aos RH Diretos/Indiretos              Pertinência       Não aprovar
+       envolvidos (nome, função, etc..), porém não são descritas as
+       atividades executadas e quais etapas do projeto o colaborador está
+       associado, de modo que seja possível identificar claramente a atuação
+       dos colaboradores.
+  3    Verificar se há indícios de que as atividades declaradas do RH                Pertinência       Não aprovar
+       Direto/Indireto são incompatíveis com as atividades desenvolvidas no
+       projeto.
+  4    Descrição completa de valores e de atividades de RH Direto no projeto. No        EPA             Aprovar e
+       entanto, é possível identificar que esses dispêndios foram lançados no RH                      reclassificar o
+       Indireto.                                                                                    dispêndio na rubrica
+                                                                                                    apropriada no ato da
+                                                                                                          análise.
+
+
+                                             www.axmconsultoria.com                                                        9
+ORIENTAÇÕES PRÁTICAS PARA O TRATAMENTO DOS DISPÊNDIOS
+  ID                         Descrição da Ocorrência                                  Atributo       Recomendação
+                                                                                   Correspondente
+             RECURSOS HUMANOS DIRETOS E INDIRETOS ENVOLVIDOS NA EXECUÇÃO DO PROJETO
+  5    Não há informação da quantidade de horas trabalhadas e/ou                      Adequação       Não aprovar
+       valores dispendido por pessoa no projeto, ou se a quantidade de horas
+       trabalhadas por pessoa por mês exceder os limites de jornada de trabalho
+       e horas extras determinados pela legislação trabalhista vigente, e
+       consideradas eventuais condições pactuadas em acordo coletivo.
+  6    Há justificativa das atividades dos RH, porém não são discriminados quais         PA             Analisar PA
+       são os de nível médio e os de nível superior.
+  7    Valores diferentes na descrição e na tabela de dispêndios (número de RH e      Adequação     Ver orientações gerais
+       valores)                                                                                             (tabela
+                                                                                                            GERAL)
+
+
+
+
+                                             www.axmconsultoria.com                                                      10
+ORIENTAÇÕES PRÁTICAS PARA O TRATAMENTO DOS DISPÊNDIOS
+
+  ID                          Descrição da Ocorrência                                   Atributo      Recomendação
+                                                                                     Correspondente
+             RECURSOS HUMANOS DIRETOS E INDIRETOS ENVOLVIDOS NA EXECUÇÃO DO PROJETO
+  8    Em projetos de Formação e Capacitação onde há treinamento interno e             Pertinência       Analisar P
+       são declaradas na rubrica de RH horas e valores dos funcionários treinados.
+
+
+
+  10 Estagiário e Menor Aprendiz: o estagiário é funcionário da empresa,                  EPA           Analisar EPA
+       ainda que sob um contrato específico. Se as atividades forem dentro de um
+       projeto de PD&I, as horas podem ser aprovadas como        RH    Direto   do
+       projeto, preferencialmente. Se as atividades forem realizadas fora de
+       projetos de PD&I não podem ser aprovadas. Um projeto para pagar os
+       estagiários sem distinção de onde vão trabalhar não é elegível.
+
+
+
+
+                                               www.axmconsultoria.com                                                  11
+ORIENTAÇÕES PRÁTICAS PARA O TRATAMENTO DOS DISPÊNDIOS
+  ID                          Descrição da Ocorrência                                    Atributo       Recomendação
+                                                                                      Correspondente
+     PROGRAMAS DE COMPUTADOR, MÁQUINAS, EQUIPAMENTOS, APARELHOS E INSTRUMENTOS, SEUS
+     ACESSÓRIOS, SOBRESSALENTES E FERRAMENTAS, E SERVIÇOS DE INSTALAÇÃO DESSAS MÁQUINAS E
+                       EQUIPAMENTOS UTILIZADOS NA EXECUÇÃO DO PROJETO
+ 1     São mencionados os gastos com equipamentos e sua finalidade no                 Pertinência/       Analisar PA do
+       projeto, na descrição do investimento, porém não estão discriminados           Adequação           conjunto dos
+       item a item.                                                                                        dispêndios
+
+
+ 2     Projeto continuado em que a compra de equipamentos é uma etapa do              Pertinência/        Analisar PA
+       projeto de PD&I para o ano-base, prevista na proposta inicial.                 Adequação
+
+ 3     Investimentos da empresa em projetos próprios: Não foi informado se os         Pertinência/        Não aprovar
+       valores    lançados     na rubrica equipamentos são de aquisição               Adequação
+       ou depreciação calculada.
+ 4     Aquisição de equipamentos pela ICT, informando o valor total de                Pertinência/        Analisar PA.
+       aquisição na rubrica.                                                          Adequação
+
+ 5     Cessão de equipamentos à ICT pela empresa incentivada que não seja               Elegibilidade     Não aprovar
+       possível identificar se o valor informado na rubrica é de custo de produção.
+
+
+                                                www.axmconsultoria.com                                                    12
+ORIENTAÇÕES PRÁTICAS PARA O TRATAMENTO DOS DISPÊNDIOS
+ID                             Descrição da Ocorrência                                   Atributo         Recomendação
+                                                                                      Correspondente
+       PROGRAMAS DE COMPUTADOR, MÁQUINAS, EQUIPAMENTOS, APARELHOS E INSTRUMENTOS, SEUS
+       ACESSÓRIOS, SOBRESSALENTES E FERRAMENTAS, E SERVIÇOS DE INSTALAÇÃO DESSAS MÁQUINAS E
+                         EQUIPAMENTOS UTILIZADOS NA EXECUÇÃO DO PROJETO
+6    Cessão     definitiva de equipamentos à ICT pela empresa incentivada               Elegibilidade             Não aprovar
+     não foi informado se os valores na rubrica se referem ao valor do
+     equipamento deduzida a depreciação acumulada dos anos de uso
+
+
+7    Na descrição dos dispêndios de Equipamentos, estão incluídos serviços, tais        Elegibilidade    Analisar EPA sobre os
+     como Serviços de Garantia Estendida, Contrato de Manutenção.                                           equipamentos e
+                                                                                                        reclassificar os demais
+                                                                                                          valores como outros
+                                                                                                         dispêndios correlatos.
+8    Na descrição dos dispêndios de Equipamentos e Software estão incluídos os               PA                      Analisar PA
+     serviços de instalação e implantação para o funcionamento dos itens referidos.
+
+9    Dispêndios com móveis de escritório para laboratório.                                  EPA            São elegíveis. Analisar
+                                                                                                                    EPA
+
+10 Kits de treinamento para laboratórios de capacitação (Aporte Material)                    PA            São elegíveis. Analisar
+                                                                                                                     PA
+                                                   www.axmconsultoria.com                                                     13
+ORIENTAÇÕES PRÁTICAS PARA O TRATAMENTO DOS DISPÊNDIOS
+  ID    Descrição da Ocorrência            Atributo                               Recomendação
+                                        Correspondent
+                                               e
+         PROGRAMAS DE COMPUTADOR, MÁQUINAS, EQUIPAMENTOS, APARELHOS E INSTRUMENTOS, SEUS ACESSÓRIOS,
+       SOBRESSALENTES E FERRAMENTAS, E SERVIÇOS DE INSTALAÇÃO DESSAS MÁQUINAS E EQUIPAMENTOS UTILIZADOS NA
+                                               EXECUÇÃO DO PROJETO
+
+ 11 Projetos Próprios: Casos em               PA        Deve-se deixar indicado o valor de depreciação relativo a cada
+       que a empresa adquire                            equipamento, com descrição do cálculo de rateio para cada projeto
+       equipamentos a serem usados                      individualmente. Analisar PA
+       em mais de um projeto.
+ 12    Há lançamento de dispêndios            EPA       Caso a descrição comprove que o mobiliário seja indispensável ao
+       com mobiliário de escritório,                    desenvolvimento do projeto (Inciso I do art. 22, do Decreto nº
+       tais como: mesa, cadeira                         10.521/2020) ou para uso em laboratório de PD&I (Inciso II do art. 22,
+                                                        do Decreto nº 10.521/2020). analisar EPA.
+ 13 Investimentos da empresa em         Pertinência/            Não aprovar
+       projetos próprios: Não foi       Adequação
+       informado se os valores
+       lançados na sub-rubrica
+       Software são de aquisição
+       ou amortização calculada.
+ 14    Aquisição de software pela ICT   Pertinência/            Analisar PA.
+       informando o valor total de      Adequação
+       aquisição na rubrica.
+                                                www.axmconsultoria.com                                                      14
+ORIENTAÇÕES PRÁTICAS PARA O TRATAMENTO DOS DISPÊNDIOS
+ID                            Descrição da Ocorrência                                 Atributo      Recomendação
+                                                                                   Correspondente
+       PROGRAMAS DE COMPUTADOR, MÁQUINAS, EQUIPAMENTOS, APARELHOS E INSTRUMENTOS, SEUS
+       ACESSÓRIOS, SOBRESSALENTES E FERRAMENTAS, E SERVIÇOS DE INSTALAÇÃO DESSAS MÁQUINAS E
+                         EQUIPAMENTOS UTILIZADOS NA EXECUÇÃO DO PROJETO
+15 Dispêndios com software que não apresentam informações mínimas para               Adequação        Não aprovar
+     sua aceitação: nome e tipo de software, data de aquisição, finalidade.
+
+
+
+16 Dispêndios com equipamentos (bens de informática/outros) que não                  Adequação        Não aprovar
+     apresentam informações mínimas para sua   aceitação:       descrição     do
+     equipamento, data da aquisição e finalidade
+
+
+
+
+                                                www.axmconsultoria.com                                              15
+ORIENTAÇÕES PRÁTICAS PARA O TRATAMENTO DOS DISPÊNDIOS
+ID                             Descrição da Ocorrência                                     Atributo             Recomendação
+                                                                                        Correspondente
+AQUISIÇÃO, IMPLANTAÇÃO, AMPLIAÇÃO OU MODERNIZAÇÃO DE INFRAESTRUTURA FÍSICA E DE LABORATÓRIOS
+                      DE PESQUISA, DESENVOLVIMENTO E INOVAÇÃO E DE ICTs
+1    A finalidade das obras consiste em atender o Processo Produtivo Básico                Elegibilidade           Não aprovar
+     (PPB) ou para áreas distintas às destinadas à realização de PD&I.
+
+
+
+2    Há menção às obras realizadas e sua justificativa no projeto. Porém não há menção        Pertinência          Não aprovar
+     da data de execução e/ou identificação da pessoa física ou jurídica
+     executora.
+3    Projeto Próprio - Há justificativa para a obra realizada, assim como suas          Pertinência Adequação      Não aprovar
+     etapas e valores. Porém, o valor informado na rubrica não especifica se o valor do
+     dispêndio se refere ao seu total ou à sua depreciação.
+4    Projeto Conveniado, ICT - Há justificativa para a obra realizada, data,            Pertinência Adequação   São elegíveis. Analisar
+     dados da empresa ou pessoa física executora, assim como suas etapas e                                                PA
+     valores.
+
+
+
+
+                                                  www.axmconsultoria.com                                                           16
+ORIENTAÇÕES PRÁTICAS PARA O TRATAMENTO DOS DISPÊNDIOS
+ID                             Descrição da Ocorrência                                    Atributo              Recomendação
+                                                                                       Correspondente
+                                                   MATERIAL DE CONSUMO
+1    São mencionados os gastos com material de consumo e sua finalidade no           Pertinência Adequação       Não aprovar
+     projeto, na descrição do investimento, porém não estão
+     discriminados item a item, ou, pelo menos, especificados por tipo e/ou
+     utilização.
+2    Existe declaração nominal dos materiais de consumo adquiridos por item e              Adequação             Não aprovar
+     estão relacionados ao projeto. Entretanto, não há discriminação de seus valores
+     de aquisição.
+3    Kits de treinamento para laboratórios de capacitação (Aporte Material)          Pertinência Adequação São elegíveis. Analisar PA
+
+
+4    Materiais para protótipos para projeto                                          Pertinência Adequação         Analisar PA
+
+
+
+
+                                                 www.axmconsultoria.com                                                          17
+ORIENTAÇÕES PRÁTICAS PARA O TRATAMENTO DOS DISPÊNDIOS
+ID                             Descrição da Ocorrência                                   Atributo          Recomendação
+                                                                                      Correspondente
+                                              SERVIÇOS TÉCNICOS DE TERCEIROS
+1    Projeto Conveniado: a descrição dos dispêndios com serviços se refere a            Elegibilidade     Não aprovar. Observar
+     atividades principais do projeto de PD&I.                                                            que por se tratar de
+                                                                                                         um projeto conveniado,
+                                                                                                        as    atividades principais
+                                                                                                          deverão ser realizadas
+                                                                                                               pela ICT/IES.
+2    Os dispêndios com serviços envolvem atividades tais como: pesquisa                 Elegibilidade          Não aprovar
+     de mercado, estudos de viabilidade econômica, tradução de documentos
+     não essenciais para a execução do projeto, recrutamento e seleção de RH,
+     homologação de produto no cliente, certificações de maturidade de
+     desenvolvimento de software      e     consultorias    não relacionadas à
+     atividade principal do projeto,   como     por      exemplo, consultorias para
+     preenchimento do formulário do RD ou consultorias de gestão.
+3    A relação de serviços descritos é parcial ou genérica, porém sem                   Pertinência            Não aprovar
+     discriminação dos valores pagos por serviço.
+
+
+
+
+                                                   www.axmconsultoria.com                                                     18
+ORIENTAÇÕES PRÁTICAS PARA O TRATAMENTO DOS DISPÊNDIOS
+ID                          Descrição da Ocorrência                                    Atributo          Recomendação
+                                                                                    Correspondente
+                                          SERVIÇOS TÉCNICOS DE TERCEIROS
+4    Não há menção do nome da pessoa física      ou     jurídica contratada     e     Pertinência            Não aprovar
+     do tempo de execução (quando aplicável)
+
+
+
+5    Há menção aos serviços técnicos de terceiros realizados, com a descrição             EPA         Entende-se      que      os
+     e     detalhamento da aplicabilidade ao projeto de PD&I. Além disso, são                           impostos fazem parte
+     discriminados todos os valores da nota, inclusive impostos.                                      do custo de aquisição do
+                                                                                                         serviço. Analisar EPA
+6    Há lançamentos de dispêndios com serviços de alimentação, tais como              Elegibilidade   Não aprovar. Tais serviços
+     coffee break, almoço, lanches, dentre outros.                                                     não     são    essenciais
+                                                                                                        ao desenvolvimento do
+                                                                                                                projeto.
+7    Há lançamento de dispêndios com RENOVAÇÃO de certificados. Ex.: ANATEL, Elegibilidade            Não aprovar. A
+     INMETRO, etc                                                                                     RENOVAÇÃO não
+                                                                                                      pertence ao ciclo de
+                                                                                                      desenvolvimento do
+                                                                                                      projeto.
+
+
+                                               www.axmconsultoria.com                                                       19
+ORIENTAÇÕES PRÁTICAS PARA O TRATAMENTO DOS DISPÊNDIOS
+ID         Descrição da Ocorrência              Atributo                       Recomendação
+                                             Correspondente
+                                       SERVIÇOS TÉCNICOS DE TERCEIROS
+8    Há lançamento de dispêndios com     Elegibilidade        Não aprovar. A RENOVAÇÃO não pertence ao ciclo de
+     RENOVAÇÃO de certificados. Ex.:                          desenvolvimento do projeto.
+     ANATEL, INMETRO, etc
+
+
+
+
+                                          www.axmconsultoria.com                                             20
+ORIENTAÇÕES PRÁTICAS PARA O TRATAMENTO DOS DISPÊNDIOS
+ID                              Descrição da Ocorrência                                    Atributo         Recomendação
+                                                                                        Correspondente
+                                              OUTROS DISPÊNDIOS CORRELATOS
+1    Consultoria específica para submissão de PPB, elaboração de RD,
+     prestação de contas, treinamento nessas tarefas, assessoria jurídica sobre a Lei
+     de Informática
+2    Despesas com editais, avisos em jornal, DOU
+
+3    Hospedagem de servidores corporativos de aplicativos              ou
+                                                                                                         Não aprovar.
+     armazenamento
+                                                                                                         Despesa cujo vínculo
+4    Renovação das licenças de softwares corporativos (ERP)                             Elegibilidade
+                                                                                                         com o projeto não se
+     Serviços de manutenção e limpeza do terreno e jardinagem.                                           justifica.
+5
+6    Serviços de alimentação, tais como
+     coffee break e outras refeições.
+
+7      Tarifas bancárias, juros e multas
+
+
+
+
+                                                  www.axmconsultoria.com                                                  21
+ORIENTAÇÕES PRÁTICAS PARA O TRATAMENTO DOS DISPÊNDIOS
+ID                            Descrição da Ocorrência                                     Atributo              Recomendação
+                                                                                       Correspondente
+                                    OUTROS DISPÊNDIOS CORRELATOS (Treinamentos)
+1    É informado apenas o título do treinamento.                                           Elegibilidade         Não aprovar
+
+
+
+
+2    Há descrição do treinamento realizado aplicável ao projeto, porém sem             Pertinência/ Adequação    Não aprovar
+     informações suficientes para justificar o gasto no contexto do projeto. Exemplos:
+     lista ou identificação dos participantes do treinamento, local, data, duração ou
+     pessoa física ou jurídica contratada para realizar o treinamento.
+3    Não é possível identificar quem participou do treinamento (nome ou                      Pertinência         Não aprovar
+     função)
+
+
+
+
+                                                 www.axmconsultoria.com                                                        22
+ORIENTAÇÕES PRÁTICAS PARA O TRATAMENTO DOS DISPÊNDIOS
+ID                            Descrição da Ocorrência                                    Atributo       Recomendação
+                                                                                      Correspondente
+                                       OUTROS DISPÊNDIOS CORRELATOS (Viagens)
+1    Os dispêndios com viagens não especificamente destinadas à atividade de PD&I,      Elegibilidade    Não aprovar
+     tais como: desenvolvimento de fornecedores, visitas comerciais, ou homologação
+     de produto junto aos clientes.
+
+
+2    Não é possível identificar quem viajou (nome ou função), finalidade da             Pertinência      Não aprovar
+     viagem e/ou data de início e fim da viagem
+
+3    Viagens realizadas por pessoas que não compõem a equipe técnica do projeto.        Pertinência      Não aprovar
+
+
+
+
+                                                www.axmconsultoria.com                                                 23
+ORIENTAÇÕES PRÁTICAS PARA O TRATAMENTO DOS DISPÊNDIOS
+ID                             Descrição da Ocorrência                               Atributo              Recomendação
+                                                                                  Correspondente
+                                          OUTROS DISPÊNDIOS CORRELATOS (Livros)
+1    Os dispêndios são pertinentes,                                                   Adequação               Não aprovar
+     porém não há declaração nominal ou agrupada dos livros e periódicos
+
+
+
+2    Existe declaração nominal dos livros ou          periódicos   por   item.        Adequação               Não aprovar
+     Entretanto, não há declaração de seus valores.
+
+3    Aquisição de livros importados discriminando o preço do item e tarifas de   Pertinência Adequação   Entende-se que as
+     importação ou frete.                                                                                tarifas fazem parte
+                                                                                                       do custo de aquisição
+                                                                                                          do bem. Analisar PA
+4    Assinatura mensal ou anual de periódicos                                    Pertinência Adequação São elegíveis. Analisar PA
+
+
+
+
+                                                  www.axmconsultoria.com                                                    24
+ORIENTAÇÕES PRÁTICAS PARA O TRATAMENTO DOS DISPÊNDIOS
+ID              Descrição da Ocorrência                         Atributo                           Recomendação
+                                                             Correspondente
+                     DESPESAS OPERACIONAIS, ADMINISTRATIVAS E CONSTITUIÇÃO DE RESERVAS*
+1    Caso os valores do dispêndio no ano-base ultrapassem      Elegibilidade   Aprovar até o valor limite elegível. Alocar em
+     os valores limites:20% do total do dispêndio no ano-                      exceção o excedente.
+     base    (conforme      Lei   nº 8.387/1991, Art. 2º §
+     21
+
+2    Projeto cujos dispêndios do ano- base foram                Pertinência    Não aprovar os dispêndios com Custos Incorridos.
+     totalmente reprovados.
+
+3    Projeto cujos dispêndios foram parcialmente                Pertinência    Aprovar   até   o   valor máximo    proporcional
+     reprovados.                                                               aos dispêndios aprovados*
+4    Projetos em que ocorreram a cessão de                     Elegibilidade   Não aprovar os custos incorridos sobre os valores da
+     equipamentos e/ou software.                                               Cessão de Materiais. Observar que os custos incorridos
+                                                                               devem ser calculados sobre o montante financeiro a ser
+                                                                               gasto no projeto, excluindo a cessão.
+
+
+
+
+                                                    www.axmconsultoria.com                                                        25
+

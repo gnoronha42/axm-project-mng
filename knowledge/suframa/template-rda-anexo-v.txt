@@ -1,0 +1,624 @@
+                                ANEXO - V
+
+
+
+
+MINISTÉRIO DO DESENVOLVIMENTO INDÚSTRIA E COMÉRCIO EXTERIOR
+             Superintendência da Zona Franca de Manaus
+                            SUFRAMA
+
+
+
+
+Relatório de Projetos pelas Instituições Credenciadas
+                   no CAPDA (Externo):
+
+                  Projeto XXXXXXXXX
+
+                         Ano Base20XX
+
+
+
+
+                               Manaus – Am
+             Relatório de Projetos Executados pelas Instituições Credenciadas pelo CAPDA - Ano-Base 20XX   2
+
+
+
+SUMÁRIO
+
+1.      ENQUADRAMENTO DOS PROJETOS EXTERNOS NO TERMO DO ART. 21 DO DECRETO Nº
+10.521, DE 2020.                                                                                               5
+
+     1.1.    CONVÊNIO                                                                                           5
+
+     1.2.    TERMO ADITIVO – TA                                                                                 5
+
+     1.3.    PROJETO                                                                                            5
+
+     1.4.    ADENDO AO TERMO ADITIVO                                                                            5
+
+2.      DESCRIÇÃO DO PROJETO                                                                                   7
+
+     2.1.    Descrição                                                                                          7
+
+     2.2.    Motivação do Projeto:                                                                              7
+
+     2.3.    Justificativa                                                                                      7
+
+     2.4.    Escopo                                                                                             7
+
+     2.5.    Objetivo Geral                                                                                     8
+
+     2.6.    Objetivo Específico                                                                                8
+
+     2.7.    Características Inovadoras                                                                         8
+
+     2.8.    PROCESSO DE DESENVOLVIMENTO                                                                        8
+
+        2.8.1.    Estrutura Analítica do Projeto (EAP)                                                          8
+
+        2.8.2.    CRONOGRAMA                                                                                    8
+
+     2.9.    Indicadores de Resultados:                                                                         9
+
+     2.10.   Resultados Alcançados                                                                              9
+
+3.      ATIVIDADES DESENVOLVIDAS                                                                               10
+
+     3.1.    ATIVIDADE 1 – GERENCIAMENTO DO PROJETO                                                            10
+
+        3.1.1.    DISPÊNDIOS DA ATIVIDADE                                                                      10
+
+     3.2.    ATIVIDADE 2 - LEVANTAMENTO DE REQUISITOS                                                          11
+
+        3.2.1.    DISPÊNDIOS DA ATIVIDADE                                                                      11
+
+     3.3.    ATIVIDADE 3 - DESENVOLVIMENTO                                                                     12
+
+        3.3.1.    DISPÊNDIOS DA ATIVIDADE                                                                      13
+
+     3.4.    ATIVIDADE 3 - TESTE E ENTREGA                                                                     14
+
+        3.4.1.    DISPÊNDIOS DA ATIVIDADE                                                                      14
+
+4.      RESUMO FINANCEIRO                                                                                      15
+
+     4.1.    QUADRO CONSOLIDADO DOS DISPÊNDIOS POR PROJETO                                                     15
+             Relatório de Projetos Executados pelas Instituições Credenciadas pelo CAPDA - Ano-Base 20XX   3
+
+
+
+     4.2.    QUADRO DE RECEBIMENTO DE APORTES NO ANO CALENDÁRIO                                                16
+
+5.        ANEXOS                                                                                               17
+
+     5.1.    OBSERVAÇÕES GERAIS DO PROJETO:                                                                    18
+
+
+
+
+INSTRUÇÕES DE PREENCHIMENTO
+
+
+           Usar o tempo verbal no infinitivo
+           Fonte: Times New Roman, Tamanho 12, justificado, espaçamento entre as linhas de 1,5
+           Após o preenchimento dos tópicos, apagar as orientações em azul
+           Colocar os textos na cor preta, indicando preenchimento
+           Em caso de correções, destacar de amarelo
+        Relatório de Projetos Executados pelas Instituições Credenciadas pelo CAPDA - Ano-Base 20XX   4
+
+
+
+1. ENQUADRAMENTO DOS PROJETOS EXTERNOS NO TERMO DO ART. 21 DO
+   DECRETO Nº 10.521, DE 2020.
+
+1.1. CONVÊNIO
+
+INSTITUIÇÃO CONVENENTE                                <NOME DA INSTITUIÇÃO>
+
+Nº Convênio
+
+Data assinatura
+
+Período de Vigência
+
+
+
+1.2. TERMO ADITIVO – TA
+
+INSTITUIÇÃO CONVENENTE                                <NOME DA INSTITUIÇÃO>
+
+Nº Termo Aditivo
+
+Data assinatura
+
+Período de Vigência
+
+Valor do TA para o projeto específico R$
+
+Título do Projeto no TA                               <NOME DO PROJETO NO TERMO ADITIVO>
+
+
+
+1.3. PROJETO
+
+TÍTULO DO PROJETO                                        <NOME DO PROJETO NO TERMO ADITIVO>
+                                                    Em andamento, Concluído, Paralisado ou Cancelado
+Situação do Projeto                                 (em caso de Paralisado ou Cancelado deverá ser
+                                                    justificado o motivo).
+                                                    Informar se foi executado “Parcialmente entre
+Forma de Execução                                   empresa/instituição”; “Totalmente pela Empresa” ou
+                                                    “Totalmente pela Instituição”.
+                                                    Enquadrar em um dos incisos do art. 21 do Decreto
+Enquadrabilidade
+                                                    10.521/2020.
+                                                    É o período total do projeto, data de início e fim do
+Período Total da Execução do Projeto
+                                                    projeto.
+                                                    É o período compreendido entre o ano calendário
+Período Total da Execução no Ano Base               correspondente, até 31 de março do ano subsequente.
+                                                    Ex.: 1/1/2023 a 31/3/2024.
+                                                    Soma de todos os recursos utilizados no
+Valor total do projeto 1.000.000
+                                                    desenvolvimento do projeto.
+                                                    Informar o valor que a empresa aportou no projeto no
+Valor de aporte pela empresa no projeto no ano base
+                                                    ano-base.
+                                                    Soma de todas as rubricas de dispêndios realizados
+Total dos dispêndios do projeto no ano base
+                                                    (incluindo os custos incorridos)
+                                                    Em caso de repasse para o ano subsequente deverá ser
+                                                    informado o valor e o percentual correspondente ao
+Valor e % repassado para o ano subsequente R$
+                                                    repasse, limitando-se a 20% do valor do projeto,
+                                                    conforme § 2º do art. 31 do Decreto nº 10.521/2020.
+Valor e % antecipado do ano anterior R$             Informar o valor que foi antecipado do ano anterior.
+           Relatório de Projetos Executados pelas Instituições Credenciadas pelo CAPDA - Ano-Base 20XX         5
+
+
+
+                                                            Esse valor corresponde ao que foi informado como
+                                                            “valor repassado para o ano subsequente” no
+                                                            relatório demonstrativo do ano-base anterior.
+
+
+
+   1.4. ADENDO AO TERMO CONVÊNIO
+
+TÍTULO DO ADENDO                                           <XX ADENDO AO XX TERMO ADITIVO>
+
+Descrição do Adendo
+
+
+                                                           ( ) Alteração*
+                                                           ( ) Objeto do Projeto;
+Tipo de Termo Aditivo                                      ( ) Plano de Trabalho;
+                                                           ( ) Valor;
+                                                           ( ) Prazo
+
+
+Data de Assinatura
+
+Período de Vigência
+
+Valor do Adendo para o Projeto
+
+
+   *Alteração: Adendo que altera cláusulas de T.A originário.
+          Relatório de Projetos Executados pelas Instituições Credenciadas pelo CAPDA - Ano-Base 20XX             6
+
+
+
+2. DESCRIÇÃO DO PROJETO
+Tipo de Projeto: Art. 21 do Decreto 10.521, de 2020
+<uma breve descrição sobre a empresa e um breve resumo o que é o projeto>
+TEXTO AQUI (nota de rodapé1)
+
+
+
+2.1. DESCRIÇÃO
+<uma breve descrição sobre a empresa e um breve resumo o que é o projeto>
+TEXTO AQUI
+
+
+
+2.2. MOTIVAÇÃO DO PROJETO:
+<Descreva quais os principais problemas o projeto pretendeu ajudar a resolver. Descrever, por exemplo,
+quais melhorias para o usuário/cliente com o desenvolvimento/aperfeiçoamento do projeto/processo;
+descreva quais potencialidades e oportunidades existiam para a execução do projeto. Por que ele foi
+proposto? De onde nasceu a ideia? Quais os benefícios gerados para o usuário/cliente do
+projeto/processo       desenvolvido/aperfeiçoado.         Quem       são     os     beneficiários       diretos       do
+desenvolvimento/aperfeiçoamento a partir do desenvolvimento do projeto. Quais os objetivos de negócio
+do cliente que foram satisfeitos com o desenvolvimento do projeto.>
+TEXTO AQUI
+
+
+
+2.3. JUSTIFICATIVA
+<Justificativa para o desenvolvimento da solução, através de pesquisa de mercado, no qual demonstra a
+necessidade e a inovação. Descrever o que torna o projeto atrativo.>
+TEXTO AQUI
+
+
+
+2.4. ESCOPO
+<Escopo do projeto: é o trabalho que precisa ser realizado para entregar um produto, serviço ou
+resultado com as características e funções especificadas anteriormente. Ou seja, é o escopo que vai
+definir os limites do projeto, considerando tanto o que deve ou não deve ser feito. Escopo do produto:
+descreve todas as características e funcionalidades que o produto do projeto precisa apresentar para
+satisfazer as necessidades e expectativas do cliente. Incluir mapa mental, ferramentas utilizadas,
+arquitetura da solução, EAP etc.
+TEXTO AQUI
+
+
+1
+    Nota de rodapé
+        Relatório de Projetos Executados pelas Instituições Credenciadas pelo CAPDA - Ano-Base 20XX   7
+
+
+
+2.5. OBJETIVO GERAL
+< O objetivo geral deve resumir e apresentar a ideia central de um trabalho, descrevendo também a sua
+finalidade. Os objetivos específicos darão uma maior delimitação ao tema, além de detalhar os processos
+necessários para a realização do trabalho. >
+TEXTO AQUI
+
+
+
+2.6. OBJETIVO ESPECÍFICO
+<Focar nas entregáveis, apresentar os passos necessários para se atingir o objetivo geral. Como será
+desenvolvido (macro)? Apresenta-los em tópicos.>
+TEXTO AQUI
+
+
+
+2.7. CARACTERÍSTICAS INOVADORAS
+<Descrever quais foram as inovações implementadas/decorrentes da realização do projeto/aplicativo.
+Qual o tipo de inovação: em relação ao produto ou processo? Qual a diferença, em termos de inovações,
+entre as soluções existentes e as soluções apresentadas neste projeto/aplicativo? Fazer menção a um
+benchmarking ou outra forma de comparação que justifique a qualificação de inovação tecnológica
+(para o mundo ou para a empresa)>
+TEXTO AQUI
+
+
+
+2.8. DESAFIO TECNOLÓGICO
+<Descrever qual o desafio ou barreira o projeto possui para se alcançar o resultado (objetivo geral)
+esperado. Lembrando que o desafio não pode ser algo comum ou de fácil solução no mercado>
+TEXTO AQUI
+
+
+
+2.9. PROCESSO DE DESENVOLVIMENTO
+<Descrever quais as etapas de desenvolvimento. Usar o PMBOK 6º edição como guia de descrição desse
+tópico. Qual a metodologia a ser utilizada para o desenvolvimento do projeto. Watefall? Scrum?
+Detalhar as etapas e suas principais entregas>
+TEXTO AQUI
+
+
+
+2.9.1. ESTRUTURA ANALÍTICA DO PROJETO (EAP)
+<Anexar o EAP do projeto conforme o Processo de Desenvolvimento>
+        Relatório de Projetos Executados pelas Instituições Credenciadas pelo CAPDA - Ano-Base 20XX   8
+
+
+
+2.9.2. Cronograma
+<Preencher os milestones da tabela de acordo com as etapas descritas no item Processo de
+Desenvolvimento >
+
+
+
+
+        ETAPA                M1     M2     M3      M4     M5    M6     M7     M8     M9 M10 M11 M12
+GERENCIAMENTO DO
+PROJETO
+
+DESENVOLVIMENTO
+
+
+TESTE
+
+
+ENTREGA
+
+
+
+2.10. INDICADORES DE RESULTADOS:
+                          Patente depositadas
+                          Protótipo com inovação científica ou tecnológica
+                          Produto com inovação cientifica ou tecnológica
+                          Publicação científica e tecnológica
+ Indicadores de           Conservação dos ecossistemas
+   Resultados             Concessão de Co-titularidade ou de participação
+                          Processo com inovação Científica ou Tecnológica
+                          Programa de computador com a inovação científica ou tecnológica
+                          Profissionais formados ou capacitados
+                          Outros indicadores
+
+
+2.11. RESULTADOS ALCANÇADOS
+<Apresentar os entregáveis alcançados ao final do projeto. Caso o projeto esteja em andamento,
+enfatizar que o resultado é parcial. Resultados das atividades deverão fazer link com o escopo, os
+objetivos do projeto e seus indicadores. Deve ser apontado resultados alcançados em prol dos
+indicadores, como o percentual de melhorias, qualidade, nível, funções, produtos desenvolvidos e
+aperfeiçoamentos alcançados.>
+TEXTO AQUI
+        Relatório de Projetos Executados pelas Instituições Credenciadas pelo CAPDA - Ano-Base 20XX            9
+
+
+
+3. ATIVIDADES DESENVOLVIDAS
+
+3.1. ATIVIDADE 1 – GERENCIAMENTO DO PROJETO
+
+Item                     Atividade                             Período         Intercambio           Vinculo
+                                                                              ( ) Sim            ( ) Interno
+ 01              Gerenciamento do Projeto
+                                                                              ( ) Não            ( ) Externo
+
+OBS: Usar sempre o verbo no passado, pois neste documento, informaremos o que já ocorreu durante o
+desenvolvimento da solução.
+
+
+Descrição da Atividade
+Descrever as atividades do gerente de projeto;
+Ferramentas utilizadas para o gerenciamento da atividade;
+Descrever as atividades de processo de identificação das ações especificas a serem realizadas.
+TEXTO AQUI
+
+
+
+
+Justificativa da Atividade
+Descrever as atividades do gerente de projeto;
+Ferramentas utilizadas para o gerenciamento da atividade;
+Descrever as atividades de processo de identificação das ações especificas a serem realizadas.
+TEXTO AQUI
+
+
+
+
+Resultado Obtido
+Descrever as atividades do gerente de projeto;
+Ferramentas utilizadas para o gerenciamento da atividade;
+Descrever as atividades de processo de identificação das ações especificas a serem realizadas.
+TEXTO AQUI
+
+
+
+
+3.1.1. DISPÊNDIOS DA ATIVIDADE
+OBS: Os dispêndios vinculados à esta atividade estão demonstrados na tabela de dispêndios (Excel).
+        Relatório de Projetos Executados pelas Instituições Credenciadas pelo CAPDA - Ano-Base 20XX            10
+
+
+
+
+3.2. ATIVIDADE 2 - LEVANTAMENTO DE REQUISITOS
+
+Item                     Atividade                             Período         Intercambio           Vinculo
+                                                                              ( ) Sim            ( ) Interno
+ 02             Levantamento de requisitos
+                                                                              ( ) Não            ( ) Externo
+
+OBS: Usar sempre o verbo no passado, pois neste documento, informaremos o que já ocorreu durante o
+desenvolvimento da solução.
+
+
+Descrição da Atividade
+Descrever as atividades realizadas, reuniões, os requisitos levantados de forma macro, alinhados com
+os requisitos apresentados no termo de abertura do projeto.
+TEXTO AQUI
+
+
+
+
+Justificativa da Atividade
+Descrever qual a importância das atividades desenvolvidas nesta fase.
+TEXTO AQUI
+
+
+
+
+Resultado Obtido
+Não apresentar resultados em tópicos.
+TEXTO AQUI
+
+
+
+
+3.2.1. DISPÊNDIOS DA ATIVIDADE
+OBS: Os dispêndios vinculados à esta atividade estão demonstrados na tabela de dispêndios (Excel).
+        Relatório de Projetos Executados pelas Instituições Credenciadas pelo CAPDA - Ano-Base 20XX            11
+
+
+
+
+3.3. ATIVIDADE 3 - DESENVOLVIMENTO
+
+Item                     Atividade                             Período         Intercambio           Vinculo
+                                                                              ( ) Sim            ( ) Interno
+ 03                  Desenvolvimento
+                                                                              ( ) Não            ( ) Externo
+
+OBS: Usar sempre o verbo no passado, pois neste documento, informaremos o que já ocorreu durante o
+desenvolvimento da solução.
+
+
+Descrição da Atividade
+Não apresentar a descrição das atividades em formas de tópicos.
+Apresentar além das atividades sua descrição, ou seja, o que foi desenvolvido em prol das atividades,
+como foram realizadas;
+Correlacionar as descrições de atividades com a justificativa de RH.
+Ex: Após a realização do Levantamento de Requisitos, foi possível definir a arquitetura do software e
+dar início ao desenvolvimento da solução.
+Para o desenvolvimento da solução, o time utilizou as ferramentas X, Y e Z e a metodologia Y para
+controle das etapas do desenvolvimento.
+Nesta atividade, foram desenvolvidas as funcionalidades X, Y, e Z.
+As soluções desenvolvidas nesta atividade apresentação as seguintes funcionalidades: .....
+(Estas funcionalidades precisam estar linkadas com as necessidades do cliente, apresentadas na
+atividade de Levantamento de Requisitos).
+TEXTO AQUI
+
+
+
+
+Justificativa da Atividade
+Descrever qual a importância das atividades desenvolvidas nesta fase.
+TEXTO AQUI
+
+
+
+
+Resultado Obtido
+Não apresentar resultados em tópicos.
+Apresentar telas referente as atividades desenvolvidas e descrever suas principais funcionalidades,
+alinhados com os requisitos apresentados no termo de abertura do projeto.
+Apresentar a imagem de arquitetura de software.
+TEXTO AQUI
+        Relatório de Projetos Executados pelas Instituições Credenciadas pelo CAPDA - Ano-Base 20XX   12
+
+
+
+
+3.3.1. DISPÊNDIOS DA ATIVIDADE
+OBS: Os dispêndios vinculados à esta atividade estão demonstrados na tabela de dispêndios (Excel).
+        Relatório de Projetos Executados pelas Instituições Credenciadas pelo CAPDA - Ano-Base 20XX            13
+
+
+
+
+3.4. ATIVIDADE 3 - TESTE E ENTREGA
+
+Item                     Atividade                             Período         Intercambio           Vinculo
+                                                                              ( ) Sim            ( ) Interno
+ 04                    Teste e entrega
+                                                                              ( ) Não            ( ) Externo
+
+OBS: Usar sempre o verbo no passado, pois neste documento, informaremos o que já ocorreu durante o
+desenvolvimento da solução.
+
+
+Descrição da Atividade
+Não presentar a descrição das atividades em formas de tópicos.
+Apresentar além das atividades sua descrição, ou seja, o que foi desenvolvido em prol das atividades,
+como foram realizadas;
+Correlacionar as descrições de atividades com a justificativa de RH.
+Evidenciar os tipos de testes que foram realizados para validar os softwares que foram desenvolvidos;
+Não informar links, e apresentar relatórios de testes (fora a parte)
+TEXTO AQUI
+
+
+
+
+Justificativa da Atividade
+Descrever qual a importância das atividades desenvolvidas nesta fase.
+TEXTO AQUI
+
+
+
+
+Resultado Obtido
+Não apresentar resultados em tópicos.
+TEXTO AQUI
+
+
+
+
+3.4.1. DISPÊNDIOS DA ATIVIDADE
+OBS: Os dispêndios vinculados à esta atividade estão demonstrados na tabela de dispêndios (Excel).
+              Relatório de Projetos Executados pelas Instituições Credenciadas pelo CAPDA - Ano-Base 20XX           14
+
+
+
+   4. RESUMO FINANCEIRO
+
+   4.1. QUADRO CONSOLIDADO DOS DISPÊNDIOS POR PROJETO
+
+                           PROJETO XXX                                               Valor do Projeto
+
+                                                                                                        % SOBRE O
+                              DISPÊNDIOS                                   VALOR TOTAL R$
+                                                                                                         TOTAL
+I – Programas de computador, máquinas, equipamentos, etc
+II – Aquisição, Implantação, Ampliação ou Modernização de Infraestrutura
+física e de laboratórios de PD&I e de ICTs
+III – Recursos Humanos Diretos e Indiretos
+
+IV – Serviços Técnicos de Terceiros
+
+V – Materiais de Consumo
+
+Subtotal
+
+VI – Outros dispêndios correlatos às atividades PD&I
+
+Total de Custos                                                                                             75%
+
+Ressarcimento custos incorridos                                                                             9%
+
+Constituição de reserva                                                                                     11%
+
+Total Custos + Custos Incorridos e Constituição de Reserva                                                  95%
+
+Imposto                                                                                                     5%
+
+Valor Total do Projeto                                                                                      100%
+
+
+
+   OBS: Para este projeto, no Ano-Calendário 20XX foi aportado pelo cliente XXXXXXXX ao Instituto XXX
+   R$ XXXXX. Deste valor, houve um desconto de 5% inerente ao ISSQN, conforme estabelecido pela Lei nº
+   2.251/2017, totalizando em R$ XXXXX.
+           Relatório de Projetos Executados pelas Instituições Credenciadas pelo CAPDA - Ano-Base 20XX   15
+
+
+
+
+4.2. QUADRO DE RECEBIMENTO DE APORTES NO ANO CALENDÁRIO
+
+                                                  PROJETO XXXX
+           DATA DE RECEBIMENTO                                           VALOR DO APORTE
+
+
+
+
+            Total de Aportes Recebidos                                             R$
+
+
+OBS: Os comprovantes de recebimento de aportes serão enviados juntamente com o RDA do referido
+projeto.
+        Relatório de Projetos Executados pelas Instituições Credenciadas pelo CAPDA - Ano-Base 20XX   16
+
+
+
+5. ANEXOS
+Inserir imagens relativas às atividades do projeto, com as devidas legendas.
+        Relatório de Projetos Executados pelas Instituições Credenciadas pelo CAPDA - Ano-Base 20XX   17
+
+
+
+
+5.1. OBSERVAÇÕES GERAIS DO PROJETO:
+Mini currículo dos pesquisadores e participantes do projeto:
+
+
+NOME COMPLETO DO COLABORADOR 1 - Possui Técnico em Programação de Computadores
+pelo Centro Federal de Educação Tecnológica do Amazonas - CEFET-AM, graduação em Tecnologia em
+Desenvolvimento de Software pelo Instituto Federal do Amazonas - IFAM. Têm experiência em
+desenvolvimento de sistemas web, atuando no frontend e backend, com análise de requisitos, modelagem
+de banco de dados, testes de software, gerenciamento de time de desenvolvimento. Atualmente trabalha
+com Análise e Desenvolvimento sendo utilizando: Spring Boot, Angular 6, Material Design, SQL Server,
+Docker, Servidores Linux e Scrum.
+
+
+NOME COMPLETO DO COLABORADOR 2 - Possui Técnico em Programação de Computadores
+pelo Centro Federal de Educação Tecnológica do Amazonas - CEFET-AM, graduação em Tecnologia em
+Desenvolvimento de Software pelo Instituto Federal do Amazonas - IFAM. Têm experiência em
+desenvolvimento de sistemas web, atuando no frontend e backend, com análise de requisitos, modelagem
+de banco de dados, testes de software, gerenciamento de time de desenvolvimento. Atualmente trabalha
+com Análise e Desenvolvimento sendo utilizando: Spring Boot, Angular 6, Material Design, SQL Server,
+Docker, Servidores Linux e Scrum.
+

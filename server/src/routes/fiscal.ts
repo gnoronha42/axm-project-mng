@@ -3,7 +3,7 @@ import { prisma } from '../lib/prisma.js';
 import { canManageFinance, resolveUserTenantId } from '../lib/tenancy.js';
 import { computeObligation, validateRepartition, type AllocationCategory } from '../lib/suframaRules.js';
 
-const CATEGORIES: AllocationCategory[] = ['ict_amazonia', 'capda_priority', 'other'];
+const CATEGORIES: AllocationCategory[] = ['ict_amazonia', 'fndct', 'capda_priority', 'other'];
 
 function mapPeriod(row: {
   id: string;
@@ -27,7 +27,7 @@ function mapPeriod(row: {
   return {
     ...row,
     allocations,
-    validation: validateRepartition(row.pdiObligation, allocations),
+    validation: validateRepartition(row.pdiObligation, allocations, row.netRevenue),
   };
 }
 

@@ -7,9 +7,10 @@ import type { AllocationCategory, BillingPeriod } from '../types';
 const MONTHS = ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'];
 
 const CAT_LABEL: Record<AllocationCategory, string> = {
-  ict_amazonia: 'ICT Amazônia Ocidental',
+  ict_amazonia: 'ICT Amazônia Ocidental / Amapá (0,9%)',
+  fndct: 'FNDCT (0,2%)',
   capda_priority: 'Programa Prioritário CAPDA',
-  other: 'Demais PD&I elegível',
+  other: 'Demais PD&I (complemento 2,7%)',
 };
 
 function brl(n: number) {
@@ -60,9 +61,6 @@ export default function Fiscal() {
   return (
     <div>
       <Typography.Title level={3} className="axm-page-title">Motor Fiscal Suframa</Typography.Title>
-      <Typography.Paragraph type="secondary">
-        Alíquota de 5% sobre faturamento líquido (bruto − IPI − ICMS). Mínimos: 40% ICT Amazônia Ocidental e 20% CAPDA.
-      </Typography.Paragraph>
 
       <Select
         style={{ minWidth: 280, marginBottom: 16 }}
@@ -101,11 +99,22 @@ export default function Fiscal() {
                 <Col span={8}><Statistic title="Investido" value={selected.validation.invested} formatter={(v) => brl(Number(v))} /></Col>
               </Row>
               {selected.validation.alerts.map((a) => (
-                <Alert key={a.code} type={a.severity === 'error' ? 'error' : 'warning'} message={a.message} style={{ marginTop: 8 }} />
+                <Alert
+                  key={a.code}
+                  type={a.severity === 'error' ? 'error' : 'warning'}
+                  message={a.message}
+                  description={a.cite}
+                  style={{ marginTop: 8 }}
+                />
               ))}
               {selected.validation.compliant && (
-                <Alert type="success" message="Repartição em conformidade com os mínimos legais." style={{ marginTop: 8 }} />
+                <Alert type="success" message="Repartição em conformidade com Lei 8.387/Decreto 10.521." style={{ marginTop: 8 }} />
               )}
+              <Row gutter={12} style={{ marginTop: 12 }}>
+                <Col span={8}><Statistic title="Mín. ICT 0,9%" value={selected.validation.minIct} formatter={(v) => brl(Number(v))} /></Col>
+                <Col span={8}><Statistic title="Mín. FNDCT 0,2%" value={selected.validation.minFndct} formatter={(v) => brl(Number(v))} /></Col>
+                <Col span={8}><Statistic title="Cesta 2,3%" value={selected.validation.minParagraph4} formatter={(v) => brl(Number(v))} /></Col>
+              </Row>
               <Typography.Title level={5} style={{ marginTop: 16 }}>Alocar investimento</Typography.Title>
               <Form form={allocForm} layout="inline" onFinish={(v) => addAlloc.mutate(v)} style={{ rowGap: 8 }}>
                 <Form.Item name="category" rules={[{ required: true }]}>

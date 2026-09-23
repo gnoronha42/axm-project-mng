@@ -6,12 +6,13 @@
  */
 import { computeObligation, validateRepartition, type AllocationInput } from '../../server/src/lib/suframaRules.js';
 import { buildSagatPayload } from '../../server/src/lib/sagatMapper.js';
+import { sagatSandboxSteps } from '../../server/src/lib/sagatPlaybook.js';
 
 export const MCP_TOOLS = [
   {
     name: 'mcp_validate_suframa_rules',
     description:
-      'Concilia faturamento líquido, obrigação de 5% PD&I e percentuais mínimos de ICT Amazônia (40%) e CAPDA (20%).',
+      'Concilia faturamento líquido, obrigação de 5% PD&I (Lei 8.387/Dec. 10.521), ICT ≥ 0,9%, FNDCT ≥ 0,2% e cesta §4º ≥ 2,3% da base.',
     inputSchema: {
       type: 'object',
       required: ['grossRevenue'],
@@ -24,7 +25,7 @@ export const MCP_TOOLS = [
           items: {
             type: 'object',
             properties: {
-              category: { type: 'string', enum: ['ict_amazonia', 'capda_priority', 'other'] },
+              category: { type: 'string', enum: ['ict_amazonia', 'fndct', 'capda_priority', 'other'] },
               amount: { type: 'number' },
               description: { type: 'string' },
             },
@@ -62,7 +63,7 @@ export async function callTool(name: string, args: Record<string, unknown>) {
       icmsDeduction: Number(args.icmsDeduction ?? 0),
     });
     const allocations = (Array.isArray(args.allocations) ? args.allocations : []) as AllocationInput[];
-    return { ...computed, ...validateRepartition(computed.pdiObligation, allocations) };
+    return { ...computed, ...validateRepartition(computed.pdiObligation, allocations, computed.netRevenue) };
   }
 
   if (name === 'mcp_sagat_fill_sandbox') {
@@ -90,14 +91,7 @@ export async function callTool(name: string, args: Record<string, unknown>) {
     return {
       mode: 'sandbox',
       filled: payload.conciliacao.compliant,
-      steps: [
-        'Abrir formulário RD (sandbox local)',
-        'Preencher faturamento bruto/líquido e deduções IPI/ICMS',
-        'Preencher obrigação 5% e alocações ICT/CAPDA',
-        payload.conciliacao.compliant
-          ? 'Gerar hash preliminar da Declaração de Veracidade'
-          : 'Bloquear envio: conciliação fiscal reprovada',
-      ],
+      steps: sagatSandboxSteps(payload.conciliacao.compliant),
       payload,
     };
   }

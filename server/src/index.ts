@@ -22,6 +22,11 @@ import { ensureDefaultTenants, TENANT_KINDS, type TenantKind } from './lib/tenan
 import { processDocumentIntelligence } from './lib/processDocument.js';
 import { registerFiscalRoutes } from './routes/fiscal.js';
 import { registerIntelligenceRoutes } from './routes/intelligence.js';
+import { registerKnowledgeRoutes } from './routes/knowledge.js';
+import { registerUserRoutes } from './routes/users.js';
+import { registerProfileRoutes } from './routes/profile.js';
+import { findAvatarUrl } from './lib/avatar.js';
+import { ensureKnowledgeIndex } from './lib/knowledgeIndexer.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const PORT = Number(process.env.PORT ?? 3001);
@@ -30,6 +35,9 @@ const CORS_ORIGIN = process.env.CORS_ORIGIN ?? 'http://localhost:5173';
 
 await mkdir(UPLOAD_DIR, { recursive: true });
 await ensureDefaultTenants();
+await ensureKnowledgeIndex().catch((err) => {
+  console.warn('[knowledge] falha ao indexar corpus:', err);
+});
 
 const app = Fastify({ logger: true });
 
@@ -67,7 +75,11 @@ app.addHook('onRequest', async (req, reply) => {
   req.user = user;
 });
 
-app.get('/health', async () => ({ ok: true }));
+app.get('/health', async () => {
+  const { configuredLlm } = await import('./lib/llmExtract.js');
+  const llm = configuredLlm();
+  return { ok: true, llm: llm.provider ?? 'heuristic', model: llm.model };
+});
 
 app.post('/auth/register', async (req, reply) => {
   const body = req.body as { name?: string; email?: string; password?: string; kind?: string };
@@ -114,8 +126,9 @@ app.post('/auth/register', async (req, reply) => {
     data: { tenantId: tenant.id, userId: user.id, role },
   });
 
-  const token = signToken(publicUser(user));
-  return reply.status(201).send({ token, user: publicUser(user) });
+  const created = publicUser({ ...user, avatarUrl: await findAvatarUrl(user.id, UPLOAD_DIR) });
+  const token = signToken(created);
+  return reply.status(201).send({ token, user: created });
 });
 
 app.post('/auth/login', async (req, reply) => {
@@ -132,15 +145,16 @@ app.post('/auth/login', async (req, reply) => {
     return reply.status(401).send({ error: 'E-mail ou senha incorretos' });
   }
 
-  const token = signToken(publicUser(user));
-  return { token, user: publicUser(user) };
+  const logged = publicUser({ ...user, avatarUrl: await findAvatarUrl(user.id, UPLOAD_DIR) });
+  const token = signToken(logged);
+  return { token, user: logged };
 });
 
 app.get('/auth/me', async (req, reply) => {
   if (!req.user) return reply.status(401).send({ error: 'Não autenticado' });
   const user = await prisma.user.findUnique({ where: { id: req.user.id } });
   if (!user) return reply.status(401).send({ error: 'Usuário não encontrado' });
-  return { user: publicUser(user) };
+  return { user: publicUser({ ...user, avatarUrl: await findAvatarUrl(user.id, UPLOAD_DIR) }) };
 });
 
 app.get('/projects', async () => {
@@ -339,6 +353,8 @@ app.post('/projects/:id/documents', async (req, reply) => {
   return mapDocument(row);
 });
 
+await registerProfileRoutes(app, UPLOAD_DIR);
+
 app.get('/files/:id', async (req, reply) => {
   const { id } = req.params as { id: string };
   const doc = await prisma.document.findUnique({ where: { id } });
@@ -522,6 +538,8 @@ app.patch('/reports/:id', async (req, reply) => {
 
 await registerFiscalRoutes(app);
 await registerIntelligenceRoutes(app);
+await registerKnowledgeRoutes(app);
+await registerUserRoutes(app);
 
 try {
   await app.listen({ port: PORT, host: '0.0.0.0' });

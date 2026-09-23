@@ -1,0 +1,4 @@
+[Documento escaneado — extração de texto vazia]
+
+PC 01/02.25 FIP. O PDF anexado é imagem; pdftotext não recuperou conteúdo.
+Manter o arquivo no corpus para consulta manual / OCR futuro. O AXM não consulta o portal da Suframa.

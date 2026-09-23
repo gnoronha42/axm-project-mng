@@ -116,6 +116,16 @@ export interface Project {
   tags: string[];
 }
 
+export type UserRole = 'admin' | 'analista' | 'consultoria' | 'empresa' | 'instituto';
+
+export interface TeamUser {
+  id: string;
+  name: string;
+  email: string;
+  role: UserRole | string;
+  createdAt: string;
+}
+
 export type TenantKind = 'consultoria' | 'empresa' | 'instituto';
 
 export interface Tenant {
@@ -125,7 +135,7 @@ export interface Tenant {
   cnpj?: string | null;
 }
 
-export type AllocationCategory = 'ict_amazonia' | 'capda_priority' | 'other';
+export type AllocationCategory = 'ict_amazonia' | 'fndct' | 'capda_priority' | 'other';
 
 export interface FiscalValidation {
   obligation: number;
@@ -133,11 +143,35 @@ export interface FiscalValidation {
   gap: number;
   ict: number;
   capda: number;
+  fndct: number;
   other: number;
+  paragraph4: number;
   minIct: number;
-  minCapda: number;
+  minFndct: number;
+  minParagraph4: number;
   compliant: boolean;
-  alerts: { code: string; severity: 'warning' | 'error'; message: string }[];
+  alerts: { code: string; severity: 'warning' | 'error'; message: string; cite?: string }[];
+}
+
+export interface KnowledgeDocument {
+  slug: string;
+  title: string;
+  kind: string;
+  filename: string;
+  extractable: boolean;
+  summary: string;
+  charCount: number;
+  chunks: number;
+  indexedAt: string;
+}
+
+export interface KnowledgeHit {
+  slug: string;
+  title: string;
+  kind: string;
+  heading: string | null;
+  excerpt: string;
+  score: number;
 }
 
 export interface BillingPeriod {

@@ -1,0 +1,56 @@
+Roteiro operacional SAGAT — extraído do treinamento LG (gravação 04/03/2026)
+Fonte: knowledge/suframa/treinamento-sagat-lg-0403.txt
+O AXM replica estes passos só em sandbox. Não acessa o portal real.
+
+1. MÓDULO CONVÊNIO (fazer antes de vincular no projeto)
+- Cadastrar o convênio: número (ex.: 001-25), nomenclatura curta, tipo DX (dx2/dx3).
+- Informar datas de assinatura, início e fim (e do Termo Aditivo, se houver).
+- Anexar o PDF do convênio com NOME CURTO. Nome longo estoura o limite de caracteres do SAGAT; renomear ANTES do upload.
+- Incluir o Termo Aditivo (TA) com data de assinatura.
+- Anexar o relatório técnico no módulo convênio: usar a data FIM do projeto; somente PDF; se passar de ~30 (tamanho/caracteres), comprimir; se ainda grande, dividir em dois arquivos.
+- Para projeto EXTERNO, o relatório técnico fica no módulo convênio. Isso precisa estar visível para a Suframa.
+
+2. MÓDULO PROJETOS
+- Caminho: Execução > modalidade externa > Projetos > cadastrar.
+- Preencher nomenclatura, palavra-chave (facilita achar o projeto), modalidade (na LG: parcialmente ICT + parcialmente empresa), status (em andamento / cancelado / concluído).
+- Período total de execução e recorte do ano-base.
+- Conferir dados no instrumento jurídico (não só na tela) e salvar.
+
+3. VÍNCULO DE INSTRUMENTOS JURÍDICOS NO PROJETO (ordem obrigatória)
+- Selecionar o instituto/ICT.
+- NÃO incluir o convênio primeiro: se o convênio entra antes, o TA some da lista.
+- Ordem correta: 1) incluir cada TA; 2) por último incluir o CONVÊNIO.
+- Trazer o NOME do projeto no convênio (não só 001/2023), senão dois projetos do mesmo ano-base ficam indistinguíveis.
+
+4. PROJETO INTERNO (sem módulo convênio / sem aporte)
+- Relatório técnico vai em Dispêndios > Outros correlatos.
+- O campo não aceita zero: lançar R$ 0,01 só para permitir o anexo.
+- Bug conhecido: em interno, "outros correlatos" permanece aberto independente do valor.
+- Se "outros correlatos" passar de 20%, justificar na descrição do dispêndio.
+- Vínculo interno/externo da atividade TEM que bater com o módulo em que se está lançando.
+
+5. ATIVIDADES E RH
+- Cadastrar atividades (ex.: gerenciamento de projetos).
+- Participante já existente: informar CPF — o SAGAT puxa o cadastro da Suframa (titulação não edita no save).
+- Participante novo: CPF, nome (sem erro de digitação), formação/escolaridade, direto ou indireto, horas INTEIRAS (sem vírgula).
+- Mini currículo do RD alimenta a justificativa quando a titulação mudou.
+- Conferir horas/valores na Planilha Azul (arredondamento para não estourar teto mensal).
+- Marca "X" = campo incompleto. Com X, a Declaração de Veracidade falha.
+
+6. DISPÊNDIOS, AUDITORIA E INDICADORES
+- Lançar dispêndios já validados (consumo, programas de computador, etc.) em ordem, para achar depois na lista.
+- Auditoria: razão social, CNPJ, valor, nota fiscal e comprovante de pagamento.
+- Indicadores: bug lista no máximo 10 projetos; o 11º some da tela — não significa que não existe.
+- Imprimir o relatório do projeto para conferir. O resumo financeiro "sempre vem errado"; validar o restante.
+- O campo "outras informações" NÃO é "motivação". Auditoria já glosou empresa que tratou esse rótulo como motivação.
+- Bater a soma dos convênios com os instrumentos jurídicos (não gera cálculo, mas é cheque obrigatório).
+- Projeto misto: o valor interno pode aparecer duplicado (interno + interno) — isso é esperado.
+
+7. DECLARAÇÃO DE VERACIDADE
+- Só depois de zerar os X de preenchimento.
+- No AXM: gera hash preliminar em sandbox. Nunca envia ao portal.
+
+8. OPERAÇÃO PRÁTICA
+- Pode alimentar o SAGAT mesmo com projeto ainda não finalizado, se os dispêndios já estiverem aprovados.
+- Se precisar corrigir RH: excluir só aquela pessoa e relançar.
+- Paginação 10/25/50: quanto mais linhas na tela, mais lento.

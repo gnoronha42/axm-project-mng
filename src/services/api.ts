@@ -9,8 +9,11 @@ import type {
   BillingPeriod,
   GlosaRisk,
   AllocationCategory,
+  KnowledgeDocument,
+  KnowledgeHit,
+  TeamUser,
 } from '../types';
-import { ApiError, request, uploadDocument } from './apiClient';
+import { ApiError, request, uploadDocument, fetchBlob } from './apiClient';
 
 const USE_MOCK = import.meta.env.VITE_USE_MOCK === 'true';
 
@@ -151,6 +154,13 @@ export const api = {
     await request<void>(`/checklist/${itemId}`, { method: 'DELETE' });
   },
 
+  getUsers: () => request<TeamUser[]>('/users'),
+  createUser: (input: { name: string; email: string; password: string }) =>
+    request<TeamUser>('/users', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(input),
+    }),
   getTenants: () => request<Tenant[]>('/tenants'),
   createTenant: (input: { name: string; kind: Tenant['kind']; cnpj?: string }) =>
     request<Tenant>('/tenants', {
@@ -195,6 +205,22 @@ export const api = {
       body: JSON.stringify({ billingPeriodId }),
     }),
   getSagatJobs: () => request<{ id: string; status: string; log: string; createdAt: string }[]>('/sagat/jobs'),
+  getKnowledge: () =>
+    request<{
+      livePortal: boolean;
+      documents: KnowledgeDocument[];
+      rdTemplate: { id: string; label: string }[];
+      rules: Record<string, unknown>;
+    }>('/knowledge'),
+  searchKnowledge: (q: string) =>
+    request<{ query: string; hits: KnowledgeHit[] }>(
+      `/knowledge/search?q=${encodeURIComponent(q)}`,
+    ),
+  openKnowledgePdf: async (slug: string) => {
+    const blob = await fetchBlob(`/knowledge/${slug}/file`);
+    const url = URL.createObjectURL(blob);
+    window.open(url, '_blank', 'noopener');
+  },
 
   async addComment(comment: Omit<Comment, 'id' | 'createdAt'>): Promise<Comment> {
     return withMock(

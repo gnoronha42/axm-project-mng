@@ -1,0 +1,1429 @@
+                                                                  Ministério da Economia
+                                                                   Gabinete do Ministro
+
+
+
+                                              PORTARIA ME/SUFRAMA Nº 9.835, DE 17 DE NOVEMBRO DE 2022
+
+
+ (Vide Portaria Conjunta MDIC/SUFRAMA Nº 2, de 2023)              Dispõe sobre o Plano de Pesquisa, Desenvolvimento e Inovação - PD&I; a
+ (Vide Portaria Conjunta MDIC/SUFRAMA Nº 3, de 2023)
+ (Vide Portaria Conjunta MDIC/SUFRAMA Nº 5, de 2023)
+                                                                  apresentação e julgamento dos projetos de PD&I; e os procedimentos para o
+ (Vide Portaria Conjunta MDIC/SUFRAMA Nº 6, de 2023)              acompanhamento e a fiscalização das obrigações previstas no art. 5º do Decreto
+                                                                  nº 10.521, de 15 de outubro de 2020.
+
+
+             O MINISTRO DE ESTADO DA ECONOMIA E O SUPERINTENDENTE DA ZONA FRANCA DE MANAUS, no uso da atribuição que lhes confere
+o art. 2º, § 22, da Lei nº 8.387, de 30 de dezembro de 1991, e tendo em vista o disposto no art. 33 do Decreto nº 10.521, de 15 de outubro de
+2020, resolvem:
+             Art. 1º Esta Portaria Conjunta dispõe sobre o Plano de Pesquisa, Desenvolvimento e Inovação PD&I e regulamenta a apresentação e
+o julgamento dos projetos de PD&I e os procedimentos para o acompanhamento e a fiscalização das obrigações previstas no art. 5º do Decreto
+nº 10.521, de 15 de outubro de 2020.
+             CAPÍTULO I
+             DAS DISPOSIÇÕES PRELIMINARES
+             Art. 2º A fruição dos incentivos fiscais previstos no art. 2º da Lei nº 8.387, de 30 de dezembro de 1991, relativos à produção de bens
+e serviços de tecnologia da informação e comunicação na Zona Franca de Manaus, depende da realização de investimentos em PD&I, dentre
+outros requisitos legais para aprovação dos correspondentes projetos industriais.
+             Art. 3º São objetivos estratégicos para a aplicação da Lei nº 8.387, de 1991, na Amazônia Ocidental e Amapá:
+             I - fortalecimento das atividades de PD&I na Amazônia Ocidental e no Estado do Amapá;
+             II - amadurecimento do ecossistema de inovação e empreendedorismo da Amazônia Ocidental e do Estado do Amapá; e
+             III - uso dos incentivos da Lei nº 8.387, de 1991, para potencializar os Objetivos de Desenvolvimento Sustentável - ODS.
+             Art. 4º Para fins desta Portaria Conjunta, considera-se:
+             I - aceleradoras: pessoas jurídicas com ou sem fins lucrativos dedicadas a apoiar, por tempo determinado, o desenvolvimento de
+empresas nascentes de base tecnológica, por meio de um processo estruturado, que inclua ou não aportes de capital financeiro, em troca de
+uma possível participação societária futura nos negócios acelerados;
+             II - aperfeiçoamento de produto ou processo: produto ou processo existente e que foi modificado para que apresente melhorias
+tecnológicas e com efetivo ganho de qualidade ou desempenho, desde que para um técnico no assunto, não decorra de maneira evidente ou
+óbvia do estado da técnica;
+             II - aperfeiçoamento de produto ou processo: produto ou processo existente e que foi modificado para que apresente melhorias
+tecnológicas e com efetivo ganho de qualidade ou desempenho; (Redação dada pela Portaria Conjunta MDIC/SUFRAMA Nº 6, de 31 de outubro
+de 2023).
+             III - estado da técnica: tudo aquilo que é tornado acessível ao público, por descrição escrita ou oral, por uso ou qualquer outro meio,
+no Brasil ou no exterior;
+             IV - atividades de PD&I: definição das atividades de pesquisa, desenvolvimento e inovação que seguem o disposto no Capítulo VI do
+Decreto nº 10.521, de 2020, compreendendo o trabalho criativo e sistemático, realizado com o objetivo de aumentar o estoque de
+conhecimentos, conceber aplicações inovadoras do conhecimento disponível e que podem resultar em uma inovação tecnológica, podendo ser,
+no âmbito do Plano de PD&I, uma ação individualizada ou um conjunto de ações agrupadas como projeto, para realizar os investimentos em
+PD&I;
+             V - base de cálculo: faturamento calculado conforme disposto no caput do art. 5º do Decreto nº10.521, de 2020;
+             VI - desafio tecnológico: incerteza cientifica ou tecnológica, cuja resolução demanda atividades investigativas e de experimentação,
+incorre em riscos para obtenção dos resultados e gera novos conhecimentos, observados os parâmetros mínimos do Anexo I;
+            VII - ecossistema de inovação e empreendedorismo da Amazônia Ocidental e Estado do Amapá: conjunto de empresas, instituições
+e negócios que se estabelecem em um mesmo local ou região e se comunicam e interagem entre si e, como resultado, tornam-se sistemas
+colaborativos e produtivos para a geração de inovação, transformação e novos negócios;
+            VIII - startups: organizações empresariais ou societárias, nascentes ou em operação recente, cuja atuação caracteriza-se pela inovação
+aplicada a modelo de negócios ou a produtos ou serviços ofertados, nos termos do disposto na Lei Complementar nº 182, de 1º de junho de
+2021;
+            IX - fundação de apoio: entidade com objetivo de prover apoio à projetos de PD&I, inclusive na gestão administrativa e financeira
+necessária à execução desses projetos, nos termos do disposto no inciso VII do art. 2º da Lei nº 10.973, de 20 de dezembro de 1994;
+            IX - fundação de apoio: entidade com objetivo de prover apoio à projetos de PD&I, inclusive na gestão administrativa e financeira
+necessária à execução desses projetos, nos termos do disposto no inciso VII do art. 2º da Lei nº 10.973, de 2 de dezembro de 2004; (Redação
+dada pela Portaria Conjunta MDIC/SUFRAMA Nº 6, de 31 de outubro de 2023).
+            X - incubadoras de empresas: organização ou estrutura que objetiva estimular ou prestar apoio logístico, gerencial e tecnológico ao
+empreendedorismo inovador e intensivo em conhecimento, com o objetivo de facilitar a criação e o desenvolvimento de empresas que tenham
+como diferencial a realização de atividades voltadas à inovação;
+            XI - inovação: introdução de novidade ou aperfeiçoamento no ambiente produtivo e social que resulte em novos produtos, serviços
+ou processos ou que compreenda a agregação de novas funcionalidades ou características a produto, serviço ou processo já existente que possa
+resultar em melhorias e em efetivo ganho de qualidade ou desempenho;
+            XI-A - inovação tecnológica: implementação de produtos, bens e serviços ou de processo tecnológico novo ou significativamente
+aprimorado, desde que caracterizado o desafio tecnológico enfrentado; (Incluída pela Portaria Conjunta MDIC/SUFRAMA Nº 6, de 31 de outubro
+de 2023).
+            XII - indústria 4.0: integração de instalações de produção, cadeias de suprimentos e sistemas de serviços para permitir o
+estabelecimento de redes de valor agregado, envolvendo tecnologias como: análise de grandes volumes de dados (big data), robôs autônomos
+(adaptativos), sistemas ciber-físicos, simulação, integração horizontal e vertical, internet industrial, computação em nuvem, manufatura aditiva
+e realidade aumentada, e compreendendo sistemas distribuídos como: redes de sensores, sistemas em nuvem, robôs autônomos e manufatura
+aditiva conectados uns aos outros;
+            XIII - investimento em PD&I: a contrapartida financeira de empresas titulares de projetos industriais de bens e serviços de tecnologia
+da informação e comunicação favorecidas com a concessão de incentivos fiscais no âmbito da Zona Franca de Manaus em atividades de PD&I a
+serem realizadas na Amazônia Ocidental ou no Estado do Amapá, incentivando o desenvolvimento cientifico e tecnológico regional, com
+valorização da tecnologia desenvolvida pelas empresas, entidades, instituições e demais pessoas da cadeia de inovação;
+            XIV - Instituição Científica, Tecnológica e de Inovação - ICT: órgão ou entidade da administração pública direta ou indireta ou pessoa
+jurídica de direito privado sem fins lucrativos legalmente constituída sob as leis brasileiras, com sede e foro no País, que inclua em sua missão
+institucional ou em seu objetivo social ou estatutário a pesquisa básica ou aplicada de caráter científico ou tecnológico ou o desenvolvimento de
+novos produtos, serviços ou processos;
+            XV - objetivos de desenvolvimento sustentável: conjunto de 17 objetivos e 169 metas da Organização das Nações Unidas - ONU
+organizados em quatro grandes dimensões (social, econômica, ambiental e institucional) que constituem uma agenda de desenvolvimento
+sustentável para os países signatários, dentre os quais o Brasil;
+            XVI - plano de PD&I: documento formal destinado a discriminar o planejamento das ações e projetos de PD&I, incluindo desafios
+científicos ou tecnológicos a serem enfrentados e os resultados previstos na realização dos investimentos em PD&I;
+            XVII - projeto de PD&I: conjunto de atividades de PD&I organizadas e gerenciadas para um propósito específico e único, não rotineiro,
+com escopo, objetivos e resultados próprios, além da duração e recursos humanos, materiais e financeiros definidos;
+            XVIII - projetos rotineiros de engenharia: projetos cujos métodos e conhecimentos necessários para a execução são dominados ou os
+insumos necessários, usualmente caracterizados por levantamento de dados, parâmetros de configurações, cálculos pré-definidos, medições e
+práticas similares, sem desafio tecnológico a ser superado;
+            XIX - protótipo: modelo construído para incluir todas as características técnicas e de desempenho do novo produto ou
+aperfeiçoamento tecnológico dos já existentes; e
+            XX - relatório demonstrativo - RD: documento formal destinado a demonstrar a realização dos projetos e outras modalidades de
+investimentos de PD&I, conforme previsto no Plano de PD&I, bem como os resultados obtidos destes investimentos, considerando as regras
+estabelecidas nesta Portaria Conjunta.
+            Parágrafo único. São equiparadas a ICTs as instituições de pesquisa ou instituições de ensino superior mantidas pelo poder público,
+caso satisfaçam as condições descritas no inciso V do art. 2º da Lei nº 10.973, de 2004.
+            CAPÍTULO II
+            DAS OBRIGAÇÕES E INVESTIMENTOS EM PD&I
+            Art. 5º Os investimentos em PD&I das empresas beneficiárias da Lei nº 8.387, de 1991, devem corresponder a no mínimo cinco por
+cento do seu faturamento bruto no mercado interno, calculado conforme disposto no caput do art. 5º do Decreto nº 10.521, de 2020, devendo
+ser executados em conformidade com o plano de PD&I, ressalvadas as hipóteses de redução relativas a situações específicas previstas em lei.
+            Art. 5º Os investimentos em PD&I das empresas beneficiárias do art. 2º da Lei nº 8.387, de 1991, devem corresponder a no mínimo
+cinco por cento do seu faturamento bruto no mercado interno, calculado conforme disposto no caput do art. 5º do Decreto nº 10.521, de 2020,
+devendo ser executados em conformidade com o plano de PD&I, ressalvadas as hipóteses de redução relativas a situações específicas previstas
+em lei. (Redação dada pela Portaria Conjunta MDIC/SUFRAMA Nº 6, de 31 de outubro de 2023).
+            Art. 6º Para as empresas cujo faturamento bruto anual, calculado nos termos do disposto no art. 5º do Decreto nº 10.521, de 2020,
+seja igual ou superior a R$ 30.000.000,00 (trinta milhões de reais), os investimentos em PD&I deverão ser realizados da seguinte forma:
+            I - no mínimo dois inteiros e três décimos por cento da base de cálculo, sendo que:
+            a) no mínimo nove décimos por cento em convênio com ICTs credenciadas pelo Comitê das atividades de Pesquisa e
+Desenvolvimento na Amazônia - CAPDA;
+            a) no mínimo nove décimos por cento em convênio com ICTs ou com instituições de pesquisa ou instituições de ensino superior
+mantidas pelo Poder Público, com sede ou estabelecimento principal na Amazônia Ocidental ou no Estado do Amapá, credenciadas pelo Comitê
+das atividades de Pesquisa e Desenvolvimento na Amazônia – CAPDA; (Redação dada pela Portaria Conjunta MDIC/SUFRAMA Nº 6, de 31 de
+outubro de 2023).
+            b) no mínimo dois décimos por cento em depósitos trimestrais no Fundo Nacional de Desenvolvimento Científico e Tecnológico -
+FNDCT;
+            c) sob a forma de aplicação em fundos de investimentos ou outros instrumentos autorizados pela Comissão de Valores Mobiliários -
+CVM que se destinem à capitalização de empresas de base tecnológica, com sede ou atividade principal na Amazônia Ocidental ou no Estado do
+Amapá, conforme disposto na Portaria nº 1.753, de 16 de outubro de 2018, do extinto Ministério da Indústria, Comércio Exterior e Serviços e da
+Superintendência da Zona Franca de Manaus - Suframa;
+            c) sob a forma de aplicação em fundos de investimentos ou outros instrumentos autorizados pela Comissão de Valores Mobiliários -
+CVM que se destinem à capitalização de empresas de base tecnológica, com sede ou atividade principal na Amazônia Ocidental ou no Estado do
+Amapá, conforme disposto na Portaria nº 1.753, de 16 de outubro de 2018, do Ministério da Indústria, Comércio Exterior e Serviços e da
+SUFRAMA. (Redação dada pela Portaria Conjunta MDIC/SUFRAMA Nº 6, de 31 de outubro de 2023).
+            d) sob a forma de aplicação em programas prioritários definidos pelo CAPDA;
+            e) sob a forma de implantação ou operação de incubadoras ou aceleradoras credenciadas pelo CAPDA;
+            f) no mínimo quatro décimos por cento em convênio com ICTs criadas e mantidas pelo poder público e credenciadas pelo CAPDA,
+posto que esse percentual não compõe a obrigação prevista na alínea "a" deste inciso, conforme disposto na Portaria Conjunta nº 347, de 20 de
+outubro de 2020, do Ministério da Economia e Suframa; e
+            g) em organizações sociais, qualificadas nos termos da Lei nº 9.637, de 15 de maio de 1998, que mantenham contrato de gestão com
+o Ministério da Economia e que promovam e incentivem a realização de projetos de PD&I na área de bioeconomia, com sede ou atividade
+principal na Amazônia Ocidental ou no Estado do Amapá, conforme regulamento a ser editado pelo Ministro de Estado da Economia, que, neste
+caso, poderá substituir o percentual previsto nas alíneas "a" e "f" deste inciso; e
+            g) em organizações sociais, qualificadas nos termos da Lei nº 9.637, de 15 de maio de 1998, que mantenham contrato de gestão com
+o Ministério do Desenvolvimento, Indústria, Comércio e Serviços e que promovam e incentivem a realização de projetos de PD&I na área de
+bioeconomia, com sede ou atividade principal na Amazônia Ocidental ou no Estado do Amapá, conforme regulamento a ser editado pelo Ministro
+de Estado do Desenvolvimento, Indústria, Comércio e Serviços, que, neste caso, poderá substituir o percentual previsto nas alíneas "a" e "f" deste
+inciso; e (Redação dada pela Portaria Conjunta MDIC/SUFRAMA Nº 6, de 31 de outubro de 2023).
+              II - complemento de até dois inteiros e sete décimos por cento da base de cálculo poderá ser realizado:
+              a) projetos tecnológicos com objetivo de sustentabilidade ambiental, de entidades credenciadas pelo CAPDA, conforme disposto na
+Portaria Conjunta nº 268, de 9 de julho de 2020, do Ministério da Economia e da Suframa;
+              b) capitalização de empresas nascentes de base tecnológica, com sede ou atividade principal na Amazônia Ocidental ou no Estado
+do Amapá, conforme disposto na Portaria nº 2.145, de 21 de dezembro de 2018, do extinto Ministério da Indústria, Comércio Exterior e Serviços
+e da Suframa;
+              b) capitalização de empresas nascentes de base tecnológica, com sede ou atividade principal na Amazônia Ocidental ou no Estado do
+Amapá, conforme disposto na Portaria nº 2.145, de 21 de dezembro de 2018, do Ministério da Indústria, Comércio Exterior e Serviços e da
+Suframa; (Redação dada pela Portaria Conjunta MDIC/SUFRAMA Nº 6, de 31 de outubro de 2023).
+              c) repasses a organizações sociais, qualificadas conforme a Lei nº 9.637, de 1998, que mantenham contrato de gestão com o
+Ministério da Economia e que promovam e incentivem a realização de projetos de PD&I na área de bioeconomia, com sede ou atividade principal
+na Amazônia Ocidental ou no Estado do Amapá; e
+              c) repasses a organizações sociais, qualificadas conforme a Lei nº 9.637, de 1998, que mantenham contrato de gestão com o
+Ministério do Desenvolvimento, Indústria, Comércio e Serviços e que promovam e incentivem a realização de projetos de PD&I na área de
+bioeconomia, com sede ou atividade principal na Amazônia Ocidental ou no Estado do Amapá; e (Redação dada pela Portaria Conjunta
+MDIC/SUFRAMA Nº 6, de 31 de outubro de 2023).
+              d) em atividades de PD&I realizadas diretamente pelas próprias empresas ou por elas contratadas com outras empresas ou ICTs, com
+sede ou atividade principal na Amazônia Ocidental ou no Estado do Amapá.
+              d) em atividades de PD&I realizadas diretamente pelas próprias empresas ou por elas contratadas com outras empresas ou ICTs, com
+sede ou atividade principal na Amazônia Ocidental ou no Estado do Amapá, credenciadas pelo CAPDA. (Redação dada pela Portaria Conjunta
+MDIC/SUFRAMA Nº 6, de 31 de outubro de 2023).
+              Art. 7º Para as empresas cujo faturamento bruto anual, calculado nos termos do disposto no art. 5º do Decreto nº 10.521, de 2020,
+seja inferior a R$ 30.000.000,00 (trinta milhões de reais) em bens e serviços de tecnologia da informação e comunicação, os investimentos em
+PD&I poderão ser realizados em qualquer das modalidades, não sendo obrigatórios o cumprimento dos limites percentuais previstos nos incisos
+do art. 6º.
+              Art. 8º A empresa contratante, no caso de produção terceirizada, poderá assumir, mediante contrato ou termo equivalente, a
+obrigação de investimento em PD&I da empresa contratada relativamente aos produtos incentivados entre elas comercializados, observadas as
+seguintes condições:
+              I - o repasse das obrigações poderá ser integral ou parcial;
+              II - ao assumir as obrigações da contratada, fica a empresa contratante com a responsabilidade de discriminar o fato em seu plano
+de PD&I, bem como de apresentar os correspondentes RDs do cumprimento das obrigações assumidas;
+              III - o repasse das obrigações não eximirá a contratada da responsabilidade pelo seu cumprimento, ficando ela sujeita às penalidades
+cabíveis, no caso de descumprimento pela contratante de quaisquer das obrigações assumidas;
+              IV - as empresas contratadas também deverão apresentar RD, mesmo que fabriquem somente o produto do qual derivaram as
+obrigações objeto do repasse; e
+              V - o contrato de assunção deverá especificar as modalidades e/ou projetos de investimentos nas quais os recursos serão aplicados.
+              § 1º A insuficiência ou glosa de investimentos será imputada às empresas contratantes e contratada proporcionalmente ao montante
+de suas respectivas obrigações.
+              § 2º A Suframa, caso a contratante não atenda ao disposto no inciso II do caput, não reconhecerá o repasse das obrigações acordado
+entre as empresas, subsistindo a responsabilidade da contratada pelas obrigações assumidas.
+              Art. 9º Poderão ser enquadrados como aplicações em PD&I no ano-base:
+              I - os dispêndios realizados até 31 de março do ano subsequente ao ano-base nas modalidades previstas nas alíneas "a", "e" e "f" do
+inciso I e na alínea "d" do inciso II do art. 6º;
+             II - os depósitos efetuados até 31 de março do ano subsequente ao ano-base nas modalidades previstas nas alíneas "b", "d" e "g" do
+inciso I e na alínea "c" do inciso II do art. 6º; e
+             III - eventual pagamento antecipado a ICTs, nas modalidades previstas nas alíneas "a" e "f" do inciso I do art. 6º, desde que seu valor
+não seja superior a vinte por cento do projeto.
+             § 1º Os prazos das demais modalidades deverão seguir as suas respectivas regulamentações.
+             § 2º Os investimentos realizados de janeiro a março poderão ser contabilizados para efeito do cumprimento das obrigações relativas
+ao correspondente ano-base em curso ou para fins do ano-base anterior, ficando vedada a contagem simultânea do mesmo investimento nos
+dois períodos.
+             § 3º Para efeitos de contabilização de investimento no ano-base, os aportes realizados pelas empresas beneficiárias nas ICTs,
+conforme as modalidades de convênio, devem ocorrer até março do ano seguinte.
+             § 4º O valor reprovado, em caso de glosa de valores oriundos dos recursos mencionados no inciso III do caput, será atualizado em
+regime simples pela Taxa de Juros de Longo Prazo - TJLP, acrescido de doze por cento, uma única vez, e cobrado junto aos déficits apurados no
+ano-base posterior à aprovação da antecipação.
+             CAPÍTULO III
+             DAS ATIVIDADES DE PD&I
+             Art. 10. Consideram-se atividades de PD&I, nos termos do disposto no art. 21 do Decreto nº 10.521, de 2020:
+             I - pesquisa básica;
+             II - pesquisa aplicada;
+             III - desenvolvimento experimental;
+             IV - inovação tecnológica;
+             V - formação ou capacitação profissional; e
+             VI - serviços de consultoria científica e tecnológica.
+             § 1º As atividades de desenvolvimento experimental, no âmbito de um projeto de PD&I, consistem no trabalho sistemático, baseado
+em conhecimento pré-existente e destinado a produzir novos produtos e processos ou aperfeiçoar os já existentes, nos termos do disposto no
+inciso III do art. 21 do Decreto nº 10.521, de 2020.
+             § 2º Os projetos de desenvolvimento experimental são aqueles que abordam uma incerteza técnica ou científica, cuja resolução gera
+conhecimentos formalizados, produtos ou processos inovadores (protótipos documentados, processos industriais, programas de computador,
+patentes, teses, artigos e similares), a partir da pesquisa e/ou de uma base de conhecimentos tácitos.
+             § 3º Em se tratando do desenvolvimento de novos processos produtivos ou aperfeiçoamento dos já implantados, nos que se evidencie
+desafio tecnológico, considera-se que:
+             I - o desenvolvimento consiste na definição, elaboração e disponibilização de novo processo produtivo; e
+             II - o aperfeiçoamento consiste na execução de conjunto de etapas cientificas ou tecnológicas, que apresente aprimoramentos nos
+processos já existentes.
+             § 4º Nos projetos em que houver necessidade de desenvolvimento de prova de conceito e protótipo, deve ficar evidenciada a
+presença de desafio tecnológico.
+             § 5º Não são considerados válidos os investimentos em projetos e testes rotineiros de engenharia.
+             § 6º Projetos destinados à elevação da aptidão da unidade fabril da empresa beneficiária para indústria 4.0 deverão seguir os termos
+da Portaria nº 2.091, de 2018, do extinto Ministério da Indústria, Comércio Exterior e Serviços e da Suframa, e da régua de avaliação do quadro
+2 do Anexo I.
+             § 6º Projetos destinados à elevação da aptidão da unidade fabril da empresa beneficiária para indústria 4.0 deverão seguir os termos
+da Portaria nº 2.091, de 17 de dezembro de 2018, do Ministério da Indústria, Comércio Exterior e Serviços, e da régua de avaliação do quadro 2
+do Anexo I. (Redação dada pela Portaria Conjunta MDIC/SUFRAMA Nº 6, de 31 de outubro de 2023).
+             § 7º São exemplos de projetos rotineiros de engenharia que não se configuram usualmente como um projeto de PD&I, salvo a clara
+presença de um desafio tecnológico:
+           § 7º São exemplos de projetos rotineiros de engenharia que não se configuram usualmente como um projeto de PD&I, salvo a clara
+presença de um desafio tecnológico, nos termos do inciso VI do art. 4º: (Redação dada pela Portaria Conjunta MDIC/SUFRAMA Nº 6, de 31 de
+outubro de 2023).
+           I - projetos para configuração ou parametrização de máquinas ou equipamentos no processo produtivo;
+           II - ações para setup de sistemas robóticos na linha de produção;
+           III - desenho e produção de equipamentos e estruturas que não se relacionem com o projeto de PD&I;
+           IV - ações para a padronização da produção como calibração de jigas de testes ou equipamentos;
+           V - ajustes na linha de produção, para otimização de tempo ou desempenho que não envolvam desenvolvimento de equipamento
+ou software inovadores;
+           VI - modificação pontual de algoritmos pré-existentes sem implicar a construção de um algoritmo inovador, exceto quando envolver
+tecnologias de última geração;
+           VII - projetos de desenvolvimento de software que não envolvam avanço científico e/ou tecnológico na área de software e não
+objetivem incertezas cientificas e/ou tecnológicas;
+           VIII - uso de software para o desenvolvimento de uma aplicação usual ou objetivo que não implique em avanço do conhecimento
+científico e/ou tecnológico;
+           IX - atualização ou adaptações de software, em função de mudanças de plataforma, atualização tecnológica ou ações similares, que
+não impliquem no avanço do conhecimento cientifico e/ou tecnológico na área de software;
+           X - desenvolvimento de componentes de software ou software embarcado que não impliquem no avanço do conhecimento cientifico
+e/ou tecnológico na área de software.
+           X - desenvolvimento de componentes de software ou de software embarcado que não impliquem no avanço do conhecimento
+científico e/ou tecnológico na área de software; (Redação dada pela Portaria Conjunta MDIC/SUFRAMA Nº 6, de 31 de outubro de 2023).
+           XI - customização, conceituada como adequação de produtos e processos às condições do cliente, tais como atividades de construção
+ou mudanças de interfaces em programas ou desenvolvimento de módulos para atender necessidades específicas do cliente;
+           XII - tropicalização, que consiste em mudanças nos produtos de forma a adaptar às condições de uso a que ele será submetido no
+Brasil, tais como adaptações para cumprimento de legislações de segurança, normas ambientais, condições de funcionamento;
+           XIII - alterações de forma, posicionamento de botões, cor ou embalagem de um produto; e
+           XIV - projetos de automação oriundos dos investimentos destinados à elevação da aptidão da unidade fabril da empresa beneficiária
+para indústria 4.0 que não objetiva atingir pelo menos o estágio 4 de maturidade em indústria 4.0, conforme Anexo I à Portaria nº 2.091, de 17
+de dezembro de 2018, do extinto Ministério da Indústria, Comércio Exterior e Serviços.
+           XV - projetos destinados à implementação, ampliação ou modernização de infraestrutura física e de laboratórios de PD&I. (Incluído
+pela Portaria Conjunta MDIC/SUFRAMA Nº 6, de 31 de outubro de 2023)
+           Art. 11. Serão consideradas como atividades de PD&I a formação ou capacitação profissional:
+           I - cursos de aperfeiçoamento ou desenvolvimento voltados às atividades de que tratam os incisos I ao IV do art. 21 do Decreto nº
+10.521, de 2020;
+           II - cursos de aperfeiçoamento ou desenvolvimento de recursos humanos em áreas consideradas prioritárias pelo CAPDA, nos
+termos do disposto no inciso V do art. 21 Decreto nº 10.521, de 2020; e
+           III - oferta de disciplinas ou cursos de curta duração técnico-profissionalizantes complementares a formação do ensino médio, com
+objetivo de formação de recursos humanos necessários na região.
+           § 1º Para fins desta Portaria Conjunta não são consideradas atividades de PD&I os cursos de capacitação que:
+           I - não tem vínculo com os objetivos estratégicos do Plano de PD&I para a Amazônia Ocidental e Amapá; e
+           II - objetivam o treinamento para operação, tais como suporte e manutenção;
+           § 2º Os cursos de formação de nível superior ou de pós-graduação devem ser reconhecidos ou credenciados pelo órgão competente
+do Sistema Nacional de Educação.
+           Art. 12. Para fins desta Portaria Conjunta entende-se a inovação como a que decorre de atividades de PD&I e constitui-se como um
+dos principais resultados esperados da Lei nº de 8.387, de 1991.
+            Parágrafo único. A aquisição ou implementação de uma solução existente no mercado ou a utilização de conhecimentos ou
+tecnologias já conhecidas em produtos ou processos da empresa beneficiária, sem que haja desafio tecnológico, não caracteriza inovação.
+            Art. 13. Os serviços de consultoria científica e tecnológica referenciados no inciso VI do art. 21 do Decreto nº 10.521, de 2020, são
+serviços vinculados às atividades de PD&I constantes nos projetos do Plano de PD&I e que viabilizam sua consecução, a saber:
+            I - consultoria cientifica e tecnológica: serviços de consultoria técnica especializada para o desenvolvimento do projeto de PD&I nos
+aspectos técnicos e científicos que envolvem a definição, equacionamento e resolução de um desafio tecnológico;
+            II - estudos: serviços especializados para o planejamento, elaboração ou execução de estudos técnicos ou de mercado necessários a
+consecução do projeto;
+            II - estudos, ensaios e testes: serviços especializados para o planejamento, elaboração ou execução de estudos técnicos ou de
+mercado, ensaios e testes, necessários à consecução do projeto; (Redação dada pela Portaria Conjunta MDIC/SUFRAMA Nº 6, de 31 de outubro
+de 2023).
+            III - atividades de normalização: serviços especializados para a identificação, adequação ou formulação de normas técnicas de
+produção ou certificação de serviços correlacionadas aos projetos de PD&I;
+            IV - gestão de projetos de PD&I: serviços especializados para orientar, estruturar, avaliar, estimular, aprimorar ou capacitar a gestão
+de projetos de PD&I no âmbito das empresas beneficiárias;
+            V- gestão tecnológica: serviços especializados para orientar, estruturar, avaliar, estimular, aprimorar ou capacitar a gestão de projetos
+de tecnologia no âmbito das empresas beneficiárias;
+            VI - fomento à invenção e inovação: serviços especializados para estimular, disseminar, estruturar, avaliar ou capacitar equipes das
+empresas beneficiárias em conceitos e métodos relacionados à invenção e inovação; e
+            VII - gestão da propriedade intelectual: serviços especializados para apoiar processos relacionados à propriedade intelectual dos
+resultados de projetos de PD&I.
+            VI - controle e gestão da propriedade intelectual: serviços especializados para apoiar processos relacionados à propriedade intelectual
+dos resultados de projetos de PD&I. (Redação dada pela Portaria Conjunta MDIC/SUFRAMA Nº 6, de 31 de outubro de 2023).
+            CAPÍTULO IV
+            DO PLANO DE PD&I
+            Art. 14. A empresa interessada em se beneficiar da isenção do Imposto sobre Produtos Industrializados - IPI e da redução do Imposto
+de Importação - II, titular de projetos industriais aprovados pelo Conselho de Administração da Suframa, deverá apresentar Plano de PD&I.
+            § 1º O Plano de PD&I deverá conter informações a respeito da estratégia de PD&I para a Amazônia Ocidental e Amapá, da gestão de
+PD&I e das atividades de PD&I a serem realizadas pela empresa beneficiária, com o descritivo dos desafios tecnológicos a serem enfrentados, o
+detalhamento dos projetos a serem executados e a estimativa dos resultados a serem alcançados.
+            § 2º O Plano de PD&I compreenderá os investimentos de dois anos-base.
+            § 3º A empresa, para projeto industrial de implantação ou diversificação, terá o prazo de noventa dias, contado da data da emissão
+do laudo de produção para apresentar o plano de PD&I, de forma a considerar o seu primeiro faturamento, sob pena de cancelamento do projeto
+industrial em caso de descumprimento do referido prazo.
+            § 4º A empresa, no caso previsto no § 1º, poderá efetuar investimentos antes da emissão do parecer técnico final do Plano de PD&I,
+sem prejuízo da reprovação desses investimentos pela Suframa se estiverem em desacordo com a legislação aplicável.
+            § 5º A empresa beneficiária deverá apresentar Plano de PD&I, via formulário eletrônico, até 31 de maio do ano anterior ao início das
+atividades nele descritas.
+            § 6º. O prazo previsto no §5º será até 31 de julho para o primeiro ano de vigência desta Portaria. (Incluído pela Portaria Conjunta
+MDIC/SUFRAMA Nº 2, de 31 de maio de 2023).
+            § 6º. O prazo previsto no §5º será até 30 de setembro para o primeiro ano de vigência desta Portaria. (Redação dada pela Portaria
+Conjunta MDIC/SUFRAMA Nº 3, de 28 de julho de 2023).
+            § 6º. O prazo previsto no §5º será até 31 de outubro para o primeiro ano de vigência desta Portaria. (Redação dada pela Portaria
+Conjunta MDIC/SUFRAMA Nº 5, de 29 de setembro de 2023).
+            § 6º. O prazo previsto no § 5º será até 30 de novembro para o primeiro ano de vigência desta Portaria. (Redação dada pela Portaria
+Conjunta MDIC/SUFRAMA Nº 6, de 31 de outubro de 2023).
+           Art. 15. O Plano de PD&I é um instrumento utilizado pela Suframa para acompanhar e avaliar os resultados decorrentes dos
+investimentos de PD&I das empresas beneficiárias.
+           Parágrafo único. Ato da SUFRAMA definirá o formato e os elementos essenciais do plano de PD&I, bem como os procedimentos para
+sua apresentação.
+           CAPÍTULO V
+           DAS ETAPAS DE AVALIAÇÃO DAS ATIVIDADES DE PD&I
+           Art. 16. A avaliação das atividades de PD&I pela Suframa compreende três etapas procedimentais:
+           I - avaliação de mérito;
+           II - avaliação da execução por meio dos relatórios demonstrativos; e
+           III - avaliação dos resultados e impactos.
+           Art. 17. A avaliação das atividades de PD&I será baseada na verificação da geração de novos conhecimentos, novas tecnologias, novas
+competências e os resultados e impactos decorrentes desta geração para a Amazônia Ocidental e Amapá.
+           Seção I
+           Da Avaliação do Mérito das Atividades do Plano de PD&I
+           Art. 18. A empresa deverá submeter à avaliação da Suframa o Plano de PD&I, que conterá todas as informações necessárias para a
+avaliação do mérito das atividades nele previstas, nos termos do disposto no § 1º do art. 14.
+           § 1º A aprovação do mérito dos projetos componentes do Plano de PD&I será baseada em indicadores de avaliação constantes no
+Anexo I.
+           § 2º Para cada tipo de projeto haverá a atribuição dos graus dos respectivos indicadores de avaliação.
+           § 3º Os projetos apenas poderão ser aprovados quando os graus a ele atribuídos forem iguais ou superiores aos indicadores mínimos
+estabelecidos no Anexo I.
+           § 4º Ato específico da autoridade competente poderá definir critérios para as avaliações das atividades de PD&I das demais
+modalidades de investimento.
+           Art. 19. A aprovação pela Suframa do mérito do plano de PD&I, na forma do disposto no caput do art. 18, garante a aprovação da
+enquadrabilidade dos projetos contidos no Plano de PD&I, caso a empresa desenvolva os projetos conforme o plano aprovado.
+           Parágrafo único. A empresa poderá, mediante justificativa técnica, não apresentar no Plano de PD&I todas as informações necessárias
+para a aprovação dos indicadores de avaliação constantes no Anexo I, caso em que estará sujeita a eventual glosa dos projetos que não cumpram
+os indicadores mínimos exigidos, quando da avaliação dos relatórios demonstrativos.
+           Parágrafo único. A empresa poderá, mediante justificativa técnica, não apresentar no Plano de PD&I todas as informações necessárias
+para a aprovação dos indicadores de avaliação constantes no Anexo I, hipótese em que: (Redação dada pela Portaria Conjunta MDIC/SUFRAMA
+Nº 6, de 31 de outubro de 2023).
+           I - a empresa deverá enviar formalmente a justificativa técnica à Suframa; (Incluída pela Portaria Conjunta MDIC/SUFRAMA Nº 6, de
+31 de outubro de 2023).
+           II - mantém-se a obrigação da empresa beneficiária em ajustar seu Plano de PD&I aos termos desta Portaria Conjunta; (Incluída pela
+Portaria Conjunta MDIC/SUFRAMA Nº 6, de 31 de outubro de 2023).
+           III - a empresa beneficiária estará sujeita à glosa dos projetos que não cumpram os indicadores mínimos exigidos, quando da avaliação
+dos relatórios demonstrativos; e (Incluída pela Portaria Conjunta MDIC/SUFRAMA Nº 6, de 31 de outubro de 2023).
+           IV - a justificativa técnica deverá ser apensada e considerada pela Suframa quando da avaliação dos relatórios demonstrativos
+correspondentes. (Incluída pela Portaria Conjunta MDIC/SUFRAMA Nº 6, de 31 de outubro de 2023).
+           Art. 20. A Suframa, durante o período de avaliação do Plano de PD&I, poderá solicitar à empresa que apresente esclarecimentos a
+respeito do conteúdo do Plano de PD&I.
+           § 1º A empresa deverá prestar os esclarecimentos no prazo de até quinze dias, contado da data da sua notificação.
+           § 2º Os esclarecimentos serão prestados por meio de documento escrito, podendo a empresa solicitar apresentação oral a respeito
+do Plano e das dúvidas encaminhadas na notificação, que será avaliada e agendada a critério da Suframa.
+           Art. 21. A avaliação do Plano de PD&I e emissão do parecer técnico correspondente deverá ser encaminhado à empresa beneficiaria
+no prazo de até noventa dias, contado da data de apresentação do Plano de PD&I.
+           § 1º Caso o plano não seja integralmente aprovado, a empresa poderá no prazo de até trinta dias, contado da data do recebimento
+do parecer técnico da Suframa:
+           I - contestar a avaliação do Plano;
+           II - complementar informações ou atualizar os projetos constantes do Plano; ou
+           III - apresentar novos projetos de PD&I.
+           § 2º A Suframa deverá avaliar e emitir novo parecer técnico na hipótese do § 1º no prazo de até sessenta dias, contado da data do
+recebimento dos respectivos documentos.
+           § 3º Na hipótese de a Suframa não realizar a avaliação dentro do prazo previsto no caput e no § 2º, fica aprovada a execução do
+Plano apresentado à Suframa, devendo a avaliação do mérito das atividades de PD&I ser realizada na avaliação dos Relatórios Demonstrativos.
+           § 3º Na hipótese de a Suframa não concluir a avaliação prevista no caput ou no § 2º até o início do ano-base previsto para execução
+do Plano de PD&I apresentado: (Redação dada pela Portaria Conjunta MDIC/SUFRAMA Nº 6, de 31 de outubro de 2023).
+           I - fica a empresa beneficiária provisoriamente autorizada a iniciar a realização de atividades previstas no Plano de PD&I submetido;
+(Incluída pela Portaria Conjunta MDIC/SUFRAMA Nº 6, de 31 de outubro de 2023).
+           II - a enquadrabilidade prevista no caput do art. 19 só será assegurada a partir da aprovação do Plano de PD&I pela Suframa; e
+(Incluída pela Portaria Conjunta MDIC/SUFRAMA Nº 6, de 31 de outubro de 2023).
+           III - a enquadrabilidade de atividades iniciadas pela empresa antes de aprovação pela Suframa, nos termos do inciso I, será analisada
+na fase de avaliação dos relatórios demonstrativos. (Incluída pela Portaria Conjunta MDIC/SUFRAMA Nº 6, de 31 de outubro de 2023).
+           § 4º As hipóteses previstas neste artigo: (Incluída pela Portaria Conjunta MDIC/SUFRAMA Nº 6, de 31 de outubro de 2023).
+           I - não afastam a obrigação da empresa beneficiária de observar os parâmetros, conceitos e indicadores mínimos estipulados nesta
+Portaria Conjunta ao: (Incluída pela Portaria Conjunta MDIC/SUFRAMA Nº 6, de 31 de outubro de 2023).
+           a) apresentar ou ajustar seu Plano de PD&I; (Incluída pela Portaria Conjunta MDIC/SUFRAMA Nº 6, de 31 de outubro de 2023).
+           b) realizar os projetos e atividades de seu Plano de PD&I. (Incluída pela Portaria Conjunta MDIC/SUFRAMA Nº 6, de 31 de outubro de
+2023).
+           II - não previnem a possibilidade de glosa de projetos que não comprovem atender aos critérios mínimos exigidos por esta Portaria
+Conjunta quando da avaliação dos relatórios demonstrativos. (Incluída pela Portaria Conjunta MDIC/SUFRAMA Nº 6, de 31 de outubro de 2023).
+           § 5º Os pareceres técnicos emitidos pela Suframa deverão ser apensados e por ela considerados quando da avaliação dos relatórios
+demonstrativos correspondentes a cada projeto do Plano de PD&I analisado. (Incluída pela Portaria Conjunta MDIC/SUFRAMA Nº 6, de 31 de
+outubro de 2023).
+           Art. 22. O Plano de PD&I proposto será integralmente reprovado quando ocorrer uma ou mais das seguintes situações:
+           I - apresentar volume de investimentos em projetos menor do que a contrapartida prevista no Plano de PD&I; ou
+           II - apresentar investimentos da contrapartida em desacordo com os percentuais previstos no Decreto nº 10.521, de 2020.
+           Art. 23. Caso a empresa beneficiária, após a aprovação e durante a execução do Plano de PD&I, opte por estabelecer contrato de
+assunção, a empresa que assumir a obrigação deverá apresentar novo Plano de PD&I para avaliação de mérito.
+           Art. 24. O Plano de PD&I poderá passar por revisões na fase de execução, caso a implementação difira do conteúdo originalmente
+aprovado na etapa de avaliação do Plano de PD&I.
+           § 1º Poderão ser registrados no formulário do Relatório Demonstrativo Anual apenas os seguintes tipos de alteração no Plano de
+PD&I:
+           I - aumento do valor individual do projeto até o limite máximo de vinte por cento em relação à última versão aprovada;
+           II - exclusão de projetos;
+           III - remanejamento de investimentos de projetos para outras modalidades de aplicação; e
+           IV - mudanças nos prazos de execução dos projetos.
+           § 2º O valor do projeto individual não poderá sofrer aumentos superiores ao definido no inciso I do § 1º.
+           § 2º O valor do projeto individual poderá sofrer aumentos superiores ao definido no inciso I do § 1º, desde que seja apresentada
+justificativa técnica no relatório demonstrativo e esta seja acatada pela SUFRAMA. (Redação dada pela Portaria Conjunta MDIC/SUFRAMA Nº 6,
+de 31 de outubro de 2023).
+           § 3º Caso as atividades a serem realizadas no projeto, ao longo do tempo, apresentem diferenças em relação ao previsto no Plano
+original aprovado, mas não alterem para menos os graus obtidos na avaliação do mérito, a partir da linha de corte definida no Anexo I, não
+implicarão na necessidade da apresentação de um novo projeto ou novo Plano.
+           § 4º Na eventualidade de apresentação de novos projetos, o prazo para enviar a revisão do Plano de PD&I para a Suframa, contendo
+os novos projetos, é até 31 de maio e a avaliação destes projetos seguirá os prazos definidos no art. 21.
+           Art. 25. A empresa poderá apresentar uma única revisão do Plano de PD&I no ano posterior à sua aprovação, em data definida nos
+termos do disposto no § 4º do art. 24.
+           Art. 26. A Suframa, a seu critério, poderá realizar visitas de acompanhamento da execução do plano de PD&I.
+           Art. 27. A não apresentação do plano de PD&I ou apresentação em desacordo com os requisitos previstos nesta Portaria Conjunta
+poderá importar na aplicação das penalidades previstas no art. 34 do Decreto nº 10.521, de 2020.
+           Art. 27. A não apresentação do plano de PD&I ou apresentação em desacordo com os requisitos previstos nesta Portaria Conjunta
+ensejará a aplicação do previsto no § 3º do art. 20 e no art. 34 do Decreto nº 10.521, de 2020, no que couber. (Redação dada pela Portaria
+Conjunta MDIC/SUFRAMA Nº 6, de 31 de outubro de 2023).
+           Seção II
+           Da Avaliação da Execução por meio dos Relatórios Demonstrativos
+           Art. 28. A avaliação dos RDs compreende:
+           I - o acompanhamento da execução do plano;
+           II - a verificação do cumprimento dos projetos aprovados no Plano de PD&I;
+           III - o registro dos resultados; e
+           IV - a verificação da regularidade da documentação contábil e jurídica decorrente da execução dos projetos.
+           § 1º Os relatórios demonstrativos do cumprimento das obrigações referentes ao ano anterior deverão ser encaminhados à Suframa,
+por meio de formulário eletrônico específico a ser disponibilizado, onde deverão ser demonstrados os investimentos e dispêndios realizados, os
+desafios tecnológicos enfrentados e resultados alcançados com as atividades de PD&I, até 30 de setembro de cada ano.
+           § 1º Os relatórios demonstrativos do cumprimento das obrigações referentes ao ano anterior deverão ser encaminhados à Suframa
+até 30 de setembro de cada ano, por meio de formulário eletrônico específico a ser disponibilizado, onde deverão ser demonstrados os
+investimentos e dispêndios realizados, os desafios tecnológicos enfrentados e resultados alcançados com as atividades de PD&I. (Redação dada
+pela Portaria Conjunta MDIC/SUFRAMA Nº 6, de 31 de outubro de 2023).
+           § 2º O relatório consolidado e parecer conclusivo, elaborados por auditoria independente deverão ser encaminhados, por meio de
+formulário eletrônico específico a ser disponibilizado, observando o disposto no Manual de Análise do Relatório Demonstrativo da Lei nº 8.387,
+de 1991, bem como nas normas técnicas emitidas pelo Conselho Federal de Contabilidade, até a data de 30 de novembro de cada ano.
+           § 2º O relatório consolidado e parecer conclusivo, elaborados por auditoria independente deverão ser encaminhados à Suframa até
+a data de 30 de novembro de cada ano, por meio de formulário eletrônico específico a ser disponibilizado, observando o disposto no Manual de
+Análise do Relatório Demonstrativo da Lei nº 8.387, de 1991, bem como nas normas técnicas emitidas pelo Conselho Federal de Contabilidade,
+conforme previsto na Portaria Conjunta nº 254, de 11 de janeiro de 2022, do Ministério da Economia e da Suframa. (Redação dada pela Portaria
+Conjunta MDIC/SUFRAMA Nº 6, de 31 de outubro de 2023).
+           § 3º As empresas beneficiárias deverão indicar no relatório demonstrativo as informações que não poderão ser divulgadas, mediante
+justificativa fundamentada em dispositivo legal que resguarde o sigilo.
+           Art. 29. Na elaboração do relatório consolidado e parecer conclusivo pela auditoria independente serão observados:
+           I - o cadastramento das entidades responsáveis pela auditoria independente, que deverá observar o disposto na Portaria Conjunta
+nº 395, de 5 de agosto de 2019, do Ministério da Economia e Suframa; e
+           II - a análise do demonstrativo do cumprimento das obrigações da empresa beneficiária.
+           § 1 º As empresas cujo faturamento anual, calculado nos termos do disposto no art. 5º do Decreto nº 10.521, de 2020, seja inferior
+a R$ 10.000.000,00 (dez milhões de reais) estarão dispensadas do parecer da auditoria e deverão somente encaminhar o relatório demonstrativo.
+           § 2º O pagamento da auditoria a que se refere o caput poderá ser deduzido integralmente do complemento de dois inteiros e sete
+décimos por cento do faturamento mencionado no art. 6º do Decreto nº 10.521, de 2020 e, neste caso, o valor não poderá exceder a dois décimos
+por cento do faturamento anual, calculado conforme o disposto no art. 5º do Decreto nº 10.521, de 2020.
+              Art. 30. Caberá à Suframa a análise e emissão de parecer final sobre os relatórios das atividades de PD&I mencionados no § 1º e § 2º
+do art. 28.
+              § 1º Os investimentos realizados sem demonstração de resultados não serão admitidos para efeito de cumprimento das obrigações
+em PD&I.
+              § 2º No caso de atividades que envolvam mais de um ano-base, deverão ser demonstrados seus resultados parciais.
+              Art. 31. As hipóteses de execução total ou parcial de projeto através de empresas contratadas, nos termos do disposto na alínea "d"
+do inciso II do art. 6º, não exonera a empresa contratante da obrigação de detalhar e demonstrar em seu RD, inclusive apresentando documentos,
+a correta aplicação dos recursos nos projetos desenvolvidos pelas empresas contratadas.
+              Art. 32. A análise dos RDs será realizada sob a forma de parecer técnico, devendo ser concedido à empresa interessada, para
+apresentação de contestação, o prazo de trinta dias, contado da data da ciência do parecer que conclua pela reprovação total ou parcial de
+relatório demonstrativo.
+              § 1º Durante a análise dos relatórios demonstrativos poderá ser conferido à empresa o prazo de até quinze dias, contado da data da
+notificação, podendo ser prorrogado por igual período mediante justificativa, para complementação da instrução, com indicação das informações
+e documentos necessários à análise.
+              § 2º Transcorrido o prazo de contestação, apresentada ou não, emitido novo parecer técnico quando cabível, o processo será
+submetido à decisão da Superintendência-Adjunta de Desenvolvimento e Inovação Tecnológica.
+              § 2º O processo será submetido à decisão da Superintendência-Adjunta de Desenvolvimento e Inovação Tecnológica após
+transcorrido o prazo de contestação - apresentada ou não -, e, quando cabível, emitido novo parecer técnico. (Redação dada pela Portaria
+Conjunta MDIC/SUFRAMA Nº 6, de 31 de outubro de 2023).
+              Art. 33. Da decisão referida no § 2º do art. 32 caberá recurso ao Superintendente da Suframa no prazo de trinta dias, contado da data
+da ciência.
+              § 1º O recurso será dirigido à Superintendência-Adjunta de Desenvolvimento e Inovação Tecnológica da Suframa, que não
+reconsiderando sua decisão em no prazo de até cinco dias, contado da data do seu recebimento, procederá ao encaminhamento do processo ao
+Superintendente da Suframa.
+              § 2º Da decisão proferida pelo Superintendente da Suframa, com intimação da empresa, não caberá recurso.
+              § 3º O Superintendente da Suframa será assistido tecnicamente por equipe vinculada diretamente ao seu gabinete.
+              § 4º Não havendo ou não provido o recurso, a empresa será notificada para que sejam regularizados os pontos de inadimplência nos
+termos do disposto no art. 45.
+              Art. 34. A análise do RD, da contestação e do recurso, bem como a aplicação das penalidades previstas nesta Portaria Conjunta, serão
+realizadas no prazo de até cinco anos, contado da data de recebimento do respectivo RD.
+              Art. 34. As análises de relatórios demonstrativos, as contestações ou os recursos, bem como a aplicação das penalidades previstas
+nesta Portaria Conjunta, serão realizados no prazo de até cinco anos, contado da data de recebimento do respectivo relatório demonstrativo.
+(Redação dada pela Portaria Conjunta MDIC/SUFRAMA Nº 6, de 31 de outubro de 2023).
+              Parágrafo único. Caso o relatório demonstrativo não seja apresentado, o prazo de que trata o caput terá início no primeiro dia
+seguinte à data estabelecida no § 1º do art. 28. (Incluído pela Portaria Conjunta MDIC/SUFRAMA Nº 6, de 31 de outubro de 2023).
+              Art. 35. A decisão que reprovar o RD por insuficiência de investimentos ou glosa de dispêndios consignará o prazo de trinta dias,
+contado da data da sua ciência, para que a empresa apresente a prova de regularização, mediante aplicação do recurso financeiro residual,
+atualizado pela TJLP, calculada em regime simples e acrescido de doze por cento, uma única vez, nas opções previstas nas alíneas "b", "c", "d" e
+"e" do inciso I do art. 6º, estando sujeita às penalidades previstas no art. 46 em caso de descumprimento.
+              Parágrafo único. Na hipótese de regularização de insuficiência de investimentos ou glosa de dispêndios por meio da modalidade
+prevista na alínea "c", deverá ser apresentado o relatório de que trata o §2º do art. 10 da Portaria nº 1.753, de 2018, do extinto Ministério da
+Indústria, Comércio Exterior e Serviços e da Suframa.
+              Parágrafo único. Na hipótese de regularização de insuficiência de investimentos ou glosa de dispêndios por meio da modalidade
+prevista na alínea "c" do inciso I do art. 6º, deverá ser apresentado o relatório de que trata o § 2º do art. 10 da Portaria nº 1.753, de 2018, do
+Ministério da Indústria, Comércio Exterior e Serviços e da Suframa. (Redação dada pela Portaria Conjunta MDIC/SUFRAMA Nº 6, de 31 de outubro
+de 2023).
+             Seção III
+             Da Avaliação dos Impactos das Atividades de PD&I
+             Art. 36. A avaliação dos resultados e impactos das atividades de PD&I tem por objetivo verificar em que medida a execução dessas
+atividades contribuíram para a consecução dos objetivos constantes no art. 3º.
+             Art. 37. A Suframa, anualmente, emitirá relatório de resultados da Lei nº 8.248, de 1991 - Lei de Informática, do total dos recursos
+financeiros aplicados em atividades de pesquisa, desenvolvimento e inovação nas ICTs credenciadas.
+             Art. 37. A Suframa, anualmente, emitirá relatório de resultados da Lei nº 8.387, de 1991, do total dos recursos financeiros aplicados
+em atividades de pesquisa, desenvolvimento e inovação nas ICTs credenciadas. (Redação dada pela Portaria Conjunta MDIC/SUFRAMA Nº 6, de
+31 de outubro de 2023).
+             Art. 38. Os Ministérios da Economia e da Ciência, Tecnologia e Inovações divulgarão, a cada biênio, relatórios com os resultados
+econômicos e técnicos advindos da análise dos indicadores de monitoramento e outras informações secundárias constantes nos RDs da aplicação
+do disposto no Decreto nº 10.521, de 2020, durante o período.
+             Art. 38. Os Ministérios do Desenvolvimento, Indústria, Comércio e Serviços e da Ciência, Tecnologia e Inovação divulgarão, a cada
+biênio, relatórios com os resultados econômicos e técnicos advindos da análise dos indicadores de monitoramento e outras informações
+secundárias constantes nos relatórios demonstrativos durante o período, nos termos do § 16 do art. 2º da Lei nº 8.387, de 1991, e do art. 10 do
+Decreto 10.521, de 2020. (Redação dada pela Portaria Conjunta MDIC/SUFRAMA Nº 6, de 31 de outubro de 2023).
+             Art. 39. A avaliação dos resultados e impactos das atividades de PD&I acontecerá a cada quatro anos, preferencialmente, por
+instituição externa à Suframa, que poderá realizar o levantamento de informações primárias e secundárias, além das fornecidas pelos RDs.
+             § 1º As informações fornecidas pelos relatórios demonstrativos para avaliação de resultados e impactos incluem as informações
+relativas:
+             I - ao investimento de PD&I;
+             II - aos resultados dos projetos; e
+             III - aos indicadores de monitoramento constantes do Anexo II.
+             § 2º A avaliação dos resultados e impactos das atividades de PD&I não implicará qualquer tipo de punição às empresas.
+             § 3º As conclusões da avaliação fornecerão insumos para a Suframa e para o Ministério da Economia realizarem melhorias nos
+instrumentos da Lei nº 8.387, de 1991, inclusive da própria Lei, e em todos os processos associados a estes instrumentos.
+             § 3º As conclusões da avaliação fornecerão insumos para a Suframa e para o Ministério do Desenvolvimento, Indústria, Comércio e
+Serviços realizarem melhorias nos instrumentos da Lei nº 8.387, de 1991, inclusive da própria Lei, e em todos os processos associados a estes
+instrumentos. (Redação dada pela Portaria Conjunta MDIC/SUFRAMA Nº 6, de 31 de outubro de 2023).
+             § 4º Deverá ser dado conhecimento público das principais análises e conclusões da avaliação de resultados e impactos da Lei nº 8.387,
+de 1991.
+             § 5º Os resultados indicados como sigilosos pelas empresas nos planos de PD&I e respectivos relatórios demonstrativos serão
+resguardados, desde que enquadrados em hipótese de sigilo legal. (Incluído pela Portaria Conjunta MDIC/SUFRAMA Nº 6, de 31 de outubro de
+2023).
+             CAPÍTULO VI
+             DOS DISPÊNDIOS
+             Art. 40. Serão reconhecidos como dispêndios em atividades de PD&I os gastos realizados na execução ou contratação das atividades
+do art. 21 do Decreto nº 10.521, de 2020, desde que se refiram a:
+             I - programas de computador, máquinas, equipamentos, aparelhos e instrumentos, seus acessórios, sobressalentes e ferramentas,
+e serviços de instalação dessas máquinas e equipamentos utilizados na execução do projeto;
+             II - aquisição, implantação, ampliação ou modernização de infraestrutura física e de laboratórios de PD&I e de ICTs;
+             III - recursos humanos diretos e indiretos envolvidos na execução das atividades de PD&I, referentes aos profissionais com dedicação
+proporcional ao tempo de participação nas referidas atividades;
+             IV - serviços técnicos de terceiros;
+             V - materiais de consumo, não sendo enquadráveis os utilizados em escritórios comerciais, em processos de fabricação, etc; ou
+             VI - outros dispêndios correlatos às atividades de pesquisa, desenvolvimento e inovação, não relacionados nos incisos anteriores.
+            § 1º Excetuados os serviços de instalação, os gastos de que trata o inciso I do caput, quando se tratar de investimentos internos da
+empresa, deverão ser computados pelo valor da depreciação acelerada ou não, da amortização acelerada ou não, do aluguel ou da cessão de
+direito de uso desses recursos, correspondentes ao período de sua utilização na execução das atividades de PD&I.
+            § 2º A cessão de recursos materiais, definitiva ou por pelo menos três anos, visando à realização de atividades de PD&I nas formas
+previstas nas alíneas "a", "d", "e", "f" e "g" do inciso I do art. 6º, será computada para a apuração do montante dos gastos, alternativamente:
+            I - pelos seus valores de custo de produção ou aquisição, deduzida a respectiva depreciação acumulada; ou
+            II - por cinquenta por cento do valor de mercado, mediante laudo de avaliação.
+            § 3º Se a instituição mantiver o compromisso da utilização dos bens adquiridos em atividades de PD&I até o final do período de
+depreciação, para efeito das aplicações previstas nas alíneas "a" e "f" do inciso I do art. 6º, poderão ser computados os valores integrais dos
+dispêndios de que trata os incisos I e II do caput.
+            § 4º Poderão ser aceitos os dispêndios com as áreas dedicadas à administração, em relação ao § 3º, desde que vinculadas às atividades
+de PD&I e não excedam vinte por cento dos gastos de que trata o inciso II do caput.
+            § 5º Os dispêndios do inciso VI do caput, realizados na execução do projeto, serão aceitos para efeito de cumprimento de obrigação
+de investimento em PD&I, limitados a vinte por cento da soma dos incisos I a V do caput, não sendo necessária a apresentação de comprovações,
+desde que não excedam o percentual previsto neste parágrafo.
+            § 6º Os gastos previstos no inciso VI do caput deverão ser correlatos às atividades de PD&I e poderão ser compartilhados entre vários
+projetos, podendo os valores serem agrupados nas seguintes categorias:
+            a) consumo (água, energia elétrica, internet, telefone);
+            b) impostos e taxas não contabilizados nos incisos anteriores;
+            b) impostos e taxas não contabilizados nos incisos I ao V do caput; (Redação dada pela Portaria Conjunta MDIC/SUFRAMA Nº 6, de
+31 de outubro de 2023).
+            c) treinamentos;
+            d) viagens; e
+            e) pedido de registro de marca, depósito de patente ou outro direito relativo à propriedade intelectual decorrente do projeto de
+PD&I.
+            § 7º A aquisição de bens e serviços deverá ser realizada por meio de notas fiscais e os demais dispêndios, por documentos idôneos e
+próprios do tipo de despesa e dentro do período de execução das atividades de PD&I, observando ainda os correspondentes comprovantes de
+pagamento, cabendo à empresa apresentá-los caso seja solicitado pela Suframa.
+            § 8º As atividades mencionadas nos incisos do art. 13 poderão ser lançadas como dispêndios nos incisos IV ou VI do caput, observando
+sua natureza no projeto de PD&I.
+            § 9º Não serão reconhecidos como dispêndios em atividades de PD&I, os serviços de manutenção de equipamentos de instalações
+fabris, de escritórios comerciais, consultoria para contratação de recursos humanos, consultoria geral administrativa, especialmente para o
+preenchimento de RDs.
+            Art. 41. Os investimentos voltados para elevação da aptidão da unidade fabril da empresa beneficiária para indústria 4.0, realizados
+até o ano de 2028, serão considerados como atividades de PD&I realizadas diretamente pelas próprias empresas, conforme disposto na alínea
+"d" do inciso II do art. 6º, limitados a sessenta por cento do complemento de dois inteiros e sete décimos por cento previsto no inciso II do art.
+6º, podendo haver a possibilidade de depreciação acelerada dos equipamentos instalados, conforme regulamentação do Ministério da Economia.
+            Art. 42. Os convênios referidos na alínea "a" e "f" do inciso I do art. 6º poderão contemplar percentual de até vinte por cento dos
+dispêndios dos projetos de PD&I para fins de cobertura de despesas operacionais e administrativas incorridas na execução dos convênios e de
+constituição de reserva a ser por elas utilizada em pesquisa, desenvolvimento e inovação.
+            § 1º É vedada à instituição que não tenha participado das atividades principais do projeto reter o percentual de que trata o caput.
+            § 2º Entende-se por despesas operacionais e administrativas aquelas não relacionadas nos incisos do art. 40, de natureza operacional
+e administrativa, de caráter indivisível, sujeitas à demonstração e passíveis de serem contabilizados por meio de rateio ou centro de custo, a
+exemplo das relativas a:
+            a) aluguel e tributos decorrentes da locação imobiliária;
+            b) água, energia elétrica, telefone, internet;
+            c) taxas;
+            d) gestão institucional;
+            e) segurança patrimonial, limpeza, jardinagem e conservação em geral;
+            f) alocação de gastos diretos ou por rateios relativos à alimentação, diárias, benefícios sociais ou
+            outros relacionados com pessoas ou setores não vinculados diretamente à execução de PD&I;
+            g) manutenção de laboratórios e outras despesas operacionais relacionadas a sua manutenção física (instalações laboratoriais), não
+vinculadas com a execução de projeto de PD&I (taxas, seguros prediais, certificações, homologações, serviços e consertos técnicos em geral);
+            h) custos administrativos relacionados à atividades de setores diversos, por exemplo, setor de compras, financeiro, jurídico, fiscal,
+entre outros ou rateios relacionados a gastos administrativos em geral e de infraestrutura (tais como, taxas relativas a despesas aduaneiras,
+fiscais e cartoriais, serviços de consultoria especializados não vinculados diretamente à PD&I, no entanto, necessários à instituição, tais como,
+serviço técnico de auditoria, contábil, jurídico, cientifico-tecnológico ou institucional de apoio à manutenção de entidade; consultoria para RH,
+consultoria para P&D (suporte);
+            h) custos administrativos relacionados à atividades de setores diversos, por exemplo, setor de compras, financeiro, jurídico, fiscal,
+entre outros ou rateios relacionados a gastos administrativos em geral e de infraestrutura (tais como, taxas relativas a despesas aduaneiras,
+fiscais e cartoriais, serviços de consultoria especializados não vinculados diretamente à PD&I, no entanto, necessários à instituição, tais como,
+serviço técnico de auditoria, contábil, jurídico, científico-tecnológico ou institucional de apoio à manutenção de entidade; consultoria relacionada
+a recursos humanos, consultoria para P&D (suporte); (Redação dada pela Portaria Conjunta MDIC/SUFRAMA Nº 6, de 31 de outubro de 2023).
+            i) viagens de diretores e outros funcionários da empresa ou de terceiros, quando não especificamente destinadas a atividades do
+projeto de PD&I como por exemplo: viagens a título de homologação de produtos junto a clientes ou para desenvolvimento de fornecedores, as
+quais se referem a atividades de engenharia, comerciais etc. e não se enquadram como pesquisa e desenvolvimento ou para outras atividades
+assemelhadas;
+            j) serviços de hospedagens pagos diretamente a estabelecimentos hoteleiros ou agências especializadas, inclusive às de alimentação
+e locomoção, quando não houver pagamento de diárias;
+            l) treinamento para pessoal não alocado diretamente no projeto de PD&I ou não relacionado à atividade de PD&I (de pessoal de
+escritório, de pessoal de suporte ou apoio administrativo); e
+            m) serviços de importação especializada, inclusive as despesas geradas no seu decorrer, tais como, frete, seguros, taxa etc.
+            m) serviços de importação especializada, inclusive as despesas geradas no seu decorrer, tais como, frete, seguros e taxas. (Redação
+dada pela Portaria Conjunta MDIC/SUFRAMA Nº 6, de 31 de outubro de 2023).
+            Art. 43. Como atividade de suporte ao seu objeto, os projetos de PD&I decorrentes das modalidades previstas no inciso I, alíneas "a"
+e "f", e inciso II, alínea "d", do art. 6º poderão prever o intercâmbio científico e tecnológico, internacional ou inter-regional, desde que o montante
+das despesas não seja superior a vinte por cento do valor total do projeto em pesquisa, desenvolvimento e inovação do ano-base.
+            § 1º Considera-se intercâmbio quando a atividade de suporte for realizada fora da Amazônia Ocidental e Estado do Amapá.
+            § 2º Considera-se atividade de suporte aquela que envolva trabalho prático ou teórico para completar as atividades do projeto de
+PD&I.
+            § 3º Os objetivos do intercâmbio são permitir o acesso a conhecimentos, métodos e tecnologias não disponíveis regionalmente e
+assim formar e reter competências na Amazônia Ocidental e Amapá, ampliando sua base tecnológica.
+            § 4º É vedada a utilização do mecanismo de intercâmbio para a terceirização de atividades de PD&I para grupos externos ao
+Ecossistema da Amazônia Ocidental e Amapá.
+            § 5º Consideram-se intercâmbio científico e tecnológico:
+            I - as atividades que envolvam visitas e estágios de técnicos de empresas e de técnicos, alunos e professores das instituições de
+ensino, pesquisa e desenvolvimento;
+            II - os pagamentos financeiros efetuados a título de cessão de equipamentos; e
+            III - a aquisição, a transmissão ou o recebimento de dados, informações ou conhecimento ligados à pesquisa e ao desenvolvimento
+tecnológico, que contribua para os processos de produção, difusão ou aplicação de conhecimentos científicos e técnicos ou para os processos de
+formação, capacitação, qualificação ou aprimoramento de recursos humanos.
+            § 6º Os casos em que o percentual extrapole o limite definido neste artigo poderão ser admitidos, desde que previamente justificada
+no plano de PD&I da empresa beneficiária, em razão de sua relevância no contexto do projeto de PD&I.
+            § 7º A formalização de intercâmbio científico e tecnológico inter-regional ou internacional no âmbito da execução de projeto de PD&I
+deve ser feita por meio de acordos de cooperação, os quais devem ser assinados pelas partes envolvidas no intercâmbio.
+            CAPÍTULO VII
+            DOS CONVÊNIOS COM ICTS CREDENCIADOS PELO CAPDA
+            Art. 44. As ICTs, após o credenciamento pelo CAPDA, deverão celebrar convênios com as empresas beneficiárias no qual deverá ser
+informado de forma detalhada as atividades de PD&I que serão desenvolvidas, considerando a definição contida no art. 21 do Decreto nº 10.
+521, de 2020.
+            Art. 44. As ICTs, após o credenciamento pelo CAPDA, deverão celebrar convênios com as empresas beneficiárias nos quais deverão
+ser informados de forma detalhada as atividades de PD&I que serão desenvolvidas, considerando a definição contida no art. 21 do Decreto nº
+10.521, de 2020. (Redação dada pela Portaria Conjunta MDIC/SUFRAMA Nº 6, de 31 de outubro de 2023).
+            § 1º Deverão estar consignados nos instrumentos, além das cláusulas essenciais a todos os convênios, as seguintes informações:
+            I - a forma de repasse de recursos financeiros pelas empresas que poderá ser realizado de forma direta ou por meio de fundações
+de apoio, no caso das ICTs públicas, conforme disposto na Lei nº 8.958, de dezembro de 1994, e disciplinado na Portaria Conjunta nº 347, de
+                                                                                                                     500.000
+2020, do Ministério da Economia e da Suframa;                                                                        100.000
+                                                                                                                     600.000x25%
+           II - a titularidade da propriedade intelectual, observado o disposto na Lei nº 10.973, de 2004; e         120.000
+                                                                                                                     720.000
+           II - a titularidade da propriedade intelectual e a participação nos resultados da exploração das criações, observado o disposto na Lei
+nº 10.973, de 2004; e (Redação dada pela Portaria Conjunta MDIC/SUFRAMA Nº 6, de 31 de outubro de 2023).
+            III - a estimativa de recursos para a execução de cada projeto de PD&I, de forma detalhada, com vistas a possibilitar a verificação do
+atingimento das metas e a prestação de contas; além de facilitar a verificação do atingimento do limite de vinte por cento para aplicação em
+despesas operacionais e constituição de reserva, nos termos do disposto no § 3º do art. 22 do Decreto nº 10. 521, de 2020.
+            § 2º Todos os recursos captados, mesmo quando não utilizados pela ICT no ano-base em curso, deverão ser discriminados no Relatório
+Demonstrativo do ano-base em curso a ser apresentado à Suframa.
+            § 3º A transferência dos recursos não utilizados pela ICT no ano base em curso poderá ser realizada, desde que seja celebrado Termo
+Aditivo do convênio no qual deverá ser indicado de forma detalhada como serão utilizados os recursos.
+            § 4º Os recursos também deverão indicados de forma detalhada no RD do ano base em curso, conforme o disposto no § 1º.
+            § 4º Os recursos de que trata o § 3º também deverão ser indicados de forma detalhada no relatório demonstrativo do ano base em
+curso, conforme o disposto no § 1º. (Redação dada pela Portaria Conjunta MDIC/SUFRAMA Nº 6, de 31 de outubro de 2023).
+            § 5º As ICTs públicas e fundações de apoio deverão observar as disposições contidas na Lei nº 8.958, de 1994, e no Decreto nº 7.423,
+de 2010, devendo as instituições estaduais observar a legislação correlata.
+            § 6º O repasse de recursos as ICTs deverá ser realizado por meio de documentos idôneos no período informado, cabendo à empresa
+apresentá-los, caso seja solicitada pela Suframa.
+            § 7º Aos convênios com ICTs de que trata o inciso I do art. 6º aplica-se o disposto no art. 9º da Lei nº 10.973, de 2004, conforme
+previsto no § 29 do art. 2º da Lei nº 8.387, de 1991. (Incluído pela Portaria Conjunta MDIC/SUFRAMA Nº 6, de 31 de outubro de 2023).
+            CAPÍTULO VIII
+            DAS PENALIDADES
+            Art. 45. A não apresentação do relatório demonstrativo ou do relatório consolidado nos prazos definidos no § 1º e no § 2º do art. 28,
+importará na aplicação das penalidades previstas no art. 35 do Decreto nº 10.521, de 2020.
+            Art. 45. A não apresentação do relatório demonstrativo ou do relatório consolidado nos prazos definidos nos §§ 1º e 2º do art. 28,
+importará na aplicação do art. 35 do Decreto nº 10.521, de 2020. (Redação dada pela Portaria Conjunta MDIC/SUFRAMA Nº 6, de 31 de outubro
+de 2023).
+            § 1º Decorridos trinta dias da comunicação das penalidades descritas no caput, permanecendo a empresa inadimplente com a
+obrigação de apresentação do relatório demonstrativo e relatório consolidado de auditoria, serão aplicadas as penalidades previstas no art. 46
+            § 2º A aplicação das penalidades às ICTs credenciadas pelo CAPDA por descumprimento de exigências previstas em lei e regulamento
+devem observar as disposições contidas nos art. art. 27, inciso III, art. 37 e art. 38 do Decreto nº 10.521, de 2020.
+            Art. 46. O Superintendente da Suframa, na hipótese de descumprimento das exigências estabelecidas nesta Portaria Conjunta ou de
+reprovação dos RDs, determinará a suspensão dos efeitos do ato aprobatório do projeto industrial e encaminhará o processo ao Conselho de
+Administração da Suframa para deliberação sobre a cassação em caráter terminativo.
+            § 1º A decisão de suspensão será formalizada por meio de portaria e a de cassação por meio de resolução, com comunicação à
+empresa e publicação no Diário Oficial da União.
+            § 2º O prazo de suspensão de ato aprobatório de projeto industrial mencionado no caput será de até cento e oitenta dias, devendo
+o Conselho de Administração da Suframa manifestar-se em reunião ordinária ou extraordinária sobre a cassação nos últimos noventa dias deste
+prazo.
+            § 3º A empresa, no curso da suspensão, mas antes da cassação do ato aprobatório do projeto industrial, poderá promover sua
+reabilitação mediante cumprimento do disposto no art. 35.
+            § 4º Concluindo a Superintendência Adjunta de Desenvolvimento e Inovação Tecnológica da Suframa pela regularização, o processo
+será encaminhado ao Gabinete do Superintendente que, se de acordo, expedirá portaria restabelecendo os efeitos do ato aprobatório do projeto
+industrial, a contar da data de regularização.
+            Art. 47. A publicação dos atos no Diário Oficial da União deverá ocorrer no prazo de até cinco dias, contado da data de sua prática.
+            Art. 48. A suspensão, reabilitação dos efeitos dos atos aprobatórios de projetos e cassação deverão ser comunicados à Secretaria
+Especial da Receita Federal do Brasil do Ministério da Economia no prazo de até 30 dias, contado da data da publicação no Diário Oficial da União.
+            Art. 48. A suspensão, reabilitação dos efeitos dos atos aprobatórios de projetos e cassação deverão ser comunicados à Secretaria
+Especial da Receita Federal do Brasil do Ministério da Fazenda no prazo de até 30 dias, contado da data da publicação no Diário Oficial da União.
+(Redação dada pela Portaria Conjunta MDIC/SUFRAMA Nº 6, de 31 de outubro de 2023).
+            CAPÍTULO IX
+            DAS DISPOSIÇÕES GERAIS
+            Art. 49. A Suframa poderá solicitar apoio técnico de especialistas externos com reconhecida competência em áreas ou temas técnicos
+afetos às atividades de PD&I, para dar suporte aos processos de que trata esta Portaria Conjunta.
+            Art. 49. A Suframa poderá solicitar apoio técnico de especialistas externos com reconhecida competência em áreas ou temas técnicos
+afetos às atividades de PD&I, para dar suporte aos processos de que trata esta Portaria Conjunta, desde que afastado o conflito de interesse e a
+quebra de sigilo legal. (Redação dada pela Portaria Conjunta MDIC/SUFRAMA Nº 6, de 31 de outubro de 2023).
+            § 1º Os especialistas externos deverão se manifestar formalmente a partir das solicitações técnicas da Suframa para os casos em que
+houver dúvidas quanto ao mérito técnico de projetos e/ou atividades de PD&I.
+            § 2º A decisão final do parecer técnico é de responsabilidade da Suframa.
+            § 3º Os especialistas externos poderão prestar suporte e apoio consultivo para Programas Prioritários, projetos tecnológicos
+sustentáveis ou outros temas das áreas prioritárias do CAPDA em que a Suframa necessite de apoio técnico.
+            § 4º Ato da Suframa definirá os critérios técnicos de seleção dos especialistas externos, bem como os procedimentos necessários
+para o exercício das atividades vinculadas ao disposto nesta Portaria Conjunta.
+            Art. 50. As empresas, ICTs e instituições de pesquisa ou de ensino superior envolvidas na execução das atividades de PD&I deverão
+efetuar escrituração contábil específica das operações relativas a tais atividades, detalhando nas notas explicativas o faturamento e os tributos
+relativos aos bens incentivados.
+            Parágrafo Único. Portaria conjunta do Ministério da Economia e da Suframa discorrerá sobre os procedimentos de abertura de conta
+específica pelas ICTs relativa a cada convênio firmado com as empresas beneficiárias, nos moldes do disposto no § 4º do art. 4º Portaria
+Interministerial nº 424, de 30 de dezembro de 2016, dos extintos Ministérios do Planejamento, Desenvolvimento e Gestão, da Fazenda e da
+Transparência, Fiscalização e Controladoria-Geral da União.
+            Parágrafo único. Portaria conjunta do Ministério do Desenvolvimento, Indústria, Comércio e Serviços e da Suframa discorrerá sobre
+os procedimentos de abertura de conta específica pelas ICTs relativa a cada convênio firmado com as empresas beneficiárias, nos termos do
+disposto no § 4º do art. 4º Portaria Interministerial nº 424, de 30 de dezembro de 2016, dos extintos Ministérios do Planejamento,
+Desenvolvimento e Gestão, da Fazenda e da Transparência, Fiscalização e Controladoria-Geral da União. (Redação dada pela Portaria Conjunta
+MDIC/SUFRAMA Nº 6, de 31 de outubro de 2023).
+            Art. 51. A documentação técnica e contábil relativa às atividades de que trata o art. 10 deverá ser mantida pelo prazo de cinco anos,
+contado da data de entrega do relatório de que trata o § 1º do art. 28, a não ser que haja processo de contestação em andamento.
+            Art. 52. As empresas beneficiárias e demais entidades envolvidas no regime de que trata nesta Portaria Conjunta, quando da
+divulgação das atividades de PD&I e dos resultados alcançados com recursos provenientes da contrapartida da isenção do IPI ou da redução do
+II deverão fazer expressa referência à Lei nº 8.387, de 1991.
+            Parágrafo único. Os resultados das atividades de PD&I poderão ser divulgados, identificando empresas ou ICTs, desde que mediante
+autorização prévia das entidades envolvidas.
+            Art. 53. Os convênios e demais acordos firmados entre as partes envolvidas, para que possam operar seus efeitos junto à Suframa,
+devem ser celebrados antecipadamente ou durante o período de execução das atividades de PD&I.
+            Art. 54. Os prazos previstos nesta Portaria Conjunta são contados em dias corridos, excluindo-se o dia do começo e incluindo-se o do
+vencimento.
+            § 1º Os prazos alusivos às intimações das empresas começam a correr a partir da data da cientificação oficial, efetiva por meio de
+intimação eletrônica ou recebimento de envio postal.
+            § 1º Os prazos alusivos às intimações das empresas começam a correr a partir da data da cientificação oficial, efetivada por meio de
+intimação eletrônica ou recebimento de envio postal. (Redação dada pela Portaria Conjunta MDIC/SUFRAMA Nº 6, de 31 de outubro de 2023).
+            § 2º Considera-se prorrogado o prazo até o primeiro dia útil seguinte se o vencimento cair em dia em que não houver expediente ou
+se este for encerrado antes da hora normal.
+            Art. 55. As empresas, cujos Planos foram aprovados com fundamento na Portaria nº 222, de 4 de julho de 2017, da Suframa, deverão
+apresentar os futuros planos de PD&I nos moldes definidos nesta Portaria Conjunta e de acordo com o formulário a ser regulamentado por ato
+da Suframa, conforme previsto no parágrafo único do art. 15.
+            Parágrafo único. Os projetos constantes de Planos de PD&I apresentados antes da vigência desta Portaria Conjunta, desde que
+continuados e com data de finalização já definida em RDs dos respectivos anos-base, deverão seguir os procedimentos de avaliação e
+acompanhamento constantes da Resolução nº 71, de 6 de maio de 2016, do Conselho de Administração da Suframa.
+            Art. 56. Os conceitos e indicadores constantes nesta Portaria Conjunta e Anexos deverão ser observados na apresentação dos projetos
+pelas entidades de que trata os incisos I e VI do § 1º do art. 5º do Decreto nº 10.521, 2021, no que couber.
+            Art. 56. Os conceitos e indicadores constantes nesta Portaria Conjunta e Anexos deverão ser observados na apresentação dos projetos
+pelas entidades de que trata os incisos I e VI do § 1º do Art. 5º e no inciso IV do Art. 6º do Decreto nº 10.521, 2021, no que couber. (Redação
+dada pela Portaria Conjunta MDIC/SUFRAMA Nº 6, de 31 de outubro de 2023).
+            Parágrafo único. O CAPDA definirá os critérios para credenciamento das entidades indicadas no caput, conforme disposto na alínea
+"a" do inciso III do art. 27 do Decreto nº 10.521, 2021.
+            Art. 57. As disposições desta Portaria Conjunta se aplicam a partir das obrigações de PD&I do ano-base de 2024.
+            Parágrafo único. O grau mínimo para o indicador de Intensidade de Desafio do Quadro 1, constante do Anexo I, será o grau 2 quando
+se trata de atividades de PD&I para o cumprimento dos investimentos na forma do disposto na alínea "d" do inciso II do art. 6º, para os anos-
+base 2024 e 2025.
+            Art. 58. Esta Portaria Conjunta entra em vigor em 1º de janeiro de 2023.
+
+
+
+
+                                                                                                        PAULO GUEDES
+                                                                                               Ministro de Estado da Economia
+                                                                                                  ALGACIR ANTÔNIO POLSIN
+                                                                                         Superintendente da Zona Franca de Manaus
+                                                              ANEXO I
+
+                                        Quadro 1 - Desafio, Solução e Novidade dos Projetos
+
+
+1. PROJETOS INTERNOS E EXTERNOS GERAIS
+
+Indicador                                                Grau    Métricas (Maturidade)
+
+                                                                 Realização de pesquisa básica: trabalho experimental ou teórico
+                                                                 executado primariamente para a aquisição de novo conhecimento
+1. Intensidade do Desafio                                5
+                                                                 dos fundamentos subjacentes aos fenômenos e fatos observáveis,
+                                                                 sem qualquer aplicação particular ou uso em vista
+
+Indica o nível de esforço e o tipo de resultado esperado         Realização de pesquisa aplicada: pesquisa original realizada com o
+com relação à criação de conhecimentos originais ou 4            objetivo de adquirir conhecimento, na qual é primariamente dirigida
+produção de novas tecnologias.                                   a um objetivo ou a um alvo prático específico;
+                                                                 Realização de desenvolvimento experimental: trabalho sistemático,
+                                                                 baseado em conhecimento pré-existente, adquirido na pesquisa ou
+                                                         3
+                                                                 experiência prática, e voltado para produzir novos produtos e
+                                                                 processos ou aperfeiçoar os já existentes
+
+                                                                 Aprimoramento significativo de produto ou processo que configure
+                                                         2
+                                                                 inovação.
+
+                                                                 Aprimoramento de produto ou processo por meio de atualização
+                                                                 tecnológica, incorporação de conhecimentos e tecnologias já
+                                                         1
+                                                                 existentes; ou projetos rotineiros de engenharia; ou produtos e
+                                                                 processos sem desafio tecnológico claramente identificado.
+
+                                                                 Equacionamento inclui desenvolvimento sistemático documentado,
+2. Equacionamento da Solução                             4       com elaboração de hipóteses e alternativas, desenvolvimento e
+                                                                 avaliação de protótipos para selecionar a melhor
+
+Indica a forma como foi equacionada a resolução do
+                                                                 Equacionamento inclui identificar restrições ou limitações técnicas
+desafio: desenvolvimento sistemático documentado,
+                                                          3      para a solução; realizar desenvolvimento sistemático com testes de
+elaboração de hipóteses e alternativas, desenvolvimento e
+                                                                 validação.
+avaliação de protótipos, entre outros.
+                                                                 Equacionamento inclui identificar restrições ou limitações técnicas
+                                                         2
+                                                                 para a solução e buscar o conhecimento necessário para a solução.
+
+                                                                 Equacionamento usual com atividades rotineiras de gestão de
+                                                         1       projeto (cronograma, etapas, recursos) ou o equacionamento não
+                                                                 está claramente definido.
+
+3. Grau de Novidade
+Indica em que medida a resolução do desafio tecnológico
+                                                        4        Nova para o mundo
+proposto leva à geração de inovações tecnológicas na
+fronteira internacional.
+
+                                                         3       Nova para o país ou para a região da Amazônia Ocidental e Amapá
+
+
+                                                         2       Nova para empresa
+
+                                                                 O grau de novidade não identificado (descrição) ou não há agregação
+                                                         1
+                                                                 de valor
+
+Linha de corte para Intensidade do Desafio: Grau mínimo - grau 3
+Linha de corte para Equacionamento da Solução: Grau mínimo - grau 3
+Linha de corte para Grau de Novidade: Grau mínimo - grau 3
+                                Quadro 2 - Indicadores de Avaliação para Projetos Internos: Indústria 4.0
+
+
+2. PROJETOS INTERNOS: INDÚSTRIA 4.0
+
+Indicador                                 Grau Métricas (Maturidade)
+
+                                                 Estágio 6 (Adaptabilidade): Este estágio promove a integração de toda estrutura
+                                                 organizacional da empresa já com os níveis anteriores implementados e permite a
+1.Maturidade do Processo I4.0             4
+                                                 gestão da empresa baseada em inteligência artificial, de todo o negócio a nível local,
+                                                 regional ou mundial, incluindo toda a cadeia produtiva local ou global.
+                                                 Estágio 5 (Capacidade preditiva): Este estágio utiliza a inteligência artificial e analisa,
+Indica o nível de maturidade de processo         compreende, cria cenários e modelos de tendências, cria as relações causa-efeito das
+de Indústria 4.0 (segundo metodologia            possíveis variações de demanda, promovendo as autocorreções e auto-otimizações de
+                                         3
+da ACATECH), pretendido pelo projeto             todos os processos e subprocessos, já compatíveis com os conceitos da indústria 4.0, e
+de PD&I                                          adaptando-os as novas condições de demanda. Promove a integração da demanda, do
+                                                 processo de transformação e da cadeia de suprimentos.
+                                                 Estágio 4 (Transparência): Neste estágio, dados, informações e conhecimentos gerados
+                                                 ao longo dos processos e subprocessos de transformação, serão utilizados para
+                                                 autocorrigir e auto-otimizar todos os processos e subprocessos de transformação ao
+                                          2      mesmo tempo que integra a cadeia de suprimentos para fornecer subsídios e
+                                                 informações de demanda (presente e futuro) de fornecimentos, e potencializa a
+                                                 capacidade de corrigir e otimizar o processo de fornecimento ao mesmo tempo que
+                                                 pode direcionar (prever) a produção futura dos mesmos insumos.
+
+                                                 Projetos em estágios de maturidade 3 ou inferior ou grau de maturidade não está
+                                          1
+                                                 claramente descrito
+2. Equacionamento da Solução
+Indica a forma como foi equacionada a
+                                                 Equacionamento inclui desenvolvimento sistemático documentado, com elaboração de
+resolução do desafio: desenvolvimento
+                                       4         hipóteses e alternativas, desenvolvimento e avaliação de protótipos para selecionar a
+sistemático               documentado,
+                                                 melhor
+desenvolvimento e avaliação de
+protótipos, entre outros.
+                                                 Equacionamento inclui identificar restrições ou limitações técnicas para a solução;
+                                          3
+                                                 realizar desenvolvimento sistemático com testes de validação.
+                                                 Equacionamento inclui identificar restrições ou limitações técnicas para a solução e
+                                          2
+                                                 buscar o conhecimento necessário para a solução.
+                                                 Equacionamento usual com atividades rotineiras de gestão de projeto (cronograma,
+                                          1
+                                                 etapas, recursos) ou o equacionamento não está claramente definido.
+3. Grau de Novidade Indica em que
+medida a resolução do desafio             4      Nova para o mundo
+tecnológico proposto leva à
+
+                                          3      Nova para o país ou para a região da Amazônia Ocidental e Amapá
+
+                                          2      Nova para empresa
+
+geração de inovações tecnológicas na
+                                     1           O grau de novidade não identificado (descrição) ou não há agregação de valor
+fronteira internacional.
+
+Linha de corte para Maturidade do Processo de I4.0: Grau mínimo - grau 2
+Linha de corte para Equacionamento da Solução: Grau mínimo - grau 3
+Linha de corte para Grau de Novidade: Grau mínimo - grau 3
+                                     Quadro 3 - Indicadores de Avaliação para Projetos de Startups
+
+
+3. PROJETOS DE CAPITALIZAÇÃO DE STARTUPS
+
+Indicador                                                     Grau    Métricas (Maturidade)
+
+1. Maturidade Tecnológica (TRL)
+Indica a TRL (technology readness level) do resultado previsto
+                                                               4      TRL 3 - Funções críticas e prova de conceito estabelecida
+pelo projeto (produto ou processo desenvolvido), ou seja, se
+já é uma tecnologia amadurecida ou será desenvolvida.
+
+                                                                      TRL 4 - Teste de laboratório dos componentes do protótipo ou
+                                                              3
+                                                                      processo
+
+                                                              2       TRL 5 - Teste de laboratório do sistema integrado
+
+                                                              1       TRL 6 ou maior ou TRL não está claramente descrita
+
+                                                                      Há metodologias, técnicas ou processos relacionados com gestão
+2. Gestão da Inovação e Comercialização                       4       da inovação e comercialização estruturados e fazem parte do
+                                                                      planejamento da empresa.
+Indica o quanto processos, técnicas ou metodologias de                Há metodologias, técnicas ou processos relacionados com gestão
+gestão da inovação e                                    3             da inovação e comercialização estruturados, mas não fazem parte
+comercialização estão inseridas no dia a dia da Startup               do planejamento da empresa.
+                                                                      Há metodologias, técnicas ou processos relacionados com gestão
+                                                              2       da inovação e comercialização, mas são informais e não
+                                                                      estruturados.
+                                                                      Não há utilização de nenhuma metodologia, técnica ou processo
+                                                              1       relacionado com gestão da inovação e comercialização ou a gestão
+                                                                      da inovação e da comercialização não está claramente descrita.
+3. Necessidade do Mercado
+Indica o quanto o objeto do projeto (produto ou processo) é           Há demanda internacional que pode ser atendida e condições de
+                                                            4
+novidade no mercado, se tem produtos ou serviços                      viabilidade da comercialização no mercado internacional.
+semelhantes etc. Benchmarking da solução ou serviço
+                                                                      Há um impacto potencial significativo no mercado brasileiro em
+                                                              3
+                                                                      função do caráter inovador da solução.
+
+                                                                      Há uma demanda definida para atendimentos de mercados na
+                                                              2
+                                                                      Amazônia Ocidental/Amapá, ou em outras regiões do Brasil,
+
+                                                              1       Não existe demanda clara e significativa identificada
+
+4. Contribuições para os Objetivos do Desenvolvimento
+Sustentável (ODS)
+                                                         4            Contribui para os três ou quatro temas
+Indica as contribuições para 4 temas que interrelacionam
+diversos ODS: 4. Geração de empregos
+
+5 . Melhoria da qualidade de acesso aos serviços públicos     3       Contribui para pelo menos dois temas
+
+6.Empoderamento de comunidades de baixa renda por meio
+da geração
+                                                            2         Contribui para pelo menos um tema
+de renda, agregação de valor e repartição dos benefícios da
+biodiversidade
+
+                                                                      Não contribui para nenhum ODS ou a contribuição para os ODS
+4. Conservação dos recursos naturais e redução de resíduos    1
+                                                                      não está claramente descrita.
+
+Também são itens classificatórios dos projetos de capitalização de startups:
+·Comprometimento da empresa em divulgar em um site, o seu Plano de Pesquisa e Inovação (conforme
+Anexo I da Portaria 2.145, de 2018);
+·A empresa cumprir os itens de caracterização mínima para faixa do investimento (item 7, Anexo II da Portaria 2.145, de 2018).
+Linha de corte para Maturidade Tecnológica: Grau mínimo - grau 2
+Linha de corte para Gestão da Inovação e Comercialização: Grau mínimo - grau 3Linha de corte para Necessidade de Mercado: Grau
+mínimo - grau 3
+Linha de corte para Contribuições para os ODS: Grau mínimo: grau 2
+                                      Quadro 4 - Indicadores de Avaliação de Projetos de Capacitação
+
+
+4. PROJETOS INTERNOS E EXTERNOS DE CAPACITAÇÃO
+
+Indicador                                               Grau   Métricas (Maturidade)
+
+1. Vínculo com a estratégia do Plano de PD&I
+Indica o alinhamento do projeto com a estratégia de            Forte alinhamento. Desenvolvimento ou aprimoramento de formações
+                                                    4
+PD&I do Plano do                                               para atender aos objetivos do Plano de PD&I
+Proponente
+
+                                                               Médio alinhamento. Formações específicas para o desenvolvimento dos
+                                                        3
+                                                               objetivos do Plano de PD&I
+
+                                                               Pouco alinhamento. Formações básicas para a execução das atividades do
+                                                        2
+                                                               Plano de PD&I
+
+                                                               Não tem alinhamento. Formações são necessidades da empresa, não do
+                                                        1
+                                                               Plano de PD&I
+
+2. Grau de formação
+Indica o tipo de formação que se pretende,                     Curso formal, nível de pós-graduação ou certificação externa, com mínimo
+                                                        4
+formal ou informal, o tipo de certificação                     de 320 horas
+etc.
+
+                                                               Curso formal, nível superior ou com certificação externa à empresa com
+                                                        3
+                                                               mínimo de 160 horas
+
+                                                        2      Curso formal, nível técnico, com certificação e externo à empresa
+
+                                                        1      Curso informal e/ou operacional, interno à empresa
+
+3. Abrangência da Formação                              4      Formação aborda os três eixos de formação.
+
+Indica o grau de transdisciplinaridade da formação,
+quantos eixos do Book of Knowledge (BOK) são
+incluídos na formação                                          Formação aborda dois dos eixos de formação ou aborda o eixo de
+                                                         3
+(tecnologias disruptivas, soft skills e práticas legais,       tecnologias disruptivas
+éticas e sociais)
+
+                                                        2      Formação aborda somente um dos eixos de formação
+
+                                                        1      A formação não está claramente descrita
+
+Observações - 3 eixos de formação que se integram:
+·Tecnologias disruptivas: IoT, I4.0, Big Data, Inteligência Artificial, etc.
+·Soft Skills: habilidades de interação do indivíduo - comunicação, flexibilidade, criatividade, gestão de conflitos, adaptabilidade etc.
+·Práticas legais, éticas e sociais: referências para o desenvolvimento e conduta profissional comportamento ético, compliance,
+propriedade intelectual, sustentabilidade etc.
+Linha de corte para Vínculo com a Estratégia do Plano: Grau mínimo - grau 3
+Linha de corte para Grau de Formação: Grau mínimo - grau 2
+Linha de corte para Abrangência da Formação: Grau mínimo: grau 2
+                                                             ANEXO I
+
+                       (Redação dada pela Portaria Conjunta MDIC/SUFRAMA Nº 6, de 31 de outubro de 2023).
+
+                                                             Quadro 1
+
+                                              Desafio, Solução e Novidade dos Projetos
+
+
+1. PROJETOS INTERNOS E EXTERNOS GERAIS
+
+Indicador                                           Grau    Métricas (Maturidade)
+
+1. Intensidade do Desafio.                                  Realização de pesquisa básica: trabalho experimental ou teórico executado
+Indica o nível de esforço e o tipo de resultado             primariamente para a aquisição de novo conhecimento dos fundamentos
+                                                5
+esperado com relação à criação de conhecimentos             subjacentes aos fenômenos e fatos observáveis, sem qualquer aplicação
+originais ou produção de novas tecnologias.                 particular ou uso em vista.
+                                                            Realização de pesquisa aplicada: pesquisa original realizada com o objetivo
+                                                    4       de adquirir conhecimento, na qual é primariamente dirigida a um objetivo
+                                                            ou a um alvo prático específico.
+                                                            Realização de desenvolvimento experimental: trabalho sistemático,
+                                                            baseado em conhecimento pré-existente, adquirido na pesquisa ou
+                                                    3
+                                                            experiência prática, e voltado para produzir novos produtos e processos ou
+                                                            aperfeiçoar os já existentes.
+                                                            Realização de inovação tecnológica: implementação de produtos, bens e
+                                                            serviços ou de processo tecnológico novo ou significativamente
+                                                    2
+                                                            aprimorado, desde que demonstrado o desafio tecnológico a ser
+                                                            enfrentado.
+                                                            Realização de projeto sem desafio tecnológico claro, a exemplo de projetos
+                                                    1
+                                                            rotineiros de engenharia.
+2. Equacionamento da Solução.
+Indica a forma como foi equacionada a resolução do
+                                                            Equacionamento inclui desenvolvimento sistemático documentado, com
+desafio: desenvolvimento sistemático documentado,
+                                                     4      elaboração de hipóteses e alternativas, desenvolvimento e avaliação de
+elaboração     de   hipóteses     e    alternativas,
+                                                            protótipos para selecionar a melhor.
+desenvolvimento e avaliação de protótipos, entre
+outros.
+                                                            Equacionamento inclui identificar restrições ou limitações técnicas para a
+                                                    3
+                                                            solução; realizar desenvolvimento sistemático com testes de validação.
+                                                            Equacionamento inclui identificar restrições ou limitações técnicas para a
+                                                            solução e buscar o conhecimento necessário para a solução; e há uma
+                                                    2       estrutura de etapas de natureza técnico-científica para atingir o objetivo
+                                                            definido, com as etapas mais relevantes identificadas e contextualizadas
+                                                            com o objetivo e escopo do projeto.
+                                                            Equacionamento usual com atividades rotineiras de gestão de projeto
+                                                    1       (cronograma, etapas, recursos) ou o equacionamento não está claramente
+                                                            definido.
+3. Grau de Novidade.
+Indica em que medida a resolução do desafio
+                                                 4          Nova para o mundo.
+tecnológico proposto leva à geração de inovações
+tecnológicas na fronteira internacional.
+
+                                                    3       Nova para o país ou para a região da Amazônia Ocidental e Amapá.
+
+                                                    2       Nova para empresa.
+
+                                                            O grau de novidade não identificado (descrição) ou não há agregação de
+                                                    1
+                                                            valor.
+Linha de corte para Intensidade do Desafio: Grau mínimo - grau 2
+Linha de corte para Equacionamento da Solução: Grau mínimo - grau 2
+Linha de corte para Grau de Novidade: Grau mínimo - grau 2
+                                                                 Quadro 2
+
+                                      Indicadores de Avaliação para Projetos Internos: Indústria 4.0
+
+
+2. PROJETOS INTERNOS: INDÚSTRIA 4.0
+
+Indicador                                  Grau     Métricas (Maturidade)
+1. Maturidade do Processo I4.0                      Estágio 6 (Adaptabilidade): Este estágio promove a integração de toda estrutura
+Indica o nível de maturidade de processo de         organizacional da empresa já com os níveis anteriores implementados e permite a
+Indústria 4.0 (segundo metodologia da 5             gestão da empresa baseada em
+ACATECH), pretendido pelo projeto de                inteligência artificial, de todo o negócio a nível local, regional ou mundial, incluindo
+PD&I                                                toda a cadeia produtiva local ou global.
+                                                    Estágio 5 (Capacidade preditiva): Este estágio utiliza a inteligência artificial e analisa,
+                                                    compreende, cria cenários e modelos de tendências, cria as relações causa-efeito das
+                                                    possíveis variações de demanda, promovendo as autocorreções e auto-otimizações de
+                                           4
+                                                    todos os processos e subprocessos, já compatíveis com os conceitos da indústria 4.0,
+                                                    e adaptando-os as novas condições de demanda. Promove a integração da demanda,
+                                                    do processo de transformação e da cadeia de suprimentos.
+                                                    Estágio 4 (Transparência): Neste estágio, dados, informações e conhecimentos
+                                                    gerados ao longo dos processos e subprocessos de transformação, serão utilizados
+                                                    para autocorrigir e auto-otimizar todos os processos e subprocessos de transformação
+                                           3        ao mesmo tempo que integra a cadeia de suprimentos para fornecer subsídios e
+                                                    informações de demanda (presente e futuro) de fornecimentos, e potencializa a
+                                                    capacidade de corrigir e otimizar o processo de fornecimento ao mesmo tempo que
+                                                    pode direcionar (prever) a produção futura dos mesmos insumos.
+                                                    Estágio 3 (Visibilidade): Este estágio utiliza os dados, informações e conhecimentos
+                                                    gerados ao longo dos processos e subprocessos de transformação para criar,
+                                                    realimentar, robustecer o gêmeo digital ou virtual dos subprocessos e processos de
+                                                    transformação. Esta integração entre o virtual-digital e o real permite a execução de
+                                           2
+                                                    simulações computacionais e criação de cenários que podem alimentar e contribuir
+                                                    com o processo de autocorreção e auto otimização, e contribuir para reduzir o ciclo de
+                                                    novos desenvolvimentos, pois os conhecimentos dos processos de transformação, já
+                                                    testados e comprovados em produção real, não mais serão variáveis indeterminadas.
+                                                    Projetos em estágios de maturidade 2 ou inferior ou grau de maturidade não está
+                                           1
+                                                    claramente descrito.
+2. Equacionamento da Solução
+Indica a forma como foi equacionada a
+                                                    Equacionamento inclui desenvolvimento sistemático documentado, com elaboração
+resolução do desafio: desenvolvimento
+                                        4           de hipóteses e alternativas, desenvolvimento e avaliação de protótipos para selecionar
+sistemático                documentado,
+                                                    a melhor.
+desenvolvimento       e   avaliação  de
+protótipos, entre outros.
+                                                    Equacionamento inclui identificar restrições ou limitações técnicas para a solução;
+                                           3
+                                                    realizar desenvolvimento sistemático com testes de validação.
+                                                    Equacionamento inclui identificar restrições ou limitações técnicas para a solução e
+                                           2
+                                                    buscar o conhecimento necessário para a solução.
+                                                    Equacionamento usual com atividades rotineiras de gestão de projeto (cronograma,
+                                           1
+                                                    etapas, recursos) ou o equacionamento não está claramente definido.
+3. Grau de Novidade Indica em que medida
+a resolução do desafio tecnológico
+                                           4        Nova para o mundo.
+proposto leva à geração de inovações
+tecnológicas na fronteira internacional.
+
+                                           3        Nova para o país ou para a região da Amazônia Ocidental e Amapá.
+
+                                           2        Nova para empresa.
+
+                                           1        O grau de novidade não identificado (descrição) ou não há agregação de valor.
+
+Linha de corte para Maturidade do Processo de I4.0: Grau mínimo - grau 3
+Linha de corte para Equacionamento da Solução: Grau mínimo - grau 3
+Linha de corte para Grau de Novidade: Grau mínimo - grau 2
+                                                                 Quadro 3
+
+                                            Indicadores de Avaliação para Projetos de Startups
+
+
+3. PROJETOS DE CAPITALIZAÇÃO DE STARTUPS
+Indicador                                                    Grau   Métricas (Maturidade)
+1. Maturidade Tecnológica (TRL)
+Indica a TRL (Technology Readiness Level) do resultado
+previsto pelo projeto (produto ou processo desenvolvido), ou 5      TRL 3 ou inferior
+seja, se já é uma tecnologia amadurecida ou será
+desenvolvida.
+
+                                                                    TRL 4 - Teste de laboratório dos componentes do protótipo ou
+                                                             4
+                                                                    processo
+
+                                                             3      TRL 5 - Teste de laboratório do sistema integrado
+
+                                                             2      TRL 6 - Protótipo em ambiente relevante
+
+                                                             1      TRL 7 a 9, ou TRL não está claramente descrita
+
+2. Gestão da Inovação e Comercialização Indica o quanto             Há metodologias, técnicas ou processos relacionados com gestão da
+processos, técnicas ou metodologias de gestão da inovação e 4       inovação e comercialização estruturados e fazem parte do
+comercialização estão inseridas no dia a dia da Startup             planejamento da empresa.
+
+                                                                    Há metodologias, técnicas ou processos relacionados com gestão da
+                                                             3      inovação e comercialização estruturados, mas não fazem parte do
+                                                                    planejamento da empresa.
+
+                                                                    Há metodologias, técnicas ou processos relacionados com gestão da
+                                                             2
+                                                                    inovação e comercialização, mas são informais e não estruturados.
+
+                                                                    Não há utilização de nenhuma metodologia, técnica ou processo
+                                                             1      relacionado com gestão da inovação e comercialização ou a gestão
+                                                                    da inovação e da comercialização não está claramente descrita.
+
+3. Necessidade do Mercado
+Indica o quanto o objeto do projeto (produto ou processo) é         Há demanda internacional que pode ser atendida e condições de
+                                                            4
+novidade no mercado, se tem produtos ou serviços                    viabilidade da comercialização no mercado internacional.
+semelhantes etc. Benchmarking da solução ou serviço
+                                                                    Há um impacto potencial significativo no mercado brasileiro em
+                                                             3
+                                                                    função do caráter inovador da solução.
+                                                                    Há uma demanda definida para atendimentos de mercados na
+                                                             2
+                                                                    Amazônia Ocidental/Amapá, ou em outras regiões do Brasil.
+
+                                                             1      Não existe demanda clara e significativa identificada.
+
+4. Contribuições para os Objetivos do Desenvolvimento
+Sustentável (ODS)
+Indica as contribuições para 4 temas que interrelacionam
+diversos ODS:
+· Geração de empregos
+                                                          4         Contribui para os três ou quatro temas.
+· Melhoria da qualidade de acesso aos serviços públicos
+· Empoderamento de comunidades de baixa renda por meio
+da geração de renda, agregação de valor e repartição dos
+benefícios da biodiversidade
+· Conservação dos recursos naturais e redução de resíduos
+
+                                                             3      Contribui para pelo menos dois temas.
+
+                                                             2      Contribui para pelo menos um tema.
+
+                                                                    Não contribui para nenhum ODS ou a contribuição para os ODS não
+                                                             1
+                                                                    está claramente descrita.
+Também são itens classificatórios dos projetos de capitalização de startups, conforme Portaria MDIC/SUFRAMA nº 2.145, de 2018:
+· Comprometimento da empresa em divulgar em um site, o seu plano de pesquisa, desenvolvimento e inovação (conforme Anexo I da
+Portaria MDIC/SUFRAMA 2.145, de 2018);
+· A empresa cumprir os itens de caracterização mínima para faixa do investimento (item 7, Anexo II da Portaria MDIC/SUFRAMA 2.145, de
+2018).
+Linha de corte para Maturidade Tecnológica: Grau mínimo - grau 2
+Linha de corte para Gestão da Inovação e Comercialização: Grau mínimo - grau 3
+Linha de corte para Necessidade de Mercado: Grau mínimo - grau 3
+Linha de corte para Contribuições para os ODS: Grau mínimo - grau 2
+
+
+                                                                        Quadro 4
+
+                                               Indicadores de Avaliação de Projetos de Capacitação
+
+4. PROJETOS INTERNOS E EXTERNOS DE CAPACITAÇÃO
+Indicador                                                           Grau Métricas (Maturidade)
+1. Vínculo com a estratégia do Plano de PD&I
+                                                                            Forte alinhamento. Desenvolvimento ou aprimoramento de
+Indica o alinhamento do projeto com a estratégia de PD&I do 4
+                                                                            formações para atender aos objetivos do Plano de PD&I.
+Plano do Proponente.
+                                                                            Médio alinhamento. Formações específicas para o desenvolvimento
+                                                                    3
+                                                                            dos objetivos do Plano de PD&I.
+                                                                            Pouco alinhamento. Formações básicas para a execução das
+                                                                    2
+                                                                            atividades do Plano de PD&I.
+                                                                            Não tem alinhamento. Formações são necessidades da empresa,
+                                                                    1
+                                                                            não do Plano de PD&I.
+2. Grau de formação                                                         Curso formal, nível de pós-graduação, com certificação externa,
+                                                                    5
+Indica o tipo de formação que se pretende                                   com mínimo de 320 horas
+                                                                    4       Curso formal, nível superior, com certificação externa à empresa
+                                                                            Curso formal, profissional técnico de nível médio, com certificação e
+                                                                    3
+                                                                            externo à empresa
+                                                                            Curso de capacitação profissional, de natureza tecnocientífica, com
+                                                                    2
+                                                                            certificação e externo à empresa
+                                                                    1       Curso não formal, de natureza operacional, ou interno à empresa
+3. Abrangência da formação
+Indica o grau de transdisciplinaridade da formação, quantos
+eixos do Book of Knowledge (BOK) são incluídos na formação          5       Formação aborda os três eixos de formação
+(tecnologias disruptivas, soft skills e práticas legais, éticas e
+sociais).
+                                                                            Formação aborda dois dos eixos de formação ou aborda o eixo de
+                                                                    4
+                                                                            tecnologias disruptivas.
+                                                                    3       Formação aborda somente um dos eixos de formação.
+                                                                            Formação em área considerada prioritária pelo CAPDA ou em área
+                                                                    2       vinculada às atividades de que tratam os incisos I ao IV do caput do
+                                                                            art. 10 desta Portaria Conjunta
+                                                                    1       A formação não está claramente descrita.
+Observações - 3 eixos de formação que se integram:
+· Tecnologias disruptivas: IoT, I4.0, Big Data, Inteligência Artificial etc.
+· Soft skills: habilidades de interação do indivíduo - comunicação, flexibilidade, criatividade, gestão de conflitos, adaptabilidade etc.
+· Práticas legais, éticas e sociais: referências para o desenvolvimento e conduta profissional comportamento ético, compliance, propriedade
+intelectual, sustentabilidade etc.
+Linha de corte para Vínculo com a Estratégia do plano: Grau mínimo - grau 3
+Linha de corte para Grau de Formação: Grau mínimo - grau 2
+Linha de corte para Abrangência da Formação: Grau mínimo: grau 2
+                                                                ANEXO II
+
+                          INDICADORES DE MONITORAMENTO DE RESULTADOS DOS INVESTIMENTOS EM PD&I
+
+                          Quadro 5 - Indicadores de monitoramento de resultados dos investimentos em PD&I
+
+
+Modalidades         de INDICADORES DE MONITORAMENTO DE RESULTADOS DOS INVESTIMENTOS EM PD&I
+Investimentos
+
+                         Indicador                 Descrição
+
+4. Projetos de PD&I
+internos e externos                                Frequência de interação entre empresa beneficiária e Instituições de Ciência e
+                    1. Interação com
+                                                   Tecnologia (ICTs) por objeto de cooperação: atividades de PD&I, transferência de
+2. Projetos         ICTs
+                                                   tecnologia, ensaios e testes, treinamento e outras atividades de cooperação
+Indústria 4.0
+                         2. Instrumentos de Frequência de uso de instrumentos de propriedade intelectual (patentes, registro de
+                         propriedade intelectual desenho industrial, registro de software,
+                                                 marcas, modelo de utilidade e outros instrumentos)
+
+                         3. Proporção de
+                         novos produtos na         Relação entre o faturamento de novos produtos (*) e faturamento total da empresa.
+                         receita
+                                                   Número de artigos científicos, livros, teses, dissertações e publicações em anais de
+                         4. Publicações            eventos científicos.
+
+3. Investimentos    em
+Startups                 5. Startups               Número de empresas startups capitalizadas
+
+                         6. Faturamento
+                                                   Volume do faturamento líquido das startups capitalizadas
+                         das startups
+                         7.       Investimentos Volume de aporte de investimentos externos nas startups capitalizadas
+                         externos
+                         8. Qualificação de        Número total de profissionais alocados na startup capitalizada, agrupados pela
+                         Recursos Humanos          qualificação técnica (técnicos, graduados, pós-graduados)
+
+                         9. Índice de sucesso do Relação entre a receita produzida pelos clientes e o custo de aquisição de clientes da
+                         negócio                 startup capitalizada.
+4. Capacitação de
+                         10. Cursos de Formação    Número de cursos oferecidos para formação profissional e educacional
+Recursos Humanos
+                         11.Profissionais          Número de profissionais formados nos cursos de formação (certificação formal)
+                         Formados
+
+                         12. Abrangência da        Frequência dos cursos oferecidos por eixo temático: tecnologias disruptivas, habilidades
+                         Formação                  de interação (soft skills) e práticas legais, éticas e sociais.
+                        13.    Geração         de Número de empregos formais gerados na região da AMOC/AP a partir dos investimentos
+5. Todas as modalidades Empregos Locais
+                                                  das contrapartidas.
+
+                         14. Conservação      dos Frequência da ocorrência de resultados de conservação ambiental: redução do
+                         Recursos                 desmatamento, redução da geração de resíduos, redução da contaminação de aquíferos,
+                         Naturais                 redução do consumo de energia, uso de materiais recicláveis, dentre outros resultados.
+Observações:
+ (*) Novo produto é um produto cujas características técnicas fundamentais (especificações técnicas, componentes e materiais, software
+
+incorporado, user friendiness, usos ou funções pretendidas) difere significativamente de todos os produtos previamente produzidos pela
+empresa.
+                                                     Quadro 6 - Indicadores de monitoramento – Empresas
+
+
+ Indicador                                                              Descrição
+
+                                                                        Volume total de investimentos de PD&I realizado anualmente pela empresa
+ 1. Investimento em PD&I                                                beneficiária (investimento da contrapartida e além da contrapartida)
+
+ 2. Diversidade do investimento da contrapartida                        Volume de investimento por modalidade de aplicação (Artigos 5º e 6º do
+                                                                        Decreto nº 10.521, de 2020)
+                                                                        Número total de profissionais alocados na equipe de PD&I, agrupados pela
+ 3. Equipe de PD&I
+                                                                        qualificação (técnicos, graduados, pós-graduados)
+                                                                        Número de total de interações que a empresa teve com diferentes atores
+ 4. Interação com ecossistema                                           que fazem parte com o ecossistema de PD&I (ICTs, incubadoras,
+                                                                        aceleradoras, etc.).
+
+                                                                        Possui processo de P&D&I: prospecção, pesquisa, desenvolvimento de
+                                                                 Grau   produto, monitoramento de portfólio, colaboração interna e externa,
+ 5. Gestão de PD&I
+                                                                 4      avaliação, etc.
+
+                                                                        Realiza planejamento estratégico em P&D&I: alinha a estratégia em P&D&I
+                                                                 Grau   com os objetivos estratégicos da empresa.
+                                                                 3
+
+                                                                 Grau   Possui alguma estrutura de P&D&I na empresa: pessoa(s) definida(s), área,
+                                                                 2      departamento, etc.
+
+                                                                 Grau
+                                                                        Não possui.
+                                                                 1
+ 6. Desenvolvimento de produtos e processos na                          Mais de 50% dos investimentos realizados se reflete no desenvolvimento de
+ Amazônia Ocidental e Estado do Amapá.                           Grau   produtos e processos na Amazônia Ocidental e Estado do Amapá
+                                                                 3
+
+                                                                 Grau   Menos de 50% dos investimentos realizados se reflete no desenvolvimento
+                                                                 2      de produtos e processos na Amazônia Ocidental e Estado do Amapá
+
+                                                                        Os investimentos não se refletem no desenvolvimento de produtos e
+                                                                 Grau   processos na Amazônia Ocidental e Estado do
+                                                                 1      Amapá
+Este conteúdo não substitui o publicado na versão certificada.
+

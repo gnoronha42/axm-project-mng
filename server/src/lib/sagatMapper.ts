@@ -1,4 +1,5 @@
 import { validateRepartition, type AllocationInput } from './suframaRules.js';
+import { SAGAT_PLAYBOOK } from './sagatPlaybook.js';
 
 export type SagatPayload = {
   empresa: { name: string; cnpj?: string | null };
@@ -16,6 +17,7 @@ export type SagatPayload = {
     ready: boolean;
     hashPreview: string;
   };
+  roteiroTreinamento: typeof SAGAT_PLAYBOOK;
 };
 
 export function buildSagatPayload(input: {
@@ -30,7 +32,7 @@ export function buildSagatPayload(input: {
   pdiObligation: number;
   allocations: AllocationInput[];
 }): SagatPayload {
-  const conciliacao = validateRepartition(input.pdiObligation, input.allocations);
+  const conciliacao = validateRepartition(input.pdiObligation, input.allocations, input.netRevenue);
   const canonical = JSON.stringify({
     cnpj: input.cnpj ?? '',
     year: input.year,
@@ -57,5 +59,6 @@ export function buildSagatPayload(input: {
       ready: conciliacao.compliant,
       hashPreview,
     },
+    roteiroTreinamento: SAGAT_PLAYBOOK,
   };
 }

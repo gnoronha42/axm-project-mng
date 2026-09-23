@@ -1,0 +1,686 @@
+4/7/24, 1:11 PM                                 PORTARIA SUFRAMA Nº 858, DE 31 DE MAIO DE 2023 - PORTARIA SUFRAMA Nº 858, DE 31 DE MAIO DE 2023 - DOU - Imprensa Nacional
+
+
+
+
+                                                              DIÁRIO OFICIAL DA UNIÃO
+                                                          Publicado em: 31/05/2023 | Edição: 103-B | Seção: 1 - Extra B | Página: 1
+                         Órgão: Ministério do Desenvolvimento, Indústria, Comércio e Serviços/Superintendência da Zona Franca de Manaus
+
+
+                                                        PORTARIA SUFRAMA Nº 858, DE 31 DE MAIO DE 2023
+
+                                                                                      Dispõe sobre o formato, os elementos essenciais e os
+                                                                                      procedimentos para apresentação dos planos de pesquisa,
+                                                                                      desenvolvimento e inovação - PD&I de que trata o art. 20 do
+                                                                                      Decreto nº 10.521, de 15 de outubro de 2020.
+
+
+                             O SUPERINTENDENTE DA SUPERINTENDÊNCIA DA ZONA FRANCA DE MANAUS - SUFRAMA, no
+                  uso da atribuição que lhe confere o parágrafo único do art. 15 da Portaria nº 9.835, de 17 de novembro de
+                  2022, do Ministério da Economia e da Suframa, e o constante do processo nº 52710.008992/2022-24,
+                  resolve:
+
+                                 Art. 1º Esta Portaria dispõe sobre o formato, os elementos essenciais e os procedimentos para
+                  apresentação dos planos de pesquisa, desenvolvimento e inovação - PD&I de que trata o art. 20 do
+                  Decreto nº 10.521, de 15 de outubro de 2020.
+
+                           Art. 2º O plano de PD&I compreende os investimentos de dois anos-base, devendo ser
+                  apresentado em um dos formatos a seguir, conforme o caso:
+
+                             I - plano de PD&I completo: plano de PD&I que contém todas as informações necessárias para a
+                  avaliação do mérito de suas atividades, conforme previsto no art. 18 da Portaria Conjunta nº 9.835, de 17 de
+                  novembro de 2022, do Ministério da Economia e da Suframa; ou
+
+                            II - plano de PD&I simplificado: plano de PD&I que não contém todas as informações necessárias
+                  para a avaliação do mérito de suas atividades, conforme previsto no parágrafo único do art. 19 da Portaria
+                  Conjunta nº 9.835, de 2022, do Ministério da Economia e da Suframa.
+
+                             § 1º O plano de PD&I completo deve ser apresentado de acordo com o formato e os elementos
+                  essenciais constantes do Anexo I desta Portaria.
+
+                           § 2º O plano de PD&I simplificado deve ser apresentado de acordo com o formato e os
+                  elementos essenciais constantes do Anexo II desta Portaria.
+
+                            § 3º O plano de PD&I simplificado somente poderá ser apresentado caso haja justificativa
+                  técnica para a não apresentação do plano de PD&I completo.
+
+                            Art. 3º O plano de PD&I apresentado em desacordo aos Anexos I ou II desta Portaria não será
+                  considerado válido.
+
+                              Parágrafo Único. Na hipótese prevista no caput, a empresa deverá apresentar versão ajustada
+                  do plano de PD&I no prazo de até quinze dias após notificação, estando sujeita às penalidades previstas no
+                  art. 34 do Decreto nº 10.521, de 2020, em caso de descumprimento.
+
+                            Art. 4º A apresentação do plano de PD&I deverá ser efetuada por meio do Sistema Eletrônico de
+                  Informação - SEI, com encaminhamento à Superintendência-Adjunta de Desenvolvimento e Inovação
+                  Tecnológica da Suframa.
+
+                             Parágrafo único. Após a implementação de módulo específico no Sistema de Acompanhamento,
+                  Gestão e Análise Tecnológica - SAGAT, a apresentação de que trata o caput deverá ser realizada por meio
+                  desse sistema.
+
+                            Art. 5º O disposto nesta Portaria aplica-se no que couber à apresentação de revisões de plano
+                  de PD&I previstas no art. 24 e no art. 25 da Portaria Conjunta nº 9.835, de 2022, do Ministério da Economia
+                  e da Suframa.
+
+                                 Art. 6º Fica revogado o art. 2º da Portaria nº 222, de 4 de julho de 2017, da Suframa.
+
+                                 Art. 7º Esta Portaria entra em vigor na data de sua publicação.
+https://www.in.gov.br/en/web/dou/-/portaria-suframa-n-858-de-31-de-maio-de-2023-487078004                                                                                   1/11
+4/7/24, 1:12 PM                                 PORTARIA SUFRAMA Nº 858, DE 31 DE MAIO DE 2023 - PORTARIA SUFRAMA Nº 858, DE 31 DE MAIO DE 2023 - DOU - Imprensa Nacional
+
+
+                                                              JOÃO BOSCO GOMES SARAIVA
+                  ANEXO I FORMULÁRIO PARA APRESENTAÇÃO DE PLANO DE PD&I - COMPLETO
+
+                                 1. CARACTERIZAÇÃO DA EMPRESA
+
+                  Nome da Empresa:
+                  Razão Social:
+                  Representante legal da empresa**:
+                  Cargo na empresa:
+                  Celular (com DDD)/e-mail:
+                  Nome do responsável pelas Informações do Plano:
+                  Cargo na empresa:
+                  Celular (com DDD)/e-mail:
+                  Data do preenchimento:
+                  Vigência do Plano:
+                  Dados dos produtos incentivados:
+                  NCM Cód. Suframa Descrição do Produto Documento Aprobatório
+
+
+
+                                 **Em caso de representação terceirizada, encaminhar procuração.
+
+                                 2. GESTÃO DA PD&I
+
+                  2.1. A empresa tem pessoal próprio dedicado às atividades de PD&I? [opções excludentes]
+                  ( ) Sim, pessoal próprio dedicado exclusivamente para atividades de PD&I
+                  ( ) Sim, pessoal próprio dedicado parcialmente para atividades de PD&I
+                  ( ) Sim, pessoal próprio dedicado e atividades de PD&I parcialmente terceirizadas.
+                  ( ) Não, as atividades PD&I são realizadas integralmente de forma terceirizada
+                  ( ) Não existe pessoal dedicado à PD&I, próprio ou terceirizado
+                  Caso a empresa possua equipe própria de PD&I, responda aos itens seguintes
+                  2.2. Informe o número de pessoas, do quadro da empresa, total e normalmente ocupadas em atividades
+                  de PD&I em 2020, segundo o nível de qualificação e o tempo de dedicação a estas atividades.
+                  Número total de ocupações na empresa:
+                  Ocupação segundo níveis de                                Número de pessoas em dedicação Número de pessoas em
+                  qualificação                                              exclusiva                      dedicação parcial
+                  Doutores
+                  Mestres
+                  Especialistas
+                  Graduados
+                  Nível médio ou fundamental
+                  2.3. Qual o nível de centralização das atividades de PD&I na empresa? [opções excludentes]
+                  ( ) As atividades de PD&I são centralizadas em um único departamento/área (ou estrutura similar) da
+                  empresa (ou grupo).
+                  Localização do departamento/área: Brasil (UF):_____ Exterior (país): ____
+                  ( ) As atividades de PD&I são descentralizadas em vários departamentos/áreas (ou estruturas similares)
+                  da empresa (ou grupo), com a predominância de um destes departamentos/áreas, para o qual os demais
+                  se reportam.
+                  Localização do departamento/área: Brasil (UF):_____ Exterior (país): ____
+                  ( ) As atividades de PD&I são descentralizadas em vários departamentos/áreas (ou estruturas similares)
+                  da empresa (ou grupo), sem a predominância de um departamento/áreas sobre as demais.
+                  2.4. A empresa realiza planejamento em PD&I?
+                  ( ) Sim, porém de maneira não estruturada - não há etapas e processos formais, nem registro e
+                  acompanhamento de planos de PD&I
+                  ( ) Sim, de maneira estruturada.
+                  ( ) Sim, outros:______________________________
+                  ( ) Não realiza planejamento de PD&I
+                  2.5. Indique a(s) metodologia(s) utilizada(s) no planejamento da PD&I :
+
+                                 3. ESTRATÉGIA DA PD&I
+
+
+
+
+https://www.in.gov.br/en/web/dou/-/portaria-suframa-n-858-de-31-de-maio-de-2023-487078004                                                                                   2/11
+4/7/24, 1:12 PM                                 PORTARIA SUFRAMA Nº 858, DE 31 DE MAIO DE 2023 - PORTARIA SUFRAMA Nº 858, DE 31 DE MAIO DE 2023 - DOU - Imprensa Nacional
+
+                  3.1. Descrição da estratégia de PD&I da empresa para a Amazônia Ocidental e Amapá - máximo de 2.000
+                  caracteres:
+                  Descrever resumidamente os objetivos e princípios que norteiam a empresa no exercício das atividades de
+                  PD&I na Amazônia Ocidental
+                  3.2. Estratégia do Plano de PD&I:
+                  3.2.1. Indique o principal elemento motivador dos objetivos estratégicos do Plano de PD&I:
+                  ( ) Desenvolvimento de novos nichos de mercado
+                  ( ) Melhoria do processo produtivo
+                  ( ) Atualização tecnológica para manter competitividade no mercado
+                  ( ) Outro:_________________________________________
+                  3.2.2. Descreva os objetivos estratégicos do Plano de PD&I - máximo 2.000 caracteres
+                  3.2.3. Descreva os principais desafios tecnológicos que pretende abordar e os macrorresultados que
+                  pretende atingir a partir da resolução dos desafios - máximo de 2.500 caracteres.
+                  Conceito de 'desafio tecnológico' - Incerteza científica ou tecnológica, cuja resolução demanda atividades
+                  investigativas e de experimentação, incorre em riscos para obtenção dos resultados e gera novos
+                  conhecimentos.
+                  Macrorresultados -indicar os macrorresultados esperados a partir da resolução dos desafios e que
+                  contribuam para os objetivos estratégicos da Lei de Informática Como referência, pode-se utilizar os
+                  resultados esperados da Lei de Informática.
+
+                                 4. INVESTIMENTOS EM PD&I
+
+                  4.1. Valores previstos de investimentos em PD&I
+                  Valor total previsto para o Plano de PD&I
+                  Valor previsto das Contrapartidas                                         Ano 1 Ano 2
+
+                  Valor previsto dos investimentos de PD&I                                  Ano 1 Ano 2
+
+                  Valor previsto nos projetos internos (2,7%) Ano 1 Ano 2
+
+                  Valor previsto nos projetos externos (2,3%) Ano 1 Ano 2
+
+
+                  4.2. Modalidades previstas de investimentos em PD&I
+                  Modalidades de Investimento                                                             Ano 1 % Ano 2 %
+                  Projetos de PD&I externos - ICTs credenciadas CAPDA
+                  Projetos de PD&I externos - ICTs públicas
+                  Projetos externos - Organizações Sociais
+                  Programas prioritários
+                  Fundos de Investimentos em Participações (FIPs)
+                  Implantação e Operação de incubadoras ou aceleradoras
+                  FNDCT
+                  SUB-TOTAIS (R$)
+                  Projetos de PD&I internos
+                  Projetos de PD&I contratados com empresas ou ICTs
+                  Projetos Indústria 4.0
+                  Projetos tecnológicos sustentáveis (PROTECSUS)
+                  Projetos Internos de Capacitação
+                  Capitalização de Startups (EBTs)
+                  Projetos internos - Organizações Sociais
+                  SUB-TOTAIS (R$)
+
+                                 5. PROJETOS DE PD&I
+
+                           As informações a serem apresentadas, estão organizadas por modalidade de projeto. As
+                  informações devem ser apresentadas individualmente para cada projeto.
+
+                                Para cada modalidade, os projetos deverão ser numerados numa sequência. Por exemplo, no
+                  caso dos projetos internos e externos, se houver cinco projetos, eles deverão ser identificados como 5.1.1,
+                  5.1.2, 5.1.3, 5.1.4 e 5.1.5. Para cada um deles, responder a todos os itens, de a) até f).
+
+                                 Não serão aceitos projetos que já foram executados em sua totalidade.
+
+https://www.in.gov.br/en/web/dou/-/portaria-suframa-n-858-de-31-de-maio-de-2023-487078004                                                                                   3/11
+4/7/24, 1:12 PM                                 PORTARIA SUFRAMA Nº 858, DE 31 DE MAIO DE 2023 - PORTARIA SUFRAMA Nº 858, DE 31 DE MAIO DE 2023 - DOU - Imprensa Nacional
+
+                                 5.1. Projetos de PD&I Externos e Internos
+
+                  a) Identificação do Projeto
+                  Projeto : <Código do projeto - empresa beneficiária>
+                  Título: <máximo 100 caracteres>
+                  Tecnologia: <máximo 150 caracteres> P.ex. Inteligência Artificial, IoT, Big Data etc.
+                  Valor estimado do Projeto: R$ xxxx
+                  Modalidade:
+                  ( ) Totalmente executado pela empresa beneficiária
+                  ( ) Totalmente executado pela Instituição convenente
+                  ( ) Atividade principal executada por empresa terceirizada
+                  ( ) Parcialmente executado pela empresa beneficiária e parcialmente pela Instituição convenente
+                  Instituição Convenente: <em caso de projeto externo>
+
+                                 Obs. - No preenchimento do projeto, não colocar informações que identifiquem a empresa
+                  (nome da empresa, marca, etc.)
+
+                  b) Vínculo com os objetivos estratégicos do Plano de PD&I
+                  Objetivos do Projeto:
+                  Máximo de 500 caracteres
+                  Vínculo com os objetivos do Plano de PD&I: indicar qual(is) objetivos do Plano de PD&I este projeto se
+                  vincula (Item 3.2.2 - estratégicos do Plano de PD&I):
+                  Máximo 100 caracteres.
+
+                  c) Intensidade do desafio tecnológico
+                  Descrever qual é o tipo de desafio tecnológico a ser equacionado pelo projeto, indicando em que medida
+                  este desafio demanda a realização de atividades de pesquisa básica/aplicada ou se trata da utilização de
+                  tecnologias ou conhecimentos existentes para a melhoria significativa de performance de produtos,
+                  processos ou serviços:
+                  Máximo de 750 caracteres
+                  Justificar a relevância do desafio - apresentar artigos, documentos, estudos, links de sites especializados
+                  ou outros tipos de conteúdos que comprovem a intensidade descrita do desafio:
+                  Máximo 2000 caracteres.
+
+                  d) Equacionamento da solução
+                  Descrever como o desafio será equacionado: quais os métodos, etapas pensadas para a solução; em que
+                  medida serão buscados novos conhecimentos no estado da arte; se será necessária a construção e
+                  testes de hipóteses, provas de conceitos, testes de validação etc:
+                  Máximo de 5.000 caracteres
+
+                  e) Grau de novidade
+                  Indique se a inovação é de:
+                  ( ) produtos
+                  ( ) processos
+                  ( ) serviços
+                  Indique se a inovação tecnológica também leva à inovação no processo de negócio:
+                  ( ) Produção de bens e serviços
+                  ( ) Distribuição e logística
+                  ( ) Marketing e vendas
+                  ( ) Sistema de informação e comunicação
+                  ( ) Administração e Gestão
+                  ( ) Desenvolvimento do produto e do processo de negócio
+                  Descrever os principais resultados esperados, identificando se a disseminação da novidade destes
+                  resultados será no âmbito da empresa, da região da Amazônia Ocidental/Amapá, do país ou do mundo:
+                  Máximo de 1.000 caracteres
+
+                  f) Cronograma, resultados esperados e recursos
+                  Cronograma - descrever as macroatividades de PD&I do projeto e respectivos prazos de realização em
+                  uma linha temporal:
+                  Recursos - valores totais do projeto agrupados pelas rubricas de equipamentos e programas de
+                  computador, implantação e ampliação de laboratórios, recursos humanos, serviços técnicos de terceiros,
+                  materiais de consumo e outros correlatos:
+
+
+https://www.in.gov.br/en/web/dou/-/portaria-suframa-n-858-de-31-de-maio-de-2023-487078004                                                                                   4/11
+4/7/24, 1:12 PM                                 PORTARIA SUFRAMA Nº 858, DE 31 DE MAIO DE 2023 - PORTARIA SUFRAMA Nº 858, DE 31 DE MAIO DE 2023 - DOU - Imprensa Nacional
+
+                  Resultados - Indicar principais resultados previstos, correlacionando com os macrorresultados do plano
+                  (item 3.2.3):
+                  Máximo de 1.000 caracteres.
+
+                                 5.2. Projetos de PD&I Internos de Indústria 4.0
+
+                  a) Identificação do Projeto
+                  Projeto : <Código do projeto - empresa beneficiária>
+                  Título: <máximo 100 caracteres>
+                  Tecnologia: <máximo 150 caracteres> P.ex. Inteligência Artificial, IoT, Big Data etc.
+                  Valor estimado do Projeto: R$ xxxx
+
+                            Obs. - No preenchimento do projeto, não colocar informações que identifiquem a empresa
+                  (nome da empresa, marca, etc.)
+
+                  b) Vínculo com os objetivos estratégicos do Plano de PD&I
+                  Objetivos do Projeto:
+                  Máximo de 500 caracteres
+                  Vínculo com os objetivos do Plano de PD&I: indicar qual(is) objetivos do Plano de PD&I este projeto se
+                  vincula (Item 3.2.2 - estratégicos do Plano de PD&I):
+                  Máximo 100 caracteres.
+
+                  c) Maturidade do processo
+                  Descrever qual é o tipo estágio de maturidade de processo de Indústria 4.0 pretendido (4 a 6), conforme
+                  descrito no anexo 1 da Portaria 2.091/18:
+                  Máximo de 100 caracteres
+                  Caracterizar o estágio de maturidade a ser atingido, contextualizando-o com os processos e
+                  subprocessos a serem desenvolvidos, a vinculação com os conceitos de Indústria 4.0 e as melhorias
+                  pretendidas no processo produtivo:
+                  Máximo 2000 caracteres.
+
+                  d) Equacionamento da solução
+                  Descrever como o desafio será equacionado: quais os métodos, etapas pensadas para a solução; em que
+                  medida serão buscados novos conhecimentos no estado da arte; se será necessária a construção e
+                  testes de hipóteses, provas de conceitos, testes de validação etc:
+                  Máximo de 5.000 caracteres
+
+                  e) Grau de novidade
+                  Indique se a inovação é de:
+                  ( ) produtos
+                  ( ) processos
+                  ( ) serviços
+                  Indique se a inovação tecnológica também leva à inovação no processo de negócio:
+                  ( ) Produção de bens e serviços
+                  ( ) Distribuição e logística
+                  ( ) Marketing e vendas
+                  ( ) Sistema de informação e comunicação
+                  ( ) Administração e Gestão
+                  ( ) Desenvolvimento do produto e do processo de negócio
+                  Descrever os principais resultados esperados, identificando se a disseminação da novidade destes
+                  resultados será no âmbito da empresa, da região da Amazônia Ocidental/Amapá, do país ou do mundo:
+                  Máximo de 1.000 caracteres
+
+                  f) Cronograma, resultados esperados e recursos
+                  Cronograma - descrever as macroatividades de PD&I do projeto e respectivos prazos de realização em
+                  uma linha temporal:
+                  Recursos - valores totais do projeto agrupados pelas rubricas de equipamentos e programas de
+                  computador, implantação e ampliação de laboratórios, recursos humanos, serviços técnicos de terceiros,
+                  materiais de consumo e outros correlatos:
+                  Resultados - Indicar principais resultados previstos, correlacionando com os macrorresultados do plano
+                  (item 3.2.3):
+                  Máximo de 1.000 caracteres.
+
+
+https://www.in.gov.br/en/web/dou/-/portaria-suframa-n-858-de-31-de-maio-de-2023-487078004                                                                                   5/11
+4/7/24, 1:12 PM                                 PORTARIA SUFRAMA Nº 858, DE 31 DE MAIO DE 2023 - PORTARIA SUFRAMA Nº 858, DE 31 DE MAIO DE 2023 - DOU - Imprensa Nacional
+
+                                 5.3. Projetos de capitalização de Empresas Emergentes de Base Tecnológica
+
+                            Para Empresas Beneficiárias que ainda não identificaram uma Startup: Apresentar somente
+                  plano de pesquisa, desenvolvimento e inovação, conforme anexo I da Portaria 2.145/2018.
+
+                                 Para Empresas Beneficiárias que já identificaram a Startup: Apresentar o plano de pesquisa,
+                  desenvolvimento e inovação, conforme anexo I e II da Portaria 2.145/2018 e as seguintes informações
+
+                  a) Identificação do Projeto
+                  Projeto : <Código do projeto - empresa beneficiária>
+                  Título: <máximo 100 caracteres>
+                  Tecnologia: <máximo 150 caracteres> P.ex. Inteligência Artificial, IoT, Big Data etc.
+                  Valor estimado do Projeto: R$ xxxx
+
+                  b) Vínculo com os objetivos estratégicos do Plano de PD&I
+                  Objetivos do Projeto:
+                  Máximo de 500 caracteres
+                  Vínculo com os objetivos do Plano de PD&I: indicar qual(is) objetivos do Plano de PD&I este projeto se
+                  vincula (Item 3.2.2 - estratégicos do Plano de PD&I):
+                  Máximo 100 caracteres.
+
+                  c) Maturidade Tecnológica - TRL
+                  Descrever qual é o nível de prontidão tecnológica pretendida (3 a 6) para a solução, conforme
+                  metodologia do indicadorTechnology Readness Level, desenvolvido pelaNational Aeronautics and Space
+                  Agency(NASA).
+                  Máximo de 10 caracteres
+                  Caracterizar as atividades de PD&I necessárias para atingir o nível de prontidão pretendido:
+                  Máximo 2.000 caracteres.
+
+                  d) Gestão da inovação e comercialização
+                  Descrever resumidamente quais as técnicas, procedimentos ou metodologias que a empresa startup
+                  utiliza para a gestão do processo inovativo e para a criação de estratégias de comercialização.
+                  Máximo 2.000 caracteres.
+                  As técnicas, procedimentos ou metodologias são utilizados:
+                  ( ) de maneira informal e não estruturadas
+                  ( ) de maneira estruturados, mas não fazem parte do planejamento da empresa
+                  ( ) de maneira estruturada e fazem parte do planejamento da empresa.
+                  Para qualquer das opções, explique:
+                  máximo de 1.000 caracteres.
+
+                            Obs. - Se houver mais de um projeto para investimento em startups, este campo só necessita
+                  ser preenchido uma única vez.
+
+                  e) Necessidade do mercado
+                  Descrever resumidamente as demandas existentes no mercado para a solução a ser desenvolvida.
+                  Há demanda(s) definida(s)? Indique dados, informações, estudos etc., que comprovem a existência da
+                  demanda.
+                  Máximo de 2.000 caracteres.
+                  Classifique o impacto da demanda:
+                  ( ) Demanda com impacto potencial na Amazônia Ocidental/Amapá ou outra região do Brasil;
+                  ( ) Demanda com impacto potencial no mercado brasileiro como um todo
+                  ( ) Demanda com impacto potencial no mercado internacional
+                  ( ) Demanda indefinida em função do caráter disruptivo
+                  Justifique:Máximo de 2.000 caracteres.
+
+                  f) Contribuições para os Objetivos do Desenvolvimento Sustentável (ODS)
+                  Descrever os tipos de resultados esperados a partir do desenvolvimento da solução, relacionando-os,
+                  quando couber, a um dos 4 temas: geração de empregos, melhoria da qualidade de acesso a serviços
+                  públicos, redução das desigualdades ou conservação dos recursos naturais e redução de resíduos.
+                  Indique o potencial resultado previsto.
+
+
+
+
+https://www.in.gov.br/en/web/dou/-/portaria-suframa-n-858-de-31-de-maio-de-2023-487078004                                                                                   6/11
+4/7/24, 1:12 PM                                 PORTARIA SUFRAMA Nº 858, DE 31 DE MAIO DE 2023 - PORTARIA SUFRAMA Nº 858, DE 31 DE MAIO DE 2023 - DOU - Imprensa Nacional
+
+                  Geração de empregos
+                  ( ) geração de novos empregos formais na startup - quantidade prevista: XX
+                  ( ) geração de novos empregos indiretos formais pela aplicação da solução. Quantidade prevista: XX
+                  Qualificação dos empregos - %:
+                  ( ) Pós-graduados ( ) nível superior ( ) Técnicos ( ) Sem qualificação
+                  Melhoria nos serviços públicos (saúde, educação, informações das autarquias, pagamento de tributos
+                  etc)
+                  ( ) Maior abrangência e alcance do serviço público (áreas de atendimentos e número de beneficiários)
+                  ( ) Diminuição do tempo de atendimento de serviços públicos
+                  ( ) Maior transparência às informações dos serviços públicos
+                  ( ) Outros impactos:____________________________
+                  Justifique a(s) opção(ões). Máximo de 2.000 caracteres.
+                  Redução das desigualdades
+                  ( ) Aumento dos níveis de bem-estar de pessoas em situação de vulnerabilidade social
+                  ( ) Aumento da agregação de valor a serviços ou produtos de grupos em vulnerabilidade social (incluindo
+                  repartição justa dos benefícios advindos da biodiversidade)
+                  ( ) Outros:___________________________________________
+                  Justifique as opções, quantificando sempre que possível:
+                  Máximo de 2.000 caracteres.
+                  Conservação dos recursos naturais
+                  ( ) Redução do desmatamento
+                  ( ) Redução da geração de resíduos
+                  ( ) Aumento da utilização de materiais recicláveis
+                  ( ) Redução do consumo de energia
+                  ( ) Outros:___________________________________________
+                  Justifique as opções, quantificando sempre que possível:
+                  Máximo de 2.000 caracteres.
+
+                  f) Cronograma, resultados esperados e recursos
+                  f) Cronograma, resultados esperados e recursos
+                  Cronograma - descrever as macroatividades de PD&I do projeto e respectivos prazos de realização em
+                  uma linha temporal:
+                  Recursos - valores totais do projeto agrupados pelas rubricas de equipamentos e programas de
+                  computador, implantação e ampliação de laboratórios, recursos humanos, serviços técnicos de terceiros,
+                  materiais de consumo e outros correlatos:
+                  Resultados - Indicar principais resultados previstos, correlacionando com os macrorresultados do plano
+                  (item 3.2.3):
+                  Máximo de 1.000 caracteres.
+
+                                 5.4. Projetos Internos e Externos de Capacitação/ Formação
+
+                  a) Identificação do Projeto
+                  Projeto : <Código do projeto - empresa beneficiária>
+                  Título: <máximo 100 caracteres>
+                  Valor estimado do Projeto: R$ xxxx
+                  Instituição Convenente: <em caso de projeto externo>
+
+                            Obs. - No preenchimento do projeto, não colocar informações que identifiquem a empresa
+                  (nome da empresa, marca, etc.)
+
+                  b) Vínculo com os objetivos estratégicos do Plano de PD&I
+                  Objetivos do Projeto:
+                  Máximo de 500 caracteres
+
+
+
+
+https://www.in.gov.br/en/web/dou/-/portaria-suframa-n-858-de-31-de-maio-de-2023-487078004                                                                                   7/11
+4/7/24, 1:12 PM                                 PORTARIA SUFRAMA Nº 858, DE 31 DE MAIO DE 2023 - PORTARIA SUFRAMA Nº 858, DE 31 DE MAIO DE 2023 - DOU - Imprensa Nacional
+
+                  Vínculo com os objetivos do Plano de PD&I: indicar o alinhamento com os objetivos estratégicos do Plano
+                  de PD&I.
+                  ( ) Forte alinhamento - novas modalidades de formação de RH para atendimento dos objetivos de PD&I
+                  do Plano.
+                  ( ) Médio alinhamento - formações específicas já existentes, para atendimento aos objetivos de PD&I do
+                  Plano
+                  ( ) Pouco alinhamento - formações básicas já existentes, para atendimento aos objetivos de PD&I do
+                  Plano
+                  ( ) Nenhum alinhamento - as formações atendem prioritariamente a demandas da empresa e não tem
+                  ligação com o Plano de PD&I
+                  Justifique as opções.
+                  Máximo de 2.000 caracteres.
+
+                  c) Grau de formação
+                  Indicar o tipo de formação a ser realizada.
+                  ( ) Curso formal. Nível de pós-graduação ou certificação externa, com mínimo de 320 horas
+                  ( ) Curso formal, nível superior ou com certificação externa à empresa com mínimo de 160 horas
+                  ( ) Curso formal, nível superior ou com certificação externa à empresa com mínimo de 160 horas
+                  ( ) Curso informal e/ou operacional, interno à empresa
+                  Descreva resumidamente o tipo de curso de formação.
+                  Máximo de 1.000 palavras
+
+                  d) Abrangência da formação
+                  Indicar o grau em que a formação inclui os eixos de formação: tecnologias disruptivas, soft skills e
+                  práticas, legais, éticas e sociais.
+                  Eixos de formação:
+                  · Tecnologias disruptivas: IoT, I4.0, Big Data, Inteligência Artifical, etc.
+                  · Soft Skills: habilidades de interação do indivíduo - comunicação, flexibilidade, criatividade, gestão de
+                  conflitos, adaptabilidade etc.
+                  · Práticas legais, éticas e sociais: referências para o desenvolvimento e conduta profissional -
+                  comportamento ético, compliance, propriedade intelectual, sustentabilidade etc.
+                  ( ) Formação aborda os três eixos, porém sem inter-relações entre as formações.
+                  ( ) Formação aborda dois dos eixos de formação
+                  ( ) Formação aborda somente um dos eixos de formação.
+                  Descreva resumidamente o vínculo com o(s) eixo(s) de formação.
+                  Máximo de 2.000 palavras.
+
+                  e) Cronograma, resultados esperados e recursos
+                  Cronograma - descrever as macroatividades de PD&I do projeto e respectivos prazos de realização em
+                  uma linha temporal:
+                  Recursos - valores totais do projeto agrupados pelas rubricas de equipamentos e programas de
+                  computador, implantação e ampliação de laboratórios, recursos humanos, serviços técnicos de terceiros,
+                  materiais de consumo e outros correlatos:
+                  Resultados - Indicar principais resultados previstos, correlacionando com os macrorresultados do plano
+                  (item 3.2.3):
+                  Máximo de 1.000 caracteres.
+
+                                 ANEXO II FORMULÁRIO PARA APRESENTAÇÃO DE PLANO DE PD&I - SIMPLIFICADO
+
+                                 1. JUSTIFICATIVA TÉCNICA PARA APRESENTAÇÃO DO PLANO DE PD&I SIMPLIFICADO
+
+                                 Máximo 2.000 caracteres
+
+                                 2. CARACTERIZAÇÃO DA EMPRESA
+
+                  Nome da Empresa:
+                  Razão Social:
+                  Representante legal da empresa**:
+                  Cargo na empresa:
+                  Celular (com DDD)/e-mail:
+                  Nome do responsável pelas Informações do Plano:
+                  Cargo na empresa:
+                  Celular (com DDD)/e-mail:
+                  Data do preenchimento:
+                  Vigência do Plano:
+
+https://www.in.gov.br/en/web/dou/-/portaria-suframa-n-858-de-31-de-maio-de-2023-487078004                                                                                   8/11
+4/7/24, 1:12 PM                                 PORTARIA SUFRAMA Nº 858, DE 31 DE MAIO DE 2023 - PORTARIA SUFRAMA Nº 858, DE 31 DE MAIO DE 2023 - DOU - Imprensa Nacional
+
+                  Dados dos produtos incentivados:
+                  NCM Cód. Suframa Descrição do Produto Documento Aprobatório
+
+
+
+                                 **Em caso de representação terceirizada, encaminhar procuração.
+
+                                 3. GESTÃO DA PD&I
+
+                  3.1 A empresa tem pessoal próprio dedicado às atividades de PD&I? [opções excludentes]
+                  ( ) Sim, pessoal próprio dedicado exclusivamente para atividades de PD&I
+                  ( ) Sim, pessoal próprio dedicado parcialmente para atividades de PD&I
+                  ( ) Sim, pessoal próprio dedicado e atividades de PD&I parcialmente terceirizadas.
+                  ( ) Não, as atividades PD&I são realizadas integralmente de forma terceirizada
+                  ( ) Não existe pessoal dedicado à PD&I, próprio ou terceirizado
+                  3.2 Caso a empresa possua equipe própria de PD&I, responda aos itens seguintes
+                  3.2.1 Informe o número de pessoas, do quadro da empresa, total e normalmente ocupadas em atividades
+                  de PD&I em 2020, segundo o nível de qualificação e o tempo de dedicação a estas atividades.
+                  3.2.2 Número total de ocupações na empresa:
+                  Ocupação segundo níveis de                                Número de pessoas em dedicação Número de pessoas em
+                  qualificação                                              exclusiva                      dedicação parcial
+                  Doutores
+                  Mestres
+                  Especialistas
+                  Graduados
+                  Nível médio ou fundamental
+                  3.2.3 Qual o nível de centralização das atividades de PD&I na empresa? [opções excludentes]
+                  ( ) As atividades de PD&I são centralizadas em um único departamento/área (ou estrutura similar) da
+                  empresa (ou grupo).
+                  Localização do departamento/área: Brasil (UF):_____ Exterior (país): ____
+                  ( ) As atividades de PD&I são descentralizadas em vários departamentos/áreas (ou estruturas similares)
+                  da empresa (ou grupo), com a predominância de um destes departamentos/áreas, para o qual os demais
+                  se reportam.
+                  Localização do departamento/área: Brasil (UF):_____ Exterior (país): ____
+                  ( ) As atividades de PD&I são descentralizadas em vários departamentos/áreas (ou estruturas similares)
+                  da empresa (ou grupo), sem a predominância de um departamento/áreas sobre as demais.
+                  3.2.4 A empresa realiza planejamento em PD&I?
+                  ( ) Sim, porém de maneira não estruturada - não há etapas e processos formais, nem registro e
+                  acompanhamento de planos de PD&I
+                  ( ) Sim, de maneira estruturada.
+                  ( ) Sim, outros:______________________________
+                  ( ) Não realiza planejamento de PD&I
+
+                                 4. ESTRATÉGIA DA PD&I
+
+                  4.1 Descrição da estratégia de PD&I da empresa para a Amazônia Ocidental e Amapá - máximo de 2.000
+                  caracteres:
+                  Descrever resumidamente os objetivos e princípios que norteiam a empresa no exercício das atividades de
+                  PD&I na Amazônia Ocidental
+                  4.2 Estratégia do Plano de PD&I:
+                  4.2.1 Indique o principal elemento motivador dos objetivos estratégicos do Plano de PD&I:
+                  ( ) Desenvolvimento de novos nichos de mercado
+                  ( ) Melhoria do processo produtivo
+                  ( ) Atualização tecnológica para manter competitividade no mercado
+                  ( ) Outro:_________________________________________
+                  4.2.2 Descreva os objetivos estratégicos do Plano de PD&I - máximo 2.000 caracteres
+                  4.2.3 Descreva os principais desafios tecnológicos que pretende abordar e os macrorresultados que
+                  pretende atingir a partir da resolução dos desafios - máximo de 2.500 caracteres.
+                  Conceito de 'desafio tecnológico' - Incerteza científica ou tecnológica, cuja resolução demanda atividades
+                  investigativas e de experimentação, incorre em riscos para obtenção dos resultados e gera novos
+                  conhecimentos.
+                  Macrorresultados -indicar os macrorresultados esperados a partir da resolução dos desafios e que
+                  contribuam para os objetivos estratégicos da Lei de Informática Como referência, pode-se utilizar os
+                  resultados esperados da Lei de Informática.
+
+
+https://www.in.gov.br/en/web/dou/-/portaria-suframa-n-858-de-31-de-maio-de-2023-487078004                                                                                   9/11
+4/7/24, 1:12 PM                                 PORTARIA SUFRAMA Nº 858, DE 31 DE MAIO DE 2023 - PORTARIA SUFRAMA Nº 858, DE 31 DE MAIO DE 2023 - DOU - Imprensa Nacional
+
+                                 5. INVESTIMENTOS EM PD&I
+
+                  5.5 Valores previstos de investimentos em PD&I
+                  Valor total previsto para o Plano de PD&I
+                  Valor previsto das Contrapartidas                                         Ano 1 Ano 2
+
+                  Valor previsto dos investimentos de PD&I                                  Ano 1 Ano 2
+
+                  Valor previsto nos projetos internos (2,7%) Ano 1 Ano 2
+
+                  Valor previsto nos projetos externos (2,3%) Ano 1 Ano 2
+
+
+                  5.6 Modalidades previstas de investimentos em PD&I
+                  Modalidades de Investimento                                                             Ano 1 % Ano 2 %
+                  Projetos de PD&I externos - ICTs credenciadas CAPDA
+                  Projetos de PD&I externos - ICTs públicas
+                  Projetos externos - Organizações Sociais
+                  Programas prioritários
+                  Fundos de Investimentos em Participações (FIPs)
+                  Implantação e Operação de incubadoras ou aceleradoras
+                  FNDCT
+                  SUB-TOTAIS (R$)
+                  Projetos de PD&I internos
+                  Projetos de PD&I contratados com empresas ou ICTs
+                  Projetos Indústria 4.0
+                  Projetos tecnológicos sustentáveis (PROTECSUS)
+                  Projetos Internos de Capacitação
+                  Capitalização de Startups (EBTs)
+                  Projetos internos - Organizações Sociais
+                  SUB-TOTAIS (R$)
+
+                                 6. PROJETOS DE PD&I
+
+                           As informações a serem apresentadas, estão organizadas por modalidade de projeto. As
+                  informações devem ser apresentadas individualmente para cada projeto.
+
+                            Para cada modalidade, os projetos deverão ser numerados numa sequência. Por exemplo, no
+                  caso dos projetos internos e externos, se houver cinco projetos, eles deverão ser identificados como 5.1.1,
+                  5.1.2, 5.1.3, 5.1.4 e 5.1.5. Para cada um deles, responder a todos os itens, de a) até f).
+
+                                 Não serão aceitos projetos que já foram executados em sua totalidade.
+
+                  Projeto : <Código do projeto - empresa beneficiária>
+                  Título: <máximo 100 caracteres>
+                  Caracterização do projeto : <máximo 150 caracteres>
+                  ( ) PD&I;
+                  ( ) Capacitação;
+                  ( ) Indústria 4.0;
+                  ( ) Capitalização de Startups;
+                  Valor estimado do Projeto: R$ xxxx
+                  Modalidade:
+                  ( ) Totalmente executado pela empresa beneficiária;
+                  ( ) Totalmente executado pela Instituição convenente
+                  ( ) Atividade principal executada por empresa terceirizada;
+                  ( ) Parcialmente executado pela empresa beneficiária e parcialmente pela Instituição convenente
+                  Instituição Convenente: <em caso de projeto externo>
+                  Objetivo do Projeto:
+                  Máximo de 500 caracteres
+
+
+https://www.in.gov.br/en/web/dou/-/portaria-suframa-n-858-de-31-de-maio-de-2023-487078004                                                                                   10/11
+4/7/24, 1:12 PM                                 PORTARIA SUFRAMA Nº 858, DE 31 DE MAIO DE 2023 - PORTARIA SUFRAMA Nº 858, DE 31 DE MAIO DE 2023 - DOU - Imprensa Nacional
+
+                   Vínculo com os objetivos do Plano de PD&I: indicar qual(is) objetivos do Plano de PD&I este projeto se
+                   vincula (Item 4.2.2 - estratégicos do Plano de PD&I):
+                   Máximo 100 caracteres.
+                   Resultados - Indicar principais resultados previstos, correlacionando com os macrorresultados do plano
+                   (item 4.2.3):
+                   Máximo de 1.000 caracteres.
+
+                                 Obs. - No preenchimento do projeto, não colocar informações que identifiquem a empresa
+                  (nome da empresa, marca, etc.)
+
+                  Este conteúdo não substitui o publicado na versão certificada.
+
+
+
+
+https://www.in.gov.br/en/web/dou/-/portaria-suframa-n-858-de-31-de-maio-de-2023-487078004                                                                                   11/11
+

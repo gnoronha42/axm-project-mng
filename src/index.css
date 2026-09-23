@@ -6,6 +6,20 @@
   --brand-gold-light: #fce8b2;
   --sidebar-bg: #141414;
   --content-bg: #f5f5f5;
+  --nav-icon-bg: #fff;
+  --nav-icon-border: #1f1f1f;
+  --nav-label: #333;
+  --nav-label-active: #111;
+  --page-text: #111;
+}
+
+[data-theme="dark"] {
+  --content-bg: #141414;
+  --nav-icon-bg: #1f1f1f;
+  --nav-icon-border: #e8e8e8;
+  --nav-label: #d9d9d9;
+  --nav-label-active: #fff;
+  --page-text: #f5f5f5;
 }
 
 * {
@@ -33,8 +47,8 @@ body {
 
 /* ── Sidebar ── */
 .axm-sider {
-  background: linear-gradient(180deg, #1a1a1a 0%, #111111 100%) !important;
-  box-shadow: 2px 0 12px rgba(0,0,0,0.15);
+  background: var(--content-bg) !important;
+  box-shadow: none !important;
   border-right: none !important;
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -43,52 +57,259 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
+  background: var(--content-bg);
 }
 
-.axm-sider .ant-menu-dark {
-  background: transparent !important;
-}
-
-.axm-sider .ant-menu-dark .ant-menu-item {
-  margin: 2px 12px;
-  border-radius: 8px;
-  height: 42px;
-  line-height: 42px;
-  color: rgba(255,255,255,0.55);
-  transition: all 0.2s ease;
-}
-
-.axm-sider .ant-menu-dark .ant-menu-item:hover {
-  background: rgba(249, 197, 86, 0.08) !important;
-  color: rgba(255,255,255,0.9);
-}
-
-.axm-sider .ant-menu-dark .ant-menu-item-selected {
-  background: rgba(249, 197, 86, 0.12) !important;
-  color: #f9c556 !important;
-  font-weight: 500;
-}
-
-.axm-sider .ant-menu-dark .ant-menu-item-selected .anticon {
-  color: #f9c556 !important;
-}
-
-.axm-sider-collapsed .ant-menu-dark .ant-menu-item {
-  margin: 2px 8px;
-  padding: 0 !important;
+.axm-icon-nav {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  padding: 12px 8px 12px;
+}
+
+.axm-icon-nav > .axm-sider-toggle {
+  margin-bottom: -4px;
+  color: var(--page-text);
+}
+
+.axm-icon-nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: var(--page-text);
+}
+
+.axm-icon-nav-circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1.5px solid var(--nav-icon-border);
+  display: inline-flex;
   align-items: center;
   justify-content: center;
+  font-size: 18px;
+  background: var(--nav-icon-bg);
+  transition: border-color 0.2s, color 0.2s, background 0.2s, box-shadow 0.2s;
+}
+
+.axm-icon-nav-item:hover .axm-icon-nav-circle,
+.axm-icon-nav-item.is-active .axm-icon-nav-circle {
+  border-color: var(--brand-gold-dark);
+  color: var(--brand-gold-dark);
+  background: var(--nav-icon-bg);
+  box-shadow: 0 0 0 3px rgba(249, 197, 86, 0.18);
+}
+
+.axm-icon-nav-label {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  color: var(--nav-label);
+  line-height: 1.2;
+  text-align: center;
+  max-width: 92px;
+}
+
+.axm-icon-nav-item.is-active .axm-icon-nav-label {
+  color: var(--nav-label-active);
+  font-weight: 600;
+}
+
+.axm-profile-photo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
 }
 
 /* ── Logo area ── */
 .axm-logo-area {
-  padding: 28px 16px 20px;
+  padding: 20px 12px 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   margin-bottom: 8px;
+}
+
+.axm-sider-collapsed .axm-logo-area {
+  padding: 16px 8px 12px;
+}
+
+.axm-kind-tag.ant-tag {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  line-height: 18px;
+  margin-inline-end: 0;
+  padding: 0 6px;
+}
+
+.axm-kanban {
+  display: flex;
+  gap: 14px;
+  overflow-x: auto;
+  padding: 4px 2px 12px;
+}
+
+.axm-kanban-col {
+  flex: 0 0 280px;
+  width: 280px;
+  min-height: 520px;
+  background: #f4f5f7;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.6);
+}
+
+.axm-kanban-col--wide {
+  flex-basis: 300px;
+  width: 300px;
+  min-height: calc(100vh - 140px);
+}
+
+.axm-kanban-col__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 12px 12px 10px;
+  border-bottom: 1px solid rgba(0,0,0,0.04);
+}
+
+.axm-kanban-col__title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.axm-kanban-col__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.axm-kanban-col__name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1f1f1f;
+  line-height: 1.3;
+}
+
+.axm-kanban-col__count {
+  min-width: 22px;
+  height: 22px;
+  padding: 0 7px;
+  border-radius: 999px;
+  background: #fff;
+  color: #8c8c8c;
+  font-size: 11px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.axm-kanban-col__body {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.axm-kanban-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 12px 12px 12px 14px;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06);
+  border: 1px solid rgba(0,0,0,0.04);
+  position: relative;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.axm-kanban-card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  bottom: 10px;
+  width: 3px;
+  border-radius: 0 3px 3px 0;
+  background: var(--card-accent, var(--brand-gold));
+}
+
+.axm-kanban-card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.08);
+}
+
+.axm-kanban-card__title {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.axm-kanban-card__title .ant-badge {
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.axm-kanban-card__name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1f1f1f;
+  line-height: 1.35;
+}
+
+.axm-kanban-card__client {
+  font-size: 11px;
+  color: #8c8c8c;
+  padding-left: 16px;
+}
+
+.axm-kanban-empty {
+  font-size: 12px;
+  color: #bfbfbf;
+  text-align: center;
+  padding: 16px 8px;
+}
+
+.axm-board-fullscreen {
+  position: fixed;
+  inset: 0;
+  z-index: 1100;
+  background: var(--content-bg);
+  padding: 16px 20px 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.axm-board-fullscreen .axm-board-card {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.axm-board-fullscreen .axm-board-card .ant-card-body {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
 }
 
 .axm-logo-area img {
@@ -111,23 +332,71 @@ body {
 
 /* ── Header ── */
 .axm-header {
-  background: #fff !important;
-  border-bottom: 1px solid #f0f0f0;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  position: relative;
+  background: var(--content-bg) !important;
+  border-bottom: none;
+  box-shadow: none;
   z-index: 10;
   display: flex !important;
   align-items: center;
+  justify-content: space-between;
   gap: 12px;
   padding: 0 16px !important;
-  height: 56px !important;
-  line-height: 56px !important;
+  height: 64px !important;
+  line-height: normal !important;
+  overflow: visible;
+}
+
+.axm-header-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  z-index: 1;
+}
+
+.axm-header-logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 132px;
+  width: auto;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.axm-header-user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  line-height: 1;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  z-index: 1;
+  padding: 0;
+  border: none;
+  background: transparent;
+  border-radius: 50%;
+}
+
+.axm-header-user-name {
+  line-height: 1.2;
+  max-width: 180px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  color: #111;
 }
 
 .axm-header-title {
   font-weight: 600;
   font-size: 15px;
   color: #111;
-  flex: 1;
   min-width: 0;
 }
 
@@ -142,7 +411,7 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  color: #555;
+  color: var(--page-text);
   font-size: 18px;
   transition: background 0.2s, color 0.2s;
   flex-shrink: 0;
@@ -311,6 +580,15 @@ body {
   .axm-page-title {
     font-size: 20px !important;
     margin-bottom: 16px !important;
+  }
+
+  .axm-header-logo {
+    height: 108px;
+  }
+
+  .axm-header-title {
+    font-size: 13px;
+    max-width: 140px;
   }
 
   .axm-logo-area {

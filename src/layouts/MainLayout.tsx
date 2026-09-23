@@ -1,17 +1,21 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Outlet, useLocation, useNavigate } from 'react-router-dom';
-import { Avatar, Drawer, Dropdown, Layout, Menu, Space, Typography } from 'antd';
+import { Avatar, Drawer, Dropdown, Layout, Tooltip } from 'antd';
+import { mediaUrl } from '../services/apiClient';
+import { useThemeMode } from '../theme/ThemeContext';
 import {
   ApartmentOutlined,
   CalculatorOutlined,
   DashboardOutlined,
   FileTextOutlined,
   LogoutOutlined,
-  MenuFoldOutlined,
+  ArrowLeftOutlined,
+  ArrowRightOutlined,
   MenuOutlined,
-  MenuUnfoldOutlined,
   ProjectOutlined,
   SafetyCertificateOutlined,
+  ReadOutlined,
+  TeamOutlined,
   UserOutlined,
 } from '@ant-design/icons';
 import logo from '../assets/images.png';
@@ -20,14 +24,17 @@ import { useAuth } from '../auth/AuthContext';
 
 const { Sider, Header, Content } = Layout;
 
-const menuItems = [
+const baseMenuItems = [
   { key: '/', icon: <DashboardOutlined />, label: 'Dashboard' },
   { key: '/projects', icon: <ProjectOutlined />, label: 'Projetos' },
   { key: '/fluxo', icon: <ApartmentOutlined />, label: 'Fluxo' },
   { key: '/documents', icon: <FileTextOutlined />, label: 'Documentos' },
-  { key: '/fiscal', icon: <CalculatorOutlined />, label: 'Fiscal Suframa' },
-  { key: '/conformidade', icon: <SafetyCertificateOutlined />, label: 'SAGAT / Glosa' },
+  { key: '/fiscal', icon: <CalculatorOutlined />, label: 'Fiscal' },
+  { key: '/conformidade', icon: <SafetyCertificateOutlined />, label: 'SAGAT' },
+  { key: '/biblioteca', icon: <ReadOutlined />, label: 'Biblioteca' },
 ];
+
+const equipeItem = { key: '/equipe', icon: <TeamOutlined />, label: 'Equipe' };
 
 export default function MainLayout() {
   const [collapsed, setCollapsed] = useState(false);
@@ -36,6 +43,12 @@ export default function MainLayout() {
   const location = useLocation();
   const { isMobile } = useBreakpoint();
   const { user, logout } = useAuth();
+  const { mode } = useThemeMode();
+
+  const menuItems = useMemo(
+    () => (user?.role === 'admin' ? [...baseMenuItems, equipeItem] : baseMenuItems),
+    [user?.role],
+  );
 
   const selectedKey =
     menuItems.find((item) =>
@@ -51,89 +64,80 @@ export default function MainLayout() {
     setDrawerOpen(false);
   };
 
-  const menu = (
-    <Menu
-      theme="dark"
-      mode="inline"
-      selectedKeys={[selectedKey]}
-      items={menuItems}
-      onClick={({ key }) => handleNavigate(key)}
-    />
+  const closeToggle = !isMobile && (
+    <button
+      type="button"
+      className="axm-sider-toggle"
+      onClick={() => setCollapsed(true)}
+      aria-label="Fechar menu"
+    >
+      <ArrowLeftOutlined />
+    </button>
   );
 
-  const logoBlock = (
-    <div className="axm-logo-area">
-      <img
-        src={logo}
-        alt="AXM Consultoria"
-        style={{ width: collapsed && !isMobile ? 34 : 72, height: 'auto' }}
-      />
-      {(!collapsed || isMobile) && <span className="axm-logo-text">AXM Consultoria</span>}
-    </div>
-  );
-
-  const siderContent = (
-    <>
-      {logoBlock}
-      {menu}
-      <div style={{ flex: 1 }} />
-      {!isMobile && (
-        <div
-          style={{
-            padding: '12px 16px',
-            borderTop: '1px solid rgba(255,255,255,0.06)',
-            display: 'flex',
-            justifyContent: collapsed ? 'center' : 'flex-end',
-          }}
+  const nav = (
+    <nav className="axm-icon-nav" aria-label="Menu principal">
+      {closeToggle}
+      {menuItems.map((item) => (
+        <button
+          key={item.key}
+          type="button"
+          className={`axm-icon-nav-item${selectedKey === item.key ? ' is-active' : ''}`}
+          onClick={() => handleNavigate(item.key)}
         >
-          <button
-            type="button"
-            className="axm-sider-toggle"
-            onClick={() => setCollapsed(!collapsed)}
-            aria-label={collapsed ? 'Expandir menu' : 'Recolher menu'}
-          >
-            {collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
-          </button>
-        </div>
-      )}
-    </>
+          <span className="axm-icon-nav-circle">{item.icon}</span>
+          <span className="axm-icon-nav-label">{item.label}</span>
+        </button>
+      ))}
+    </nav>
   );
+
+  const siderContent = nav;
 
   return (
-    <Layout style={{ minHeight: '100vh' }}>
-      {!isMobile && (
-        <Sider
-          collapsible
-          collapsed={collapsed}
-          onCollapse={setCollapsed}
-          trigger={null}
-          width={240}
-          collapsedWidth={72}
-          className={`axm-sider ${collapsed ? 'axm-sider-collapsed' : ''}`}
-        >
+    <Layout style={{ minHeight: '100vh', background: 'var(--content-bg)' }}>
+      {!isMobile && !collapsed && (
+        <Sider theme={mode === 'dark' ? 'dark' : 'light'} width={112} trigger={null} className="axm-sider">
           {siderContent}
         </Sider>
       )}
 
-      <Layout className="axm-main">
+      <Layout className="axm-main" style={{ background: 'var(--content-bg)' }}>
         <Header className="axm-header">
-          {isMobile && (
-            <button
-              type="button"
-              className="axm-mobile-menu-btn"
-              onClick={() => setDrawerOpen(true)}
-              aria-label="Abrir menu"
-            >
-              <MenuOutlined />
-            </button>
-          )}
-          <Typography.Text className="axm-header-title" ellipsis>
-            AXM Project Manager
-          </Typography.Text>
+          <div className="axm-header-left">
+            {isMobile && (
+              <button
+                type="button"
+                className="axm-mobile-menu-btn"
+                onClick={() => setDrawerOpen(true)}
+                aria-label="Abrir menu"
+              >
+                <MenuOutlined />
+              </button>
+            )}
+            {!isMobile && collapsed && (
+              <button
+                type="button"
+                className="axm-sider-toggle"
+                onClick={() => setCollapsed(false)}
+                aria-label="Mostrar menu"
+              >
+                <ArrowRightOutlined />
+              </button>
+            )}
+          </div>
+
+          <img src={logo} alt="AXM" className="axm-header-logo" />
 
           <Dropdown
             menu={{
               items: [
+                {
+                  key: 'perfil',
+                  icon: <UserOutlined />,
+                  label: 'Minha conta',
+                  onClick: () => navigate('/perfil'),
+                },
                 {
                   key: 'logout',
                   icon: <LogoutOutlined />,
@@ -147,14 +151,16 @@ export default function MainLayout() {
             }}
             placement="bottomRight"
           >
-            <Space style={{ cursor: 'pointer', flexShrink: 0 }} size={8}>
-              <Avatar size="small" icon={<UserOutlined />} style={{ background: '#f9c556', color: '#111' }} />
-              {!isMobile && (
-                <Typography.Text ellipsis style={{ maxWidth: 160 }}>
-                  {user?.name}
-                </Typography.Text>
-              )}
-            </Space>
+            <Tooltip title={user?.name} placement="left">
+              <button type="button" className="axm-header-user" aria-label={user?.name ?? 'Conta'}>
+                <Avatar
+                  size={32}
+                  src={mediaUrl(user?.avatarUrl)}
+                  icon={<UserOutlined />}
+                  style={{ background: '#f9c556', color: '#111' }}
+                />
+              </button>
+            </Tooltip>
           </Dropdown>
         </Header>
 
@@ -168,8 +174,8 @@ export default function MainLayout() {
         placement="left"
         open={drawerOpen}
         onClose={() => setDrawerOpen(false)}
-        width={280}
-        styles={{ body: { padding: 0, background: '#141414' } }}
+        width={140}
+        styles={{ body: { padding: 0, background: 'var(--content-bg)' } }}
         className="axm-mobile-drawer"
       >
         <div className="axm-sider axm-sider-drawer">{siderContent}</div>

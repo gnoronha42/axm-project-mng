@@ -5,6 +5,10 @@ import { useAuth } from '../auth/AuthContext';
 import { ApiError } from '../services/apiClient';
 import logo from '../assets/images.png';
 
+const DEV_LOGIN = import.meta.env.DEV
+  ? { email: 'admin@axm.local', password: 'admin123' }
+  : undefined;
+
 export default function Login() {
   const { login, user, loading } = useAuth();
   const navigate = useNavigate();
@@ -16,7 +20,7 @@ export default function Login() {
     <div className="axm-auth-page">
       <Card className="axm-auth-card">
         <div className="axm-auth-brand">
-          <img src={logo} alt="AXM" width={64} height={64} />
+          <img src={logo} alt="AXM" width={96} height={96} />
           <Typography.Title level={3} style={{ margin: '12px 0 4px' }}>
             AXM Project Manager
           </Typography.Title>
@@ -26,6 +30,7 @@ export default function Login() {
         <Form
           layout="vertical"
           requiredMark={false}
+          initialValues={DEV_LOGIN}
           onFinish={async (values: { email: string; password: string }) => {
             try {
               await login(values.email, values.password);
@@ -61,6 +66,11 @@ export default function Login() {
             Entrar
           </Button>
         </Form>
+        {DEV_LOGIN && (
+          <Typography.Paragraph type="secondary" style={{ marginTop: 12, marginBottom: 0, textAlign: 'center' }}>
+            Login de teste: {DEV_LOGIN.email} / {DEV_LOGIN.password}
+          </Typography.Paragraph>
+        )}
 
         <Typography.Paragraph style={{ marginTop: 16, marginBottom: 0, textAlign: 'center' }}>
           Não tem conta? <Link to="/register">Criar conta</Link>
@@ -81,7 +91,7 @@ export function RegisterPage() {
     <div className="axm-auth-page">
       <Card className="axm-auth-card">
         <div className="axm-auth-brand">
-          <img src={logo} alt="AXM" width={64} height={64} />
+          <img src={logo} alt="AXM" width={96} height={96} />
           <Typography.Title level={3} style={{ margin: '12px 0 4px' }}>
             Criar conta
           </Typography.Title>

@@ -10,6 +10,7 @@ export type AuthUser = {
   name: string;
   role: string;
   tenantId?: string;
+  avatarUrl?: string;
 };
 
 export function hashPassword(password: string): string {
@@ -79,8 +80,22 @@ export function verifyToken(token: string): AuthUser | null {
   }
 }
 
-export function publicUser(user: { id: string; email: string; name: string; role: string; tenantId?: string | null }) {
-  return { id: user.id, email: user.email, name: user.name, role: user.role, tenantId: user.tenantId ?? undefined };
+export function publicUser(user: {
+  id: string;
+  email: string;
+  name: string;
+  role: string;
+  tenantId?: string | null;
+  avatarUrl?: string | null;
+}) {
+  return {
+    id: user.id,
+    email: user.email,
+    name: user.name,
+    role: user.role,
+    tenantId: user.tenantId ?? undefined,
+    avatarUrl: user.avatarUrl ?? undefined,
+  };
 }
 
 /** Fingerprint estável para logs (não é senha). */

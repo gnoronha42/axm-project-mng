@@ -250,3 +250,30 @@ model SagatJob {
 
   @@index([tenantId])
 }
+
+model KnowledgeDocument {
+  id           String   @id @default(cuid())
+  slug         String   @unique
+  title        String
+  kind         String
+  filename     String
+  extractable  Boolean  @default(true)
+  summary      String
+  charCount    Int      @default(0)
+  indexedAt    DateTime @default(now())
+
+  chunks KnowledgeChunk[]
+}
+
+model KnowledgeChunk {
+  id         String @id @default(cuid())
+  documentId String
+  ordinal    Int
+  heading    String?
+  content    String
+
+  document KnowledgeDocument @relation(fields: [documentId], references: [id], onDelete: Cascade)
+
+  @@unique([documentId, ordinal])
+  @@index([documentId])
+}

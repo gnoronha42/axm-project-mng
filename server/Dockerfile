@@ -1,17 +1,19 @@
 FROM node:20-alpine AS deps
 WORKDIR /app
-COPY package.json package-lock.json* ./
-COPY prisma ./prisma
+COPY server/package.json server/package-lock.json* ./
+COPY server/prisma ./prisma
 RUN npm ci
 
 FROM node:20-alpine AS runner
 WORKDIR /app
 ENV NODE_ENV=production
+ENV KNOWLEDGE_DIR=/app/knowledge/suframa
 COPY --from=deps /app/node_modules ./node_modules
-COPY package.json ./
-COPY prisma ./prisma
-COPY tsconfig.json ./
-COPY src ./src
+COPY server/package.json ./
+COPY server/prisma ./prisma
+COPY server/tsconfig.json ./
+COPY server/src ./src
+COPY knowledge ./knowledge
 RUN npx prisma generate
 RUN mkdir -p uploads
 EXPOSE 3001

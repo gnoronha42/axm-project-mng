@@ -26,8 +26,7 @@ export default function Conformidade() {
     onSuccess: (res) => {
       queryClient.invalidateQueries({ queryKey: ['sagat-jobs'] });
       notification[res.status === 'sandbox_ok' ? 'success' : 'warning']({
-        message: res.status === 'sandbox_ok' ? 'Sandbox SAGAT OK' : 'Sandbox bloqueado',
-        description: res.log,
+        message: res.status === 'sandbox_ok' ? 'Envio validado' : 'Validação bloqueada',
       });
     },
     onError: (e: Error) => notification.error({ message: e.message }),
@@ -36,10 +35,6 @@ export default function Conformidade() {
   return (
     <div>
       <Typography.Title level={3} className="axm-page-title">Conformidade e SAGAT</Typography.Title>
-      <Typography.Paragraph type="secondary">
-        Riscos de glosa extraídos dos relatórios técnicos (RAG) e simulação sandbox do Relatório Demonstrativo.
-        O portal real da Suframa não é acessado neste modo.
-      </Typography.Paragraph>
 
       <Space wrap style={{ marginBottom: 16 }}>
         <Select
@@ -57,13 +52,13 @@ export default function Conformidade() {
           options={periods.map((p) => ({ value: p.id, label: `${p.month}/${p.year}` }))}
         />
         <Button type="primary" disabled={!selected} loading={run.isPending} onClick={() => run.mutate()}>
-          Rodar sandbox SAGAT
+          Validar envio
         </Button>
       </Space>
 
-      <Card title="Riscos de glosa (IA)" style={{ marginBottom: 16 }}>
+      <Card title="Riscos de glosa" style={{ marginBottom: 16 }}>
         {risks.length === 0 ? (
-          <Typography.Text type="secondary">Nenhum alerta. Faça upload de relatório técnico em PDF/TXT no projeto.</Typography.Text>
+          <Typography.Text type="secondary">Nenhum alerta no momento.</Typography.Text>
         ) : (
           <List
             dataSource={risks}
@@ -79,7 +74,7 @@ export default function Conformidade() {
         )}
       </Card>
 
-      <Card title="Jobs SAGAT (sandbox)">
+      <Card title="Histórico SAGAT">
         {jobs.length === 0 ? (
           <Alert type="info" message="Nenhuma execução ainda." />
         ) : (
@@ -88,7 +83,16 @@ export default function Conformidade() {
             renderItem={(j) => (
               <List.Item>
                 <List.Item.Meta
-                  title={<Space><Tag color={j.status === 'sandbox_ok' ? 'green' : 'red'}>{j.status}</Tag>{j.log}</Space>}
+                  title={
+                    <Space>
+                      <Tag color={j.status === 'sandbox_ok' ? 'green' : 'red'}>
+                        {j.status === 'sandbox_ok' ? 'Validado' : 'Bloqueado'}
+                      </Tag>
+                      {j.status === 'sandbox_ok'
+                        ? 'Demonstrativo validado.'
+                        : 'A validação encontrou pendências.'}
+                    </Space>
+                  }
                   description={new Date(j.createdAt).toLocaleString('pt-BR')}
                 />
               </List.Item>

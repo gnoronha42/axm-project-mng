@@ -22,8 +22,8 @@ services:
 
   api:
     build:
-      context: ./server
-      dockerfile: Dockerfile
+      context: .
+      dockerfile: server/Dockerfile
     container_name: axm-api
     restart: unless-stopped
     depends_on:
@@ -37,7 +37,10 @@ services:
       UPLOAD_DIR: /app/uploads
       API_PUBLIC_URL: ${API_PUBLIC_URL:-http://76.13.234.226:8085/api}
       OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      ANTHROPIC_MODEL: ${ANTHROPIC_MODEL:-claude-sonnet-4-5}
       SAGAT_LIVE: 'false'
+      KNOWLEDGE_DIR: /app/knowledge/suframa
     volumes:
       - axm_uploads:/app/uploads
     networks:

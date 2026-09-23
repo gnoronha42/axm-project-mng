@@ -16,6 +16,12 @@ dist-ssr
 *.local
 .env.local
 
+# Mídia pesada do corpus (só texto/PDF vão para o git)
+*.mp4
+*.m4a
+*.mkv
+*.webm
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

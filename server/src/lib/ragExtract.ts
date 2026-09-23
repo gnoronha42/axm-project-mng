@@ -103,39 +103,16 @@ function uniqueBy<T>(items: T[], key: (item: T) => string): T[] {
 
 export async function extractWithOptionalLlm(text: string): Promise<ExtractionResult> {
   const base = extractHeuristic(text);
-  const apiKey = process.env.OPENAI_API_KEY?.trim();
-  if (!apiKey) return base;
-
   try {
-    const res = await fetch('https://api.openai.com/v1/chat/completions', {
-      method: 'POST',
-      headers: {
-        Authorization: `Bearer ${apiKey}`,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        model: process.env.OPENAI_MODEL ?? 'gpt-4o-mini',
-        temperature: 0,
-        messages: [
-          {
-            role: 'system',
-            content:
-              'Extraia JSON {activities:[{description}], timesheet:[{researcher,hours,hourlyRate}], expenses:[{description,amount,invoice}]} de relatórios de PD&I. Sem markdown.',
-          },
-          { role: 'user', content: text.slice(0, 12000) },
-        ],
-      }),
-    });
-    if (!res.ok) return base;
-    const data = (await res.json()) as { choices?: { message?: { content?: string } }[] };
-    const content = data.choices?.[0]?.message?.content ?? '';
-    const parsed = JSON.parse(content) as Partial<ExtractionResult>;
+    const { extractJsonWithLlm } = await import('./llmExtract.js');
+    const { parsed, model } = await extractJsonWithLlm(text);
+    if (!parsed) return base;
     return {
       activities: parsed.activities?.length ? parsed.activities : base.activities,
       timesheet: parsed.timesheet?.length ? parsed.timesheet : base.timesheet,
       expenses: parsed.expenses?.length ? parsed.expenses : base.expenses,
       rawPreview: base.rawPreview,
-      model: process.env.OPENAI_MODEL ?? 'gpt-4o-mini',
+      model,
     };
   } catch {
     return base;
