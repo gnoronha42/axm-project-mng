@@ -14,6 +14,8 @@ const Fiscal = lazy(() => import('../pages/Fiscal'));
 const Conformidade = lazy(() => import('../pages/Conformidade'));
 const Biblioteca = lazy(() => import('../pages/Biblioteca'));
 const Equipe = lazy(() => import('../pages/Equipe'));
+const RdList = lazy(() => import('../pages/RdList'));
+const RdWizard = lazy(() => import('../pages/RdWizard'));
 const Perfil = lazy(() => import('../pages/Perfil'));
 const Login = lazy(() => import('../pages/Login'));
 const Register = lazy(() => import('../pages/Register'));
@@ -58,6 +60,8 @@ export const router = createBrowserRouter([
           { path: 'fiscal', element: withSuspense(Fiscal) },
           { path: 'conformidade', element: withSuspense(Conformidade) },
           { path: 'biblioteca', element: withSuspense(Biblioteca) },
+          { path: 'rd', element: withSuspense(RdList) },
+          { path: 'rd/:id', element: withSuspense(RdWizard) },
           { path: 'perfil', element: withSuspense(Perfil) },
           {
             element: <RequireAdmin />,

@@ -4,7 +4,10 @@ import {
   Space, Statistic, Result, Modal, App, Segmented,
 } from 'antd';
 import {
-  ArrowLeftOutlined, DollarOutlined, CalendarOutlined,
+  ArrowLeftOutlined,
+  CalendarOutlined,
+  DollarOutlined,
+  FileProtectOutlined,
   UserOutlined, ForwardOutlined, ExclamationCircleOutlined, UploadOutlined,
 } from '@ant-design/icons';
 import { useState } from 'react';
@@ -22,6 +25,7 @@ import MonthlyReports from '../components/workflow/MonthlyReports';
 import { PhaseLabelTag } from '../components/common/StatusTag';
 import { useBreakpoint } from '../hooks/useBreakpoint';
 import { useAuth } from '../auth/AuthContext';
+import { useCreateRd } from '../hooks/useRd';
 
 export default function ProjectDetail() {
   const { id } = useParams<{ id: string }>();
@@ -38,6 +42,7 @@ export default function ProjectDetail() {
   const queryClient = useQueryClient();
   const advancePhase = useAdvancePhase();
   const addComment = useAddComment();
+  const createRd = useCreateRd();
 
   const [selectedPhase, setSelectedPhase] = useState<PhaseInfo | null>(null);
   const [uploadOpen, setUploadOpen] = useState(false);
@@ -83,6 +88,26 @@ export default function ProjectDetail() {
       <Space style={{ marginBottom: 16 }}>
         <Button icon={<ArrowLeftOutlined />} onClick={() => navigate('/projects')}>
           Voltar
+        </Button>
+        <Button
+          icon={<FileProtectOutlined />}
+          loading={createRd.isPending}
+          onClick={async () => {
+            try {
+              const report = await createRd.mutateAsync({
+                projectId: project.id,
+                enquadramento: 'suframa',
+              });
+              navigate(`/rd/${report.id}`);
+            } catch (err) {
+              notification.error({
+                message: 'Não foi possível criar o RD',
+                description: err instanceof Error ? err.message : undefined,
+              });
+            }
+          }}
+        >
+          Escrever RD
         </Button>
       </Space>
 

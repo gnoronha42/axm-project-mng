@@ -189,6 +189,75 @@ export interface BillingPeriod {
   validation: FiscalValidation;
 }
 
+export interface RdSource {
+  id: string;
+  sourceType: string;
+  refId: string | null;
+  title: string;
+  excerpt: string;
+  url: string | null;
+  hash: string | null;
+}
+
+export type RdClaimLevel = 'COMPROVADO' | 'RELATADO' | 'PLANEJADO' | 'LACUNA';
+
+export interface RdClaim {
+  id: string;
+  ordinal: number;
+  text: string;
+  level: RdClaimLevel | string;
+  question: string | null;
+  approved: boolean;
+  sources: RdSource[];
+}
+
+export interface RdSection {
+  id: string;
+  step: string;
+  title: string;
+  ordinal: number;
+  summary: string;
+  status: string;
+  claims: RdClaim[];
+}
+
+export interface RdReport {
+  id: string;
+  projectId: string;
+  project: { id: string; title: string; client: string };
+  authorId?: string | null;
+  title: string;
+  enquadramento: 'suframa' | 'lei_informatica' | string;
+  status: string;
+  version: number;
+  parentId?: string | null;
+  finalizedAt: string | null;
+  createdAt: string;
+  updatedAt: string;
+  sections: RdSection[];
+}
+
+export interface RdReportListItem {
+  id: string;
+  projectId: string;
+  project: { id: string; title: string; client: string };
+  title: string;
+  enquadramento: string;
+  status: string;
+  version: number;
+  claims: number;
+  updatedAt: string;
+  finalizedAt: string | null;
+}
+
+export interface RdResearchHit {
+  sourceType: 'knowledge' | 'web';
+  sourceId: string;
+  title: string;
+  excerpt: string;
+  url?: string;
+}
+
 export interface GlosaRisk {
   id: string;
   projectId?: string;

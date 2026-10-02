@@ -8,6 +8,7 @@ import {
   CalculatorOutlined,
   DashboardOutlined,
   FileTextOutlined,
+  FileProtectOutlined,
   LogoutOutlined,
   ArrowLeftOutlined,
   ArrowRightOutlined,
@@ -32,6 +33,7 @@ const baseMenuItems = [
   { key: '/fiscal', icon: <CalculatorOutlined />, label: 'Fiscal' },
   { key: '/conformidade', icon: <SafetyCertificateOutlined />, label: 'SAGAT' },
   { key: '/biblioteca', icon: <ReadOutlined />, label: 'Biblioteca' },
+  { key: '/rd', icon: <FileProtectOutlined />, label: 'RD' },
 ];
 
 const equipeItem = { key: '/equipe', icon: <TeamOutlined />, label: 'Equipe' };

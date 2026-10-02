@@ -12,6 +12,9 @@ import type {
   KnowledgeDocument,
   KnowledgeHit,
   TeamUser,
+  RdReport,
+  RdReportListItem,
+  RdResearchHit,
 } from '../types';
 import { ApiError, request, uploadDocument, fetchBlob } from './apiClient';
 
@@ -220,6 +223,45 @@ export const api = {
     const blob = await fetchBlob(`/knowledge/${slug}/file`);
     const url = URL.createObjectURL(blob);
     window.open(url, '_blank', 'noopener');
+  },
+
+  listRdReports: (projectId?: string) =>
+    request<RdReportListItem[]>(`/rd${projectId ? `?projectId=${encodeURIComponent(projectId)}` : ''}`),
+  getRdReport: (id: string) => request<RdReport>(`/rd/${id}`),
+  createRdReport: (projectId: string, input: { enquadramento: string; title?: string }) =>
+    request<RdReport>(`/projects/${projectId}/rd`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(input),
+    }),
+  generateRdStep: (id: string, step: string, input?: { notes?: string; researchQuery?: string }) =>
+    request<RdReport>(`/rd/${id}/step/${step}/generate`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(input ?? {}),
+    }),
+  patchRdClaim: (id: string, claimId: string, patch: { text?: string; level?: string; question?: string | null; approved?: boolean }) =>
+    request<RdReport>(`/rd/${id}/claim/${claimId}`, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(patch),
+    }),
+  researchRd: (id: string, q?: string) =>
+    request<{ query: string; webEnabled: boolean; hits: RdResearchHit[] }>(`/rd/${id}/research`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ q }),
+    }),
+  finalizeRd: (id: string) => request<RdReport>(`/rd/${id}/finalize`, { method: 'POST' }),
+  newRdVersion: (id: string) => request<RdReport>(`/rd/${id}/version`, { method: 'POST' }),
+  downloadRdDocx: async (id: string, filename: string) => {
+    const blob = await fetchBlob(`/rd/${id}/export`);
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = filename.endsWith('.docx') ? filename : `${filename}.docx`;
+    a.click();
+    URL.revokeObjectURL(url);
   },
 
   async addComment(comment: Omit<Comment, 'id' | 'createdAt'>): Promise<Comment> {

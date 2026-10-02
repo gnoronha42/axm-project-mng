@@ -39,6 +39,7 @@ services:
       OPENAI_API_KEY: ${OPENAI_API_KEY:-}
       ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
       ANTHROPIC_MODEL: ${ANTHROPIC_MODEL:-claude-sonnet-4-5}
+      BRAVE_API_KEY: ${BRAVE_API_KEY:-}
       SAGAT_LIVE: 'false'
       KNOWLEDGE_DIR: /app/knowledge/suframa
     volumes:

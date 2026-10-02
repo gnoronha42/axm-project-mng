@@ -15,13 +15,13 @@ model Tenant {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
-  members              TenantMember[]
-  users                User[]
-  ownedProjects        Project[]              @relation("ProjectOwnerTenant")
-  empresaProjects      Project[]              @relation("ProjectEmpresaTenant")
-  institutoProjects    Project[]              @relation("ProjectInstitutoTenant")
-  billingPeriods       BillingPeriod[]
-  sagatJobs            SagatJob[]
+  members           TenantMember[]
+  users             User[]
+  ownedProjects     Project[]       @relation("ProjectOwnerTenant")
+  empresaProjects   Project[]       @relation("ProjectEmpresaTenant")
+  institutoProjects Project[]       @relation("ProjectInstitutoTenant")
+  billingPeriods    BillingPeriod[]
+  sagatJobs         SagatJob[]
 }
 
 model TenantMember {
@@ -66,9 +66,9 @@ model Project {
   empresaTenantId   String?
   institutoTenantId String?
 
-  tenant     Tenant? @relation("ProjectOwnerTenant", fields: [tenantId], references: [id])
-  empresa    Tenant? @relation("ProjectEmpresaTenant", fields: [empresaTenantId], references: [id])
-  instituto  Tenant? @relation("ProjectInstitutoTenant", fields: [institutoTenantId], references: [id])
+  tenant    Tenant? @relation("ProjectOwnerTenant", fields: [tenantId], references: [id])
+  empresa   Tenant? @relation("ProjectEmpresaTenant", fields: [empresaTenantId], references: [id])
+  instituto Tenant? @relation("ProjectInstitutoTenant", fields: [institutoTenantId], references: [id])
 
   phases      ProjectPhaseRecord[]
   documents   Document[]
@@ -77,6 +77,98 @@ model Project {
   checklist   PhaseChecklistItem[]
   extractions DocumentExtraction[]
   glosaRisks  GlosaRisk[]
+  rdReports   RdReport[]
+}
+
+model RdReport {
+  id            String    @id @default(cuid())
+  projectId     String
+  authorId      String?
+  title         String
+  enquadramento String
+  status        String    @default("draft")
+  version       Int       @default(1)
+  parentId      String?
+  finalizedAt   DateTime?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  project  Project      @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  sections RdSection[]
+  claims   RdClaim[]
+  logs     RdAuditLog[]
+
+  @@index([projectId])
+}
+
+model RdSection {
+  id        String   @id @default(cuid())
+  reportId  String
+  step      String
+  title     String
+  ordinal   Int      @default(0)
+  summary   String   @default("")
+  status    String   @default("pending")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  report RdReport  @relation(fields: [reportId], references: [id], onDelete: Cascade)
+  claims RdClaim[]
+
+  @@unique([reportId, step])
+  @@index([reportId])
+}
+
+model RdClaim {
+  id        String   @id @default(cuid())
+  reportId  String
+  sectionId String
+  ordinal   Int      @default(0)
+  text      String
+  level     String   @default("LACUNA")
+  question  String?
+  approved  Boolean  @default(false)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  report  RdReport   @relation(fields: [reportId], references: [id], onDelete: Cascade)
+  section RdSection  @relation(fields: [sectionId], references: [id], onDelete: Cascade)
+  sources RdSource[]
+
+  @@index([reportId])
+  @@index([sectionId])
+}
+
+model RdSource {
+  id         String   @id @default(cuid())
+  claimId    String
+  sourceType String
+  refId      String?
+  title      String
+  excerpt    String   @default("")
+  url        String?
+  page       Int?
+  hash       String?
+  fetchedAt  DateTime @default(now())
+
+  claim RdClaim @relation(fields: [claimId], references: [id], onDelete: Cascade)
+
+  @@index([claimId])
+}
+
+model RdAuditLog {
+  id         String   @id @default(cuid())
+  reportId   String
+  actorId    String?
+  action     String
+  targetType String
+  targetId   String?
+  payload    String   @default("{}")
+  createdAt  DateTime @default(now())
+
+  report RdReport @relation(fields: [reportId], references: [id], onDelete: Cascade)
+
+  @@index([reportId])
 }
 
 model ProjectPhaseRecord {
@@ -108,9 +200,9 @@ model Document {
   storagePath String
   version     Int      @default(1)
 
-  project     Project              @relation(fields: [projectId], references: [id], onDelete: Cascade)
-  extraction  DocumentExtraction?
-  glosaRisks  GlosaRisk[]
+  project    Project             @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  extraction DocumentExtraction?
+  glosaRisks GlosaRisk[]
 
   @@index([projectId])
 }
@@ -174,7 +266,7 @@ model BillingPeriod {
   createdAt     DateTime @default(now())
   updatedAt     DateTime @updatedAt
 
-  tenant      Tenant                  @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  tenant      Tenant                 @relation(fields: [tenantId], references: [id], onDelete: Cascade)
   allocations InvestmentAllocation[]
   sagatJobs   SagatJob[]
   glosaRisks  GlosaRisk[]
@@ -252,21 +344,21 @@ model SagatJob {
 }
 
 model KnowledgeDocument {
-  id           String   @id @default(cuid())
-  slug         String   @unique
-  title        String
-  kind         String
-  filename     String
-  extractable  Boolean  @default(true)
-  summary      String
-  charCount    Int      @default(0)
-  indexedAt    DateTime @default(now())
+  id          String   @id @default(cuid())
+  slug        String   @unique
+  title       String
+  kind        String
+  filename    String
+  extractable Boolean  @default(true)
+  summary     String
+  charCount   Int      @default(0)
+  indexedAt   DateTime @default(now())
 
   chunks KnowledgeChunk[]
 }
 
 model KnowledgeChunk {
-  id         String @id @default(cuid())
+  id         String  @id @default(cuid())
   documentId String
   ordinal    Int
   heading    String?
