@@ -1,0 +1,3 @@
+window.AXM_CONFIG = {
+  whatsappNumber: "${AXM_WHATSAPP_NUMBER}",
+};

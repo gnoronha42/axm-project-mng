@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /
+
+# A indexação será liberada quando axmconsultoria.com apontar para esta aplicação.

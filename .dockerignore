@@ -11,3 +11,7 @@ dist
 *.m4a
 *.mkv
 *.webm
+**/*.mp4
+**/*.m4a
+**/*.mkv
+**/*.webm

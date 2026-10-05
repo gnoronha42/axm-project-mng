@@ -1,0 +1,95 @@
+@media (max-width: 540px) {
+  .container {
+    width: min(calc(100% - 28px), var(--container));
+  }
+
+  h1 {
+    font-size: 44px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  .hero-lead {
+    font-size: 17px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .hero-actions .button {
+    width: 100%;
+  }
+
+  .hero-proof {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .hero-proof div {
+    padding-left: 14px;
+    border-left: 2px solid var(--gold);
+  }
+
+  .portrait-frame {
+    padding: 10px;
+  }
+
+  .floating-card {
+    display: none;
+  }
+
+  .audience-row > div {
+    align-items: flex-start;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .audience-row i {
+    display: none;
+  }
+
+  .solution-card,
+  .offer-card,
+  .testimonial {
+    padding: 26px;
+  }
+
+  .service-item {
+    grid-template-columns: 34px minmax(0, 1fr) 42px;
+    gap: 12px;
+  }
+
+  .service-item > a {
+    width: 40px;
+    height: 40px;
+  }
+
+  .experience-badge {
+    right: -6px;
+    bottom: 18px;
+    width: 126px;
+    height: 126px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .footer-brand {
+    grid-column: auto;
+  }
+
+  .footer-bottom {
+    gap: 8px;
+    flex-direction: column;
+  }
+
+  .whatsapp-float {
+    right: 14px;
+    bottom: 14px;
+  }
+}
