@@ -29,11 +29,13 @@
 }
 
 .footer-brand img {
+  margin-bottom: 28px;
   filter: drop-shadow(0 5px 18px rgba(245, 185, 31, 0.16));
 }
 
 .footer-brand p {
   max-width: 330px;
+  margin-bottom: 0;
   color: #aeb0a9;
   font-size: 13px;
 }
@@ -91,12 +93,8 @@
   font-weight: 800;
 }
 
-.whatsapp-float > span:first-child {
-  display: grid;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.18);
-  font-size: 18px;
-  place-items: center;
+.whatsapp-float svg {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
 }
