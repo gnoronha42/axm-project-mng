@@ -21,6 +21,11 @@ dist-ssr
 *.m4a
 *.mkv
 *.webm
+*.zip
+
+# Dossiês de projetos (evidências reais, não vão para o git)
+knowledge/6. Siscappe*
+knowledge/3. RDA*
 
 # Editor directories and files
 .vscode/*

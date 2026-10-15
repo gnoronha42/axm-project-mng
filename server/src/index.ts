@@ -25,6 +25,8 @@ import { registerIntelligenceRoutes } from './routes/intelligence.js';
 import { registerKnowledgeRoutes } from './routes/knowledge.js';
 import { registerUserRoutes } from './routes/users.js';
 import { registerRdRoutes } from './routes/rd.js';
+import { registerRdFinanceRoutes } from './routes/rdFinance.js';
+import { registerRdFinanceAllocRoutes } from './routes/rdFinanceAlloc.js';
 import { registerProfileRoutes } from './routes/profile.js';
 import { findAvatarUrl } from './lib/avatar.js';
 import { ensureKnowledgeIndex } from './lib/knowledgeIndexer.js';
@@ -542,6 +544,8 @@ await registerIntelligenceRoutes(app);
 await registerKnowledgeRoutes(app);
 await registerUserRoutes(app);
 await registerRdRoutes(app, UPLOAD_DIR);
+await registerRdFinanceRoutes(app);
+await registerRdFinanceAllocRoutes(app);
 
 try {
   await app.listen({ port: PORT, host: '0.0.0.0' });

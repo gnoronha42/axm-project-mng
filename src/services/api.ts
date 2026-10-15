@@ -15,6 +15,12 @@ import type {
   RdReport,
   RdReportListItem,
   RdResearchHit,
+  RdActivity,
+  PlannedAllocation,
+  Collaborator,
+  CollaboratorCost,
+  RhAllocation,
+  RdFinanceSummary,
 } from '../types';
 import { ApiError, request, uploadDocument, fetchBlob } from './apiClient';
 
@@ -283,6 +289,115 @@ export const api = {
         return newComment;
       },
     );
+  },
+
+  // ===================== RD Financeiro =====================
+  getActivities: (projectId: string, year?: number) =>
+    request<RdActivity[]>(`/projects/${projectId}/activities${year ? `?year=${year}` : ''}`),
+  createActivity: (projectId: string, input: Partial<RdActivity> & { name: string; year: number }) =>
+    request<RdActivity>(`/projects/${projectId}/activities`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(input),
+    }),
+  updateActivity: (actId: string, patch: Partial<RdActivity>) =>
+    request<RdActivity>(`/activities/${actId}`, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(patch),
+    }),
+  deleteActivity: (actId: string) => request<{ ok: true }>(`/activities/${actId}`, { method: 'DELETE' }),
+  setPlanned: (
+    actId: string,
+    input: { collaboratorId: string; funcao?: string; horasPrevistas?: number; valorPrevisto?: number },
+  ) =>
+    request<PlannedAllocation>(`/activities/${actId}/planned`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(input),
+    }),
+  deletePlanned: (id: string) => request<{ ok: true }>(`/planned/${id}`, { method: 'DELETE' }),
+
+  getCollaborators: (projectId: string) =>
+    request<Collaborator[]>(`/projects/${projectId}/collaborators`),
+  createCollaborator: (projectId: string, input: Partial<Collaborator> & { name: string; cpf: string }) =>
+    request<Collaborator>(`/projects/${projectId}/collaborators`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(input),
+    }),
+  updateCollaborator: (cid: string, patch: Partial<Collaborator>) =>
+    request<Collaborator>(`/collaborators/${cid}`, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(patch),
+    }),
+  deleteCollaborator: (cid: string) => request<{ ok: true }>(`/collaborators/${cid}`, { method: 'DELETE' }),
+  saveCost: (cid: string, year: number, input: Partial<CollaboratorCost>) =>
+    request<CollaboratorCost>(`/collaborators/${cid}/cost/${year}`, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(input),
+    }),
+
+  getRhAllocations: (projectId: string, year?: number, month?: number) => {
+    const qs = new URLSearchParams();
+    if (year) qs.set('year', String(year));
+    if (month) qs.set('month', String(month));
+    const s = qs.toString();
+    return request<RhAllocation[]>(`/projects/${projectId}/rh-allocations${s ? `?${s}` : ''}`);
+  },
+  createRhAllocation: (
+    projectId: string,
+    input: { activityId: string; collaboratorId: string; year: number; month: number; horas: number; justificativa?: string; claimId?: string | null },
+  ) =>
+    request<RhAllocation>(`/projects/${projectId}/rh-allocations`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(input),
+    }),
+  updateRhAllocation: (
+    allocId: string,
+    patch: Partial<{ horas: number; month: number; activityId: string; justificativa: string; claimId: string | null }>,
+  ) =>
+    request<RhAllocation>(`/rh-allocations/${allocId}`, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(patch),
+    }),
+  deleteRhAllocation: (allocId: string) =>
+    request<{ ok: true }>(`/rh-allocations/${allocId}`, { method: 'DELETE' }),
+
+  addEvidence: (
+    allocId: string,
+    input: { documentId: string; kind?: string; valorComprovado?: number; conferido?: boolean; observacao?: string },
+  ) =>
+    request<RhAllocation>(`/rh-allocations/${allocId}/evidence`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(input),
+    }),
+  updateEvidence: (
+    evId: string,
+    patch: Partial<{ valorComprovado: number; conferido: boolean; observacao: string }>,
+  ) =>
+    request<RhAllocation>(`/evidence/${evId}`, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(patch),
+    }),
+  deleteEvidence: (evId: string) => request<RhAllocation>(`/evidence/${evId}`, { method: 'DELETE' }),
+
+  getFinanceSummary: (projectId: string, year: number) =>
+    request<RdFinanceSummary>(`/projects/${projectId}/rd-finance/${year}/summary`),
+  downloadFinanceXlsx: async (projectId: string, year: number) => {
+    const blob = await fetchBlob(`/projects/${projectId}/rd-finance/${year}/export`);
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `RD-Financeiro-${year}.xlsx`;
+    a.click();
+    URL.revokeObjectURL(url);
   },
 
   uploadDocument,

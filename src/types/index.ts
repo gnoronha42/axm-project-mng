@@ -267,3 +267,127 @@ export interface GlosaRisk {
   documentId?: string | null;
   createdAt: string;
 }
+
+// ===================== RD Financeiro =====================
+
+export type Vinculo = 'interno' | 'externo' | 'intercambio';
+
+export interface PlannedAllocation {
+  id: string;
+  activityId: string;
+  collaboratorId: string;
+  funcao: string;
+  horasPrevistas: number;
+  valorPrevisto: number;
+}
+
+export interface RdActivity {
+  id: string;
+  projectId: string;
+  year: number;
+  ordinal: number;
+  name: string;
+  purpose: string;
+  vinculo: Vinculo | string;
+  startDate?: string | null;
+  endDate?: string | null;
+  sectionId?: string | null;
+  plannedRoles?: PlannedAllocation[];
+}
+
+export interface CollaboratorCost {
+  id: string;
+  collaboratorId: string;
+  year: number;
+  salarioTotal: number;
+  encargosTotal: number;
+  beneficiosTotal: number;
+  horasAno: number;
+  horasUteis: number;
+  custoTotal?: number;
+  valorHora?: number;
+}
+
+export interface Collaborator {
+  id: string;
+  projectId: string;
+  name: string;
+  cpf: string;
+  cargoRais?: string | null;
+  cargoProjeto?: string | null;
+  miniCv: string;
+  vinculo: Vinculo | string;
+  dirInd: 'direto' | 'indireto' | string;
+  admissao?: string | null;
+  rescisao?: string | null;
+  planned: boolean;
+  costs?: CollaboratorCost[];
+}
+
+export type RhNivel = 'COMPROVADO' | 'RELATADO' | 'LACUNA';
+
+export interface RhFinding {
+  code: string;
+  severity: 'error' | 'warning';
+  message: string;
+  details?: Record<string, unknown>;
+}
+
+export interface RhValidation {
+  nivel: RhNivel;
+  blocking: boolean;
+  findings: RhFinding[];
+}
+
+export interface FinancialEvidence {
+  id: string;
+  documentId: string;
+  kind: string;
+  valorComprovado?: number | null;
+  conferido: boolean;
+  observacao: string;
+}
+
+export interface RhAllocation {
+  id: string;
+  projectId: string;
+  activityId: string;
+  activityName: string;
+  collaboratorId: string;
+  collaboratorName: string;
+  year: number;
+  month: number;
+  horas: number;
+  valorHora: number;
+  valorTotal: number;
+  justificativa: string;
+  claimId?: string | null;
+  reconStatus: 'pending' | 'matched' | 'divergent' | string;
+  evidences: FinancialEvidence[];
+  validation: RhValidation;
+}
+
+export interface RhConsolidationRow {
+  key: string;
+  label: string;
+  horas: number;
+  valor: number;
+}
+
+export interface RdFinanceSummary {
+  year: number;
+  consolidation: {
+    total: number;
+    totalHoras: number;
+    porVinculo: RhConsolidationRow[];
+    porAtividade: RhConsolidationRow[];
+  };
+  totals: {
+    lancamentos: number;
+    erros: number;
+    alertas: number;
+    comprovados: number;
+    coberturaEvidencia: number;
+  };
+  findings: { errors: RhFinding[]; warnings: RhFinding[] };
+}

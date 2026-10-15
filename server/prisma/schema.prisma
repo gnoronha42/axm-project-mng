@@ -78,6 +78,10 @@ model Project {
   extractions DocumentExtraction[]
   glosaRisks  GlosaRisk[]
   rdReports   RdReport[]
+
+  rdActivities  RdActivity[]
+  collaborators Collaborator[]
+  rhAllocations RhAllocation[]
 }
 
 model RdReport {
@@ -368,4 +372,139 @@ model KnowledgeChunk {
 
   @@unique([documentId, ordinal])
   @@index([documentId])
+}
+
+// ===========================================================================
+// RD Financeiro (justificação financeira mensal — modelo SISCAPE)
+// Escopo MVP: bloco de RH (pessoas -> folha/H-H -> horas por atividade).
+// ===========================================================================
+
+/// Atividade de P&D do projeto (ex.: Gerenciamento, Levantamento de Requisitos).
+/// Cada atividade tem um propósito específico e pode receber várias pessoas.
+model RdActivity {
+  id        String    @id @default(cuid())
+  projectId String
+  year      Int
+  ordinal   Int       @default(0)
+  name      String
+  purpose   String    @default("")
+  vinculo   String    @default("externo") // interno | externo | intercambio
+  startDate DateTime?
+  endDate   DateTime?
+  sectionId String? // vínculo opcional com o RD técnico (RdSection)
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+
+  project      Project             @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  allocations  RhAllocation[]
+  plannedRoles PlannedAllocation[]
+
+  @@index([projectId, year])
+}
+
+/// Colaborador cadastrado por projeto (um projeto tem sua própria lista).
+model Collaborator {
+  id           String    @id @default(cuid())
+  projectId    String
+  name         String
+  cpf          String
+  cargoRais    String?
+  cargoProjeto String? // função exercida no projeto
+  miniCv       String    @default("")
+  vinculo      String    @default("externo") // interno | externo | intercambio
+  dirInd       String    @default("direto") // direto | indireto
+  admissao     DateTime?
+  rescisao     DateTime?
+  planned      Boolean   @default(false) // consta no Plano de Trabalho?
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+
+  project      Project             @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  costs        CollaboratorCost[]
+  allocations  RhAllocation[]
+  plannedRoles PlannedAllocation[]
+
+  @@index([projectId])
+}
+
+/// Custos de folha por ano-base (valores IMPORTADOS já calculados).
+/// valorHora/custoTotal são derivados — ver lib/rhCalc.ts.
+model CollaboratorCost {
+  id              String   @id @default(cuid())
+  collaboratorId  String
+  year            Int
+  salarioTotal    Float    @default(0)
+  encargosTotal   Float    @default(0)
+  beneficiosTotal Float    @default(0)
+  horasAno        Float    @default(0) // total de horas/ano contratadas
+  horasUteis      Float    @default(0) // horas úteis disponíveis
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  collaborator Collaborator @relation(fields: [collaboratorId], references: [id], onDelete: Cascade)
+
+  @@unique([collaboratorId, year])
+}
+
+/// Planejamento (Plano de Trabalho): quem foi planejado por atividade,
+/// com função prevista e tetos de horas/valor — base da validação anti-glosa.
+model PlannedAllocation {
+  id             String   @id @default(cuid())
+  activityId     String
+  collaboratorId String
+  funcao         String   @default("")
+  horasPrevistas Float    @default(0)
+  valorPrevisto  Float    @default(0)
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  activity     RdActivity   @relation(fields: [activityId], references: [id], onDelete: Cascade)
+  collaborator Collaborator @relation(fields: [collaboratorId], references: [id], onDelete: Cascade)
+
+  @@unique([activityId, collaboratorId])
+  @@index([collaboratorId])
+}
+
+/// Lançamento realizado mês a mês: horas de uma pessoa numa atividade.
+/// A justificativa é o elo técnico↔financeiro (pode apontar para um RdClaim).
+model RhAllocation {
+  id             String   @id @default(cuid())
+  projectId      String
+  activityId     String
+  collaboratorId String
+  year           Int
+  month          Int
+  horas          Float    @default(0)
+  valorHora      Float    @default(0) // snapshot do H/H no lançamento
+  valorTotal     Float    @default(0)
+  justificativa  String   @default("")
+  claimId        String? // vínculo opcional com RdClaim técnico
+  reconStatus    String   @default("pending") // pending | matched | divergent
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  project      Project             @relation(fields: [projectId], references: [id], onDelete: Cascade)
+  activity     RdActivity          @relation(fields: [activityId], references: [id], onDelete: Cascade)
+  collaborator Collaborator        @relation(fields: [collaboratorId], references: [id], onDelete: Cascade)
+  evidences    FinancialEvidence[]
+
+  @@index([projectId, year, month])
+  @@index([collaboratorId])
+}
+
+/// Comprovante de pagamento vinculado a um lançamento + status de conciliação manual.
+model FinancialEvidence {
+  id              String   @id @default(cuid())
+  allocationId    String
+  documentId      String // reutiliza o repositório de Document (arquivo na VPS)
+  kind            String   @default("comprovante_pagamento")
+  valorComprovado Float?
+  conferido       Boolean  @default(false)
+  observacao      String   @default("")
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  allocation RhAllocation @relation(fields: [allocationId], references: [id], onDelete: Cascade)
+
+  @@index([allocationId])
 }

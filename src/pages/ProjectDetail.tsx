@@ -22,6 +22,7 @@ import DocumentList from '../components/documents/DocumentList';
 import DocumentUpload from '../components/documents/DocumentUpload';
 import CommentThread from '../components/comments/CommentThread';
 import MonthlyReports from '../components/workflow/MonthlyReports';
+import RdFinancePanel from '../components/finance/RdFinancePanel';
 import { PhaseLabelTag } from '../components/common/StatusTag';
 import { useBreakpoint } from '../hooks/useBreakpoint';
 import { useAuth } from '../auth/AuthContext';
@@ -248,6 +249,11 @@ export default function ProjectDetail() {
                   key: 'reports',
                   label: 'Relatórios Mensais',
                   children: <MonthlyReports reports={reports} loading={loadingReports} />,
+                },
+                {
+                  key: 'rd-financeiro',
+                  label: 'RD Financeiro',
+                  children: <RdFinancePanel projectId={project.id} />,
                 },
               ]}
             />
